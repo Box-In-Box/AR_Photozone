@@ -10,6 +10,8 @@ public class PlayfabManager : MonoBehaviour
     public InputField EmailInput, PasswordInput;
     public InputField Register_EmailInput, Register_PasswordInput, Register_UserNameInput;
 
+    public GameObject ConsolePanel;
+
     public void Login()
     {
         var request = new LoginWithEmailAddressRequest { Email = EmailInput.text, Password = PasswordInput.text };
@@ -22,11 +24,20 @@ public class PlayfabManager : MonoBehaviour
         PlayFabClientAPI.RegisterPlayFabUser(request, OnRegisterSuccess, OnRegisterFailure);
     }
 
-    void OnLoginSuccess(LoginResult result) => print("로그인 성공");
+    void OnLoginSuccess(LoginResult result) => StartCoroutine(PrintText("로그인 성공"));
 
-    void OnLoginFailure(PlayFabError error) => print("로그인 실패");
+    void OnLoginFailure(PlayFabError error) => StartCoroutine(PrintText("로그인 실패"));
 
-    void OnRegisterSuccess(RegisterPlayFabUserResult result) => print("회원가입 성공");
+    void OnRegisterSuccess(RegisterPlayFabUserResult result) => StartCoroutine(PrintText("회원가입 성공"));
 
-    void OnRegisterFailure(PlayFabError error) => print("회원가입 실패");
+    void OnRegisterFailure(PlayFabError error) => StartCoroutine(PrintText("회원가입 실패"));
+
+    IEnumerator PrintText(string msg)
+    {
+        ConsolePanel.SetActive(true);
+        ConsolePanel.gameObject.transform.GetChild(0).gameObject.GetComponent<Text>().text = msg;
+        yield return new WaitForSecondsRealtime(1f);
+        ConsolePanel.gameObject.transform.GetChild(0).gameObject.GetComponent<Text>().text = "";
+        ConsolePanel.SetActive(false);
+    }
 }

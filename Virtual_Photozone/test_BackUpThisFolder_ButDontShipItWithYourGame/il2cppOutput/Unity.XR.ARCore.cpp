@@ -14936,7 +14936,7 @@ IL_0028:
 		int32_t L_15 = V_0;
 		NullCheck(L_9);
 		int32_t L_16;
-		L_16 = VirtualFuncInvoker4< int32_t, Il2CppChar*, int32_t, uint8_t*, int32_t >::Invoke(20 /* System.Int32 System.Text.Encoding::GetBytes(System.Char*,System.Int32,System.Byte*,System.Int32) */, L_9, L_10, L_12, (uint8_t*)L_14, L_15);
+		L_16 = VirtualFuncInvoker4< int32_t, Il2CppChar*, int32_t, uint8_t*, int32_t >::Invoke(21 /* System.Int32 System.Text.Encoding::GetBytes(System.Char*,System.Int32,System.Byte*,System.Int32) */, L_9, L_10, L_12, (uint8_t*)L_14, L_15);
 		// }
 		goto IL_004e;
 	}// end try (depth: 1)
@@ -25651,7 +25651,7 @@ IL_0032:
 		int32_t L_18 = V_0;
 		NullCheck(L_12);
 		int32_t L_19;
-		L_19 = VirtualFuncInvoker4< int32_t, Il2CppChar*, int32_t, uint8_t*, int32_t >::Invoke(20 /* System.Int32 System.Text.Encoding::GetBytes(System.Char*,System.Int32,System.Byte*,System.Int32) */, L_12, L_13, L_15, (uint8_t*)L_17, L_18);
+		L_19 = VirtualFuncInvoker4< int32_t, Il2CppChar*, int32_t, uint8_t*, int32_t >::Invoke(21 /* System.Int32 System.Text.Encoding::GetBytes(System.Char*,System.Int32,System.Byte*,System.Int32) */, L_12, L_13, L_15, (uint8_t*)L_17, L_18);
 		V_3 = (String_t*)NULL;
 		// return bytes;
 		NativeArray_1_t81F55263465517B73C455D3400CF67B4BADD85CF L_20 = V_1;

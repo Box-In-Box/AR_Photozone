@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
+using UnityEngine.UI;
 
 public class TouchManager : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class TouchManager : MonoBehaviour
 
     [SerializeField] 
     private Camera arCamera;
+
+    public GameObject ConsolePanel;
 
     void Start()
     {
@@ -74,22 +77,28 @@ public class TouchManager : MonoBehaviour
     }
     void StructureTouch(GameObject touchObj)
     {
-        AndroidToast.I.ShowToastMessage(touchObj.gameObject.name + " 구조물을 발견!");
-
+        StartCoroutine(PrintText(touchObj.gameObject.name + " 구조물을 발견"));
         //구조물 은 아마 위치 변경 가능하게?
     }
 
     void FindAnimalTouch(GameObject touchObj)
     {
-        AndroidToast.I.ShowToastMessage(touchObj.gameObject.name + " 발견!!");
-
+        StartCoroutine(PrintText(touchObj.gameObject.name + " 을 발견"));
         //animal 도감 추가
     }
 
     void DescriptionTouch(GameObject touchObj)
     {
-        AndroidToast.I.ShowToastMessage(touchObj.gameObject.name + " 의 설명");
-
+        StartCoroutine(PrintText(touchObj.gameObject.name + " 설명"));
         //해당 위치나 건물 설명
+    }
+
+    IEnumerator PrintText(string msg)
+    {
+        ConsolePanel.SetActive(true);
+        ConsolePanel.gameObject.transform.GetChild(0).gameObject.GetComponent<Text>().text = msg;
+        yield return new WaitForSecondsRealtime(2f);
+        ConsolePanel.gameObject.transform.GetChild(0).gameObject.GetComponent<Text>().text = "";
+        ConsolePanel.SetActive(false);
     }
 }
