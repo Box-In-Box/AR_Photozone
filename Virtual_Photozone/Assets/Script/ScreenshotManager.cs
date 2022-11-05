@@ -41,7 +41,6 @@ public class ScreenshotManager : MonoBehaviour
                     Debug.LogError("There's no active ManagerClass object");
                 }
             }
-
             return _instance;
         }
     }
@@ -62,10 +61,12 @@ public class ScreenshotManager : MonoBehaviour
     {
         isCoroutinePlaying = true;
 
-        // UI 제거 //풀 스크린일 시 UI제거 필요
-        uiPanel.SetActive(false);
-        yield return new WaitForEndOfFrame();
-
+        //풀 스크린일 시 UI제거 필요
+        if(currentRatio == 2)
+        {
+            uiPanel.SetActive(false);
+            yield return new WaitForEndOfFrame();
+        }
         // 스크린샷 + 갤러리갱신
         Screenshot();
         yield return new WaitForEndOfFrame();
@@ -76,8 +77,12 @@ public class ScreenshotManager : MonoBehaviour
         yield return new WaitForSecondsRealtime(0.1f);
         DestroyBlink();
 
-        // UI 복귀
-        uiPanel.SetActive(true);
+        // 풀 스크린일 시 UI 복귀
+        if (currentRatio == 2)
+        {
+            uiPanel.SetActive(true);  
+        }
+
         isCoroutinePlaying = false;
     }
     #endregion
@@ -85,7 +90,7 @@ public class ScreenshotManager : MonoBehaviour
     void Blink()
     {
         b = Instantiate(blink);
-        b.transform.SetParent(transform);
+        b.transform.SetParent(uiPanel.transform.parent);    //Main UI Panel에 생성
         b.transform.localPosition = new Vector3(0, 0, 0);
         b.transform.localScale = new Vector3(10, 10, 10);
     }

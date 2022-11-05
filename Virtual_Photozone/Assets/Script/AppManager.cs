@@ -29,14 +29,23 @@ public class AppManager : MonoBehaviour
                     Debug.LogError("There's no active ManagerClass object");
                 }
             }
-
             return _instance;
         }
     }
 
     void Start()
     {
+        AppSetting();
         SetRatio(currentRatio);
+    }
+
+    public void AppSetting()
+    {
+        //앱 또는 서버에 저장 된 값 가져오기
+        //화면비율
+        //사운드
+        //도감
+        //로그인은 도감 드갈 때
     }
 
 #if UNITY_ANDROID
@@ -118,7 +127,7 @@ public class AppManager : MonoBehaviour
                 break;
         }
 
-        Down_Screen_Padding_Panel.sizeDelta = new Vector2(0, Screen.height - screenRatio - upUIPanel.gameObject.GetComponent<RectTransform>().rect.height);
+        Down_Screen_Padding_Panel.sizeDelta = new Vector2(0, Screen.height - (screenRatio + upUIPanel.gameObject.GetComponent<RectTransform>().rect.height));
     }
 
     public void SetRatio(int ratio)
@@ -128,29 +137,23 @@ public class AppManager : MonoBehaviour
         ScreenshotManager.Instance.SetScreenRatio(ratio);
     }
 
-    public void SetRatioText_1_1(Text text)
+    public void OtherPanelActiveFalse(GameObject gameObject)
     {
-        text.text = "1 : 1";
+        gameObject.SetActive(false);
     }
-    public void SetRatioText_3_4(Text text)
-    {
-        text.text = "3 : 4";
-    }
-    public void SetRatioText_Full(Text text)
-    {
-        text.text = "Full";
-    }
+
+    public void SetRatioText_1_1(Text text) => text.text = "1 : 1";
+    public void SetRatioText_3_4(Text text) => text.text = "3 : 4";
+    public void SetRatioText_Full(Text text) => text.text = "Full";
+
+    public void SetSoundText_1(Text text) => text.text = "Sound1";
+    public void SetSoundText_2(Text text) => text.text = "Sound2";
+    public void SetSoundText_3(Text text) => text.text = "Sound3";
     #endregion
 
     #region Ranking Panel
-    public void SetLoginText(Text text)
-    {
-        text.text = "로그인";
-    }
-    public void SetRegistText(Text text)
-    {
-        text.text = "회원가입";
-    }
+    public void SetLoginText(Text text) => text.text = "로그인";
+    public void SetRegistText(Text text) => text.text = "회원가입";
     #endregion
 }
 

@@ -7,16 +7,17 @@ using UnityEngine.UI;
 public class GalleryManager : MonoBehaviour
 {
     public RawImage img;
-    public GameObject photoScreen;
+    public GameObject photoScreenPanel;
 
 
     private void Update()
     {
+        //뒤로가기 누를 때 갤러리 들어가지는 버그 수정 필요
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (photoScreen.activeSelf == true)
+            if (photoScreenPanel.activeSelf == true)
             {
-                QuitGallery();
+                QuitGalleryPanel();
             }
         }
     }
@@ -33,7 +34,7 @@ public class GalleryManager : MonoBehaviour
             if (!string.IsNullOrEmpty(file))
                 StartCoroutine(LoadImage(file));
         });
-        photoScreen.gameObject.SetActive(true);
+        photoScreenPanel.gameObject.SetActive(true);
     }
     #endregion
 
@@ -55,8 +56,13 @@ public class GalleryManager : MonoBehaviour
 
         img.texture = texture;
         img.SetNativeSize();
-        ImageSizeSetting(img, Screen.width, Screen.height);
+        ImageSizeSetting(img
+            , photoScreenPanel.GetComponent<RectTransform>().rect.width
+            , photoScreenPanel.GetComponent<RectTransform>().rect.height);
 
+        img.GetComponent<RectTransform>().anchorMin = new Vector2(0.5f, 0.5f);
+        img.GetComponent<RectTransform>().anchorMax = new Vector2(0.5f, 0.5f);
+        img.GetComponent<RectTransform>().pivot = new Vector2(0.5f, 0.5f);
         yield return null;
     }
 
@@ -77,8 +83,10 @@ public class GalleryManager : MonoBehaviour
         }
     }
 
-    public void QuitGallery()
+    public void QuitGalleryPanel()
     {
-        photoScreen.gameObject.SetActive(false);
+        img.texture = null;
+        img.GetComponent<RectTransform>().sizeDelta = new Vector2(0, 0);
+        photoScreenPanel.SetActive(false);
     }
 }
