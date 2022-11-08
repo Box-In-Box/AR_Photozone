@@ -16,12 +16,33 @@ public class TouchManager : MonoBehaviour
 
     [SerializeField] 
     private Camera arCamera;
+    public Transform CameraTransform;
 
     public GameObject ConsolePanel;
+
+    private static TouchManager _instance = null;
+    public static TouchManager Instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                _instance = FindObjectOfType(typeof(TouchManager)) as TouchManager;
+
+                if (_instance == null)
+                {
+                    Debug.LogError("There's no active ManagerClass object");
+                }
+            }
+            return _instance;
+        }
+    }
 
     void Start()
     {
         raycastMgr = GetComponent<ARRaycastManager>();
+
+        arCamera = CameraTransform.transform.GetChild(0).gameObject.transform.Find("AR Camera").GetComponent<Camera>();
     }
 
     void Update()
@@ -53,7 +74,7 @@ public class TouchManager : MonoBehaviour
                 }
                 else if (hitobj.collider.tag.Equals("Description"))
                 {
-                    //¾Æ¸¶ ±¸Á¶¹° ¿· º° ÀÌ¹ÌÁö·Î ÇØ´ç À§Ä¡ ¼³¸íÀÌ µé¾î°¥ µí
+                    //ì•„ë§ˆ êµ¬ì¡°ë¬¼ ì˜† ë³„ ì´ë¯¸ì§€ë¡œ í•´ë‹¹ ìœ„ì¹˜ ì„¤ëª…ì´ ë“¤ì–´ê°ˆ ë“¯
                     touchObj = hitobj.collider.gameObject;
                     DescriptionTouch(touchObj);
                     Touched = true;
@@ -66,7 +87,7 @@ public class TouchManager : MonoBehaviour
         {
             Touched = false;
         }
-        /* ±¸Á¶¹° À§Ä¡ º¯°æ ¾ÈµÊ, ¼öÁ¤ ÇÊ¿ä */
+        /* êµ¬ì¡°ë¬¼ ìœ„ì¹˜ ë³€ê²½ ì•ˆë¨, ìˆ˜ì • í•„ìš” */
         if (raycastMgr.Raycast(touch.position, hits, TrackableType.PlaneWithinPolygon))
         {
             if (Touched)
@@ -77,20 +98,25 @@ public class TouchManager : MonoBehaviour
     }
     void StructureTouch(GameObject touchObj)
     {
-        StartCoroutine(PrintText(touchObj.gameObject.name + " ±¸Á¶¹°À» ¹ß°ß"));
-        //±¸Á¶¹° Àº ¾Æ¸¶ À§Ä¡ º¯°æ °¡´ÉÇÏ°Ô?
+        StartCoroutine(PrintText(touchObj.gameObject.name + " êµ¬ì¡°ë¬¼ì„ ë°œê²¬"));
+        //êµ¬ì¡°ë¬¼ ì€ ì•„ë§ˆ ìœ„ì¹˜ ë³€ê²½ ê°€ëŠ¥í•˜ê²Œ?
     }
 
     void FindAnimalTouch(GameObject touchObj)
     {
-        StartCoroutine(PrintText(touchObj.gameObject.name + " À» ¹ß°ß"));
-        //animal µµ°¨ Ãß°¡
+        StartCoroutine(PrintText(touchObj.gameObject.name + " ì„ ë°œê²¬"));
+        //animal ë„ê° ì¶”ê°€
     }
 
     void DescriptionTouch(GameObject touchObj)
     {
-        StartCoroutine(PrintText(touchObj.gameObject.name + " ¼³¸í"));
-        //ÇØ´ç À§Ä¡³ª °Ç¹° ¼³¸í
+        StartCoroutine(PrintText(touchObj.gameObject.name + " ì„¤ëª…"));
+        //í•´ë‹¹ ìœ„ì¹˜ë‚˜ ê±´ë¬¼ ì„¤ëª…
+    }
+
+    public void SetCamera(Camera camera)
+    {
+        arCamera = camera;
     }
 
     IEnumerator PrintText(string msg)

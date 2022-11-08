@@ -6,17 +6,18 @@ using UnityEngine.UI;
 
 public class ScreenshotManager : MonoBehaviour
 {
-    #region data Fields
+    //스크린샷에 필요한 오브젝트
     public GameObject blink;
-    private GameObject b;
     public GameObject uiPanel;
     public RectTransform ScreenPaddingPanel;
     public RectTransform upUIPanel;
 
-    public int currentRatio;    //현재 스크린 비율 //사진 찍을 때 마다 AppManager 변수 잦은 호출로 같은 변수 따로 선언
+    //스크린 비율
+    public int currentRatio;    //현재 스크린 비율 //설정 바뀔 때만 변경
     public int screenRatio;     //스크린 비율
 
-    bool isCoroutinePlaying;    // 코루틴 중복방지
+    // 코루틴 중복방지
+    private bool isCoroutinePlaying;    
 
     // 파일 불러올 때 필요
     string albumName = "arTest";     // 생성될 앨범의 이름
@@ -24,10 +25,8 @@ public class ScreenshotManager : MonoBehaviour
 
     [SerializeField]
     GameObject galleryPanel;    // 찍은 사진이 뜰 패널
-    #endregion
 
     private static ScreenshotManager _instance = null;
-
     public static ScreenshotManager Instance
     {
         get
@@ -54,9 +53,7 @@ public class ScreenshotManager : MonoBehaviour
             StartCoroutine("captureScreenshot");
         }
     }
-    #endregion
 
-    #region Capture Coroutine
     IEnumerator captureScreenshot()
     {
         isCoroutinePlaying = true;
@@ -71,44 +68,25 @@ public class ScreenshotManager : MonoBehaviour
         Screenshot();
         yield return new WaitForEndOfFrame();
 
-        // 블링크 + 사운드
-        Blink();
-        Sound();
+        // 블링크
+        GameObject blinkObj;
+        blinkObj = Instantiate(blink);
+        blinkObj.transform.SetParent(uiPanel.transform.parent);    //Main UI Panel에 생성
+        blinkObj.transform.localPosition = new Vector3(0, 0, 0);
         yield return new WaitForSecondsRealtime(0.1f);
-        DestroyBlink();
+        Destroy(blinkObj);
+
+        //사운드
 
         // 풀 스크린일 시 UI 복귀
-        if (currentRatio == 2)
-        {
+        if (currentRatio == 2) 
             uiPanel.SetActive(true);  
-        }
 
         isCoroutinePlaying = false;
     }
-    #endregion
 
-    void Blink()
-    {
-        b = Instantiate(blink);
-        b.transform.SetParent(uiPanel.transform.parent);    //Main UI Panel에 생성
-        b.transform.localPosition = new Vector3(0, 0, 0);
-        b.transform.localScale = new Vector3(10, 10, 10);
-    }
-    void Sound()
-    {
-       
-    }
-
-    void DestroyBlink()
-    {
-        if(b != null)
-            Destroy(b);
-    }
-
-    #region Screenshot And GalleryUpdate
     void Screenshot()
     {
-        // 스크린샷 **수정 필요 살짝 내려서 찍힘
         Texture2D texture = new Texture2D(Screen.width, screenRatio, TextureFormat.RGB24, false);
 
         if (currentRatio == 2)  //풀스크린일 때 상단 UI 계산 X

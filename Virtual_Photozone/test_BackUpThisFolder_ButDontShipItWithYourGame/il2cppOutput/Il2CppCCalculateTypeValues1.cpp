@@ -6419,14 +6419,14 @@ struct AnimationEntry_t57E19BB849DB1493B1787A8A9CB2E608E495B447  : public Runtim
 	int32_t ___type_1;
 };
 
-// AppManager/<PrepareToQuitRoutine>d__14
-struct U3CPrepareToQuitRoutineU3Ed__14_t76DED220C22E117F80963837AF9558F3DDC84BF1  : public RuntimeObject
+// AppManager/<PrepareToQuitRoutine>d__17
+struct U3CPrepareToQuitRoutineU3Ed__17_t2044DB10EB3830DB7B82C285E96BF403D5F7ACAC  : public RuntimeObject
 {
-	// System.Int32 AppManager/<PrepareToQuitRoutine>d__14::<>1__state
+	// System.Int32 AppManager/<PrepareToQuitRoutine>d__17::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object AppManager/<PrepareToQuitRoutine>d__14::<>2__current
+	// System.Object AppManager/<PrepareToQuitRoutine>d__17::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// AppManager AppManager/<PrepareToQuitRoutine>d__14::<>4__this
+	// AppManager AppManager/<PrepareToQuitRoutine>d__17::<>4__this
 	AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C* ___U3CU3E4__this_2;
 };
 
@@ -7741,15 +7741,17 @@ struct U3CResolveU3Ed__6_t01D5F8740AD6430DDA98D2DB3CE7F37AB8B69C51  : public Run
 	RouteWaypointResolveLocation_t6CC898E86218DB20A0C5958D46054CBA14EAB701* ___U3CU3E4__this_2;
 };
 
-// ScreenshotManager/<captureScreenshot>d__15
-struct U3CcaptureScreenshotU3Ed__15_t985828D976AA8F4ED03B6DD993E31A1DA6DD07C8  : public RuntimeObject
+// ScreenshotManager/<captureScreenshot>d__14
+struct U3CcaptureScreenshotU3Ed__14_t1AAFE664778B06F97EB6B6562421A9C1A5D2844A  : public RuntimeObject
 {
-	// System.Int32 ScreenshotManager/<captureScreenshot>d__15::<>1__state
+	// System.Int32 ScreenshotManager/<captureScreenshot>d__14::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object ScreenshotManager/<captureScreenshot>d__15::<>2__current
+	// System.Object ScreenshotManager/<captureScreenshot>d__14::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// ScreenshotManager ScreenshotManager/<captureScreenshot>d__15::<>4__this
+	// ScreenshotManager ScreenshotManager/<captureScreenshot>d__14::<>4__this
 	ScreenshotManager_t9256B7E3C49A0DA2AAF36936EE312AF7D6739EB2* ___U3CU3E4__this_2;
+	// UnityEngine.GameObject ScreenshotManager/<captureScreenshot>d__14::<blinkObj>5__2
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___U3CblinkObjU3E5__2_3;
 };
 
 // TMPro.Examples.ShaderPropAnimator/<AnimateProperties>d__6
@@ -8038,16 +8040,16 @@ struct U3CU3Ec_tA35DB2FB45F5681443581EE922D10BC5C693F2A0_StaticFields
 	Func_2_t11891D6338A438B6FE4F12664DF54679097E79B9* ___U3CU3E9__14_0_2;
 };
 
-// TouchManager/<PrintText>d__11
-struct U3CPrintTextU3Ed__11_t19BF269D9657671E0C1567D9152AC955315D5A3E  : public RuntimeObject
+// TouchManager/<PrintText>d__16
+struct U3CPrintTextU3Ed__16_tF9E35E444257DFF7C662A9E341A0FAEC05AA06F7  : public RuntimeObject
 {
-	// System.Int32 TouchManager/<PrintText>d__11::<>1__state
+	// System.Int32 TouchManager/<PrintText>d__16::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object TouchManager/<PrintText>d__11::<>2__current
+	// System.Object TouchManager/<PrintText>d__16::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// TouchManager TouchManager/<PrintText>d__11::<>4__this
+	// TouchManager TouchManager/<PrintText>d__16::<>4__this
 	TouchManager_t38556C99556388530402BB02D83E19164E477D1C* ___U3CU3E4__this_2;
-	// System.String TouchManager/<PrintText>d__11::msg
+	// System.String TouchManager/<PrintText>d__16::msg
 	String_t* ___msg_3;
 };
 
@@ -31721,14 +31723,20 @@ struct AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C  : public MonoBehavi
 	int32_t ___currentRatio_8;
 	// System.Int32 AppManager::screenRatio
 	int32_t ___screenRatio_9;
+	// UnityEngine.Transform AppManager::CameraTransform
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___CameraTransform_10;
+	// UnityEngine.GameObject AppManager::Camera_World
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Camera_World_11;
+	// UnityEngine.GameObject AppManager::Camera_User
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Camera_User_12;
 	// System.Boolean AppManager::_preparedToQuit
-	bool ____preparedToQuit_11;
+	bool ____preparedToQuit_14;
 };
 
 struct AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C_StaticFields
 {
 	// AppManager AppManager::_instance
-	AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C* ____instance_10;
+	AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C* ____instance_13;
 };
 
 // ARLocation.MapboxRoutes.Examples.Search.ArMenuController
@@ -32616,32 +32624,30 @@ struct ScreenshotManager_t9256B7E3C49A0DA2AAF36936EE312AF7D6739EB2  : public Mon
 {
 	// UnityEngine.GameObject ScreenshotManager::blink
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___blink_4;
-	// UnityEngine.GameObject ScreenshotManager::b
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___b_5;
 	// UnityEngine.GameObject ScreenshotManager::uiPanel
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___uiPanel_6;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___uiPanel_5;
 	// UnityEngine.RectTransform ScreenshotManager::ScreenPaddingPanel
-	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___ScreenPaddingPanel_7;
+	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___ScreenPaddingPanel_6;
 	// UnityEngine.RectTransform ScreenshotManager::upUIPanel
-	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___upUIPanel_8;
+	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___upUIPanel_7;
 	// System.Int32 ScreenshotManager::currentRatio
-	int32_t ___currentRatio_9;
+	int32_t ___currentRatio_8;
 	// System.Int32 ScreenshotManager::screenRatio
-	int32_t ___screenRatio_10;
+	int32_t ___screenRatio_9;
 	// System.Boolean ScreenshotManager::isCoroutinePlaying
-	bool ___isCoroutinePlaying_11;
+	bool ___isCoroutinePlaying_10;
 	// System.String ScreenshotManager::albumName
-	String_t* ___albumName_12;
+	String_t* ___albumName_11;
 	// System.String ScreenshotManager::fileName
-	String_t* ___fileName_13;
+	String_t* ___fileName_12;
 	// UnityEngine.GameObject ScreenshotManager::galleryPanel
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___galleryPanel_14;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___galleryPanel_13;
 };
 
 struct ScreenshotManager_t9256B7E3C49A0DA2AAF36936EE312AF7D6739EB2_StaticFields
 {
 	// ScreenshotManager ScreenshotManager::_instance
-	ScreenshotManager_t9256B7E3C49A0DA2AAF36936EE312AF7D6739EB2* ____instance_15;
+	ScreenshotManager_t9256B7E3C49A0DA2AAF36936EE312AF7D6739EB2* ____instance_14;
 };
 
 // ScreenshotPreview
@@ -33007,8 +33013,16 @@ struct TouchManager_t38556C99556388530402BB02D83E19164E477D1C  : public MonoBeha
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___touchObj_7;
 	// UnityEngine.Camera TouchManager::arCamera
 	Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ___arCamera_8;
+	// UnityEngine.Transform TouchManager::CameraTransform
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___CameraTransform_9;
 	// UnityEngine.GameObject TouchManager::ConsolePanel
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___ConsolePanel_9;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___ConsolePanel_10;
+};
+
+struct TouchManager_t38556C99556388530402BB02D83E19164E477D1C_StaticFields
+{
+	// TouchManager TouchManager::_instance
+	TouchManager_t38556C99556388530402BB02D83E19164E477D1C* ____instance_11;
 };
 
 // UnityEngine.SpatialTracking.TrackedPoseDriver
@@ -37810,7 +37824,7 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize6346 = { sizeof(AnchorCreato
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6347;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize6347 = { sizeof(ARFeatheredPlaneMeshVisualizer_t5B508CD2D37F908F4359D7DED031B3C357E34955), -1, sizeof(ARFeatheredPlaneMeshVisualizer_t5B508CD2D37F908F4359D7DED031B3C357E34955_StaticFields), 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6348;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize6348 = { sizeof(U3CPrepareToQuitRoutineU3Ed__14_t76DED220C22E117F80963837AF9558F3DDC84BF1), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize6348 = { sizeof(U3CPrepareToQuitRoutineU3Ed__17_t2044DB10EB3830DB7B82C285E96BF403D5F7ACAC), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6349;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize6349 = { sizeof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C), -1, sizeof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C_StaticFields), 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6350;
@@ -37826,7 +37840,7 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize6354 = { sizeof(U3CPrintText
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6355;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize6355 = { sizeof(PlayfabManager_tC4032B8D2DCA02C9191F9039AB9E9C9C5D5F6CEC), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6356;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize6356 = { sizeof(U3CcaptureScreenshotU3Ed__15_t985828D976AA8F4ED03B6DD993E31A1DA6DD07C8), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize6356 = { sizeof(U3CcaptureScreenshotU3Ed__14_t1AAFE664778B06F97EB6B6562421A9C1A5D2844A), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6357;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize6357 = { sizeof(ScreenshotManager_t9256B7E3C49A0DA2AAF36936EE312AF7D6739EB2), -1, sizeof(ScreenshotManager_t9256B7E3C49A0DA2AAF36936EE312AF7D6739EB2_StaticFields), 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6358;
@@ -37844,9 +37858,9 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize6363 = { sizeof(Test_tE08E78
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6364;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize6364 = { sizeof(UIPosition_tD4D0967C6D41BEC83192B5BC2D0DC3E94CE72548), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6365;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize6365 = { sizeof(U3CPrintTextU3Ed__11_t19BF269D9657671E0C1567D9152AC955315D5A3E), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize6365 = { sizeof(U3CPrintTextU3Ed__16_tF9E35E444257DFF7C662A9E341A0FAEC05AA06F7), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6366;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize6366 = { sizeof(TouchManager_t38556C99556388530402BB02D83E19164E477D1C), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize6366 = { sizeof(TouchManager_t38556C99556388530402BB02D83E19164E477D1C), -1, sizeof(TouchManager_t38556C99556388530402BB02D83E19164E477D1C_StaticFields), 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6367;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize6367 = { sizeof(ChatController_t21BE953E1D5ADF0BA9F3B03C205203CADDC64C15), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6368;

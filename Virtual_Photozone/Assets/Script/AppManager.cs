@@ -5,17 +5,24 @@ using UnityEngine.UI;
 
 public class AppManager : MonoBehaviour
 {
+    //콘솔 텍스트
     public GameObject ConsolePanel;
 
+    //스크린 비율 패딩 오브젝트
     public RectTransform Down_Screen_Padding_Panel;
     public RectTransform Up_Screen_Padding_Panel;
     public RectTransform upUIPanel; //비율 상단 기준점
 
+    //스크린 비율
     public int currentRatio;    //현재 스크린 비율
     public int screenRatio;     //스크린 비율
 
-    private static AppManager _instance = null;
+    //카메라 전환 설정
+    public Transform CameraTransform;
+    public GameObject Camera_World;
+    public GameObject Camera_User;
 
+    private static AppManager _instance = null;
     public static AppManager Instance
     {
         get
@@ -48,6 +55,7 @@ public class AppManager : MonoBehaviour
         //로그인은 도감 드갈 때
     }
 
+    #region OS Setting
 #if UNITY_ANDROID
     private bool _preparedToQuit = false;
 
@@ -87,6 +95,7 @@ public class AppManager : MonoBehaviour
         _preparedToQuit = false;
     }
 #endif
+    #endregion
 
     #region common
     public void OpenPanel(GameObject gameObject)
@@ -155,5 +164,24 @@ public class AppManager : MonoBehaviour
     public void SetLoginText(Text text) => text.text = "로그인";
     public void SetRegistText(Text text) => text.text = "회원가입";
     #endregion
-}
 
+    public void SwitchCamera() 
+    {
+        GameObject obj = CameraTransform.transform.GetChild(0).gameObject;
+        GameObject temp = null;
+
+        if (obj.tag == "World")
+        {
+            Destroy(obj);
+            temp = Instantiate(Camera_User, this.transform.position, Quaternion.identity);
+            temp.transform.SetParent(CameraTransform.transform);
+        }
+        else
+        {
+            Destroy(obj);
+            temp = Instantiate(Camera_World, this.transform.position, Quaternion.identity);
+            temp.transform.SetParent(CameraTransform.transform);
+        }
+        TouchManager.Instance.SetCamera(temp.transform.Find("AR Camera").GetComponent<Camera>());
+    }
+}
