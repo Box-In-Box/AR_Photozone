@@ -55,48 +55,6 @@ public class AppManager : MonoBehaviour
         //로그인은 도감 드갈 때
     }
 
-    #region OS Setting
-#if UNITY_ANDROID
-    private bool _preparedToQuit = false;
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            if (_preparedToQuit == false)
-            {
-                PrepareToQuit();
-            }
-            else
-            {
-                Debug.Log("Quit");
-#if UNITY_EDITOR
-                UnityEditor.EditorApplication.isPlaying = false;
-#else
-                Application.Quit();
-#endif
-            }
-        }
-    }
-
-    private void PrepareToQuit()
-    {
-        StartCoroutine(PrepareToQuitRoutine());
-    }
-
-    private IEnumerator PrepareToQuitRoutine()
-    {
-        _preparedToQuit = true;
-        ConsolePanel.SetActive(true);
-        ConsolePanel.gameObject.transform.GetChild(0).gameObject.GetComponent<Text>().text = "뒤로가기 버튼을 한 번 더 누르시면 종료됩니다.";
-        yield return new WaitForSecondsRealtime(2.5f);
-        ConsolePanel.gameObject.transform.GetChild(0).gameObject.GetComponent<Text>().text = "";
-        ConsolePanel.SetActive(false);
-        _preparedToQuit = false;
-    }
-#endif
-    #endregion
-
     #region common
     public void OpenPanel(GameObject gameObject)
     {

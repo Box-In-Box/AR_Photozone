@@ -801,11 +801,9 @@ extern void Permission_GetUnityPermissions_m6A22A923A8B036209E6218E24F7AA8CA79AA
 extern void Permission_HasUserAuthorizedPermission_mF4C90E13124E28F6F672200E489CC25A9B645B8B (void);
 // 0x00000197 System.Void UnityEngine.Android.Permission::RequestUserPermission(System.String)
 extern void Permission_RequestUserPermission_mF9CF3A21AAF34B311137C4D00B3AD6A6C2694242 (void);
-// 0x00000198 System.Void UnityEngine.Android.Permission::RequestUserPermission(System.String,UnityEngine.Android.PermissionCallbacks)
-extern void Permission_RequestUserPermission_m7B8E817C03FDB5C99F22002C7181F27BF031F117 (void);
-// 0x00000199 System.Void UnityEngine.Android.Permission::RequestUserPermissions(System.String[],UnityEngine.Android.PermissionCallbacks)
+// 0x00000198 System.Void UnityEngine.Android.Permission::RequestUserPermissions(System.String[],UnityEngine.Android.PermissionCallbacks)
 extern void Permission_RequestUserPermissions_m09FE74BF5829C8B48A0E6C9B7F7846FEE763D2DA (void);
-static Il2CppMethodPointer s_methodPointers[409] = 
+static Il2CppMethodPointer s_methodPointers[408] = 
 {
 	AndroidJNISafe_CheckException_m465A2955F921417ED62C035390E550889E93F8DC,
 	AndroidJNISafe_DeleteGlobalRef_mD4ECCC474E98F40B65184E138EF9D84A4F4AAAA0,
@@ -1214,10 +1212,9 @@ static Il2CppMethodPointer s_methodPointers[409] =
 	Permission_GetUnityPermissions_m6A22A923A8B036209E6218E24F7AA8CA79AA15BD,
 	Permission_HasUserAuthorizedPermission_mF4C90E13124E28F6F672200E489CC25A9B645B8B,
 	Permission_RequestUserPermission_mF9CF3A21AAF34B311137C4D00B3AD6A6C2694242,
-	Permission_RequestUserPermission_m7B8E817C03FDB5C99F22002C7181F27BF031F117,
 	Permission_RequestUserPermissions_m09FE74BF5829C8B48A0E6C9B7F7846FEE763D2DA,
 };
-static const int32_t s_InvokerIndices[409] = 
+static const int32_t s_InvokerIndices[408] = 
 {
 	9870,
 	9665,
@@ -1627,7 +1624,6 @@ static const int32_t s_InvokerIndices[409] =
 	9238,
 	9667,
 	8981,
-	8981,
 };
 static const Il2CppTokenRangePair s_rgctxIndices[23] = 
 {
@@ -1744,7 +1740,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_AndroidJNIModule_CodeGen
 const Il2CppCodeGenModule g_UnityEngine_AndroidJNIModule_CodeGenModule = 
 {
 	"UnityEngine.AndroidJNIModule.dll",
-	409,
+	408,
 	s_methodPointers,
 	0,
 	NULL,
