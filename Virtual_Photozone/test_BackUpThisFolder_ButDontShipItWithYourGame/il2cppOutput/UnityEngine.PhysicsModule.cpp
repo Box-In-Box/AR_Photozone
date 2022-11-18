@@ -742,6 +742,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RaycastHitU5BU5D_t008B8309DE422FE7567068D743D
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* Physics_RaycastAll_m8B7FB8419A65BEE78927D0EE84916E8DBE7ECD34 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___origin0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___direction1, float ___maxDistance2, int32_t ___layerMask3, int32_t ___queryTriggerInteraction4, const RuntimeMethod* method) ;
 // System.Int32 UnityEngine.PhysicsScene::Raycast(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.RaycastHit[],System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PhysicsScene_Raycast_m3BD571CF6901C59C286D7B58ED9D15D836BC54C3 (PhysicsScene_t55222DD37072E8560EE054A07C0E3FE391D9D9DE* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___origin0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___direction1, RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* ___raycastHits2, float ___maxDistance3, int32_t ___layerMask4, int32_t ___queryTriggerInteraction5, const RuntimeMethod* method) ;
+// System.Boolean UnityEngine.Physics::CheckSphere_Internal_Injected(UnityEngine.PhysicsScene&,UnityEngine.Vector3&,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Physics_CheckSphere_Internal_Injected_m2ACFB56AF137AC31796C00809EBA6D55FA8BBD9A (PhysicsScene_t55222DD37072E8560EE054A07C0E3FE391D9D9DE* ___physicsScene0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___position1, float ___radius2, int32_t ___layerMask3, int32_t ___queryTriggerInteraction4, const RuntimeMethod* method) ;
+// System.Boolean UnityEngine.Physics::CheckSphere_Internal(UnityEngine.PhysicsScene,UnityEngine.Vector3,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Physics_CheckSphere_Internal_mC2E521D96447A8560D127D3EA42CB5785014B6FF (PhysicsScene_t55222DD37072E8560EE054A07C0E3FE391D9D9DE ___physicsScene0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position1, float ___radius2, int32_t ___layerMask3, int32_t ___queryTriggerInteraction4, const RuntimeMethod* method) ;
+// System.Boolean UnityEngine.Physics::CheckSphere(UnityEngine.Vector3,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Physics_CheckSphere_mC32BB961B0CF9D23EDDEEC3F30021FD1BE88E261 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position0, float ___radius1, int32_t ___layerMask2, int32_t ___queryTriggerInteraction3, const RuntimeMethod* method) ;
 // UnityEngine.Object UnityEngine.Object::FindObjectFromInstanceID(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* Object_FindObjectFromInstanceID_m977F314530A838CAB5497C8F5D0D8DA134B92E0C (int32_t ___instanceID0, const RuntimeMethod* method) ;
 // UnityEngine.Collider UnityEngine.RaycastHit::get_collider()
@@ -768,6 +774,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Component__ctor_m4319162A6E6B02301078C12
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Collider_Raycast_Injected_mAFAD355B658765116985B737217587C68BF257A3 (Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* __this, Ray_t2B1742D7958DC05BDC3EFC7461D3593E1430DC00* ___ray0, float ___maxDistance1, bool* ___hasHit2, RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5* ___ret3, const RuntimeMethod* method) ;
 // UnityEngine.RaycastHit UnityEngine.Collider::Raycast(UnityEngine.Ray,System.Single,System.Boolean&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5 Collider_Raycast_mBFA55E4B9BD7EE4E8D4107ADF24D2FA0F165FA2C (Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* __this, Ray_t2B1742D7958DC05BDC3EFC7461D3593E1430DC00 ___ray0, float ___maxDistance1, bool* ___hasHit2, const RuntimeMethod* method) ;
+// UnityEngine.CollisionFlags UnityEngine.CharacterController::Move_Injected(UnityEngine.Vector3&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CharacterController_Move_Injected_m7F25C33CF948858A8D5822EF73FAE7A16AE65C86 (CharacterController_t847C1A2719F60547D7D6077B648D6CE2D1EF3A6A* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___motion0, const RuntimeMethod* method) ;
 // System.String UnityEngine.UnityString::Format(System.String,System.Object[])
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* UnityString_Format_m98A0629641086A1BE20BBF7F4EADDE3FE3877D85 (String_t* ___fmt0, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___args1, const RuntimeMethod* method) ;
 // System.String UnityEngine.PhysicsScene::ToString()
@@ -1782,6 +1790,61 @@ IL_001c:
 		return L_5;
 	}
 }
+// System.Boolean UnityEngine.Physics::CheckSphere_Internal(UnityEngine.PhysicsScene,UnityEngine.Vector3,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Physics_CheckSphere_Internal_mC2E521D96447A8560D127D3EA42CB5785014B6FF (PhysicsScene_t55222DD37072E8560EE054A07C0E3FE391D9D9DE ___physicsScene0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position1, float ___radius2, int32_t ___layerMask3, int32_t ___queryTriggerInteraction4, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = ___radius2;
+		int32_t L_1 = ___layerMask3;
+		int32_t L_2 = ___queryTriggerInteraction4;
+		bool L_3;
+		L_3 = Physics_CheckSphere_Internal_Injected_m2ACFB56AF137AC31796C00809EBA6D55FA8BBD9A((&___physicsScene0), (&___position1), L_0, L_1, L_2, NULL);
+		return L_3;
+	}
+}
+// System.Boolean UnityEngine.Physics::CheckSphere(UnityEngine.Vector3,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Physics_CheckSphere_mC32BB961B0CF9D23EDDEEC3F30021FD1BE88E261 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position0, float ___radius1, int32_t ___layerMask2, int32_t ___queryTriggerInteraction3, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	{
+		PhysicsScene_t55222DD37072E8560EE054A07C0E3FE391D9D9DE L_0;
+		L_0 = Physics_get_defaultPhysicsScene_mC5D2BC20734D32FB421163F066BD5FB4118C633A(NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = ___position0;
+		float L_2 = ___radius1;
+		int32_t L_3 = ___layerMask2;
+		int32_t L_4 = ___queryTriggerInteraction3;
+		bool L_5;
+		L_5 = Physics_CheckSphere_Internal_mC2E521D96447A8560D127D3EA42CB5785014B6FF(L_0, L_1, L_2, L_3, L_4, NULL);
+		V_0 = L_5;
+		goto IL_0012;
+	}
+
+IL_0012:
+	{
+		bool L_6 = V_0;
+		return L_6;
+	}
+}
+// System.Boolean UnityEngine.Physics::CheckSphere(UnityEngine.Vector3,System.Single,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Physics_CheckSphere_mD6F0027DBDECFA69245E99D8A4EE1DC8742A817F (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position0, float ___radius1, int32_t ___layerMask2, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___position0;
+		float L_1 = ___radius1;
+		int32_t L_2 = ___layerMask2;
+		bool L_3;
+		L_3 = Physics_CheckSphere_mC32BB961B0CF9D23EDDEEC3F30021FD1BE88E261(L_0, L_1, L_2, 0, NULL);
+		V_0 = L_3;
+		goto IL_000d;
+	}
+
+IL_000d:
+	{
+		bool L_4 = V_0;
+		return L_4;
+	}
+}
 // System.Void UnityEngine.Physics::get_defaultPhysicsScene_Injected(UnityEngine.PhysicsScene&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Physics_get_defaultPhysicsScene_Injected_mE86AE6A398435C1754A824B2B35DF13126A6C5D6 (PhysicsScene_t55222DD37072E8560EE054A07C0E3FE391D9D9DE* ___ret0, const RuntimeMethod* method) 
 {
@@ -1799,6 +1862,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RaycastHitU5BU5D_t008B8309DE422FE7567068D743D
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Physics_Internal_RaycastAll_Injected_mAFAA47E2224DEA0ABF1A2188A969E7A663E50C92_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Physics::Internal_RaycastAll_Injected(UnityEngine.PhysicsScene&,UnityEngine.Ray&,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)");
 	RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* icallRetVal = _il2cpp_icall_func(___physicsScene0, ___ray1, ___maxDistance2, ___mask3, ___queryTriggerInteraction4);
+	return icallRetVal;
+}
+// System.Boolean UnityEngine.Physics::CheckSphere_Internal_Injected(UnityEngine.PhysicsScene&,UnityEngine.Vector3&,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Physics_CheckSphere_Internal_Injected_m2ACFB56AF137AC31796C00809EBA6D55FA8BBD9A (PhysicsScene_t55222DD37072E8560EE054A07C0E3FE391D9D9DE* ___physicsScene0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___position1, float ___radius2, int32_t ___layerMask3, int32_t ___queryTriggerInteraction4, const RuntimeMethod* method) 
+{
+	typedef bool (*Physics_CheckSphere_Internal_Injected_m2ACFB56AF137AC31796C00809EBA6D55FA8BBD9A_ftn) (PhysicsScene_t55222DD37072E8560EE054A07C0E3FE391D9D9DE*, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*, float, int32_t, int32_t);
+	static Physics_CheckSphere_Internal_Injected_m2ACFB56AF137AC31796C00809EBA6D55FA8BBD9A_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Physics_CheckSphere_Internal_Injected_m2ACFB56AF137AC31796C00809EBA6D55FA8BBD9A_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Physics::CheckSphere_Internal_Injected(UnityEngine.PhysicsScene&,UnityEngine.Vector3&,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)");
+	bool icallRetVal = _il2cpp_icall_func(___physicsScene0, ___position1, ___radius2, ___layerMask3, ___queryTriggerInteraction4);
 	return icallRetVal;
 }
 #ifdef __clang__
@@ -2229,6 +2302,34 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Collider_Raycast_Injected_mAFAD355B65876
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// UnityEngine.CollisionFlags UnityEngine.CharacterController::Move(UnityEngine.Vector3)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CharacterController_Move_mE3F7AC1B4A2D6955980811C088B68ED3A31D2DA4 (CharacterController_t847C1A2719F60547D7D6077B648D6CE2D1EF3A6A* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___motion0, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0;
+		L_0 = CharacterController_Move_Injected_m7F25C33CF948858A8D5822EF73FAE7A16AE65C86(__this, (&___motion0), NULL);
+		return L_0;
+	}
+}
+// System.Void UnityEngine.CharacterController::set_slopeLimit(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CharacterController_set_slopeLimit_mB77021F6C5D049ED76EEBB2556562BF2BBD6C1E0 (CharacterController_t847C1A2719F60547D7D6077B648D6CE2D1EF3A6A* __this, float ___value0, const RuntimeMethod* method) 
+{
+	typedef void (*CharacterController_set_slopeLimit_mB77021F6C5D049ED76EEBB2556562BF2BBD6C1E0_ftn) (CharacterController_t847C1A2719F60547D7D6077B648D6CE2D1EF3A6A*, float);
+	static CharacterController_set_slopeLimit_mB77021F6C5D049ED76EEBB2556562BF2BBD6C1E0_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (CharacterController_set_slopeLimit_mB77021F6C5D049ED76EEBB2556562BF2BBD6C1E0_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.CharacterController::set_slopeLimit(System.Single)");
+	_il2cpp_icall_func(__this, ___value0);
+}
+// UnityEngine.CollisionFlags UnityEngine.CharacterController::Move_Injected(UnityEngine.Vector3&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CharacterController_Move_Injected_m7F25C33CF948858A8D5822EF73FAE7A16AE65C86 (CharacterController_t847C1A2719F60547D7D6077B648D6CE2D1EF3A6A* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___motion0, const RuntimeMethod* method) 
+{
+	typedef int32_t (*CharacterController_Move_Injected_m7F25C33CF948858A8D5822EF73FAE7A16AE65C86_ftn) (CharacterController_t847C1A2719F60547D7D6077B648D6CE2D1EF3A6A*, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*);
+	static CharacterController_Move_Injected_m7F25C33CF948858A8D5822EF73FAE7A16AE65C86_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (CharacterController_Move_Injected_m7F25C33CF948858A8D5822EF73FAE7A16AE65C86_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.CharacterController::Move_Injected(UnityEngine.Vector3&)");
+	int32_t icallRetVal = _il2cpp_icall_func(__this, ___motion0);
+	return icallRetVal;
+}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

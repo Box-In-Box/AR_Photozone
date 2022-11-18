@@ -15,8 +15,7 @@ public class TouchManager : MonoBehaviour
     private GameObject touchObj;
 
     [SerializeField] 
-    private Camera arCamera;
-    public Transform CameraTransform;
+    public Camera arCamera;
 
     public GameObject ConsolePanel;
 
@@ -41,8 +40,6 @@ public class TouchManager : MonoBehaviour
     void Start()
     {
         raycastMgr = GetComponent<ARRaycastManager>();
-
-        arCamera = CameraTransform.transform.GetChild(0).gameObject.transform.Find("AR Camera").GetComponent<Camera>();
     }
 
     void Update()
@@ -112,11 +109,6 @@ public class TouchManager : MonoBehaviour
     {
         StartCoroutine(PrintText(touchObj.gameObject.name + " 설명"));
         //해당 위치나 건물 설명
-    }
-
-    public void SetCamera(Camera camera)
-    {
-        arCamera = camera;
     }
 
     IEnumerator PrintText(string msg)

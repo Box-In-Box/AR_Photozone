@@ -17,11 +17,6 @@ public class AppManager : MonoBehaviour
     public int currentRatio;    //현재 스크린 비율
     public int screenRatio;     //스크린 비율
 
-    //카메라 전환 설정
-    public Transform CameraTransform;
-    public GameObject Camera_World;
-    public GameObject Camera_User;
-
     private static AppManager _instance = null;
     public static AppManager Instance
     {
@@ -122,24 +117,4 @@ public class AppManager : MonoBehaviour
     public void SetLoginText(Text text) => text.text = "로그인";
     public void SetRegistText(Text text) => text.text = "회원가입";
     #endregion
-
-    public void SwitchCamera() 
-    {
-        GameObject obj = CameraTransform.transform.GetChild(0).gameObject;
-        GameObject temp = null;
-
-        if (obj.tag == "World")
-        {
-            Destroy(obj);
-            temp = Instantiate(Camera_User, this.transform.position, Quaternion.identity);
-            temp.transform.SetParent(CameraTransform.transform);
-        }
-        else
-        {
-            Destroy(obj);
-            temp = Instantiate(Camera_World, this.transform.position, Quaternion.identity);
-            temp.transform.SetParent(CameraTransform.transform);
-        }
-        TouchManager.Instance.SetCamera(temp.transform.Find("AR Camera").GetComponent<Camera>());
-    }
 }
