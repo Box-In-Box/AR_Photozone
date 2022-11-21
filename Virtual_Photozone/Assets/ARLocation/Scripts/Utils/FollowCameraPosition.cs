@@ -5,7 +5,7 @@ namespace ARLocation.Utils
 
     public class FollowCameraPosition : MonoBehaviour
     {
-        public Transform mainCameraTransform;
+        private Transform mainCameraTransform;
 
         public float Height = 1.4f;
 

@@ -570,10 +570,10 @@ struct LinqEnumerator_t419254F9B8BD3A533D41414F5475BB22930F1A94;
 struct U3CU3Ec__DisplayClass21_0_t008D6FEEF125D6A0C0EC37D9EB566048B74E1B81;
 // ARLocation.Vendor.SimpleJSON.JSONObject/<get_Children>d__27
 struct U3Cget_ChildrenU3Ed__27_t2FE02659A59F7B9E269D36EAA19B593C447A1745;
-// ARLocation.MapboxRoutes.MapboxApi/<QueryLocal>d__11
-struct U3CQueryLocalU3Ed__11_tDB1D84B03F14F45C335681F43025B03C19020DD2;
-// ARLocation.MapboxRoutes.MapboxApi/<QueryRoute>d__12
-struct U3CQueryRouteU3Ed__12_t5262E1C53F11854155D6311DC9A276AA336EDE8D;
+// ARLocation.MapboxRoutes.MapboxApi/<QueryLocal>d__12
+struct U3CQueryLocalU3Ed__12_tAFA45400DC21622ACA662B3C53304A4FABE5468B;
+// ARLocation.MapboxRoutes.MapboxApi/<QueryRoute>d__15
+struct U3CQueryRouteU3Ed__15_t5F57AFB071C44F0A90A54F9E72CCDF6C7649FA48;
 // ARLocation.MapboxRoutes.MapboxRoute/<LoadRoute>d__33
 struct U3CLoadRouteU3Ed__33_tFB6560D5EF83822DEA64F2D41CCABA5A849FC2E7;
 // ARLocation.MapboxRoutes.MapboxRoute/<LoadRoute>d__34
@@ -736,8 +736,8 @@ IL2CPP_EXTERN_C RuntimeClass* U3CLoadRouteU3Ed__34_t841B1FB56865254406E57A5BD85A
 IL2CPP_EXTERN_C RuntimeClass* U3CLoadRouteU3Ed__35_t4DD95E988C23C02ECE8940A560832AF3523B911E_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CLoadRouteU3Ed__36_t3AB87999D501E22B0CC3EFA19F50F0DDE21999BD_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CLoadRouteU3Ed__9_t828C4092AE62F2D0B213858157D593CF769FF12F_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* U3CQueryLocalU3Ed__11_tDB1D84B03F14F45C335681F43025B03C19020DD2_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* U3CQueryRouteU3Ed__12_t5262E1C53F11854155D6311DC9A276AA336EDE8D_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CQueryLocalU3Ed__12_tAFA45400DC21622ACA662B3C53304A4FABE5468B_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CQueryRouteU3Ed__15_t5F57AFB071C44F0A90A54F9E72CCDF6C7649FA48_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CResolveU3Ed__6_t01D5F8740AD6430DDA98D2DB3CE7F37AB8B69C51_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass21_0_t008D6FEEF125D6A0C0EC37D9EB566048B74E1B81_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3Cget_ChildrenU3Ed__24_t7258083FF16085082CB37BC22858D2B2BF169992_il2cpp_TypeInfo_var;
@@ -760,27 +760,39 @@ IL2CPP_EXTERN_C String_t* _stringLiteral0491ADD30E5917C8C04A75C1C1EB6BF687A9409A
 IL2CPP_EXTERN_C String_t* _stringLiteral052488227645C66BF2896325DC12320F1B88963A;
 IL2CPP_EXTERN_C String_t* _stringLiteral0767326DBE1DD31063256737FD019DC6682353E2;
 IL2CPP_EXTERN_C String_t* _stringLiteral097FDC18F6265549C8389FA2BE70BC43C8B9B2D9;
+IL2CPP_EXTERN_C String_t* _stringLiteral09DBABCF47D177922630CF7626523A2E035CFB16;
+IL2CPP_EXTERN_C String_t* _stringLiteral0A550CF57EC5576B9829DB033869A7E58588464A;
 IL2CPP_EXTERN_C String_t* _stringLiteral0A55548ECC15B25C674177B822F8D647210E9735;
+IL2CPP_EXTERN_C String_t* _stringLiteral0C45DB50527FCFAD456E74EB416B617329505309;
 IL2CPP_EXTERN_C String_t* _stringLiteral0D0A37E59BDF2414A9ECD7DBFF25A9D5A5C5D106;
 IL2CPP_EXTERN_C String_t* _stringLiteral0DA02AACF81C597832C83A35A7C315C95580326A;
 IL2CPP_EXTERN_C String_t* _stringLiteral0FDD44C41E55FFAA1BB1E41417B024E3364E4D8A;
 IL2CPP_EXTERN_C String_t* _stringLiteral0FFC9A09ACD7D6BB442EB143F1477859451D8341;
+IL2CPP_EXTERN_C String_t* _stringLiteral11B9FCE077AC90A54EA76A75593EB2272AC4E0AA;
 IL2CPP_EXTERN_C String_t* _stringLiteral12752A0E9F16710699A9AD1E79391EFA5C66329B;
 IL2CPP_EXTERN_C String_t* _stringLiteral15B87CEB41313EF122F232162342F5DA45A38C18;
 IL2CPP_EXTERN_C String_t* _stringLiteral1AE348EAFA097AB898941EAFE912D711A407DA10;
+IL2CPP_EXTERN_C String_t* _stringLiteral1B62E5629805E3224249BCAA0D9ECBB4C84AE48B;
 IL2CPP_EXTERN_C String_t* _stringLiteral1BD69EC6C9E191C57664923345F3742272616987;
+IL2CPP_EXTERN_C String_t* _stringLiteral220702BCC5C1C54BEDED83D77E4E5425AFBCE65C;
 IL2CPP_EXTERN_C String_t* _stringLiteral23114468D04FA2B7A2DA455B545DB914D0A3ED94;
+IL2CPP_EXTERN_C String_t* _stringLiteral235F27A2E21BB2D6350C8E6068C7A203AB308849;
+IL2CPP_EXTERN_C String_t* _stringLiteral24ACF1BBF43F3850CE89C1C771661404CBDF11B7;
 IL2CPP_EXTERN_C String_t* _stringLiteral24DFF757FD67718D3CAA7D74AF6F77C453D82A78;
 IL2CPP_EXTERN_C String_t* _stringLiteral2BDFBBCD12534878552D4AB5334A61B70A0C47CD;
 IL2CPP_EXTERN_C String_t* _stringLiteral3463DBAF88C79128DBC5D8ADC4CC7A58DBF4E364;
 IL2CPP_EXTERN_C String_t* _stringLiteral362235EDC821C1F15F2E81FD859D337A8BC28D74;
+IL2CPP_EXTERN_C String_t* _stringLiteral3A50E886F50E292CF8471ADF9B446694CBE92C2E;
 IL2CPP_EXTERN_C String_t* _stringLiteral3F3FD3EFA55E39E450A9A4CE66CD7B259403D44E;
 IL2CPP_EXTERN_C String_t* _stringLiteral403DFD38F660ED0992488A2262C792CE8C795FE0;
 IL2CPP_EXTERN_C String_t* _stringLiteral42960449A18FA75AF2D9A7F9CDCC744B0EF455E6;
 IL2CPP_EXTERN_C String_t* _stringLiteral44F0B67A0CD51E189DAF56DFD872A93DFE4EBC33;
 IL2CPP_EXTERN_C String_t* _stringLiteral4AA1818F26A1C6683B6DFE68B81BA869959EB3AF;
+IL2CPP_EXTERN_C String_t* _stringLiteral4B0E509E3481549FC8F096287EFB425FAAFC38A4;
+IL2CPP_EXTERN_C String_t* _stringLiteral4B793DFDC901B8148482161BA7DA76CAE1DD3E7A;
 IL2CPP_EXTERN_C String_t* _stringLiteral4B8146FB95E4F51B29DA41EB5F6D60F8FD0ECF21;
 IL2CPP_EXTERN_C String_t* _stringLiteral4EF2576B1C521CF8A34438674017CC5D0766D965;
+IL2CPP_EXTERN_C String_t* _stringLiteral541ADAD93719A7753AA265CAD6BA6276D2686025;
 IL2CPP_EXTERN_C String_t* _stringLiteral56D7B2700002749053DDE236E6278CC40B751018;
 IL2CPP_EXTERN_C String_t* _stringLiteral5A3B7B6648122585947EC068205721BDE0DEEABB;
 IL2CPP_EXTERN_C String_t* _stringLiteral5BEFD8CC60A79699B5BB00E37BAC5B62D371E174;
@@ -793,56 +805,93 @@ IL2CPP_EXTERN_C String_t* _stringLiteral6496937B5293CB485DAA9B917BBD89522937BA83
 IL2CPP_EXTERN_C String_t* _stringLiteral67E938AA189C27658D5275D3FD92B7B884E7CA06;
 IL2CPP_EXTERN_C String_t* _stringLiteral6BBFFA0F7E2864136A7712EFD3587E151FCAD75E;
 IL2CPP_EXTERN_C String_t* _stringLiteral6D5F95CFDBD6A92FD6D9A3238C1705F6312B66A1;
+IL2CPP_EXTERN_C String_t* _stringLiteral6DB33ADD301402F08747C4EE933A8EF10A8128F7;
 IL2CPP_EXTERN_C String_t* _stringLiteral6DBBFBF574EF0D2010D097B920FE3646FE1E2CE2;
 IL2CPP_EXTERN_C String_t* _stringLiteral6E931A3216C487D6F7DD8FBA8B4165DDCF8C4A0A;
+IL2CPP_EXTERN_C String_t* _stringLiteral70B17AAD07739AC6E24336BDDD087A5F4A2D8414;
 IL2CPP_EXTERN_C String_t* _stringLiteral720462333825FE8C7405B9B94CD94364349C073D;
 IL2CPP_EXTERN_C String_t* _stringLiteral758733BDBED83CBFF4F635AC26CA92AAE477F75D;
-IL2CPP_EXTERN_C String_t* _stringLiteral779F98CF777D83149159FE6BDA4EB61DF1482EB6;
+IL2CPP_EXTERN_C String_t* _stringLiteral77789C8BED5F03100BFE50870FCE069FCBEAFBDE;
 IL2CPP_EXTERN_C String_t* _stringLiteral77BA5E25678420F932ACED9EFECA6756A0CD1BEA;
 IL2CPP_EXTERN_C String_t* _stringLiteral77D38C0623F92B292B925F6E72CF5CF99A20D4EB;
+IL2CPP_EXTERN_C String_t* _stringLiteral77EE5971434CDE6F74A1DAE44D94954E1624D77C;
+IL2CPP_EXTERN_C String_t* _stringLiteral794F9A3F3F0ECB00BF4F6925604716FEFD5302C2;
+IL2CPP_EXTERN_C String_t* _stringLiteral7BFA33A11F0B12AF1B7FA1D9BA996EAE1EF77B49;
 IL2CPP_EXTERN_C String_t* _stringLiteral7C02425E72BB38D4FBC98A25B52AB15F6A225491;
+IL2CPP_EXTERN_C String_t* _stringLiteral7D63FA1B6FEDA67964D3FCDCB12764101D65571C;
+IL2CPP_EXTERN_C String_t* _stringLiteral7D8699446610575017F99BEA3E02DCF807B45CAB;
 IL2CPP_EXTERN_C String_t* _stringLiteral7DE18B9B94414FE9BDBA0668D8B260329D4DF2AA;
 IL2CPP_EXTERN_C String_t* _stringLiteral81E1778063F4AFF3234BBFAC7900C46A8A95C5FB;
 IL2CPP_EXTERN_C String_t* _stringLiteral840FD29A77B6B531DC55561318B3B8A6B4430B6D;
+IL2CPP_EXTERN_C String_t* _stringLiteral8592B054228789DCF1BCAA45E3910A2B143E58F5;
+IL2CPP_EXTERN_C String_t* _stringLiteral8609E0E2AE2791725A5753917F782BE01B29BF75;
 IL2CPP_EXTERN_C String_t* _stringLiteral8644048ABC3641B38BBD5DBBADC08FB01095EC30;
 IL2CPP_EXTERN_C String_t* _stringLiteral88695231602FA59886B08E3360F22ECCA0667765;
 IL2CPP_EXTERN_C String_t* _stringLiteral89996D7B7CAA9CF7FD4517D7889985AFCDD4151B;
 IL2CPP_EXTERN_C String_t* _stringLiteral8A32A0EBD2955320F90060D3E38F9AB6CFEAAC3D;
 IL2CPP_EXTERN_C String_t* _stringLiteral8AD7D679BBB94EB6E5F30F43C76BA7263B793FA0;
 IL2CPP_EXTERN_C String_t* _stringLiteral8AE412B367AB37786D87D55DD19A7F78E85E509D;
+IL2CPP_EXTERN_C String_t* _stringLiteral8D927104AAFE48366762B70DC5E7CA34D1C0D5BE;
 IL2CPP_EXTERN_C String_t* _stringLiteral8F5320B5692D580C1405B5267543756A79E879EF;
+IL2CPP_EXTERN_C String_t* _stringLiteral903B8C1EF36009AA876A865426B6853A18141FFA;
 IL2CPP_EXTERN_C String_t* _stringLiteral90EB62805D0602F564C1EAF384252705652798CB;
+IL2CPP_EXTERN_C String_t* _stringLiteral918047259C6FFF7176506FF4141E7C078EE96880;
+IL2CPP_EXTERN_C String_t* _stringLiteral91C5120C562094A257C8FC3C676B64F1E0403765;
+IL2CPP_EXTERN_C String_t* _stringLiteral91CE18BF0ECEE0F2C252666C43E4E5C6D90BC05A;
+IL2CPP_EXTERN_C String_t* _stringLiteral935DED07A64B226D3B13EBBDF54A8633B651D342;
 IL2CPP_EXTERN_C String_t* _stringLiteral943C2BE8A55C829A3C0D75040C74F5ECE10AE072;
 IL2CPP_EXTERN_C String_t* _stringLiteral94C9B707A1C79066F7292D0C1F78498DB7B3B858;
+IL2CPP_EXTERN_C String_t* _stringLiteral98C1FFD42D07E1CE10DC2F4E698FB344AC4CE704;
+IL2CPP_EXTERN_C String_t* _stringLiteral996E5360F80E16B2189CC1E536C91CE68083F694;
 IL2CPP_EXTERN_C String_t* _stringLiteral9AF3CD9D7BCABB1A936032C409672D1726352E8C;
+IL2CPP_EXTERN_C String_t* _stringLiteral9B15A09021E9461368605946C9DB60B092E6649E;
 IL2CPP_EXTERN_C String_t* _stringLiteral9C5B45F4874B9A04E5311E75261EB10FF33DE525;
 IL2CPP_EXTERN_C String_t* _stringLiteral9D0FDC06ED6269453E8EBEA8B19175923EC78BD4;
+IL2CPP_EXTERN_C String_t* _stringLiteralA19AA44CF7E852EDD061B7F2A098BC202378784E;
+IL2CPP_EXTERN_C String_t* _stringLiteralA31F29C367D53AD7C824C843BE0DEB228E4B5EBC;
+IL2CPP_EXTERN_C String_t* _stringLiteralA3DC94CE2E4ADB08254413E0E3386625CB614D76;
 IL2CPP_EXTERN_C String_t* _stringLiteralA5D997C4272AAB9B1C392679A887187EE6FF31CF;
+IL2CPP_EXTERN_C String_t* _stringLiteralAAAAD748A9167857089BE2BCDA56BA779A2CF7C9;
 IL2CPP_EXTERN_C String_t* _stringLiteralAB4D84F7C62E7D302A9A088AA8E292DF6A477309;
 IL2CPP_EXTERN_C String_t* _stringLiteralAF3E8553F5D91341D050C182F71DA3B838C530EC;
 IL2CPP_EXTERN_C String_t* _stringLiteralB39162E5C57793DC65F707DA781A4C2AA240853E;
+IL2CPP_EXTERN_C String_t* _stringLiteralB4796B9DD8CEA5F638F0A5ADCCC0DD4CC05D2436;
 IL2CPP_EXTERN_C String_t* _stringLiteralB6AEA0E1C14F83A795D9998880B030CBF2D8172D;
+IL2CPP_EXTERN_C String_t* _stringLiteralB6CF12FE3CC5A3A7A7FB3E28674EB3C814976446;
 IL2CPP_EXTERN_C String_t* _stringLiteralB72450A44AD16E2420CECA593AB259FFBA022198;
 IL2CPP_EXTERN_C String_t* _stringLiteralB7C45DD316C68ABF3429C20058C2981C652192F2;
 IL2CPP_EXTERN_C String_t* _stringLiteralB9A3F7557823A446D559F5C0BEFDDB69F19171A2;
+IL2CPP_EXTERN_C String_t* _stringLiteralBC214E7BC666A9707F7FCE8B3ADC6EB334D9E876;
 IL2CPP_EXTERN_C String_t* _stringLiteralBFCC6EE94F1B7AA05A04750903E25F93A7188AE0;
+IL2CPP_EXTERN_C String_t* _stringLiteralC00B6AF5670591506F3CF9C477EFE622D9039718;
 IL2CPP_EXTERN_C String_t* _stringLiteralC05349192A0818B86B59ED3E8E0B1B32915F3CE8;
 IL2CPP_EXTERN_C String_t* _stringLiteralC18C9BB6DF0D5C60CE5A5D2D3D6111BEB6F8CCEB;
+IL2CPP_EXTERN_C String_t* _stringLiteralC295AE7F3D676E2CAA3DE0DC641EF335E57A2E37;
 IL2CPP_EXTERN_C String_t* _stringLiteralC2C7DF52EC0EF6E1C0B00223DC5CFB076E30C8F5;
+IL2CPP_EXTERN_C String_t* _stringLiteralC4729ED69061AF5587EABEA577EE432AC85A94DB;
+IL2CPP_EXTERN_C String_t* _stringLiteralC6DE535D828F30C374EB3BE3FFDE520228FC3096;
 IL2CPP_EXTERN_C String_t* _stringLiteralCE18B047107AA23D1AA9B2ED32D316148E02655F;
 IL2CPP_EXTERN_C String_t* _stringLiteralD559C6D97E819D8E4EF7ACDC34C4E8D3DD314964;
+IL2CPP_EXTERN_C String_t* _stringLiteralD5B20EA6805F285482807C61CD81D1509724E3CC;
+IL2CPP_EXTERN_C String_t* _stringLiteralD7248A39F3FFD5F29F3A82B3D3AC57CF22CBABAD;
+IL2CPP_EXTERN_C String_t* _stringLiteralD744E0023ACB34526A1B142EFA90B5CFF45FDC53;
+IL2CPP_EXTERN_C String_t* _stringLiteralD7A8174DEA8A926E09167A0D516CCCA92F9201AA;
 IL2CPP_EXTERN_C String_t* _stringLiteralD9691C4FD8A1F6B09DB1147CA32B442772FB46A1;
 IL2CPP_EXTERN_C String_t* _stringLiteralD9FDDDA3F953347E9B7CA71059FC074561BCDB60;
 IL2CPP_EXTERN_C String_t* _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
+IL2CPP_EXTERN_C String_t* _stringLiteralDC24CA254617D7C7400AE68695B13607C58A72E3;
+IL2CPP_EXTERN_C String_t* _stringLiteralDC4A06A0DE599F745DBDD44A6FDE6212859D3A5F;
 IL2CPP_EXTERN_C String_t* _stringLiteralE166C9564FBDE461738077E3B1B506525EB6ACCC;
 IL2CPP_EXTERN_C String_t* _stringLiteralE19FA5B2BA16EF5FC60CA61B2C7CF3898893E02B;
 IL2CPP_EXTERN_C String_t* _stringLiteralE1D1CF376CC1D978E40044D6CA8997BA86618511;
 IL2CPP_EXTERN_C String_t* _stringLiteralE5028ADABD1DB90244F014BFB740E3B6D5D9CA47;
 IL2CPP_EXTERN_C String_t* _stringLiteralE637AC46066B9B904DEEB9B053C39E1451F3AFD9;
+IL2CPP_EXTERN_C String_t* _stringLiteralE6ED3948EBA2C4EA7B39D25923D916C995F8B7E9;
 IL2CPP_EXTERN_C String_t* _stringLiteralE76B06A2639AD88030F4BB5E35CA199DAFB79272;
 IL2CPP_EXTERN_C String_t* _stringLiteralE92AA2E2CE6BB361E69D0E998741DC4838D15E2A;
 IL2CPP_EXTERN_C String_t* _stringLiteralEAD310E54CE146E6AB2A45FA45CAB5E6A140C0A4;
 IL2CPP_EXTERN_C String_t* _stringLiteralEB0F79A6ABD88DB20E08561FCEEA8E62C21B8875;
+IL2CPP_EXTERN_C String_t* _stringLiteralF10CBFB1465C4A75BADE2EF50F42177A2191723B;
 IL2CPP_EXTERN_C String_t* _stringLiteralF3C6C902DBF80139640F6554F0C3392016A8ADF7;
 IL2CPP_EXTERN_C String_t* _stringLiteralF4AB731232FAC00BCDAC3925D0CCE828CD58C985;
 IL2CPP_EXTERN_C String_t* _stringLiteralF4E1FEB18355033A89306E7EC21E1B623D4653F4;
@@ -1007,7 +1056,6 @@ IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1__ctor_m75F3ABB694E26670F021136BD
 IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1_get_HasValue_m6B76086B0E863AB1D634FD03E30154F230070435_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Object_Instantiate_TisAbstractRouteSignpost_t6F89458A5D5222376B2EFD884A055F70A0613DFB_mADE37A4B45527E5D10D2A449F31C4A05C0A5B2C7_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ScriptableObject_CreateInstance_TisLocationPath_tD03F7736D1BC0C5F9F50492136221CA104B4511D_m2BE1BBC962354A555A6B8A88BFFF85DE16B3D812_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* ScriptableObject_CreateInstance_TisRoute_t65233920818BB3FDF557CCB00357C155AEB6543E_m4A356C2A0824A1E988225A954827EC8979A84053_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Singleton_1_get_Instance_m2F196335C12B12FA1AECCFEEEB9F5E0AA63AB5E4_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* String_Join_TisGeocodingFeature_t67646C6296781843DEC98E0FBE3F5D0CE4D93F31_m953ADF449642F7DE034D11397F2C3667C7C48A29_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* TweenRectTransformGroup_EaseInCubic_mEAAB5DA1E0942F5D4DD88834DA47222110D1BE3C_RuntimeMethod_var;
@@ -1019,8 +1067,8 @@ IL2CPP_EXTERN_C const RuntimeMethod* U3CLoadRouteU3Ed__34_System_Collections_IEn
 IL2CPP_EXTERN_C const RuntimeMethod* U3CLoadRouteU3Ed__35_System_Collections_IEnumerator_Reset_mC449B3835BA5ABF4FD4EA680C235AE056170E144_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CLoadRouteU3Ed__36_System_Collections_IEnumerator_Reset_m1C45C532350A087DA392BD1CDA48EB26DBDC9343_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CLoadRouteU3Ed__9_System_Collections_IEnumerator_Reset_m309CA44351B4EBC6242A64763BEBB47B95FC008E_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CQueryLocalU3Ed__11_System_Collections_IEnumerator_Reset_mBD3D0597C2B8ED115B5C01BDD3E60F0CA4289C30_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CQueryRouteU3Ed__12_System_Collections_IEnumerator_Reset_m40D786EE5F5480509500CF4C37A10A1BB8F4069E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CQueryLocalU3Ed__12_System_Collections_IEnumerator_Reset_mF9885573B13EB6E0C775073A2402E361007BC58D_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CQueryRouteU3Ed__15_System_Collections_IEnumerator_Reset_m38C751B0AC87A9D4E35FE072DEDC771A16D43BA1_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CResolveU3Ed__6_System_Collections_IEnumerator_Reset_m6B1C24EECD1239239E96382059F1541B24D5FEE1_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass21_0_U3CRemoveU3Eb__0_m8A18D464CFE86127E94C468C4185965DAA7C65D4_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3Cget_ChildrenU3Ed__24_System_Collections_IEnumerator_Reset_mA3BA1D7E8F6AC4030A354DB156920484546E2102_RuntimeMethod_var;
@@ -1631,12 +1679,32 @@ struct MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA  : public RuntimeObje
 {
 	// System.String ARLocation.MapboxRoutes.MapboxApi::AccessToken
 	String_t* ___AccessToken_0;
+	// ARLocation.MapboxRoutes.MapboxApiLanguage ARLocation.MapboxRoutes.MapboxApi::Language
+	int32_t ___Language_1;
 	// ARLocation.MapboxRoutes.RouteResponse ARLocation.MapboxRoutes.MapboxApi::queryRouteResult
-	RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212* ___queryRouteResult_1;
+	RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212* ___queryRouteResult_2;
 	// ARLocation.MapboxRoutes.GeocodingResponse ARLocation.MapboxRoutes.MapboxApi::queryLocalResult
-	GeocodingResponse_t38CBD1C2B935A3BAB29E994C84DD226A4AB01A94* ___queryLocalResult_2;
+	GeocodingResponse_t38CBD1C2B935A3BAB29E994C84DD226A4AB01A94* ___queryLocalResult_3;
 	// System.String ARLocation.MapboxRoutes.MapboxApi::errorMessage
-	String_t* ___errorMessage_3;
+	String_t* ___errorMessage_4;
+};
+
+// ARLocation.MapboxRoutes.MapboxApiLanguageExtensions
+struct MapboxApiLanguageExtensions_t32766A4AB693701F5AFCBF956017969A6BC96619  : public RuntimeObject
+{
+};
+
+// ARLocation.MapboxRoutes.Route
+struct Route_t65233920818BB3FDF557CCB00357C155AEB6543E  : public RuntimeObject
+{
+	// System.Single ARLocation.MapboxRoutes.Route::distance
+	float ___distance_0;
+	// ARLocation.MapboxRoutes.Route/Geometry ARLocation.MapboxRoutes.Route::geometry
+	Geometry_t6D09A5C7963C5230A00A66CE6B4886E09F8A6014* ___geometry_1;
+	// System.Collections.Generic.List`1<ARLocation.MapboxRoutes.Route/RouteLeg> ARLocation.MapboxRoutes.Route::legs
+	List_1_t362655BB702679A7A5649B2785AD171A6166512B* ___legs_2;
+	// System.String ARLocation.MapboxRoutes.Route::name
+	String_t* ___name_3;
 };
 
 // ARLocation.MapboxRoutes.RouteLoader
@@ -1892,41 +1960,41 @@ struct U3CU3Ec__DisplayClass21_0_t008D6FEEF125D6A0C0EC37D9EB566048B74E1B81  : pu
 	JSONNode_t939CD511E3ACE503FE6D009DD4B86B8EA50C3EFF* ___aNode_0;
 };
 
-// ARLocation.MapboxRoutes.MapboxApi/<QueryLocal>d__11
-struct U3CQueryLocalU3Ed__11_tDB1D84B03F14F45C335681F43025B03C19020DD2  : public RuntimeObject
+// ARLocation.MapboxRoutes.MapboxApi/<QueryLocal>d__12
+struct U3CQueryLocalU3Ed__12_tAFA45400DC21622ACA662B3C53304A4FABE5468B  : public RuntimeObject
 {
-	// System.Int32 ARLocation.MapboxRoutes.MapboxApi/<QueryLocal>d__11::<>1__state
+	// System.Int32 ARLocation.MapboxRoutes.MapboxApi/<QueryLocal>d__12::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object ARLocation.MapboxRoutes.MapboxApi/<QueryLocal>d__11::<>2__current
+	// System.Object ARLocation.MapboxRoutes.MapboxApi/<QueryLocal>d__12::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// System.String ARLocation.MapboxRoutes.MapboxApi/<QueryLocal>d__11::text
-	String_t* ___text_2;
-	// ARLocation.MapboxRoutes.MapboxApi ARLocation.MapboxRoutes.MapboxApi/<QueryLocal>d__11::<>4__this
-	MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* ___U3CU3E4__this_3;
-	// System.Boolean ARLocation.MapboxRoutes.MapboxApi/<QueryLocal>d__11::verbose
+	// ARLocation.MapboxRoutes.MapboxApi ARLocation.MapboxRoutes.MapboxApi/<QueryLocal>d__12::<>4__this
+	MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* ___U3CU3E4__this_2;
+	// System.String ARLocation.MapboxRoutes.MapboxApi/<QueryLocal>d__12::text
+	String_t* ___text_3;
+	// System.Boolean ARLocation.MapboxRoutes.MapboxApi/<QueryLocal>d__12::verbose
 	bool ___verbose_4;
-	// UnityEngine.Networking.UnityWebRequest ARLocation.MapboxRoutes.MapboxApi/<QueryLocal>d__11::<req>5__2
+	// UnityEngine.Networking.UnityWebRequest ARLocation.MapboxRoutes.MapboxApi/<QueryLocal>d__12::<req>5__2
 	UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* ___U3CreqU3E5__2_5;
 };
 
-// ARLocation.MapboxRoutes.MapboxApi/<QueryRoute>d__12
-struct U3CQueryRouteU3Ed__12_t5262E1C53F11854155D6311DC9A276AA336EDE8D  : public RuntimeObject
+// ARLocation.MapboxRoutes.MapboxApi/<QueryRoute>d__15
+struct U3CQueryRouteU3Ed__15_t5F57AFB071C44F0A90A54F9E72CCDF6C7649FA48  : public RuntimeObject
 {
-	// System.Int32 ARLocation.MapboxRoutes.MapboxApi/<QueryRoute>d__12::<>1__state
+	// System.Int32 ARLocation.MapboxRoutes.MapboxApi/<QueryRoute>d__15::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object ARLocation.MapboxRoutes.MapboxApi/<QueryRoute>d__12::<>2__current
+	// System.Object ARLocation.MapboxRoutes.MapboxApi/<QueryRoute>d__15::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// System.Boolean ARLocation.MapboxRoutes.MapboxApi/<QueryRoute>d__12::alternatives
-	bool ___alternatives_2;
-	// ARLocation.Location ARLocation.MapboxRoutes.MapboxApi/<QueryRoute>d__12::from
+	// ARLocation.MapboxRoutes.MapboxApi ARLocation.MapboxRoutes.MapboxApi/<QueryRoute>d__15::<>4__this
+	MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* ___U3CU3E4__this_2;
+	// ARLocation.Location ARLocation.MapboxRoutes.MapboxApi/<QueryRoute>d__15::from
 	Location_t9E7AB293D59F64A92A93EF884B4C0120DBE40E39* ___from_3;
-	// ARLocation.Location ARLocation.MapboxRoutes.MapboxApi/<QueryRoute>d__12::to
+	// ARLocation.Location ARLocation.MapboxRoutes.MapboxApi/<QueryRoute>d__15::to
 	Location_t9E7AB293D59F64A92A93EF884B4C0120DBE40E39* ___to_4;
-	// ARLocation.MapboxRoutes.MapboxApi ARLocation.MapboxRoutes.MapboxApi/<QueryRoute>d__12::<>4__this
-	MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* ___U3CU3E4__this_5;
-	// System.Boolean ARLocation.MapboxRoutes.MapboxApi/<QueryRoute>d__12::verbose
+	// System.Boolean ARLocation.MapboxRoutes.MapboxApi/<QueryRoute>d__15::alternatives
+	bool ___alternatives_5;
+	// System.Boolean ARLocation.MapboxRoutes.MapboxApi/<QueryRoute>d__15::verbose
 	bool ___verbose_6;
-	// UnityEngine.Networking.UnityWebRequest ARLocation.MapboxRoutes.MapboxApi/<QueryRoute>d__12::<req>5__2
+	// UnityEngine.Networking.UnityWebRequest ARLocation.MapboxRoutes.MapboxApi/<QueryRoute>d__15::<req>5__2
 	UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* ___U3CreqU3E5__2_7;
 };
 
@@ -2012,16 +2080,18 @@ struct SettingsData_tBA58CB665A9E3350A4C23BE4EC926F57BBF8EF1B  : public RuntimeO
 	AbstractOnScreenTargetIndicator_t897F2E65711C2123591F448A4DEA207371FBF1F4* ___OnScreenIndicator_2;
 	// System.String ARLocation.MapboxRoutes.MapboxRoute/SettingsData::MapboxToken
 	String_t* ___MapboxToken_3;
+	// ARLocation.MapboxRoutes.MapboxApiLanguage ARLocation.MapboxRoutes.MapboxRoute/SettingsData::Language
+	int32_t ___Language_4;
 	// ARLocation.MapboxRoutes.MapboxRoute/RouteSettings ARLocation.MapboxRoutes.MapboxRoute/SettingsData::RouteSettings
-	RouteSettings_tFE52829CFA01FD945B1DF92F1DE196FC66A20718* ___RouteSettings_4;
+	RouteSettings_tFE52829CFA01FD945B1DF92F1DE196FC66A20718* ___RouteSettings_5;
 	// System.Boolean ARLocation.MapboxRoutes.MapboxRoute/SettingsData::LoadRouteAtStartup
-	bool ___LoadRouteAtStartup_5;
+	bool ___LoadRouteAtStartup_6;
 	// System.Single ARLocation.MapboxRoutes.MapboxRoute/SettingsData::GroundHeight
-	float ___GroundHeight_6;
+	float ___GroundHeight_7;
 	// ARLocation.MapboxRoutes.MapboxRoute/MapboxRouteLoadErrorEvent ARLocation.MapboxRoutes.MapboxRoute/SettingsData::OnMapboxRouteLoadError
-	MapboxRouteLoadErrorEvent_t3453D49DC24C0F1D078E6409634DB312B2753F80* ___OnMapboxRouteLoadError_7;
+	MapboxRouteLoadErrorEvent_t3453D49DC24C0F1D078E6409634DB312B2753F80* ___OnMapboxRouteLoadError_8;
 	// System.Boolean ARLocation.MapboxRoutes.MapboxRoute/SettingsData::DebugMode
-	bool ___DebugMode_8;
+	bool ___DebugMode_9;
 };
 
 // ARLocation.MapboxRoutes.MapboxRoute/State
@@ -4430,17 +4500,6 @@ struct Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF  : public Component_t3
 {
 };
 
-// ARLocation.MapboxRoutes.Route
-struct Route_t65233920818BB3FDF557CCB00357C155AEB6543E  : public ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A
-{
-	// System.Single ARLocation.MapboxRoutes.Route::distance
-	float ___distance_4;
-	// ARLocation.MapboxRoutes.Route/Geometry ARLocation.MapboxRoutes.Route::geometry
-	Geometry_t6D09A5C7963C5230A00A66CE6B4886E09F8A6014* ___geometry_5;
-	// System.Collections.Generic.List`1<ARLocation.MapboxRoutes.Route/RouteLeg> ARLocation.MapboxRoutes.Route::legs
-	List_1_t362655BB702679A7A5649B2785AD171A6166512B* ___legs_6;
-};
-
 // UnityEngine.Transform
 struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
 {
@@ -6059,8 +6118,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GameObject_AddComponent_TisRun
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GameObject_GetComponent_TisRuntimeObject_m6EAED4AA356F0F48288F67899E5958792395563B_gshared (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
 // System.String System.String::Join<System.Object>(System.String,System.Collections.Generic.IEnumerable`1<T>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Join_TisRuntimeObject_mA9B8DCEF92E54DCEE23246AC6EB15FA9BF740C02_gshared (String_t* ___separator0, RuntimeObject* ___values1, const RuntimeMethod* method) ;
-// T UnityEngine.ScriptableObject::CreateInstance<System.Object>()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ScriptableObject_CreateInstance_TisRuntimeObject_mC07BE383F5EF546F4191035A679930852BC19BDA_gshared (const RuntimeMethod* method) ;
 // T ARLocation.Utils.Singleton`1<System.Object>::get_Instance()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Singleton_1_get_Instance_m13ACD3F05FE7D262D964BA8A97C1D15716CD9053_gshared (const RuntimeMethod* method) ;
 // System.Void UnityEngine.Events.UnityAction`1<System.Object>::.ctor(System.Object,System.IntPtr)
@@ -6081,6 +6138,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityEvent_1__ctor_m8D77F4F05F69D0E52E8A
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_1_Invoke_mF2422B2DD29F74CE66F791C3F68E288EC7C3DB9E_gshared_inline (Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* __this, RuntimeObject* ___obj0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Events.UnityEvent`1<System.Object>::Invoke(T0)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityEvent_1_Invoke_m6CDC8B0639CE8935E2E13D10B2C8E500968130B6_gshared (UnityEvent_1_t3CE03B42D5873C0C0E0692BEE72E1E6D5399F205* __this, RuntimeObject* ___arg00, const RuntimeMethod* method) ;
+// T UnityEngine.ScriptableObject::CreateInstance<System.Object>()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ScriptableObject_CreateInstance_TisRuntimeObject_mC07BE383F5EF546F4191035A679930852BC19BDA_gshared (const RuntimeMethod* method) ;
 // System.Void System.Action`2<System.Object,System.Object>::Invoke(T1,T2)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_2_Invoke_m7BFCE0BBCF67689D263059B56A8D79161B698587_gshared_inline (Action_2_t156C43F079E7E68155FCDCD12DC77DD11AEF7E3C* __this, RuntimeObject* ___arg10, RuntimeObject* ___arg21, const RuntimeMethod* method) ;
 // System.Boolean System.Nullable`1<UnityEngine.Vector3>::get_HasValue()
@@ -6491,8 +6550,6 @@ inline void List_1_Add_m3A72A2E63EB5C4ABBFECB3B8B3FF4252D1DE8F25_inline (List_1_
 {
 	((  void (*) (List_1_t362655BB702679A7A5649B2785AD171A6166512B*, RouteLeg_t79EB42B909C889E6BC00424CBA00AE38ED03C566*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___item0, method);
 }
-// System.Void UnityEngine.Object::set_name(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_set_name_mC79E6DC8FFD72479C90F0C4CC7F42A0FEAF5AE47 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* __this, String_t* ___value0, const RuntimeMethod* method) ;
 // System.Collections.Generic.List`1/Enumerator<T> System.Collections.Generic.List`1<ARLocation.MapboxRoutes.CustomRoute/Point>::GetEnumerator()
 inline Enumerator_tEE3A8C18F2AF1984D55138AB88C0107C2F224988 List_1_GetEnumerator_m7C9A60F4C7095784A8DDA03829644C5AEFE4ED1E (List_1_tD7DDDBA62222107C94CF3274E33F07609CB0CADD* __this, const RuntimeMethod* method)
 {
@@ -6650,20 +6707,26 @@ inline void List_1__ctor_m1E9F3AA71F39476833A25C788793147489D98E8E (List_1_t87C7
 {
 	((  void (*) (List_1_t87C72702F6828382F75FDD40F4E3E6C10598A2C0*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
 }
-// System.Void ARLocation.MapboxRoutes.MapboxApi/<QueryLocal>d__11::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CQueryLocalU3Ed__11__ctor_mBAA501B7F2449294A77A4BC28246D33747B3CF36 (U3CQueryLocalU3Ed__11_tDB1D84B03F14F45C335681F43025B03C19020DD2* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) ;
-// System.Void ARLocation.MapboxRoutes.MapboxApi/<QueryRoute>d__12::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CQueryRouteU3Ed__12__ctor_m497C96DA4F87EBC53BB0A548CCE422482481E49B (U3CQueryRouteU3Ed__12_t5262E1C53F11854155D6311DC9A276AA336EDE8D* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) ;
-// System.Void ARLocation.MapboxRoutes.MapboxApi/<QueryLocal>d__11::<>m__Finally1()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CQueryLocalU3Ed__11_U3CU3Em__Finally1_m2843AAF411633FB122797DFE5F0FF3245F587F5D (U3CQueryLocalU3Ed__11_tDB1D84B03F14F45C335681F43025B03C19020DD2* __this, const RuntimeMethod* method) ;
-// System.Void ARLocation.MapboxRoutes.MapboxApi/<QueryLocal>d__11::System.IDisposable.Dispose()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CQueryLocalU3Ed__11_System_IDisposable_Dispose_m940BF766D0E4FFA536A8803FD22D6B5C4F5D23B2 (U3CQueryLocalU3Ed__11_tDB1D84B03F14F45C335681F43025B03C19020DD2* __this, const RuntimeMethod* method) ;
+// System.Void ARLocation.MapboxRoutes.MapboxApi/<QueryLocal>d__12::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CQueryLocalU3Ed__12__ctor_m7C6BC6C86F8F5E09449D99F778D514C4321177D7 (U3CQueryLocalU3Ed__12_tAFA45400DC21622ACA662B3C53304A4FABE5468B* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) ;
 // System.String System.String::Concat(System.String,System.String,System.String,System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m093934F71A9B351911EE46311674ED463B180006 (String_t* ___str00, String_t* ___str11, String_t* ___str22, String_t* ___str33, const RuntimeMethod* method) ;
 // System.String System.Uri::EscapeUriString(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Uri_EscapeUriString_m1F1E67F8150470F51174B1C3B93E6F5B9C8C1A38 (String_t* ___stringToEscape0, const RuntimeMethod* method) ;
+// System.String ARLocation.MapboxRoutes.MapboxApiLanguageExtensions::GetCode(ARLocation.MapboxRoutes.MapboxApiLanguage)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MapboxApiLanguageExtensions_GetCode_m56BB10ECD1A36FD5C8C413BB89EEFA3FC4327EAC (int32_t ___me0, const RuntimeMethod* method) ;
+// System.String System.String::Concat(System.String[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m647EBF831F54B6DF7D5AFA5FD012CF4EE7571B6A (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___values0, const RuntimeMethod* method) ;
 // System.String System.String::Concat(System.String,System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m9E3155FB84015C823606188F53B47CB44C444991 (String_t* ___str00, String_t* ___str11, const RuntimeMethod* method) ;
+// System.Void ARLocation.MapboxRoutes.MapboxApi/<QueryRoute>d__15::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CQueryRouteU3Ed__15__ctor_mDAE0FCD5E3F51890FB97D00CC9860E0EDFED313E (U3CQueryRouteU3Ed__15_t5F57AFB071C44F0A90A54F9E72CCDF6C7649FA48* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) ;
+// System.Void ARLocation.MapboxRoutes.MapboxApi/<QueryLocal>d__12::<>m__Finally1()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CQueryLocalU3Ed__12_U3CU3Em__Finally1_mA649CB8D23C723ECF0A27BA0104BFE1CAF419CF3 (U3CQueryLocalU3Ed__12_tAFA45400DC21622ACA662B3C53304A4FABE5468B* __this, const RuntimeMethod* method) ;
+// System.Void ARLocation.MapboxRoutes.MapboxApi/<QueryLocal>d__12::System.IDisposable.Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CQueryLocalU3Ed__12_System_IDisposable_Dispose_mA69969612939E8AE462FEDD502B6798D11F22A8C (U3CQueryLocalU3Ed__12_tAFA45400DC21622ACA662B3C53304A4FABE5468B* __this, const RuntimeMethod* method) ;
+// System.String ARLocation.MapboxRoutes.MapboxApi::buildQueryLocalUrl(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MapboxApi_buildQueryLocalUrl_mF3DE66CD2A5870D79C8CF4DDAD9BFEEA691CCD9D (MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* __this, String_t* ___query0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Debug::Log(System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB (RuntimeObject* ___message0, const RuntimeMethod* method) ;
 // UnityEngine.Networking.UnityWebRequest UnityEngine.Networking.UnityWebRequest::Get(System.String)
@@ -6684,21 +6747,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DownloadHandler_t1B56C7D3F65D97A1E4B566A14A1E
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DownloadHandler_get_text_mA6DE5CB2647A21E577B963708DC3D0DA4DBFE7D8 (DownloadHandler_t1B56C7D3F65D97A1E4B566A14A1E783EA8AE4EBB* __this, const RuntimeMethod* method) ;
 // ARLocation.MapboxRoutes.GeocodingResponse ARLocation.MapboxRoutes.GeocodingResponse::Parse(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GeocodingResponse_t38CBD1C2B935A3BAB29E994C84DD226A4AB01A94* GeocodingResponse_Parse_m04E5CACB7F2EC0248D760F21CA2E98ED39F1CA6F (String_t* ___s0, const RuntimeMethod* method) ;
-// System.Void ARLocation.MapboxRoutes.MapboxApi/<QueryRoute>d__12::<>m__Finally1()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CQueryRouteU3Ed__12_U3CU3Em__Finally1_mB0F512E0B5DFF9573CB2E398D9B55DAD836AAC8B (U3CQueryRouteU3Ed__12_t5262E1C53F11854155D6311DC9A276AA336EDE8D* __this, const RuntimeMethod* method) ;
-// System.Void ARLocation.MapboxRoutes.MapboxApi/<QueryRoute>d__12::System.IDisposable.Dispose()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CQueryRouteU3Ed__12_System_IDisposable_Dispose_mC9C022BAF0E8B334113A4EEB9667E76ED681869C (U3CQueryRouteU3Ed__12_t5262E1C53F11854155D6311DC9A276AA336EDE8D* __this, const RuntimeMethod* method) ;
-// System.String System.String::Concat(System.String[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m647EBF831F54B6DF7D5AFA5FD012CF4EE7571B6A (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___values0, const RuntimeMethod* method) ;
+// System.Void ARLocation.MapboxRoutes.MapboxApi/<QueryRoute>d__15::<>m__Finally1()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CQueryRouteU3Ed__15_U3CU3Em__Finally1_m53FA1D338BE53C0A17081A13B31BFDE75FBCCDD8 (U3CQueryRouteU3Ed__15_t5F57AFB071C44F0A90A54F9E72CCDF6C7649FA48* __this, const RuntimeMethod* method) ;
+// System.Void ARLocation.MapboxRoutes.MapboxApi/<QueryRoute>d__15::System.IDisposable.Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CQueryRouteU3Ed__15_System_IDisposable_Dispose_mBDDB069EB7C869621DB2B4DC20A1612CC5FF9398 (U3CQueryRouteU3Ed__15_t5F57AFB071C44F0A90A54F9E72CCDF6C7649FA48* __this, const RuntimeMethod* method) ;
+// System.String ARLocation.MapboxRoutes.MapboxApi::buildQueryRouteUrl(ARLocation.Location,ARLocation.Location,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MapboxApi_buildQueryRouteUrl_m57B953961E78292AED34A5EE9C19D48D2CFCF456 (MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* __this, Location_t9E7AB293D59F64A92A93EF884B4C0120DBE40E39* ___from0, Location_t9E7AB293D59F64A92A93EF884B4C0120DBE40E39* ___to1, bool ___alternatives2, const RuntimeMethod* method) ;
 // ARLocation.MapboxRoutes.RouteResponse ARLocation.MapboxRoutes.RouteResponse::Parse(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212* RouteResponse_Parse_m6AD9CFE29C2697ED1AB9307CD716BFE0FF5F1850 (String_t* ___json0, const RuntimeMethod* method) ;
 // System.Boolean System.String::op_Inequality(System.String,System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_op_Inequality_m8C940F3CFC42866709D7CA931B3D77B4BE94BCB6 (String_t* ___a0, String_t* ___b1, const RuntimeMethod* method) ;
-// T UnityEngine.ScriptableObject::CreateInstance<ARLocation.MapboxRoutes.Route>()
-inline Route_t65233920818BB3FDF557CCB00357C155AEB6543E* ScriptableObject_CreateInstance_TisRoute_t65233920818BB3FDF557CCB00357C155AEB6543E_m4A356C2A0824A1E988225A954827EC8979A84053 (const RuntimeMethod* method)
-{
-	return ((  Route_t65233920818BB3FDF557CCB00357C155AEB6543E* (*) (const RuntimeMethod*))ScriptableObject_CreateInstance_TisRuntimeObject_mC07BE383F5EF546F4191035A679930852BC19BDA_gshared)(method);
-}
 // ARLocation.MapboxRoutes.Route/RouteLeg ARLocation.MapboxRoutes.Route/RouteLeg::Parse(ARLocation.Vendor.SimpleJSON.JSONNode)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RouteLeg_t79EB42B909C889E6BC00424CBA00AE38ED03C566* RouteLeg_Parse_mCC75E161E527B337108CAB4C8027FF8B11551E2C (JSONNode_t939CD511E3ACE503FE6D009DD4B86B8EA50C3EFF* ___node0, const RuntimeMethod* method) ;
 // System.String System.String::Format(System.String,System.Object,System.Object)
@@ -6851,8 +6909,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t MapboxRoute_get_NumberOfSteps_m56C745
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RoutePathRendererArgs_tC2799E90857409E71CC8EBDA313A9068FD0B8902 MapboxRoute_createRoutePathRendererArgs_mDEE4B5FA0EE4239602CE5F235BD9DAFFF07C5CE2 (MapboxRoute_t9F7C0E5CF1EB4B7F599503017567E4EDDBA546B0* __this, const RuntimeMethod* method) ;
 // System.Void ARLocation.Utils.Logger::WarnFromMethod(System.String,System.String,System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Logger_WarnFromMethod_m91429A7F9B584E33E970EDF9C19CC1D912FBD172 (String_t* ___className0, String_t* ___methodName1, String_t* ___message2, const RuntimeMethod* method) ;
-// System.Void ARLocation.MapboxRoutes.MapboxApi::.ctor(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MapboxApi__ctor_m393CDA96AEAEF30CD29C8183E1637E1B14D1100F (MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* __this, String_t* ___token0, const RuntimeMethod* method) ;
+// System.Void ARLocation.MapboxRoutes.MapboxApi::.ctor(System.String,ARLocation.MapboxRoutes.MapboxApiLanguage)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MapboxApi__ctor_m728B7F1894D2EDD4720AE606573594EF671E4F8A (MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* __this, String_t* ___token0, int32_t ___lang1, const RuntimeMethod* method) ;
 // T ARLocation.Utils.Singleton`1<ARLocation.ARLocationProvider>::get_Instance()
 inline ARLocationProvider_t06AF90648B7B5156D407C40E6735C7F75C0744F0* Singleton_1_get_Instance_m2F196335C12B12FA1AECCFEEEB9F5E0AA63AB5E4 (const RuntimeMethod* method)
 {
@@ -7200,10 +7258,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RouteWaypointResolveLocation__ctor_m59CF
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* RouteWaypointResolveLocation_Resolve_mF072B83964B39957B2723C24CF15F87420CC9F4C (RouteWaypointResolveLocation_t6CC898E86218DB20A0C5958D46054CBA14EAB701* __this, const RuntimeMethod* method) ;
 // System.Collections.IEnumerator ARLocation.MapboxRoutes.MapboxApi::QueryRoute(ARLocation.Location,ARLocation.Location,System.Boolean,System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* MapboxApi_QueryRoute_m033DB3712162ED4C5CD6F0F2B489AF16628D5ACB (MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* __this, Location_t9E7AB293D59F64A92A93EF884B4C0120DBE40E39* ___from0, Location_t9E7AB293D59F64A92A93EF884B4C0120DBE40E39* ___to1, bool ___alternatives2, bool ___verbose3, const RuntimeMethod* method) ;
-// ARLocation.MapboxRoutes.GeocodingResponse ARLocation.MapboxRoutes.MapboxApi::get_QueryLocalResult()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR GeocodingResponse_t38CBD1C2B935A3BAB29E994C84DD226A4AB01A94* MapboxApi_get_QueryLocalResult_m084D7A5F7DD0A99ED62EFCDDE9D560F7904C4BC8_inline (MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* __this, const RuntimeMethod* method) ;
 // ARLocation.MapboxRoutes.RouteResponse ARLocation.MapboxRoutes.MapboxApi::get_QueryRouteResult()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212* MapboxApi_get_QueryRouteResult_m214837EEF6953B00AEBAD695A23DD10005B6206C_inline (MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* __this, const RuntimeMethod* method) ;
+// ARLocation.MapboxRoutes.GeocodingResponse ARLocation.MapboxRoutes.MapboxApi::get_QueryLocalResult()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR GeocodingResponse_t38CBD1C2B935A3BAB29E994C84DD226A4AB01A94* MapboxApi_get_QueryLocalResult_m084D7A5F7DD0A99ED62EFCDDE9D560F7904C4BC8_inline (MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* __this, const RuntimeMethod* method) ;
 // System.Void ARLocation.MapboxRoutes.RouteWaypointResolveLocation/<Resolve>d__6::.ctor(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CResolveU3Ed__6__ctor_mD8D6C086AA87AB201EEC9A76D08B9783D935750E (U3CResolveU3Ed__6_t01D5F8740AD6430DDA98D2DB3CE7F37AB8B69C51* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) ;
 // System.Collections.IEnumerator ARLocation.MapboxRoutes.MapboxApi::QueryLocal(System.String,System.Boolean)
@@ -13679,8 +13737,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Route_t65233920818BB3FDF557CCB00357C155AEB654
 		NullCheck(L_5);
 		Geometry__ctor_m1142F606F9E67065D742DDDCA0DAD535903CC574(L_5, NULL);
 		NullCheck(L_4);
-		L_4->___geometry_5 = L_5;
-		Il2CppCodeGenWriteBarrier((void**)(&L_4->___geometry_5), (void*)L_5);
+		L_4->___geometry_1 = L_5;
+		Il2CppCodeGenWriteBarrier((void**)(&L_4->___geometry_1), (void*)L_5);
 		// route.legs = new List<Route.RouteLeg> { leg };
 		Route_t65233920818BB3FDF557CCB00357C155AEB6543E* L_6 = V_0;
 		List_1_t362655BB702679A7A5649B2785AD171A6166512B* L_7 = (List_1_t362655BB702679A7A5649B2785AD171A6166512B*)il2cpp_codegen_object_new(List_1_t362655BB702679A7A5649B2785AD171A6166512B_il2cpp_TypeInfo_var);
@@ -13691,13 +13749,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Route_t65233920818BB3FDF557CCB00357C155AEB654
 		NullCheck(L_8);
 		List_1_Add_m3A72A2E63EB5C4ABBFECB3B8B3FF4252D1DE8F25_inline(L_8, L_9, List_1_Add_m3A72A2E63EB5C4ABBFECB3B8B3FF4252D1DE8F25_RuntimeMethod_var);
 		NullCheck(L_6);
-		L_6->___legs_6 = L_8;
-		Il2CppCodeGenWriteBarrier((void**)(&L_6->___legs_6), (void*)L_8);
+		L_6->___legs_2 = L_8;
+		Il2CppCodeGenWriteBarrier((void**)(&L_6->___legs_2), (void*)L_8);
 		// route.name = Name; ;
 		Route_t65233920818BB3FDF557CCB00357C155AEB6543E* L_10 = V_0;
 		String_t* L_11 = __this->___Name_4;
 		NullCheck(L_10);
-		Object_set_name_mC79E6DC8FFD72479C90F0C4CC7F42A0FEAF5AE47(L_10, L_11, NULL);
+		L_10->___name_3 = L_11;
+		Il2CppCodeGenWriteBarrier((void**)(&L_10->___name_3), (void*)L_11);
 		// foreach (var p in Points)
 		List_1_tD7DDDBA62222107C94CF3274E33F07609CB0CADD* L_12 = __this->___Points_5;
 		NullCheck(L_12);
@@ -13730,7 +13789,7 @@ IL_0051_1:
 				// route.geometry.coordinates.Add(p.Location.Clone());
 				Route_t65233920818BB3FDF557CCB00357C155AEB6543E* L_15 = V_0;
 				NullCheck(L_15);
-				Geometry_t6D09A5C7963C5230A00A66CE6B4886E09F8A6014* L_16 = L_15->___geometry_5;
+				Geometry_t6D09A5C7963C5230A00A66CE6B4886E09F8A6014* L_16 = L_15->___geometry_1;
 				NullCheck(L_16);
 				List_1_t138B65ED77409476A19A1B2DCABEE5A091EEAE2D* L_17 = L_16->___coordinates_0;
 				Point_tA3ED297AC1ACC8A7188EFA149FC55E19D5B728BE* L_18 = V_3;
@@ -14889,7 +14948,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RouteResponse_tF189AFDEBA06C17330596DD4CC373A
 {
 	{
 		// public RouteResponse QueryRouteResult => queryRouteResult;
-		RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212* L_0 = __this->___queryRouteResult_1;
+		RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212* L_0 = __this->___queryRouteResult_2;
 		return L_0;
 	}
 }
@@ -14898,7 +14957,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GeocodingResponse_t38CBD1C2B935A3BAB29E994C84
 {
 	{
 		// public GeocodingResponse QueryLocalResult => queryLocalResult;
-		GeocodingResponse_t38CBD1C2B935A3BAB29E994C84DD226A4AB01A94* L_0 = __this->___queryLocalResult_2;
+		GeocodingResponse_t38CBD1C2B935A3BAB29E994C84DD226A4AB01A94* L_0 = __this->___queryLocalResult_3;
 		return L_0;
 	}
 }
@@ -14907,20 +14966,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MapboxApi_get_ErrorMessage_m46C0780
 {
 	{
 		// public string ErrorMessage => errorMessage;
-		String_t* L_0 = __this->___errorMessage_3;
+		String_t* L_0 = __this->___errorMessage_4;
 		return L_0;
 	}
 }
-// System.Void ARLocation.MapboxRoutes.MapboxApi::.ctor(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MapboxApi__ctor_m393CDA96AEAEF30CD29C8183E1637E1B14D1100F (MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* __this, String_t* ___token0, const RuntimeMethod* method) 
+// System.Void ARLocation.MapboxRoutes.MapboxApi::.ctor(System.String,ARLocation.MapboxRoutes.MapboxApiLanguage)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MapboxApi__ctor_m728B7F1894D2EDD4720AE606573594EF671E4F8A (MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* __this, String_t* ___token0, int32_t ___lang1, const RuntimeMethod* method) 
 {
 	{
-		// public MapboxApi(string token)
+		// public MapboxApi(string token, MapboxApiLanguage lang = MapboxApiLanguage.English_US)
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		// AccessToken = token;
 		String_t* L_0 = ___token0;
 		__this->___AccessToken_0 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___AccessToken_0), (void*)L_0);
+		// Language = lang;
+		int32_t L_1 = ___lang1;
+		__this->___Language_1 = L_1;
 		// }
 		return;
 	}
@@ -14931,27 +14993,226 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* MapboxApi_QueryLocal_mCFD68CB0
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CQueryLocalU3Ed__11_tDB1D84B03F14F45C335681F43025B03C19020DD2_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CQueryLocalU3Ed__12_tAFA45400DC21622ACA662B3C53304A4FABE5468B_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		U3CQueryLocalU3Ed__11_tDB1D84B03F14F45C335681F43025B03C19020DD2* L_0 = (U3CQueryLocalU3Ed__11_tDB1D84B03F14F45C335681F43025B03C19020DD2*)il2cpp_codegen_object_new(U3CQueryLocalU3Ed__11_tDB1D84B03F14F45C335681F43025B03C19020DD2_il2cpp_TypeInfo_var);
+		U3CQueryLocalU3Ed__12_tAFA45400DC21622ACA662B3C53304A4FABE5468B* L_0 = (U3CQueryLocalU3Ed__12_tAFA45400DC21622ACA662B3C53304A4FABE5468B*)il2cpp_codegen_object_new(U3CQueryLocalU3Ed__12_tAFA45400DC21622ACA662B3C53304A4FABE5468B_il2cpp_TypeInfo_var);
 		NullCheck(L_0);
-		U3CQueryLocalU3Ed__11__ctor_mBAA501B7F2449294A77A4BC28246D33747B3CF36(L_0, 0, NULL);
-		U3CQueryLocalU3Ed__11_tDB1D84B03F14F45C335681F43025B03C19020DD2* L_1 = L_0;
+		U3CQueryLocalU3Ed__12__ctor_m7C6BC6C86F8F5E09449D99F778D514C4321177D7(L_0, 0, NULL);
+		U3CQueryLocalU3Ed__12_tAFA45400DC21622ACA662B3C53304A4FABE5468B* L_1 = L_0;
 		NullCheck(L_1);
-		L_1->___U3CU3E4__this_3 = __this;
-		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this_3), (void*)__this);
-		U3CQueryLocalU3Ed__11_tDB1D84B03F14F45C335681F43025B03C19020DD2* L_2 = L_1;
+		L_1->___U3CU3E4__this_2 = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this_2), (void*)__this);
+		U3CQueryLocalU3Ed__12_tAFA45400DC21622ACA662B3C53304A4FABE5468B* L_2 = L_1;
 		String_t* L_3 = ___text0;
 		NullCheck(L_2);
-		L_2->___text_2 = L_3;
-		Il2CppCodeGenWriteBarrier((void**)(&L_2->___text_2), (void*)L_3);
-		U3CQueryLocalU3Ed__11_tDB1D84B03F14F45C335681F43025B03C19020DD2* L_4 = L_2;
+		L_2->___text_3 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&L_2->___text_3), (void*)L_3);
+		U3CQueryLocalU3Ed__12_tAFA45400DC21622ACA662B3C53304A4FABE5468B* L_4 = L_2;
 		bool L_5 = ___verbose1;
 		NullCheck(L_4);
 		L_4->___verbose_4 = L_5;
 		return L_4;
+	}
+}
+// System.String ARLocation.MapboxRoutes.MapboxApi::buildQueryLocalUrl(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MapboxApi_buildQueryLocalUrl_mF3DE66CD2A5870D79C8CF4DDAD9BFEEA691CCD9D (MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* __this, String_t* ___query0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral0A550CF57EC5576B9829DB033869A7E58588464A);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8AD7D679BBB94EB6E5F30F43C76BA7263B793FA0);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE92AA2E2CE6BB361E69D0E998741DC4838D15E2A);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// var url = Uri.EscapeUriString($"https://api.mapbox.com/geocoding/v5/mapbox.places/{query}.json?access_token={AccessToken}");
+		String_t* L_0 = ___query0;
+		String_t* L_1 = __this->___AccessToken_0;
+		String_t* L_2;
+		L_2 = String_Concat_m093934F71A9B351911EE46311674ED463B180006(_stringLiteralE92AA2E2CE6BB361E69D0E998741DC4838D15E2A, L_0, _stringLiteral8AD7D679BBB94EB6E5F30F43C76BA7263B793FA0, L_1, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E_il2cpp_TypeInfo_var);
+		String_t* L_3;
+		L_3 = Uri_EscapeUriString_m1F1E67F8150470F51174B1C3B93E6F5B9C8C1A38(L_2, NULL);
+		// url += $"&language={Language.GetCode()}";
+		int32_t L_4 = __this->___Language_1;
+		String_t* L_5;
+		L_5 = MapboxApiLanguageExtensions_GetCode_m56BB10ECD1A36FD5C8C413BB89EEFA3FC4327EAC(L_4, NULL);
+		String_t* L_6;
+		L_6 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(L_3, _stringLiteral0A550CF57EC5576B9829DB033869A7E58588464A, L_5, NULL);
+		// return url;
+		return L_6;
+	}
+}
+// System.String ARLocation.MapboxRoutes.MapboxApi::buildQueryRouteUrl(ARLocation.Location,ARLocation.Location,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MapboxApi_buildQueryRouteUrl_m57B953961E78292AED34A5EE9C19D48D2CFCF456 (MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* __this, Location_t9E7AB293D59F64A92A93EF884B4C0120DBE40E39* ___from0, Location_t9E7AB293D59F64A92A93EF884B4C0120DBE40E39* ___to1, bool ___alternatives2, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral0A550CF57EC5576B9829DB033869A7E58588464A);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral24DFF757FD67718D3CAA7D74AF6F77C453D82A78);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral403DFD38F660ED0992488A2262C792CE8C795FE0);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral77D38C0623F92B292B925F6E72CF5CF99A20D4EB);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral794F9A3F3F0ECB00BF4F6925604716FEFD5302C2);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAF3E8553F5D91341D050C182F71DA3B838C530EC);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB7C45DD316C68ABF3429C20058C2981C652192F2);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC00B6AF5670591506F3CF9C477EFE622D9039718);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC05349192A0818B86B59ED3E8E0B1B32915F3CE8);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDC24CA254617D7C7400AE68695B13607C58A72E3);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	String_t* V_1 = NULL;
+	String_t* V_2 = NULL;
+	String_t* V_3 = NULL;
+	String_t* V_4 = NULL;
+	String_t* V_5 = NULL;
+	String_t* V_6 = NULL;
+	String_t* G_B3_0 = NULL;
+	{
+		// string url = "https://api.mapbox.com/directions/v5/mapbox/walking/";
+		V_0 = _stringLiteralAF3E8553F5D91341D050C182F71DA3B838C530EC;
+		// string alt = alternatives ? "true" : "false";
+		bool L_0 = ___alternatives2;
+		if (L_0)
+		{
+			goto IL_0010;
+		}
+	}
+	{
+		G_B3_0 = _stringLiteral77D38C0623F92B292B925F6E72CF5CF99A20D4EB;
+		goto IL_0015;
+	}
+
+IL_0010:
+	{
+		G_B3_0 = _stringLiteralB7C45DD316C68ABF3429C20058C2981C652192F2;
+	}
+
+IL_0015:
+	{
+		V_1 = G_B3_0;
+		// var fromLat = from.Latitude.ToString(CultureInfo.InvariantCulture);
+		Location_t9E7AB293D59F64A92A93EF884B4C0120DBE40E39* L_1 = ___from0;
+		NullCheck(L_1);
+		double* L_2 = (&L_1->___Latitude_0);
+		il2cpp_codegen_runtime_class_init_inline(CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_il2cpp_TypeInfo_var);
+		CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* L_3;
+		L_3 = CultureInfo_get_InvariantCulture_mD1E96DC845E34B10F78CB744B0CB5D7D63CEB1E6(NULL);
+		String_t* L_4;
+		L_4 = Double_ToString_m4318830D9F771852FDCF21C14CF9E8ABC7E77357(L_2, L_3, NULL);
+		V_2 = L_4;
+		// var fromLon = from.Longitude.ToString(CultureInfo.InvariantCulture);
+		Location_t9E7AB293D59F64A92A93EF884B4C0120DBE40E39* L_5 = ___from0;
+		NullCheck(L_5);
+		double* L_6 = (&L_5->___Longitude_1);
+		CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* L_7;
+		L_7 = CultureInfo_get_InvariantCulture_mD1E96DC845E34B10F78CB744B0CB5D7D63CEB1E6(NULL);
+		String_t* L_8;
+		L_8 = Double_ToString_m4318830D9F771852FDCF21C14CF9E8ABC7E77357(L_6, L_7, NULL);
+		V_3 = L_8;
+		// var toLat = to.Latitude.ToString(CultureInfo.InvariantCulture);
+		Location_t9E7AB293D59F64A92A93EF884B4C0120DBE40E39* L_9 = ___to1;
+		NullCheck(L_9);
+		double* L_10 = (&L_9->___Latitude_0);
+		CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* L_11;
+		L_11 = CultureInfo_get_InvariantCulture_mD1E96DC845E34B10F78CB744B0CB5D7D63CEB1E6(NULL);
+		String_t* L_12;
+		L_12 = Double_ToString_m4318830D9F771852FDCF21C14CF9E8ABC7E77357(L_10, L_11, NULL);
+		V_4 = L_12;
+		// var toLon = to.Longitude.ToString(CultureInfo.InvariantCulture);
+		Location_t9E7AB293D59F64A92A93EF884B4C0120DBE40E39* L_13 = ___to1;
+		NullCheck(L_13);
+		double* L_14 = (&L_13->___Longitude_1);
+		CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* L_15;
+		L_15 = CultureInfo_get_InvariantCulture_mD1E96DC845E34B10F78CB744B0CB5D7D63CEB1E6(NULL);
+		String_t* L_16;
+		L_16 = Double_ToString_m4318830D9F771852FDCF21C14CF9E8ABC7E77357(L_14, L_15, NULL);
+		V_5 = L_16;
+		// var langCode = Language.GetCode();
+		int32_t L_17 = __this->___Language_1;
+		String_t* L_18;
+		L_18 = MapboxApiLanguageExtensions_GetCode_m56BB10ECD1A36FD5C8C413BB89EEFA3FC4327EAC(L_17, NULL);
+		V_6 = L_18;
+		// url += $"{fromLon}%2C{fromLat}%3B{toLon}%2C{toLat}";
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_19 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)8);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_20 = L_19;
+		String_t* L_21 = V_0;
+		NullCheck(L_20);
+		ArrayElementTypeCheck (L_20, L_21);
+		(L_20)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)L_21);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_22 = L_20;
+		String_t* L_23 = V_3;
+		NullCheck(L_22);
+		ArrayElementTypeCheck (L_22, L_23);
+		(L_22)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)L_23);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_24 = L_22;
+		NullCheck(L_24);
+		ArrayElementTypeCheck (L_24, _stringLiteral24DFF757FD67718D3CAA7D74AF6F77C453D82A78);
+		(L_24)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)_stringLiteral24DFF757FD67718D3CAA7D74AF6F77C453D82A78);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_25 = L_24;
+		String_t* L_26 = V_2;
+		NullCheck(L_25);
+		ArrayElementTypeCheck (L_25, L_26);
+		(L_25)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)L_26);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_27 = L_25;
+		NullCheck(L_27);
+		ArrayElementTypeCheck (L_27, _stringLiteral403DFD38F660ED0992488A2262C792CE8C795FE0);
+		(L_27)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)_stringLiteral403DFD38F660ED0992488A2262C792CE8C795FE0);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_28 = L_27;
+		String_t* L_29 = V_5;
+		NullCheck(L_28);
+		ArrayElementTypeCheck (L_28, L_29);
+		(L_28)->SetAt(static_cast<il2cpp_array_size_t>(5), (String_t*)L_29);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_30 = L_28;
+		NullCheck(L_30);
+		ArrayElementTypeCheck (L_30, _stringLiteral24DFF757FD67718D3CAA7D74AF6F77C453D82A78);
+		(L_30)->SetAt(static_cast<il2cpp_array_size_t>(6), (String_t*)_stringLiteral24DFF757FD67718D3CAA7D74AF6F77C453D82A78);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_31 = L_30;
+		String_t* L_32 = V_4;
+		NullCheck(L_31);
+		ArrayElementTypeCheck (L_31, L_32);
+		(L_31)->SetAt(static_cast<il2cpp_array_size_t>(7), (String_t*)L_32);
+		String_t* L_33;
+		L_33 = String_Concat_m647EBF831F54B6DF7D5AFA5FD012CF4EE7571B6A(L_31, NULL);
+		V_0 = L_33;
+		// url += $"?alternatives={alt}";
+		String_t* L_34 = V_0;
+		String_t* L_35 = V_1;
+		String_t* L_36;
+		L_36 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(L_34, _stringLiteralC05349192A0818B86B59ED3E8E0B1B32915F3CE8, L_35, NULL);
+		V_0 = L_36;
+		// url += "&geometries=geojson";
+		String_t* L_37 = V_0;
+		String_t* L_38;
+		L_38 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_37, _stringLiteralC00B6AF5670591506F3CF9C477EFE622D9039718, NULL);
+		V_0 = L_38;
+		// url += "&steps=true";
+		String_t* L_39 = V_0;
+		String_t* L_40;
+		L_40 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_39, _stringLiteral794F9A3F3F0ECB00BF4F6925604716FEFD5302C2, NULL);
+		V_0 = L_40;
+		// url += $"&access_token={AccessToken}";
+		String_t* L_41 = V_0;
+		String_t* L_42 = __this->___AccessToken_0;
+		String_t* L_43;
+		L_43 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(L_41, _stringLiteralDC24CA254617D7C7400AE68695B13607C58A72E3, L_42, NULL);
+		V_0 = L_43;
+		// url += $"&language={langCode}";
+		String_t* L_44 = V_0;
+		String_t* L_45 = V_6;
+		String_t* L_46;
+		L_46 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(L_44, _stringLiteral0A550CF57EC5576B9829DB033869A7E58588464A, L_45, NULL);
+		V_0 = L_46;
+		// return url;
+		String_t* L_47 = V_0;
+		return L_47;
 	}
 }
 // System.Collections.IEnumerator ARLocation.MapboxRoutes.MapboxApi::QueryRoute(ARLocation.Location,ARLocation.Location,System.Boolean,System.Boolean)
@@ -14960,32 +15221,32 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* MapboxApi_QueryRoute_m033DB371
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CQueryRouteU3Ed__12_t5262E1C53F11854155D6311DC9A276AA336EDE8D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CQueryRouteU3Ed__15_t5F57AFB071C44F0A90A54F9E72CCDF6C7649FA48_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		U3CQueryRouteU3Ed__12_t5262E1C53F11854155D6311DC9A276AA336EDE8D* L_0 = (U3CQueryRouteU3Ed__12_t5262E1C53F11854155D6311DC9A276AA336EDE8D*)il2cpp_codegen_object_new(U3CQueryRouteU3Ed__12_t5262E1C53F11854155D6311DC9A276AA336EDE8D_il2cpp_TypeInfo_var);
+		U3CQueryRouteU3Ed__15_t5F57AFB071C44F0A90A54F9E72CCDF6C7649FA48* L_0 = (U3CQueryRouteU3Ed__15_t5F57AFB071C44F0A90A54F9E72CCDF6C7649FA48*)il2cpp_codegen_object_new(U3CQueryRouteU3Ed__15_t5F57AFB071C44F0A90A54F9E72CCDF6C7649FA48_il2cpp_TypeInfo_var);
 		NullCheck(L_0);
-		U3CQueryRouteU3Ed__12__ctor_m497C96DA4F87EBC53BB0A548CCE422482481E49B(L_0, 0, NULL);
-		U3CQueryRouteU3Ed__12_t5262E1C53F11854155D6311DC9A276AA336EDE8D* L_1 = L_0;
+		U3CQueryRouteU3Ed__15__ctor_mDAE0FCD5E3F51890FB97D00CC9860E0EDFED313E(L_0, 0, NULL);
+		U3CQueryRouteU3Ed__15_t5F57AFB071C44F0A90A54F9E72CCDF6C7649FA48* L_1 = L_0;
 		NullCheck(L_1);
-		L_1->___U3CU3E4__this_5 = __this;
-		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this_5), (void*)__this);
-		U3CQueryRouteU3Ed__12_t5262E1C53F11854155D6311DC9A276AA336EDE8D* L_2 = L_1;
+		L_1->___U3CU3E4__this_2 = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this_2), (void*)__this);
+		U3CQueryRouteU3Ed__15_t5F57AFB071C44F0A90A54F9E72CCDF6C7649FA48* L_2 = L_1;
 		Location_t9E7AB293D59F64A92A93EF884B4C0120DBE40E39* L_3 = ___from0;
 		NullCheck(L_2);
 		L_2->___from_3 = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&L_2->___from_3), (void*)L_3);
-		U3CQueryRouteU3Ed__12_t5262E1C53F11854155D6311DC9A276AA336EDE8D* L_4 = L_2;
+		U3CQueryRouteU3Ed__15_t5F57AFB071C44F0A90A54F9E72CCDF6C7649FA48* L_4 = L_2;
 		Location_t9E7AB293D59F64A92A93EF884B4C0120DBE40E39* L_5 = ___to1;
 		NullCheck(L_4);
 		L_4->___to_4 = L_5;
 		Il2CppCodeGenWriteBarrier((void**)(&L_4->___to_4), (void*)L_5);
-		U3CQueryRouteU3Ed__12_t5262E1C53F11854155D6311DC9A276AA336EDE8D* L_6 = L_4;
+		U3CQueryRouteU3Ed__15_t5F57AFB071C44F0A90A54F9E72CCDF6C7649FA48* L_6 = L_4;
 		bool L_7 = ___alternatives2;
 		NullCheck(L_6);
-		L_6->___alternatives_2 = L_7;
-		U3CQueryRouteU3Ed__12_t5262E1C53F11854155D6311DC9A276AA336EDE8D* L_8 = L_6;
+		L_6->___alternatives_5 = L_7;
+		U3CQueryRouteU3Ed__15_t5F57AFB071C44F0A90A54F9E72CCDF6C7649FA48* L_8 = L_6;
 		bool L_9 = ___verbose3;
 		NullCheck(L_8);
 		L_8->___verbose_6 = L_9;
@@ -15000,8 +15261,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* MapboxApi_QueryRoute_m033DB371
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void ARLocation.MapboxRoutes.MapboxApi/<QueryLocal>d__11::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CQueryLocalU3Ed__11__ctor_mBAA501B7F2449294A77A4BC28246D33747B3CF36 (U3CQueryLocalU3Ed__11_tDB1D84B03F14F45C335681F43025B03C19020DD2* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) 
+// System.Void ARLocation.MapboxRoutes.MapboxApi/<QueryLocal>d__12::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CQueryLocalU3Ed__12__ctor_m7C6BC6C86F8F5E09449D99F778D514C4321177D7 (U3CQueryLocalU3Ed__12_tAFA45400DC21622ACA662B3C53304A4FABE5468B* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
@@ -15010,8 +15271,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CQueryLocalU3Ed__11__ctor_mBAA501B7F24
 		return;
 	}
 }
-// System.Void ARLocation.MapboxRoutes.MapboxApi/<QueryLocal>d__11::System.IDisposable.Dispose()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CQueryLocalU3Ed__11_System_IDisposable_Dispose_m940BF766D0E4FFA536A8803FD22D6B5C4F5D23B2 (U3CQueryLocalU3Ed__11_tDB1D84B03F14F45C335681F43025B03C19020DD2* __this, const RuntimeMethod* method) 
+// System.Void ARLocation.MapboxRoutes.MapboxApi/<QueryLocal>d__12::System.IDisposable.Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CQueryLocalU3Ed__12_System_IDisposable_Dispose_mA69969612939E8AE462FEDD502B6798D11F22A8C (U3CQueryLocalU3Ed__12_tAFA45400DC21622ACA662B3C53304A4FABE5468B* __this, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
 	{
@@ -15040,7 +15301,7 @@ IL_0010:
 
 FINALLY_0013:
 			{// begin finally (depth: 1)
-				U3CQueryLocalU3Ed__11_U3CU3Em__Finally1_m2843AAF411633FB122797DFE5F0FF3245F587F5D(__this, NULL);
+				U3CQueryLocalU3Ed__12_U3CU3Em__Finally1_mA649CB8D23C723ECF0A27BA0104BFE1CAF419CF3(__this, NULL);
 				return;
 			}// end finally (depth: 1)
 		});
@@ -15059,35 +15320,31 @@ IL_001a:
 		return;
 	}
 }
-// System.Boolean ARLocation.MapboxRoutes.MapboxApi/<QueryLocal>d__11::MoveNext()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CQueryLocalU3Ed__11_MoveNext_m553D227B5461A207EE091F6A1EFA2953F87D9A62 (U3CQueryLocalU3Ed__11_tDB1D84B03F14F45C335681F43025B03C19020DD2* __this, const RuntimeMethod* method) 
+// System.Boolean ARLocation.MapboxRoutes.MapboxApi/<QueryLocal>d__12::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CQueryLocalU3Ed__12_MoveNext_m073EC16C7A18FA97D4D82C189BF1FA506F524670 (U3CQueryLocalU3Ed__12_tAFA45400DC21622ACA662B3C53304A4FABE5468B* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2BDFBBCD12534878552D4AB5334A61B70A0C47CD);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral362235EDC821C1F15F2E81FD859D337A8BC28D74);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8AD7D679BBB94EB6E5F30F43C76BA7263B793FA0);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD559C6D97E819D8E4EF7ACDC34C4E8D3DD314964);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD9FDDDA3F953347E9B7CA71059FC074561BCDB60);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE92AA2E2CE6BB361E69D0E998741DC4838D15E2A);
 		s_Il2CppMethodInitialized = true;
 	}
 	bool V_0 = false;
 	int32_t V_1 = 0;
 	MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* V_2 = NULL;
 	String_t* V_3 = NULL;
-	String_t* V_4 = NULL;
-	JSONNode_t939CD511E3ACE503FE6D009DD4B86B8EA50C3EFF* V_5 = NULL;
+	JSONNode_t939CD511E3ACE503FE6D009DD4B86B8EA50C3EFF* V_4 = NULL;
 	{
 		auto __finallyBlock = il2cpp::utils::Fault([&]
 		{
 
-FAULT_01b9:
+FAULT_018a:
 			{// begin fault (depth: 1)
-				U3CQueryLocalU3Ed__11_System_IDisposable_Dispose_m940BF766D0E4FFA536A8803FD22D6B5C4F5D23B2(__this, NULL);
+				U3CQueryLocalU3Ed__12_System_IDisposable_Dispose_mA69969612939E8AE462FEDD502B6798D11F22A8C(__this, NULL);
 				return;
 			}// end fault
 		});
@@ -15096,211 +15353,201 @@ FAULT_01b9:
 			{
 				int32_t L_0 = __this->___U3CU3E1__state_0;
 				V_1 = L_0;
-				MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_1 = __this->___U3CU3E4__this_3;
+				MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_1 = __this->___U3CU3E4__this_2;
 				V_2 = L_1;
 				int32_t L_2 = V_1;
 				if (!L_2)
 				{
-					goto IL_001f_1;
+					goto IL_001c_1;
 				}
 			}
 			{
 				int32_t L_3 = V_1;
 				if ((((int32_t)L_3) == ((int32_t)1)))
 				{
-					goto IL_00a5_1;
+					goto IL_0089_1;
 				}
 			}
 			{
 				V_0 = (bool)0;
-				goto IL_01c0;
+				goto IL_0191;
 			}
 
-IL_001f_1:
+IL_001c_1:
 			{
 				__this->___U3CU3E1__state_0 = (-1);
-				// var term = text;
-				String_t* L_4 = __this->___text_2;
-				V_3 = L_4;
-				// var url = Uri.EscapeUriString($"https://api.mapbox.com/geocoding/v5/mapbox.places/{term}.json?access_token={AccessToken}");
-				String_t* L_5 = V_3;
-				MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_6 = V_2;
-				NullCheck(L_6);
-				String_t* L_7 = L_6->___AccessToken_0;
-				String_t* L_8;
-				L_8 = String_Concat_m093934F71A9B351911EE46311674ED463B180006(_stringLiteralE92AA2E2CE6BB361E69D0E998741DC4838D15E2A, L_5, _stringLiteral8AD7D679BBB94EB6E5F30F43C76BA7263B793FA0, L_7, NULL);
-				il2cpp_codegen_runtime_class_init_inline(Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E_il2cpp_TypeInfo_var);
-				String_t* L_9;
-				L_9 = Uri_EscapeUriString_m1F1E67F8150470F51174B1C3B93E6F5B9C8C1A38(L_8, NULL);
-				V_4 = L_9;
+				// var url = buildQueryLocalUrl(text);
+				MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_4 = V_2;
+				String_t* L_5 = __this->___text_3;
+				NullCheck(L_4);
+				String_t* L_6;
+				L_6 = MapboxApi_buildQueryLocalUrl_mF3DE66CD2A5870D79C8CF4DDAD9BFEEA691CCD9D(L_4, L_5, NULL);
+				V_3 = L_6;
 				// errorMessage = null;
-				MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_10 = V_2;
-				NullCheck(L_10);
-				L_10->___errorMessage_3 = (String_t*)NULL;
-				Il2CppCodeGenWriteBarrier((void**)(&L_10->___errorMessage_3), (void*)(String_t*)NULL);
+				MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_7 = V_2;
+				NullCheck(L_7);
+				L_7->___errorMessage_4 = (String_t*)NULL;
+				Il2CppCodeGenWriteBarrier((void**)(&L_7->___errorMessage_4), (void*)(String_t*)NULL);
 				// queryLocalResult = null;
-				MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_11 = V_2;
-				NullCheck(L_11);
-				L_11->___queryLocalResult_2 = (GeocodingResponse_t38CBD1C2B935A3BAB29E994C84DD226A4AB01A94*)NULL;
-				Il2CppCodeGenWriteBarrier((void**)(&L_11->___queryLocalResult_2), (void*)(GeocodingResponse_t38CBD1C2B935A3BAB29E994C84DD226A4AB01A94*)NULL);
+				MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_8 = V_2;
+				NullCheck(L_8);
+				L_8->___queryLocalResult_3 = (GeocodingResponse_t38CBD1C2B935A3BAB29E994C84DD226A4AB01A94*)NULL;
+				Il2CppCodeGenWriteBarrier((void**)(&L_8->___queryLocalResult_3), (void*)(GeocodingResponse_t38CBD1C2B935A3BAB29E994C84DD226A4AB01A94*)NULL);
 				// if (verbose)
-				bool L_12 = __this->___verbose_4;
-				if (!L_12)
+				bool L_9 = __this->___verbose_4;
+				if (!L_9)
 				{
-					goto IL_0071_1;
+					goto IL_0056_1;
 				}
 			}
 			{
 				// Debug.Log($"[MapboxApi#QueryLocal]: {url}");
-				String_t* L_13 = V_4;
-				String_t* L_14;
-				L_14 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral362235EDC821C1F15F2E81FD859D337A8BC28D74, L_13, NULL);
+				String_t* L_10 = V_3;
+				String_t* L_11;
+				L_11 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral362235EDC821C1F15F2E81FD859D337A8BC28D74, L_10, NULL);
 				il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-				Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_14, NULL);
+				Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_11, NULL);
 			}
 
-IL_0071_1:
+IL_0056_1:
 			{
 				// using (var req = UnityWebRequest.Get(url))
-				String_t* L_15 = V_4;
-				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_16;
-				L_16 = UnityWebRequest_Get_m1A332EE069BB5052368307F254A5A7627BB5FD86(L_15, NULL);
-				__this->___U3CreqU3E5__2_5 = L_16;
-				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CreqU3E5__2_5), (void*)L_16);
+				String_t* L_12 = V_3;
+				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_13;
+				L_13 = UnityWebRequest_Get_m1A332EE069BB5052368307F254A5A7627BB5FD86(L_12, NULL);
+				__this->___U3CreqU3E5__2_5 = L_13;
+				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CreqU3E5__2_5), (void*)L_13);
 				__this->___U3CU3E1__state_0 = ((int32_t)-3);
 				// yield return req.SendWebRequest();
-				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_17 = __this->___U3CreqU3E5__2_5;
-				NullCheck(L_17);
-				UnityWebRequestAsyncOperation_t14BE94558FF3A2CFC2EFBE2511A3A88252042B8C* L_18;
-				L_18 = UnityWebRequest_SendWebRequest_mA3CD13983BAA5074A0640EDD661B1E46E6DB6C13(L_17, NULL);
-				__this->___U3CU3E2__current_1 = L_18;
-				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_18);
+				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_14 = __this->___U3CreqU3E5__2_5;
+				NullCheck(L_14);
+				UnityWebRequestAsyncOperation_t14BE94558FF3A2CFC2EFBE2511A3A88252042B8C* L_15;
+				L_15 = UnityWebRequest_SendWebRequest_mA3CD13983BAA5074A0640EDD661B1E46E6DB6C13(L_14, NULL);
+				__this->___U3CU3E2__current_1 = L_15;
+				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_15);
 				__this->___U3CU3E1__state_0 = 1;
 				V_0 = (bool)1;
-				goto IL_01c0;
+				goto IL_0191;
 			}
 
-IL_00a5_1:
+IL_0089_1:
 			{
 				__this->___U3CU3E1__state_0 = ((int32_t)-3);
 				// if (Utils.Misc.WebRequestResultIsError(req))
-				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_19 = __this->___U3CreqU3E5__2_5;
-				bool L_20;
-				L_20 = Misc_WebRequestResultIsError_mF0E2999514B0FF1DA4283C597D3B86D8B199E191(L_19, NULL);
-				if (!L_20)
+				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_16 = __this->___U3CreqU3E5__2_5;
+				bool L_17;
+				L_17 = Misc_WebRequestResultIsError_mF0E2999514B0FF1DA4283C597D3B86D8B199E191(L_16, NULL);
+				if (!L_17)
 				{
-					goto IL_00f2_1;
-				}
-			}
-			{
-				// if (verbose)
-				bool L_21 = __this->___verbose_4;
-				if (!L_21)
-				{
-					goto IL_00dc_1;
+					goto IL_00ce_1;
 				}
 			}
 			{
 				// Debug.LogError("[MapboxApi#QueryLocal]: Error -> " + req.error);
+				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_18 = __this->___U3CreqU3E5__2_5;
+				NullCheck(L_18);
+				String_t* L_19;
+				L_19 = UnityWebRequest_get_error_m20A5D813ED59118B7AA1D1E2EB5250178B1F5B6F(L_18, NULL);
+				String_t* L_20;
+				L_20 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteralD9FDDDA3F953347E9B7CA71059FC074561BCDB60, L_19, NULL);
+				il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+				Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(L_20, NULL);
+				// errorMessage = req.error;
+				MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_21 = V_2;
 				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_22 = __this->___U3CreqU3E5__2_5;
 				NullCheck(L_22);
 				String_t* L_23;
 				L_23 = UnityWebRequest_get_error_m20A5D813ED59118B7AA1D1E2EB5250178B1F5B6F(L_22, NULL);
-				String_t* L_24;
-				L_24 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteralD9FDDDA3F953347E9B7CA71059FC074561BCDB60, L_23, NULL);
-				il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-				Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(L_24, NULL);
+				NullCheck(L_21);
+				L_21->___errorMessage_4 = L_23;
+				Il2CppCodeGenWriteBarrier((void**)(&L_21->___errorMessage_4), (void*)L_23);
+				goto IL_0179_1;
 			}
 
-IL_00dc_1:
-			{
-				// errorMessage = req.error;
-				MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_25 = V_2;
-				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_26 = __this->___U3CreqU3E5__2_5;
-				NullCheck(L_26);
-				String_t* L_27;
-				L_27 = UnityWebRequest_get_error_m20A5D813ED59118B7AA1D1E2EB5250178B1F5B6F(L_26, NULL);
-				NullCheck(L_25);
-				L_25->___errorMessage_3 = L_27;
-				Il2CppCodeGenWriteBarrier((void**)(&L_25->___errorMessage_3), (void*)L_27);
-				goto IL_01a8_1;
-			}
-
-IL_00f2_1:
+IL_00ce_1:
 			{
 				// if (req.responseCode != 200)
-				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_28 = __this->___U3CreqU3E5__2_5;
-				NullCheck(L_28);
-				int64_t L_29;
-				L_29 = UnityWebRequest_get_responseCode_m012C177F61435D5D120A21D7A03FFF7B0F8B904B(L_28, NULL);
-				if ((((int64_t)L_29) == ((int64_t)((int64_t)((int32_t)200)))))
+				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_24 = __this->___U3CreqU3E5__2_5;
+				NullCheck(L_24);
+				int64_t L_25;
+				L_25 = UnityWebRequest_get_responseCode_m012C177F61435D5D120A21D7A03FFF7B0F8B904B(L_24, NULL);
+				if ((((int64_t)L_25) == ((int64_t)((int64_t)((int32_t)200)))))
 				{
-					goto IL_0166_1;
-				}
-			}
-			{
-				// if (verbose)
-				bool L_30 = __this->___verbose_4;
-				if (!L_30)
-				{
-					goto IL_01a8_1;
+					goto IL_0137_1;
 				}
 			}
 			{
 				// Debug.LogError("[MapboxApi#QueryLocal]: Error -> " + req.downloadHandler.text);
-				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_31 = __this->___U3CreqU3E5__2_5;
-				NullCheck(L_31);
-				DownloadHandler_t1B56C7D3F65D97A1E4B566A14A1E783EA8AE4EBB* L_32;
-				L_32 = UnityWebRequest_get_downloadHandler_m1AA91B23D9D594A4F4FE2975FC356C508528F1D5(L_31, NULL);
-				NullCheck(L_32);
-				String_t* L_33;
-				L_33 = DownloadHandler_get_text_mA6DE5CB2647A21E577B963708DC3D0DA4DBFE7D8(L_32, NULL);
-				String_t* L_34;
-				L_34 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteralD9FDDDA3F953347E9B7CA71059FC074561BCDB60, L_33, NULL);
+				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_26 = __this->___U3CreqU3E5__2_5;
+				NullCheck(L_26);
+				DownloadHandler_t1B56C7D3F65D97A1E4B566A14A1E783EA8AE4EBB* L_27;
+				L_27 = UnityWebRequest_get_downloadHandler_m1AA91B23D9D594A4F4FE2975FC356C508528F1D5(L_26, NULL);
+				NullCheck(L_27);
+				String_t* L_28;
+				L_28 = DownloadHandler_get_text_mA6DE5CB2647A21E577B963708DC3D0DA4DBFE7D8(L_27, NULL);
+				String_t* L_29;
+				L_29 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteralD9FDDDA3F953347E9B7CA71059FC074561BCDB60, L_28, NULL);
 				il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-				Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(L_34, NULL);
+				Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(L_29, NULL);
 				// var node = JSON.Parse(req.downloadHandler.text);
-				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_35 = __this->___U3CreqU3E5__2_5;
+				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_30 = __this->___U3CreqU3E5__2_5;
+				NullCheck(L_30);
+				DownloadHandler_t1B56C7D3F65D97A1E4B566A14A1E783EA8AE4EBB* L_31;
+				L_31 = UnityWebRequest_get_downloadHandler_m1AA91B23D9D594A4F4FE2975FC356C508528F1D5(L_30, NULL);
+				NullCheck(L_31);
+				String_t* L_32;
+				L_32 = DownloadHandler_get_text_mA6DE5CB2647A21E577B963708DC3D0DA4DBFE7D8(L_31, NULL);
+				JSONNode_t939CD511E3ACE503FE6D009DD4B86B8EA50C3EFF* L_33;
+				L_33 = JSON_Parse_mE46AC49D06A8AE90A94F345C0C02284FCD0855E7(L_32, NULL);
+				V_4 = L_33;
+				// errorMessage = node["message"].Value; //req.downloadHandler.text;
+				MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_34 = V_2;
+				JSONNode_t939CD511E3ACE503FE6D009DD4B86B8EA50C3EFF* L_35 = V_4;
 				NullCheck(L_35);
-				DownloadHandler_t1B56C7D3F65D97A1E4B566A14A1E783EA8AE4EBB* L_36;
-				L_36 = UnityWebRequest_get_downloadHandler_m1AA91B23D9D594A4F4FE2975FC356C508528F1D5(L_35, NULL);
+				JSONNode_t939CD511E3ACE503FE6D009DD4B86B8EA50C3EFF* L_36;
+				L_36 = VirtualFuncInvoker1< JSONNode_t939CD511E3ACE503FE6D009DD4B86B8EA50C3EFF*, String_t* >::Invoke(7 /* ARLocation.Vendor.SimpleJSON.JSONNode ARLocation.Vendor.SimpleJSON.JSONNode::get_Item(System.String) */, L_35, _stringLiteralD559C6D97E819D8E4EF7ACDC34C4E8D3DD314964);
 				NullCheck(L_36);
 				String_t* L_37;
-				L_37 = DownloadHandler_get_text_mA6DE5CB2647A21E577B963708DC3D0DA4DBFE7D8(L_36, NULL);
-				JSONNode_t939CD511E3ACE503FE6D009DD4B86B8EA50C3EFF* L_38;
-				L_38 = JSON_Parse_mE46AC49D06A8AE90A94F345C0C02284FCD0855E7(L_37, NULL);
-				V_5 = L_38;
-				// errorMessage = node["message"].Value; //req.downloadHandler.text;
-				MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_39 = V_2;
-				JSONNode_t939CD511E3ACE503FE6D009DD4B86B8EA50C3EFF* L_40 = V_5;
-				NullCheck(L_40);
-				JSONNode_t939CD511E3ACE503FE6D009DD4B86B8EA50C3EFF* L_41;
-				L_41 = VirtualFuncInvoker1< JSONNode_t939CD511E3ACE503FE6D009DD4B86B8EA50C3EFF*, String_t* >::Invoke(7 /* ARLocation.Vendor.SimpleJSON.JSONNode ARLocation.Vendor.SimpleJSON.JSONNode::get_Item(System.String) */, L_40, _stringLiteralD559C6D97E819D8E4EF7ACDC34C4E8D3DD314964);
-				NullCheck(L_41);
-				String_t* L_42;
-				L_42 = VirtualFuncInvoker0< String_t* >::Invoke(9 /* System.String ARLocation.Vendor.SimpleJSON.JSONNode::get_Value() */, L_41);
-				NullCheck(L_39);
-				L_39->___errorMessage_3 = L_42;
-				Il2CppCodeGenWriteBarrier((void**)(&L_39->___errorMessage_3), (void*)L_42);
+				L_37 = VirtualFuncInvoker0< String_t* >::Invoke(9 /* System.String ARLocation.Vendor.SimpleJSON.JSONNode::get_Value() */, L_36);
+				NullCheck(L_34);
+				L_34->___errorMessage_4 = L_37;
+				Il2CppCodeGenWriteBarrier((void**)(&L_34->___errorMessage_4), (void*)L_37);
 				// queryLocalResult = null;
-				MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_43 = V_2;
-				NullCheck(L_43);
-				L_43->___queryLocalResult_2 = (GeocodingResponse_t38CBD1C2B935A3BAB29E994C84DD226A4AB01A94*)NULL;
-				Il2CppCodeGenWriteBarrier((void**)(&L_43->___queryLocalResult_2), (void*)(GeocodingResponse_t38CBD1C2B935A3BAB29E994C84DD226A4AB01A94*)NULL);
-				goto IL_01a8_1;
+				MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_38 = V_2;
+				NullCheck(L_38);
+				L_38->___queryLocalResult_3 = (GeocodingResponse_t38CBD1C2B935A3BAB29E994C84DD226A4AB01A94*)NULL;
+				Il2CppCodeGenWriteBarrier((void**)(&L_38->___queryLocalResult_3), (void*)(GeocodingResponse_t38CBD1C2B935A3BAB29E994C84DD226A4AB01A94*)NULL);
+				goto IL_0179_1;
 			}
 
-IL_0166_1:
+IL_0137_1:
 			{
 				// if (verbose)
-				bool L_44 = __this->___verbose_4;
-				if (!L_44)
+				bool L_39 = __this->___verbose_4;
+				if (!L_39)
 				{
-					goto IL_018d_1;
+					goto IL_015e_1;
 				}
 			}
 			{
 				// Debug.Log("[MapboxApi#QueryLocal]: Success -> " + req.downloadHandler.text);
+				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_40 = __this->___U3CreqU3E5__2_5;
+				NullCheck(L_40);
+				DownloadHandler_t1B56C7D3F65D97A1E4B566A14A1E783EA8AE4EBB* L_41;
+				L_41 = UnityWebRequest_get_downloadHandler_m1AA91B23D9D594A4F4FE2975FC356C508528F1D5(L_40, NULL);
+				NullCheck(L_41);
+				String_t* L_42;
+				L_42 = DownloadHandler_get_text_mA6DE5CB2647A21E577B963708DC3D0DA4DBFE7D8(L_41, NULL);
+				String_t* L_43;
+				L_43 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral2BDFBBCD12534878552D4AB5334A61B70A0C47CD, L_42, NULL);
+				il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+				Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_43, NULL);
+			}
+
+IL_015e_1:
+			{
+				// queryLocalResult = GeocodingResponse.Parse(req.downloadHandler.text);
+				MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_44 = V_2;
 				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_45 = __this->___U3CreqU3E5__2_5;
 				NullCheck(L_45);
 				DownloadHandler_t1B56C7D3F65D97A1E4B566A14A1E783EA8AE4EBB* L_46;
@@ -15308,39 +15555,22 @@ IL_0166_1:
 				NullCheck(L_46);
 				String_t* L_47;
 				L_47 = DownloadHandler_get_text_mA6DE5CB2647A21E577B963708DC3D0DA4DBFE7D8(L_46, NULL);
-				String_t* L_48;
-				L_48 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral2BDFBBCD12534878552D4AB5334A61B70A0C47CD, L_47, NULL);
-				il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-				Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_48, NULL);
+				GeocodingResponse_t38CBD1C2B935A3BAB29E994C84DD226A4AB01A94* L_48;
+				L_48 = GeocodingResponse_Parse_m04E5CACB7F2EC0248D760F21CA2E98ED39F1CA6F(L_47, NULL);
+				NullCheck(L_44);
+				L_44->___queryLocalResult_3 = L_48;
+				Il2CppCodeGenWriteBarrier((void**)(&L_44->___queryLocalResult_3), (void*)L_48);
 			}
 
-IL_018d_1:
-			{
-				// queryLocalResult = GeocodingResponse.Parse(req.downloadHandler.text);
-				MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_49 = V_2;
-				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_50 = __this->___U3CreqU3E5__2_5;
-				NullCheck(L_50);
-				DownloadHandler_t1B56C7D3F65D97A1E4B566A14A1E783EA8AE4EBB* L_51;
-				L_51 = UnityWebRequest_get_downloadHandler_m1AA91B23D9D594A4F4FE2975FC356C508528F1D5(L_50, NULL);
-				NullCheck(L_51);
-				String_t* L_52;
-				L_52 = DownloadHandler_get_text_mA6DE5CB2647A21E577B963708DC3D0DA4DBFE7D8(L_51, NULL);
-				GeocodingResponse_t38CBD1C2B935A3BAB29E994C84DD226A4AB01A94* L_53;
-				L_53 = GeocodingResponse_Parse_m04E5CACB7F2EC0248D760F21CA2E98ED39F1CA6F(L_52, NULL);
-				NullCheck(L_49);
-				L_49->___queryLocalResult_2 = L_53;
-				Il2CppCodeGenWriteBarrier((void**)(&L_49->___queryLocalResult_2), (void*)L_53);
-			}
-
-IL_01a8_1:
+IL_0179_1:
 			{
 				// }
-				U3CQueryLocalU3Ed__11_U3CU3Em__Finally1_m2843AAF411633FB122797DFE5F0FF3245F587F5D(__this, NULL);
+				U3CQueryLocalU3Ed__12_U3CU3Em__Finally1_mA649CB8D23C723ECF0A27BA0104BFE1CAF419CF3(__this, NULL);
 				__this->___U3CreqU3E5__2_5 = (UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F*)NULL;
 				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CreqU3E5__2_5), (void*)(UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F*)NULL);
 				// }
 				V_0 = (bool)0;
-				goto IL_01c0;
+				goto IL_0191;
 			}
 		}// end try (depth: 1)
 		catch(Il2CppExceptionWrapper& e)
@@ -15349,14 +15579,14 @@ IL_01a8_1:
 		}
 	}
 
-IL_01c0:
+IL_0191:
 	{
-		bool L_54 = V_0;
-		return L_54;
+		bool L_49 = V_0;
+		return L_49;
 	}
 }
-// System.Void ARLocation.MapboxRoutes.MapboxApi/<QueryLocal>d__11::<>m__Finally1()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CQueryLocalU3Ed__11_U3CU3Em__Finally1_m2843AAF411633FB122797DFE5F0FF3245F587F5D (U3CQueryLocalU3Ed__11_tDB1D84B03F14F45C335681F43025B03C19020DD2* __this, const RuntimeMethod* method) 
+// System.Void ARLocation.MapboxRoutes.MapboxApi/<QueryLocal>d__12::<>m__Finally1()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CQueryLocalU3Ed__12_U3CU3Em__Finally1_mA649CB8D23C723ECF0A27BA0104BFE1CAF419CF3 (U3CQueryLocalU3Ed__12_tAFA45400DC21622ACA662B3C53304A4FABE5468B* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -15383,26 +15613,26 @@ IL_001a:
 		return;
 	}
 }
-// System.Object ARLocation.MapboxRoutes.MapboxApi/<QueryLocal>d__11::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CQueryLocalU3Ed__11_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m2B7F183F7880ED6A110C38F457D306FD5D2C9F4C (U3CQueryLocalU3Ed__11_tDB1D84B03F14F45C335681F43025B03C19020DD2* __this, const RuntimeMethod* method) 
+// System.Object ARLocation.MapboxRoutes.MapboxApi/<QueryLocal>d__12::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CQueryLocalU3Ed__12_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m5D7A3EC852DD1B294A19678A3041A83F3E90FA25 (U3CQueryLocalU3Ed__12_tAFA45400DC21622ACA662B3C53304A4FABE5468B* __this, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = __this->___U3CU3E2__current_1;
 		return L_0;
 	}
 }
-// System.Void ARLocation.MapboxRoutes.MapboxApi/<QueryLocal>d__11::System.Collections.IEnumerator.Reset()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CQueryLocalU3Ed__11_System_Collections_IEnumerator_Reset_mBD3D0597C2B8ED115B5C01BDD3E60F0CA4289C30 (U3CQueryLocalU3Ed__11_tDB1D84B03F14F45C335681F43025B03C19020DD2* __this, const RuntimeMethod* method) 
+// System.Void ARLocation.MapboxRoutes.MapboxApi/<QueryLocal>d__12::System.Collections.IEnumerator.Reset()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CQueryLocalU3Ed__12_System_Collections_IEnumerator_Reset_mF9885573B13EB6E0C775073A2402E361007BC58D (U3CQueryLocalU3Ed__12_tAFA45400DC21622ACA662B3C53304A4FABE5468B* __this, const RuntimeMethod* method) 
 {
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
 		NullCheck(L_0);
 		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CQueryLocalU3Ed__11_System_Collections_IEnumerator_Reset_mBD3D0597C2B8ED115B5C01BDD3E60F0CA4289C30_RuntimeMethod_var)));
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CQueryLocalU3Ed__12_System_Collections_IEnumerator_Reset_mF9885573B13EB6E0C775073A2402E361007BC58D_RuntimeMethod_var)));
 	}
 }
-// System.Object ARLocation.MapboxRoutes.MapboxApi/<QueryLocal>d__11::System.Collections.IEnumerator.get_Current()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CQueryLocalU3Ed__11_System_Collections_IEnumerator_get_Current_m6F6DE7D4202CDA3990C765977CC637FE4D2F3214 (U3CQueryLocalU3Ed__11_tDB1D84B03F14F45C335681F43025B03C19020DD2* __this, const RuntimeMethod* method) 
+// System.Object ARLocation.MapboxRoutes.MapboxApi/<QueryLocal>d__12::System.Collections.IEnumerator.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CQueryLocalU3Ed__12_System_Collections_IEnumerator_get_Current_m8D0DBEBABC4DFF09FCAE121C716370573B0E7EF0 (U3CQueryLocalU3Ed__12_tAFA45400DC21622ACA662B3C53304A4FABE5468B* __this, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = __this->___U3CU3E2__current_1;
@@ -15417,8 +15647,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CQueryLocalU3Ed__11_System_C
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void ARLocation.MapboxRoutes.MapboxApi/<QueryRoute>d__12::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CQueryRouteU3Ed__12__ctor_m497C96DA4F87EBC53BB0A548CCE422482481E49B (U3CQueryRouteU3Ed__12_t5262E1C53F11854155D6311DC9A276AA336EDE8D* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) 
+// System.Void ARLocation.MapboxRoutes.MapboxApi/<QueryRoute>d__15::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CQueryRouteU3Ed__15__ctor_mDAE0FCD5E3F51890FB97D00CC9860E0EDFED313E (U3CQueryRouteU3Ed__15_t5F57AFB071C44F0A90A54F9E72CCDF6C7649FA48* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
@@ -15427,8 +15657,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CQueryRouteU3Ed__12__ctor_m497C96DA4F8
 		return;
 	}
 }
-// System.Void ARLocation.MapboxRoutes.MapboxApi/<QueryRoute>d__12::System.IDisposable.Dispose()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CQueryRouteU3Ed__12_System_IDisposable_Dispose_mC9C022BAF0E8B334113A4EEB9667E76ED681869C (U3CQueryRouteU3Ed__12_t5262E1C53F11854155D6311DC9A276AA336EDE8D* __this, const RuntimeMethod* method) 
+// System.Void ARLocation.MapboxRoutes.MapboxApi/<QueryRoute>d__15::System.IDisposable.Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CQueryRouteU3Ed__15_System_IDisposable_Dispose_mBDDB069EB7C869621DB2B4DC20A1612CC5FF9398 (U3CQueryRouteU3Ed__15_t5F57AFB071C44F0A90A54F9E72CCDF6C7649FA48* __this, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
 	{
@@ -15457,7 +15687,7 @@ IL_0010:
 
 FINALLY_0013:
 			{// begin finally (depth: 1)
-				U3CQueryRouteU3Ed__12_U3CU3Em__Finally1_mB0F512E0B5DFF9573CB2E398D9B55DAD836AAC8B(__this, NULL);
+				U3CQueryRouteU3Ed__15_U3CU3Em__Finally1_m53FA1D338BE53C0A17081A13B31BFDE75FBCCDD8(__this, NULL);
 				return;
 			}// end finally (depth: 1)
 		});
@@ -15476,53 +15706,38 @@ IL_001a:
 		return;
 	}
 }
-// System.Boolean ARLocation.MapboxRoutes.MapboxApi/<QueryRoute>d__12::MoveNext()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CQueryRouteU3Ed__12_MoveNext_mD01712280531E83592AF63A85E283E6AFEA62A8D (U3CQueryRouteU3Ed__12_t5262E1C53F11854155D6311DC9A276AA336EDE8D* __this, const RuntimeMethod* method) 
+// System.Boolean ARLocation.MapboxRoutes.MapboxApi/<QueryRoute>d__15::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CQueryRouteU3Ed__15_MoveNext_mEB423A18C59413532C5C8E82C3E1B1683F1A6D95 (U3CQueryRouteU3Ed__15_t5F57AFB071C44F0A90A54F9E72CCDF6C7649FA48* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral00E97652D3A46FC997123D6056BFC365BB73EE1E);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral097FDC18F6265549C8389FA2BE70BC43C8B9B2D9);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral0D0A37E59BDF2414A9ECD7DBFF25A9D5A5C5D106);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral24DFF757FD67718D3CAA7D74AF6F77C453D82A78);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral403DFD38F660ED0992488A2262C792CE8C795FE0);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral779F98CF777D83149159FE6BDA4EB61DF1482EB6);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral77D38C0623F92B292B925F6E72CF5CF99A20D4EB);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral88695231602FA59886B08E3360F22ECCA0667765);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9C5B45F4874B9A04E5311E75261EB10FF33DE525);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAF3E8553F5D91341D050C182F71DA3B838C530EC);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB7C45DD316C68ABF3429C20058C2981C652192F2);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC05349192A0818B86B59ED3E8E0B1B32915F3CE8);
 		s_Il2CppMethodInitialized = true;
 	}
 	bool V_0 = false;
 	int32_t V_1 = 0;
 	MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* V_2 = NULL;
 	String_t* V_3 = NULL;
-	String_t* V_4 = NULL;
-	String_t* V_5 = NULL;
-	String_t* V_6 = NULL;
-	String_t* V_7 = NULL;
-	String_t* V_8 = NULL;
-	int64_t V_9 = 0;
-	String_t* G_B6_0 = NULL;
-	RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212* G_B20_0 = NULL;
-	String_t* G_B20_1 = NULL;
-	RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212* G_B19_0 = NULL;
-	String_t* G_B19_1 = NULL;
-	String_t* G_B21_0 = NULL;
-	String_t* G_B21_1 = NULL;
+	int64_t V_4 = 0;
+	RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212* G_B15_0 = NULL;
+	String_t* G_B15_1 = NULL;
+	RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212* G_B14_0 = NULL;
+	String_t* G_B14_1 = NULL;
+	String_t* G_B16_0 = NULL;
+	String_t* G_B16_1 = NULL;
 	{
 		auto __finallyBlock = il2cpp::utils::Fault([&]
 		{
 
-FAULT_0271:
+FAULT_01ad:
 			{// begin fault (depth: 1)
-				U3CQueryRouteU3Ed__12_System_IDisposable_Dispose_mC9C022BAF0E8B334113A4EEB9667E76ED681869C(__this, NULL);
+				U3CQueryRouteU3Ed__15_System_IDisposable_Dispose_mBDDB069EB7C869621DB2B4DC20A1612CC5FF9398(__this, NULL);
 				return;
 			}// end fault
 		});
@@ -15531,7 +15746,7 @@ FAULT_0271:
 			{
 				int32_t L_0 = __this->___U3CU3E1__state_0;
 				V_1 = L_0;
-				MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_1 = __this->___U3CU3E4__this_5;
+				MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_1 = __this->___U3CU3E4__this_2;
 				V_2 = L_1;
 				int32_t L_2 = V_1;
 				if (!L_2)
@@ -15543,367 +15758,246 @@ FAULT_0271:
 				int32_t L_3 = V_1;
 				if ((((int32_t)L_3) == ((int32_t)1)))
 				{
-					goto IL_0154_1;
+					goto IL_0098_1;
 				}
 			}
 			{
 				V_0 = (bool)0;
-				goto IL_0278;
+				goto IL_01b4;
 			}
 
 IL_001f_1:
 			{
 				__this->___U3CU3E1__state_0 = (-1);
-				// string alt = alternatives ? "true" : "false";
-				bool L_4 = __this->___alternatives_2;
-				if (L_4)
-				{
-					goto IL_0035_1;
-				}
-			}
-			{
-				G_B6_0 = _stringLiteral77D38C0623F92B292B925F6E72CF5CF99A20D4EB;
-				goto IL_003a_1;
-			}
-
-IL_0035_1:
-			{
-				G_B6_0 = _stringLiteralB7C45DD316C68ABF3429C20058C2981C652192F2;
-			}
-
-IL_003a_1:
-			{
-				V_3 = G_B6_0;
-				// var fromLat = from.Latitude.ToString(CultureInfo.InvariantCulture);
+				// var url = buildQueryRouteUrl(from, to, alternatives);
+				MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_4 = V_2;
 				Location_t9E7AB293D59F64A92A93EF884B4C0120DBE40E39* L_5 = __this->___from_3;
-				NullCheck(L_5);
-				double* L_6 = (&L_5->___Latitude_0);
-				il2cpp_codegen_runtime_class_init_inline(CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_il2cpp_TypeInfo_var);
-				CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* L_7;
-				L_7 = CultureInfo_get_InvariantCulture_mD1E96DC845E34B10F78CB744B0CB5D7D63CEB1E6(NULL);
+				Location_t9E7AB293D59F64A92A93EF884B4C0120DBE40E39* L_6 = __this->___to_4;
+				bool L_7 = __this->___alternatives_5;
+				NullCheck(L_4);
 				String_t* L_8;
-				L_8 = Double_ToString_m4318830D9F771852FDCF21C14CF9E8ABC7E77357(L_6, L_7, NULL);
-				V_4 = L_8;
-				// var fromLon = from.Longitude.ToString(CultureInfo.InvariantCulture);
-				Location_t9E7AB293D59F64A92A93EF884B4C0120DBE40E39* L_9 = __this->___from_3;
-				NullCheck(L_9);
-				double* L_10 = (&L_9->___Longitude_1);
-				CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* L_11;
-				L_11 = CultureInfo_get_InvariantCulture_mD1E96DC845E34B10F78CB744B0CB5D7D63CEB1E6(NULL);
-				String_t* L_12;
-				L_12 = Double_ToString_m4318830D9F771852FDCF21C14CF9E8ABC7E77357(L_10, L_11, NULL);
-				V_5 = L_12;
-				// var toLat = to.Latitude.ToString(CultureInfo.InvariantCulture);
-				Location_t9E7AB293D59F64A92A93EF884B4C0120DBE40E39* L_13 = __this->___to_4;
-				NullCheck(L_13);
-				double* L_14 = (&L_13->___Latitude_0);
-				CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* L_15;
-				L_15 = CultureInfo_get_InvariantCulture_mD1E96DC845E34B10F78CB744B0CB5D7D63CEB1E6(NULL);
-				String_t* L_16;
-				L_16 = Double_ToString_m4318830D9F771852FDCF21C14CF9E8ABC7E77357(L_14, L_15, NULL);
-				V_6 = L_16;
-				// var toLon = to.Longitude.ToString(CultureInfo.InvariantCulture);
-				Location_t9E7AB293D59F64A92A93EF884B4C0120DBE40E39* L_17 = __this->___to_4;
-				NullCheck(L_17);
-				double* L_18 = (&L_17->___Longitude_1);
-				CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* L_19;
-				L_19 = CultureInfo_get_InvariantCulture_mD1E96DC845E34B10F78CB744B0CB5D7D63CEB1E6(NULL);
-				String_t* L_20;
-				L_20 = Double_ToString_m4318830D9F771852FDCF21C14CF9E8ABC7E77357(L_18, L_19, NULL);
-				V_7 = L_20;
-				// string url = $"https://api.mapbox.com/directions/v5/mapbox/walking/{fromLon}%2C{fromLat}%3B{toLon}%2C{toLat}?alternatives={alt}&geometries=geojson&steps=true&access_token={AccessToken}";
-				StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_21 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)((int32_t)12));
-				StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_22 = L_21;
-				NullCheck(L_22);
-				ArrayElementTypeCheck (L_22, _stringLiteralAF3E8553F5D91341D050C182F71DA3B838C530EC);
-				(L_22)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteralAF3E8553F5D91341D050C182F71DA3B838C530EC);
-				StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_23 = L_22;
-				String_t* L_24 = V_5;
-				NullCheck(L_23);
-				ArrayElementTypeCheck (L_23, L_24);
-				(L_23)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)L_24);
-				StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_25 = L_23;
-				NullCheck(L_25);
-				ArrayElementTypeCheck (L_25, _stringLiteral24DFF757FD67718D3CAA7D74AF6F77C453D82A78);
-				(L_25)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)_stringLiteral24DFF757FD67718D3CAA7D74AF6F77C453D82A78);
-				StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_26 = L_25;
-				String_t* L_27 = V_4;
-				NullCheck(L_26);
-				ArrayElementTypeCheck (L_26, L_27);
-				(L_26)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)L_27);
-				StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_28 = L_26;
-				NullCheck(L_28);
-				ArrayElementTypeCheck (L_28, _stringLiteral403DFD38F660ED0992488A2262C792CE8C795FE0);
-				(L_28)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)_stringLiteral403DFD38F660ED0992488A2262C792CE8C795FE0);
-				StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_29 = L_28;
-				String_t* L_30 = V_7;
-				NullCheck(L_29);
-				ArrayElementTypeCheck (L_29, L_30);
-				(L_29)->SetAt(static_cast<il2cpp_array_size_t>(5), (String_t*)L_30);
-				StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_31 = L_29;
-				NullCheck(L_31);
-				ArrayElementTypeCheck (L_31, _stringLiteral24DFF757FD67718D3CAA7D74AF6F77C453D82A78);
-				(L_31)->SetAt(static_cast<il2cpp_array_size_t>(6), (String_t*)_stringLiteral24DFF757FD67718D3CAA7D74AF6F77C453D82A78);
-				StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_32 = L_31;
-				String_t* L_33 = V_6;
-				NullCheck(L_32);
-				ArrayElementTypeCheck (L_32, L_33);
-				(L_32)->SetAt(static_cast<il2cpp_array_size_t>(7), (String_t*)L_33);
-				StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_34 = L_32;
-				NullCheck(L_34);
-				ArrayElementTypeCheck (L_34, _stringLiteralC05349192A0818B86B59ED3E8E0B1B32915F3CE8);
-				(L_34)->SetAt(static_cast<il2cpp_array_size_t>(8), (String_t*)_stringLiteralC05349192A0818B86B59ED3E8E0B1B32915F3CE8);
-				StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_35 = L_34;
-				String_t* L_36 = V_3;
-				NullCheck(L_35);
-				ArrayElementTypeCheck (L_35, L_36);
-				(L_35)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)9)), (String_t*)L_36);
-				StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_37 = L_35;
-				NullCheck(L_37);
-				ArrayElementTypeCheck (L_37, _stringLiteral779F98CF777D83149159FE6BDA4EB61DF1482EB6);
-				(L_37)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)10)), (String_t*)_stringLiteral779F98CF777D83149159FE6BDA4EB61DF1482EB6);
-				StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_38 = L_37;
-				MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_39 = V_2;
-				NullCheck(L_39);
-				String_t* L_40 = L_39->___AccessToken_0;
-				NullCheck(L_38);
-				ArrayElementTypeCheck (L_38, L_40);
-				(L_38)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)11)), (String_t*)L_40);
-				String_t* L_41;
-				L_41 = String_Concat_m647EBF831F54B6DF7D5AFA5FD012CF4EE7571B6A(L_38, NULL);
-				V_8 = L_41;
+				L_8 = MapboxApi_buildQueryRouteUrl_m57B953961E78292AED34A5EE9C19D48D2CFCF456(L_4, L_5, L_6, L_7, NULL);
+				V_3 = L_8;
 				// errorMessage = null;
-				MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_42 = V_2;
-				NullCheck(L_42);
-				L_42->___errorMessage_3 = (String_t*)NULL;
-				Il2CppCodeGenWriteBarrier((void**)(&L_42->___errorMessage_3), (void*)(String_t*)NULL);
+				MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_9 = V_2;
+				NullCheck(L_9);
+				L_9->___errorMessage_4 = (String_t*)NULL;
+				Il2CppCodeGenWriteBarrier((void**)(&L_9->___errorMessage_4), (void*)(String_t*)NULL);
 				// queryRouteResult = null;
-				MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_43 = V_2;
-				NullCheck(L_43);
-				L_43->___queryRouteResult_1 = (RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212*)NULL;
-				Il2CppCodeGenWriteBarrier((void**)(&L_43->___queryRouteResult_1), (void*)(RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212*)NULL);
+				MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_10 = V_2;
+				NullCheck(L_10);
+				L_10->___queryRouteResult_2 = (RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212*)NULL;
+				Il2CppCodeGenWriteBarrier((void**)(&L_10->___queryRouteResult_2), (void*)(RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212*)NULL);
 				// if (verbose)
-				bool L_44 = __this->___verbose_6;
-				if (!L_44)
+				bool L_11 = __this->___verbose_6;
+				if (!L_11)
 				{
-					goto IL_0120_1;
+					goto IL_0065_1;
 				}
 			}
 			{
 				// Debug.Log($"[MapboxApi#QueryRoute]: {url}");
-				String_t* L_45 = V_8;
-				String_t* L_46;
-				L_46 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral88695231602FA59886B08E3360F22ECCA0667765, L_45, NULL);
+				String_t* L_12 = V_3;
+				String_t* L_13;
+				L_13 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral88695231602FA59886B08E3360F22ECCA0667765, L_12, NULL);
 				il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-				Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_46, NULL);
+				Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_13, NULL);
 			}
 
-IL_0120_1:
+IL_0065_1:
 			{
 				// using (var req = UnityWebRequest.Get(url))
-				String_t* L_47 = V_8;
-				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_48;
-				L_48 = UnityWebRequest_Get_m1A332EE069BB5052368307F254A5A7627BB5FD86(L_47, NULL);
-				__this->___U3CreqU3E5__2_7 = L_48;
-				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CreqU3E5__2_7), (void*)L_48);
+				String_t* L_14 = V_3;
+				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_15;
+				L_15 = UnityWebRequest_Get_m1A332EE069BB5052368307F254A5A7627BB5FD86(L_14, NULL);
+				__this->___U3CreqU3E5__2_7 = L_15;
+				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CreqU3E5__2_7), (void*)L_15);
 				__this->___U3CU3E1__state_0 = ((int32_t)-3);
 				// yield return req.SendWebRequest();
-				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_49 = __this->___U3CreqU3E5__2_7;
-				NullCheck(L_49);
-				UnityWebRequestAsyncOperation_t14BE94558FF3A2CFC2EFBE2511A3A88252042B8C* L_50;
-				L_50 = UnityWebRequest_SendWebRequest_mA3CD13983BAA5074A0640EDD661B1E46E6DB6C13(L_49, NULL);
-				__this->___U3CU3E2__current_1 = L_50;
-				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_50);
+				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_16 = __this->___U3CreqU3E5__2_7;
+				NullCheck(L_16);
+				UnityWebRequestAsyncOperation_t14BE94558FF3A2CFC2EFBE2511A3A88252042B8C* L_17;
+				L_17 = UnityWebRequest_SendWebRequest_mA3CD13983BAA5074A0640EDD661B1E46E6DB6C13(L_16, NULL);
+				__this->___U3CU3E2__current_1 = L_17;
+				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_17);
 				__this->___U3CU3E1__state_0 = 1;
 				V_0 = (bool)1;
-				goto IL_0278;
+				goto IL_01b4;
 			}
 
-IL_0154_1:
+IL_0098_1:
 			{
 				__this->___U3CU3E1__state_0 = ((int32_t)-3);
 				// if (Utils.Misc.WebRequestResultIsError(req))
-				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_51 = __this->___U3CreqU3E5__2_7;
-				bool L_52;
-				L_52 = Misc_WebRequestResultIsError_mF0E2999514B0FF1DA4283C597D3B86D8B199E191(L_51, NULL);
-				if (!L_52)
+				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_18 = __this->___U3CreqU3E5__2_7;
+				bool L_19;
+				L_19 = Misc_WebRequestResultIsError_mF0E2999514B0FF1DA4283C597D3B86D8B199E191(L_18, NULL);
+				if (!L_19)
 				{
-					goto IL_01a1_1;
-				}
-			}
-			{
-				// if (verbose)
-				bool L_53 = __this->___verbose_6;
-				if (!L_53)
-				{
-					goto IL_018b_1;
+					goto IL_00dd_1;
 				}
 			}
 			{
 				// Debug.LogError("[MapboxApi#QueryRoute]: Error -> " + req.error);
-				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_54 = __this->___U3CreqU3E5__2_7;
-				NullCheck(L_54);
-				String_t* L_55;
-				L_55 = UnityWebRequest_get_error_m20A5D813ED59118B7AA1D1E2EB5250178B1F5B6F(L_54, NULL);
-				String_t* L_56;
-				L_56 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral9C5B45F4874B9A04E5311E75261EB10FF33DE525, L_55, NULL);
+				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_20 = __this->___U3CreqU3E5__2_7;
+				NullCheck(L_20);
+				String_t* L_21;
+				L_21 = UnityWebRequest_get_error_m20A5D813ED59118B7AA1D1E2EB5250178B1F5B6F(L_20, NULL);
+				String_t* L_22;
+				L_22 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral9C5B45F4874B9A04E5311E75261EB10FF33DE525, L_21, NULL);
 				il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-				Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(L_56, NULL);
-			}
-
-IL_018b_1:
-			{
+				Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(L_22, NULL);
 				// errorMessage = req.error;
-				MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_57 = V_2;
-				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_58 = __this->___U3CreqU3E5__2_7;
-				NullCheck(L_58);
-				String_t* L_59;
-				L_59 = UnityWebRequest_get_error_m20A5D813ED59118B7AA1D1E2EB5250178B1F5B6F(L_58, NULL);
-				NullCheck(L_57);
-				L_57->___errorMessage_3 = L_59;
-				Il2CppCodeGenWriteBarrier((void**)(&L_57->___errorMessage_3), (void*)L_59);
-				goto IL_0260_1;
+				MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_23 = V_2;
+				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_24 = __this->___U3CreqU3E5__2_7;
+				NullCheck(L_24);
+				String_t* L_25;
+				L_25 = UnityWebRequest_get_error_m20A5D813ED59118B7AA1D1E2EB5250178B1F5B6F(L_24, NULL);
+				NullCheck(L_23);
+				L_23->___errorMessage_4 = L_25;
+				Il2CppCodeGenWriteBarrier((void**)(&L_23->___errorMessage_4), (void*)L_25);
+				goto IL_019c_1;
 			}
 
-IL_01a1_1:
+IL_00dd_1:
 			{
 				// if (verbose)
-				bool L_60 = __this->___verbose_6;
-				if (!L_60)
+				bool L_26 = __this->___verbose_6;
+				if (!L_26)
 				{
-					goto IL_01eb_1;
+					goto IL_0127_1;
 				}
 			}
 			{
 				// Debug.Log("[MapboxApi#QueryRoute]: Success -> " + req.downloadHandler.text);
-				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_61 = __this->___U3CreqU3E5__2_7;
-				NullCheck(L_61);
-				DownloadHandler_t1B56C7D3F65D97A1E4B566A14A1E783EA8AE4EBB* L_62;
-				L_62 = UnityWebRequest_get_downloadHandler_m1AA91B23D9D594A4F4FE2975FC356C508528F1D5(L_61, NULL);
-				NullCheck(L_62);
-				String_t* L_63;
-				L_63 = DownloadHandler_get_text_mA6DE5CB2647A21E577B963708DC3D0DA4DBFE7D8(L_62, NULL);
-				String_t* L_64;
-				L_64 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral00E97652D3A46FC997123D6056BFC365BB73EE1E, L_63, NULL);
+				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_27 = __this->___U3CreqU3E5__2_7;
+				NullCheck(L_27);
+				DownloadHandler_t1B56C7D3F65D97A1E4B566A14A1E783EA8AE4EBB* L_28;
+				L_28 = UnityWebRequest_get_downloadHandler_m1AA91B23D9D594A4F4FE2975FC356C508528F1D5(L_27, NULL);
+				NullCheck(L_28);
+				String_t* L_29;
+				L_29 = DownloadHandler_get_text_mA6DE5CB2647A21E577B963708DC3D0DA4DBFE7D8(L_28, NULL);
+				String_t* L_30;
+				L_30 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral00E97652D3A46FC997123D6056BFC365BB73EE1E, L_29, NULL);
 				il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-				Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_64, NULL);
+				Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_30, NULL);
 				// Debug.Log("[MapboxApi#QueryRoute]: Success -> " + req.responseCode);
-				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_65 = __this->___U3CreqU3E5__2_7;
-				NullCheck(L_65);
-				int64_t L_66;
-				L_66 = UnityWebRequest_get_responseCode_m012C177F61435D5D120A21D7A03FFF7B0F8B904B(L_65, NULL);
-				V_9 = L_66;
-				String_t* L_67;
-				L_67 = Int64_ToString_m284E4E55662818E38654309A41C2B07CD436F36B((&V_9), NULL);
-				String_t* L_68;
-				L_68 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral00E97652D3A46FC997123D6056BFC365BB73EE1E, L_67, NULL);
-				Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_68, NULL);
+				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_31 = __this->___U3CreqU3E5__2_7;
+				NullCheck(L_31);
+				int64_t L_32;
+				L_32 = UnityWebRequest_get_responseCode_m012C177F61435D5D120A21D7A03FFF7B0F8B904B(L_31, NULL);
+				V_4 = L_32;
+				String_t* L_33;
+				L_33 = Int64_ToString_m284E4E55662818E38654309A41C2B07CD436F36B((&V_4), NULL);
+				String_t* L_34;
+				L_34 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral00E97652D3A46FC997123D6056BFC365BB73EE1E, L_33, NULL);
+				Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_34, NULL);
 			}
 
-IL_01eb_1:
+IL_0127_1:
 			{
 				// queryRouteResult = RouteResponse.Parse(req.downloadHandler.text);
-				MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_69 = V_2;
-				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_70 = __this->___U3CreqU3E5__2_7;
-				NullCheck(L_70);
-				DownloadHandler_t1B56C7D3F65D97A1E4B566A14A1E783EA8AE4EBB* L_71;
-				L_71 = UnityWebRequest_get_downloadHandler_m1AA91B23D9D594A4F4FE2975FC356C508528F1D5(L_70, NULL);
-				NullCheck(L_71);
-				String_t* L_72;
-				L_72 = DownloadHandler_get_text_mA6DE5CB2647A21E577B963708DC3D0DA4DBFE7D8(L_71, NULL);
-				RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212* L_73;
-				L_73 = RouteResponse_Parse_m6AD9CFE29C2697ED1AB9307CD716BFE0FF5F1850(L_72, NULL);
-				NullCheck(L_69);
-				L_69->___queryRouteResult_1 = L_73;
-				Il2CppCodeGenWriteBarrier((void**)(&L_69->___queryRouteResult_1), (void*)L_73);
+				MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_35 = V_2;
+				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_36 = __this->___U3CreqU3E5__2_7;
+				NullCheck(L_36);
+				DownloadHandler_t1B56C7D3F65D97A1E4B566A14A1E783EA8AE4EBB* L_37;
+				L_37 = UnityWebRequest_get_downloadHandler_m1AA91B23D9D594A4F4FE2975FC356C508528F1D5(L_36, NULL);
+				NullCheck(L_37);
+				String_t* L_38;
+				L_38 = DownloadHandler_get_text_mA6DE5CB2647A21E577B963708DC3D0DA4DBFE7D8(L_37, NULL);
+				RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212* L_39;
+				L_39 = RouteResponse_Parse_m6AD9CFE29C2697ED1AB9307CD716BFE0FF5F1850(L_38, NULL);
+				NullCheck(L_35);
+				L_35->___queryRouteResult_2 = L_39;
+				Il2CppCodeGenWriteBarrier((void**)(&L_35->___queryRouteResult_2), (void*)L_39);
 				// if (queryRouteResult.Code != "Ok")
-				MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_74 = V_2;
-				NullCheck(L_74);
-				RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212* L_75 = L_74->___queryRouteResult_1;
-				NullCheck(L_75);
-				String_t* L_76 = L_75->___Code_0;
-				bool L_77;
-				L_77 = String_op_Inequality_m8C940F3CFC42866709D7CA931B3D77B4BE94BCB6(L_76, _stringLiteral097FDC18F6265549C8389FA2BE70BC43C8B9B2D9, NULL);
-				if (!L_77)
+				MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_40 = V_2;
+				NullCheck(L_40);
+				RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212* L_41 = L_40->___queryRouteResult_2;
+				NullCheck(L_41);
+				String_t* L_42 = L_41->___Code_0;
+				bool L_43;
+				L_43 = String_op_Inequality_m8C940F3CFC42866709D7CA931B3D77B4BE94BCB6(L_42, _stringLiteral097FDC18F6265549C8389FA2BE70BC43C8B9B2D9, NULL);
+				if (!L_43)
 				{
-					goto IL_0237_1;
+					goto IL_0173_1;
 				}
 			}
 			{
 				// errorMessage = queryRouteResult.Code;
-				MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_78 = V_2;
-				MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_79 = V_2;
-				NullCheck(L_79);
-				RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212* L_80 = L_79->___queryRouteResult_1;
-				NullCheck(L_80);
-				String_t* L_81 = L_80->___Code_0;
-				NullCheck(L_78);
-				L_78->___errorMessage_3 = L_81;
-				Il2CppCodeGenWriteBarrier((void**)(&L_78->___errorMessage_3), (void*)L_81);
+				MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_44 = V_2;
+				MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_45 = V_2;
+				NullCheck(L_45);
+				RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212* L_46 = L_45->___queryRouteResult_2;
+				NullCheck(L_46);
+				String_t* L_47 = L_46->___Code_0;
+				NullCheck(L_44);
+				L_44->___errorMessage_4 = L_47;
+				Il2CppCodeGenWriteBarrier((void**)(&L_44->___errorMessage_4), (void*)L_47);
 				// queryRouteResult = null;
-				MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_82 = V_2;
-				NullCheck(L_82);
-				L_82->___queryRouteResult_1 = (RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212*)NULL;
-				Il2CppCodeGenWriteBarrier((void**)(&L_82->___queryRouteResult_1), (void*)(RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212*)NULL);
-				goto IL_0260_1;
+				MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_48 = V_2;
+				NullCheck(L_48);
+				L_48->___queryRouteResult_2 = (RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212*)NULL;
+				Il2CppCodeGenWriteBarrier((void**)(&L_48->___queryRouteResult_2), (void*)(RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212*)NULL);
+				goto IL_019c_1;
 			}
 
-IL_0237_1:
+IL_0173_1:
 			{
 				// if (verbose)
-				bool L_83 = __this->___verbose_6;
-				if (!L_83)
+				bool L_49 = __this->___verbose_6;
+				if (!L_49)
 				{
-					goto IL_0260_1;
+					goto IL_019c_1;
 				}
 			}
 			{
 				// Debug.Log("[MapboxApi#QueryRoute]: Parsed result -> " + queryRouteResult);
-				MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_84 = V_2;
-				NullCheck(L_84);
-				RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212* L_85 = L_84->___queryRouteResult_1;
-				RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212* L_86 = L_85;
-				G_B19_0 = L_86;
-				G_B19_1 = _stringLiteral0D0A37E59BDF2414A9ECD7DBFF25A9D5A5C5D106;
-				if (L_86)
+				MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_50 = V_2;
+				NullCheck(L_50);
+				RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212* L_51 = L_50->___queryRouteResult_2;
+				RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212* L_52 = L_51;
+				G_B14_0 = L_52;
+				G_B14_1 = _stringLiteral0D0A37E59BDF2414A9ECD7DBFF25A9D5A5C5D106;
+				if (L_52)
 				{
-					G_B20_0 = L_86;
-					G_B20_1 = _stringLiteral0D0A37E59BDF2414A9ECD7DBFF25A9D5A5C5D106;
-					goto IL_0251_1;
+					G_B15_0 = L_52;
+					G_B15_1 = _stringLiteral0D0A37E59BDF2414A9ECD7DBFF25A9D5A5C5D106;
+					goto IL_018d_1;
 				}
 			}
 			{
-				G_B21_0 = ((String_t*)(NULL));
-				G_B21_1 = G_B19_1;
-				goto IL_0256_1;
+				G_B16_0 = ((String_t*)(NULL));
+				G_B16_1 = G_B14_1;
+				goto IL_0192_1;
 			}
 
-IL_0251_1:
+IL_018d_1:
 			{
-				NullCheck(G_B20_0);
-				String_t* L_87;
-				L_87 = VirtualFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, G_B20_0);
-				G_B21_0 = L_87;
-				G_B21_1 = G_B20_1;
+				NullCheck(G_B15_0);
+				String_t* L_53;
+				L_53 = VirtualFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, G_B15_0);
+				G_B16_0 = L_53;
+				G_B16_1 = G_B15_1;
 			}
 
-IL_0256_1:
+IL_0192_1:
 			{
-				String_t* L_88;
-				L_88 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(G_B21_1, G_B21_0, NULL);
+				String_t* L_54;
+				L_54 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(G_B16_1, G_B16_0, NULL);
 				il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-				Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_88, NULL);
+				Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_54, NULL);
 			}
 
-IL_0260_1:
+IL_019c_1:
 			{
 				// }
-				U3CQueryRouteU3Ed__12_U3CU3Em__Finally1_mB0F512E0B5DFF9573CB2E398D9B55DAD836AAC8B(__this, NULL);
+				U3CQueryRouteU3Ed__15_U3CU3Em__Finally1_m53FA1D338BE53C0A17081A13B31BFDE75FBCCDD8(__this, NULL);
 				__this->___U3CreqU3E5__2_7 = (UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F*)NULL;
 				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CreqU3E5__2_7), (void*)(UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F*)NULL);
 				// }
 				V_0 = (bool)0;
-				goto IL_0278;
+				goto IL_01b4;
 			}
 		}// end try (depth: 1)
 		catch(Il2CppExceptionWrapper& e)
@@ -15912,14 +16006,14 @@ IL_0260_1:
 		}
 	}
 
-IL_0278:
+IL_01b4:
 	{
-		bool L_89 = V_0;
-		return L_89;
+		bool L_55 = V_0;
+		return L_55;
 	}
 }
-// System.Void ARLocation.MapboxRoutes.MapboxApi/<QueryRoute>d__12::<>m__Finally1()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CQueryRouteU3Ed__12_U3CU3Em__Finally1_mB0F512E0B5DFF9573CB2E398D9B55DAD836AAC8B (U3CQueryRouteU3Ed__12_t5262E1C53F11854155D6311DC9A276AA336EDE8D* __this, const RuntimeMethod* method) 
+// System.Void ARLocation.MapboxRoutes.MapboxApi/<QueryRoute>d__15::<>m__Finally1()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CQueryRouteU3Ed__15_U3CU3Em__Finally1_m53FA1D338BE53C0A17081A13B31BFDE75FBCCDD8 (U3CQueryRouteU3Ed__15_t5F57AFB071C44F0A90A54F9E72CCDF6C7649FA48* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -15946,30 +16040,535 @@ IL_001a:
 		return;
 	}
 }
-// System.Object ARLocation.MapboxRoutes.MapboxApi/<QueryRoute>d__12::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CQueryRouteU3Ed__12_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mDDE08A07E706C7E03B0BB7B4C45EC252CD34283A (U3CQueryRouteU3Ed__12_t5262E1C53F11854155D6311DC9A276AA336EDE8D* __this, const RuntimeMethod* method) 
+// System.Object ARLocation.MapboxRoutes.MapboxApi/<QueryRoute>d__15::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CQueryRouteU3Ed__15_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m6C52143BA71CF037DB597DF191D3813D593E96A4 (U3CQueryRouteU3Ed__15_t5F57AFB071C44F0A90A54F9E72CCDF6C7649FA48* __this, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = __this->___U3CU3E2__current_1;
 		return L_0;
 	}
 }
-// System.Void ARLocation.MapboxRoutes.MapboxApi/<QueryRoute>d__12::System.Collections.IEnumerator.Reset()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CQueryRouteU3Ed__12_System_Collections_IEnumerator_Reset_m40D786EE5F5480509500CF4C37A10A1BB8F4069E (U3CQueryRouteU3Ed__12_t5262E1C53F11854155D6311DC9A276AA336EDE8D* __this, const RuntimeMethod* method) 
+// System.Void ARLocation.MapboxRoutes.MapboxApi/<QueryRoute>d__15::System.Collections.IEnumerator.Reset()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CQueryRouteU3Ed__15_System_Collections_IEnumerator_Reset_m38C751B0AC87A9D4E35FE072DEDC771A16D43BA1 (U3CQueryRouteU3Ed__15_t5F57AFB071C44F0A90A54F9E72CCDF6C7649FA48* __this, const RuntimeMethod* method) 
 {
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
 		NullCheck(L_0);
 		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CQueryRouteU3Ed__12_System_Collections_IEnumerator_Reset_m40D786EE5F5480509500CF4C37A10A1BB8F4069E_RuntimeMethod_var)));
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CQueryRouteU3Ed__15_System_Collections_IEnumerator_Reset_m38C751B0AC87A9D4E35FE072DEDC771A16D43BA1_RuntimeMethod_var)));
 	}
 }
-// System.Object ARLocation.MapboxRoutes.MapboxApi/<QueryRoute>d__12::System.Collections.IEnumerator.get_Current()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CQueryRouteU3Ed__12_System_Collections_IEnumerator_get_Current_mAD7C78F83DF0B27EF731025C6F31851EF5B3CFC4 (U3CQueryRouteU3Ed__12_t5262E1C53F11854155D6311DC9A276AA336EDE8D* __this, const RuntimeMethod* method) 
+// System.Object ARLocation.MapboxRoutes.MapboxApi/<QueryRoute>d__15::System.Collections.IEnumerator.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CQueryRouteU3Ed__15_System_Collections_IEnumerator_get_Current_m91759362FECA2BCEE5CC415EDB30FFB8AC60E67D (U3CQueryRouteU3Ed__15_t5F57AFB071C44F0A90A54F9E72CCDF6C7649FA48* __this, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = __this->___U3CU3E2__current_1;
 		return L_0;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.String ARLocation.MapboxRoutes.MapboxApiLanguageExtensions::GetCode(ARLocation.MapboxRoutes.MapboxApiLanguage)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MapboxApiLanguageExtensions_GetCode_m56BB10ECD1A36FD5C8C413BB89EEFA3FC4327EAC (int32_t ___me0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral09DBABCF47D177922630CF7626523A2E035CFB16);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral0C45DB50527FCFAD456E74EB416B617329505309);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral11B9FCE077AC90A54EA76A75593EB2272AC4E0AA);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1B62E5629805E3224249BCAA0D9ECBB4C84AE48B);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral220702BCC5C1C54BEDED83D77E4E5425AFBCE65C);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral235F27A2E21BB2D6350C8E6068C7A203AB308849);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral24ACF1BBF43F3850CE89C1C771661404CBDF11B7);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3A50E886F50E292CF8471ADF9B446694CBE92C2E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4B0E509E3481549FC8F096287EFB425FAAFC38A4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4B793DFDC901B8148482161BA7DA76CAE1DD3E7A);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral541ADAD93719A7753AA265CAD6BA6276D2686025);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6DB33ADD301402F08747C4EE933A8EF10A8128F7);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral70B17AAD07739AC6E24336BDDD087A5F4A2D8414);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral77EE5971434CDE6F74A1DAE44D94954E1624D77C);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7BFA33A11F0B12AF1B7FA1D9BA996EAE1EF77B49);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7D63FA1B6FEDA67964D3FCDCB12764101D65571C);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7D8699446610575017F99BEA3E02DCF807B45CAB);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8592B054228789DCF1BCAA45E3910A2B143E58F5);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8609E0E2AE2791725A5753917F782BE01B29BF75);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8D927104AAFE48366762B70DC5E7CA34D1C0D5BE);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral903B8C1EF36009AA876A865426B6853A18141FFA);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral918047259C6FFF7176506FF4141E7C078EE96880);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral91C5120C562094A257C8FC3C676B64F1E0403765);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral91CE18BF0ECEE0F2C252666C43E4E5C6D90BC05A);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral935DED07A64B226D3B13EBBDF54A8633B651D342);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral996E5360F80E16B2189CC1E536C91CE68083F694);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA19AA44CF7E852EDD061B7F2A098BC202378784E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA31F29C367D53AD7C824C843BE0DEB228E4B5EBC);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA3DC94CE2E4ADB08254413E0E3386625CB614D76);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAAAAD748A9167857089BE2BCDA56BA779A2CF7C9);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB4796B9DD8CEA5F638F0A5ADCCC0DD4CC05D2436);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB6CF12FE3CC5A3A7A7FB3E28674EB3C814976446);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralBC214E7BC666A9707F7FCE8B3ADC6EB334D9E876);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC295AE7F3D676E2CAA3DE0DC641EF335E57A2E37);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC4729ED69061AF5587EABEA577EE432AC85A94DB);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC6DE535D828F30C374EB3BE3FFDE520228FC3096);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD5B20EA6805F285482807C61CD81D1509724E3CC);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD7248A39F3FFD5F29F3A82B3D3AC57CF22CBABAD);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD744E0023ACB34526A1B142EFA90B5CFF45FDC53);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD7A8174DEA8A926E09167A0D516CCCA92F9201AA);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDC4A06A0DE599F745DBDD44A6FDE6212859D3A5F);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE6ED3948EBA2C4EA7B39D25923D916C995F8B7E9);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF10CBFB1465C4A75BADE2EF50F42177A2191723B);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		int32_t L_0 = ___me0;
+		switch (L_0)
+		{
+			case 0:
+			{
+				goto IL_00b7;
+			}
+			case 1:
+			{
+				goto IL_00bd;
+			}
+			case 2:
+			{
+				goto IL_00c3;
+			}
+			case 3:
+			{
+				goto IL_00c9;
+			}
+			case 4:
+			{
+				goto IL_00cf;
+			}
+			case 5:
+			{
+				goto IL_00d5;
+			}
+			case 6:
+			{
+				goto IL_00db;
+			}
+			case 7:
+			{
+				goto IL_00e1;
+			}
+			case 8:
+			{
+				goto IL_00e7;
+			}
+			case 9:
+			{
+				goto IL_00ed;
+			}
+			case 10:
+			{
+				goto IL_00f3;
+			}
+			case 11:
+			{
+				goto IL_00f9;
+			}
+			case 12:
+			{
+				goto IL_00ff;
+			}
+			case 13:
+			{
+				goto IL_0105;
+			}
+			case 14:
+			{
+				goto IL_010b;
+			}
+			case 15:
+			{
+				goto IL_0111;
+			}
+			case 16:
+			{
+				goto IL_0117;
+			}
+			case 17:
+			{
+				goto IL_011d;
+			}
+			case 18:
+			{
+				goto IL_0123;
+			}
+			case 19:
+			{
+				goto IL_0129;
+			}
+			case 20:
+			{
+				goto IL_012f;
+			}
+			case 21:
+			{
+				goto IL_0135;
+			}
+			case 22:
+			{
+				goto IL_013b;
+			}
+			case 23:
+			{
+				goto IL_0141;
+			}
+			case 24:
+			{
+				goto IL_0147;
+			}
+			case 25:
+			{
+				goto IL_014d;
+			}
+			case 26:
+			{
+				goto IL_0153;
+			}
+			case 27:
+			{
+				goto IL_0159;
+			}
+			case 28:
+			{
+				goto IL_015f;
+			}
+			case 29:
+			{
+				goto IL_0165;
+			}
+			case 30:
+			{
+				goto IL_016b;
+			}
+			case 31:
+			{
+				goto IL_0171;
+			}
+			case 32:
+			{
+				goto IL_0177;
+			}
+			case 33:
+			{
+				goto IL_017d;
+			}
+			case 34:
+			{
+				goto IL_0183;
+			}
+			case 35:
+			{
+				goto IL_0189;
+			}
+			case 36:
+			{
+				goto IL_018f;
+			}
+			case 37:
+			{
+				goto IL_0195;
+			}
+			case 38:
+			{
+				goto IL_019b;
+			}
+			case 39:
+			{
+				goto IL_01a1;
+			}
+			case 40:
+			{
+				goto IL_01a7;
+			}
+			case 41:
+			{
+				goto IL_01ad;
+			}
+			case 42:
+			{
+				goto IL_01b3;
+			}
+		}
+	}
+	{
+		goto IL_01b9;
+	}
+
+IL_00b7:
+	{
+		// return "ar";
+		return _stringLiteral903B8C1EF36009AA876A865426B6853A18141FFA;
+	}
+
+IL_00bd:
+	{
+		// return "cmn-CN";
+		return _stringLiteral235F27A2E21BB2D6350C8E6068C7A203AB308849;
+	}
+
+IL_00c3:
+	{
+		// return "cs-CZ";
+		return _stringLiteral8592B054228789DCF1BCAA45E3910A2B143E58F5;
+	}
+
+IL_00c9:
+	{
+		// return "cy-GB";
+		return _stringLiteralAAAAD748A9167857089BE2BCDA56BA779A2CF7C9;
+	}
+
+IL_00cf:
+	{
+		// return "da";
+		return _stringLiteral7D8699446610575017F99BEA3E02DCF807B45CAB;
+	}
+
+IL_00d5:
+	{
+		// return "de";
+		return _stringLiteralDC4A06A0DE599F745DBDD44A6FDE6212859D3A5F;
+	}
+
+IL_00db:
+	{
+		// return "el-GR";
+		return _stringLiteral4B793DFDC901B8148482161BA7DA76CAE1DD3E7A;
+	}
+
+IL_00e1:
+	{
+		// return "en-AU";
+		return _stringLiteralD7248A39F3FFD5F29F3A82B3D3AC57CF22CBABAD;
+	}
+
+IL_00e7:
+	{
+		// return "en-GB-WLS";
+		return _stringLiteralD7A8174DEA8A926E09167A0D516CCCA92F9201AA;
+	}
+
+IL_00ed:
+	{
+		// return "en-GB";
+		return _stringLiteral91CE18BF0ECEE0F2C252666C43E4E5C6D90BC05A;
+	}
+
+IL_00f3:
+	{
+		// return "en-IN";
+		return _stringLiteralE6ED3948EBA2C4EA7B39D25923D916C995F8B7E9;
+	}
+
+IL_00f9:
+	{
+		// return "en-SG";
+		return _stringLiteralB6CF12FE3CC5A3A7A7FB3E28674EB3C814976446;
+	}
+
+IL_00ff:
+	{
+		// return "en";
+		return _stringLiteralC6DE535D828F30C374EB3BE3FFDE520228FC3096;
+	}
+
+IL_0105:
+	{
+		// return "es-MX";
+		return _stringLiteralB4796B9DD8CEA5F638F0A5ADCCC0DD4CC05D2436;
+	}
+
+IL_010b:
+	{
+		// return "es-US";
+		return _stringLiteral70B17AAD07739AC6E24336BDDD087A5F4A2D8414;
+	}
+
+IL_0111:
+	{
+		// return "es";
+		return _stringLiteral77EE5971434CDE6F74A1DAE44D94954E1624D77C;
+	}
+
+IL_0117:
+	{
+		// return "et";
+		return _stringLiteralD5B20EA6805F285482807C61CD81D1509724E3CC;
+	}
+
+IL_011d:
+	{
+		// return "fi";
+		return _stringLiteral91C5120C562094A257C8FC3C676B64F1E0403765;
+	}
+
+IL_0123:
+	{
+		// return "fr-CA";
+		return _stringLiteralBC214E7BC666A9707F7FCE8B3ADC6EB334D9E876;
+	}
+
+IL_0129:
+	{
+		// return "Fr";
+		return _stringLiteralF10CBFB1465C4A75BADE2EF50F42177A2191723B;
+	}
+
+IL_012f:
+	{
+		// return "he";
+		return _stringLiteral7D63FA1B6FEDA67964D3FCDCB12764101D65571C;
+	}
+
+IL_0135:
+	{
+		// return "hu";
+		return _stringLiteral220702BCC5C1C54BEDED83D77E4E5425AFBCE65C;
+	}
+
+IL_013b:
+	{
+		// return "id";
+		return _stringLiteral996E5360F80E16B2189CC1E536C91CE68083F694;
+	}
+
+IL_0141:
+	{
+		// return "is-IS";
+		return _stringLiteral918047259C6FFF7176506FF4141E7C078EE96880;
+	}
+
+IL_0147:
+	{
+		// return "it";
+		return _stringLiteral1B62E5629805E3224249BCAA0D9ECBB4C84AE48B;
+	}
+
+IL_014d:
+	{
+		// return "ja";
+		return _stringLiteral0C45DB50527FCFAD456E74EB416B617329505309;
+	}
+
+IL_0153:
+	{
+		// return "ko";
+		return _stringLiteral4B0E509E3481549FC8F096287EFB425FAAFC38A4;
+	}
+
+IL_0159:
+	{
+		// return "nl-BE";
+		return _stringLiteral11B9FCE077AC90A54EA76A75593EB2272AC4E0AA;
+	}
+
+IL_015f:
+	{
+		// return "nl";
+		return _stringLiteral6DB33ADD301402F08747C4EE933A8EF10A8128F7;
+	}
+
+IL_0165:
+	{
+		// return "no";
+		return _stringLiteral7BFA33A11F0B12AF1B7FA1D9BA996EAE1EF77B49;
+	}
+
+IL_016b:
+	{
+		// return "pl";
+		return _stringLiteralD744E0023ACB34526A1B142EFA90B5CFF45FDC53;
+	}
+
+IL_0171:
+	{
+		// return "pt-BR";
+		return _stringLiteral24ACF1BBF43F3850CE89C1C771661404CBDF11B7;
+	}
+
+IL_0177:
+	{
+		// return "pt-PT";
+		return _stringLiteral935DED07A64B226D3B13EBBDF54A8633B651D342;
+	}
+
+IL_017d:
+	{
+		// return "ro";
+		return _stringLiteral09DBABCF47D177922630CF7626523A2E035CFB16;
+	}
+
+IL_0183:
+	{
+		// return "ru";
+		return _stringLiteralC295AE7F3D676E2CAA3DE0DC641EF335E57A2E37;
+	}
+
+IL_0189:
+	{
+		// return "sk-SK";
+		return _stringLiteral8609E0E2AE2791725A5753917F782BE01B29BF75;
+	}
+
+IL_018f:
+	{
+		// return "sl";
+		return _stringLiteralC4729ED69061AF5587EABEA577EE432AC85A94DB;
+	}
+
+IL_0195:
+	{
+		// return "sv";
+		return _stringLiteralA3DC94CE2E4ADB08254413E0E3386625CB614D76;
+	}
+
+IL_019b:
+	{
+		// return "th-TH";
+		return _stringLiteral3A50E886F50E292CF8471ADF9B446694CBE92C2E;
+	}
+
+IL_01a1:
+	{
+		// return "tr";
+		return _stringLiteral541ADAD93719A7753AA265CAD6BA6276D2686025;
+	}
+
+IL_01a7:
+	{
+		// return "uk";
+		return _stringLiteralA31F29C367D53AD7C824C843BE0DEB228E4B5EBC;
+	}
+
+IL_01ad:
+	{
+		// return "vi";
+		return _stringLiteral8D927104AAFE48366762B70DC5E7CA34D1C0D5BE;
+	}
+
+IL_01b3:
+	{
+		// return "zh-CN";
+		return _stringLiteralA19AA44CF7E852EDD061B7F2A098BC202378784E;
+	}
+
+IL_01b9:
+	{
+		// return "en";
+		return _stringLiteralC6DE535D828F30C374EB3BE3FFDE520228FC3096;
 	}
 }
 #ifdef __clang__
@@ -15989,7 +16588,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Route_t65233920818BB3FDF557CCB00357C155AEB654
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_m3A72A2E63EB5C4ABBFECB3B8B3FF4252D1DE8F25_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_m782D40192D481AFFBB66C63E48199219580282CE_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_t362655BB702679A7A5649B2785AD171A6166512B_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ScriptableObject_CreateInstance_TisRoute_t65233920818BB3FDF557CCB00357C155AEB6543E_m4A356C2A0824A1E988225A954827EC8979A84053_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Route_t65233920818BB3FDF557CCB00357C155AEB6543E_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1BD69EC6C9E191C57664923345F3742272616987);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral77BA5E25678420F932ACED9EFECA6756A0CD1BEA);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB6AEA0E1C14F83A795D9998880B030CBF2D8172D);
@@ -15999,9 +16598,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Route_t65233920818BB3FDF557CCB00357C155AEB654
 	JSONArray_t00251716FA29EA13B8F7DA0628CDF50EA9693D5B* V_1 = NULL;
 	int32_t V_2 = 0;
 	{
-		// var result = ScriptableObject.CreateInstance<Route>(); //Route();
-		Route_t65233920818BB3FDF557CCB00357C155AEB6543E* L_0;
-		L_0 = ScriptableObject_CreateInstance_TisRoute_t65233920818BB3FDF557CCB00357C155AEB6543E_m4A356C2A0824A1E988225A954827EC8979A84053(ScriptableObject_CreateInstance_TisRoute_t65233920818BB3FDF557CCB00357C155AEB6543E_m4A356C2A0824A1E988225A954827EC8979A84053_RuntimeMethod_var);
+		// var result = new Route();
+		Route_t65233920818BB3FDF557CCB00357C155AEB6543E* L_0 = (Route_t65233920818BB3FDF557CCB00357C155AEB6543E*)il2cpp_codegen_object_new(Route_t65233920818BB3FDF557CCB00357C155AEB6543E_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		Route__ctor_m35955A0F37C4D578E86186937082EBE75ED72E1F(L_0, NULL);
 		V_0 = L_0;
 		// result.distance = node["distance"].AsFloat;
 		Route_t65233920818BB3FDF557CCB00357C155AEB6543E* L_1 = V_0;
@@ -16013,7 +16613,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Route_t65233920818BB3FDF557CCB00357C155AEB654
 		float L_4;
 		L_4 = VirtualFuncInvoker0< float >::Invoke(37 /* System.Single ARLocation.Vendor.SimpleJSON.JSONNode::get_AsFloat() */, L_3);
 		NullCheck(L_1);
-		L_1->___distance_4 = L_4;
+		L_1->___distance_0 = L_4;
 		// result.geometry = Geometry.Parse(node["geometry"]);
 		Route_t65233920818BB3FDF557CCB00357C155AEB6543E* L_5 = V_0;
 		JSONNode_t939CD511E3ACE503FE6D009DD4B86B8EA50C3EFF* L_6 = ___node0;
@@ -16023,16 +16623,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Route_t65233920818BB3FDF557CCB00357C155AEB654
 		Geometry_t6D09A5C7963C5230A00A66CE6B4886E09F8A6014* L_8;
 		L_8 = Geometry_Parse_m923161FFD97BE9AC85FCFB3C7211FDCFFA20E406(L_7, NULL);
 		NullCheck(L_5);
-		L_5->___geometry_5 = L_8;
-		Il2CppCodeGenWriteBarrier((void**)(&L_5->___geometry_5), (void*)L_8);
+		L_5->___geometry_1 = L_8;
+		Il2CppCodeGenWriteBarrier((void**)(&L_5->___geometry_1), (void*)L_8);
 		// result.legs = new List<RouteLeg>();
 		Route_t65233920818BB3FDF557CCB00357C155AEB6543E* L_9 = V_0;
 		List_1_t362655BB702679A7A5649B2785AD171A6166512B* L_10 = (List_1_t362655BB702679A7A5649B2785AD171A6166512B*)il2cpp_codegen_object_new(List_1_t362655BB702679A7A5649B2785AD171A6166512B_il2cpp_TypeInfo_var);
 		NullCheck(L_10);
 		List_1__ctor_m782D40192D481AFFBB66C63E48199219580282CE(L_10, List_1__ctor_m782D40192D481AFFBB66C63E48199219580282CE_RuntimeMethod_var);
 		NullCheck(L_9);
-		L_9->___legs_6 = L_10;
-		Il2CppCodeGenWriteBarrier((void**)(&L_9->___legs_6), (void*)L_10);
+		L_9->___legs_2 = L_10;
+		Il2CppCodeGenWriteBarrier((void**)(&L_9->___legs_2), (void*)L_10);
 		// var legs = node["legs"].AsArray;
 		JSONNode_t939CD511E3ACE503FE6D009DD4B86B8EA50C3EFF* L_11 = ___node0;
 		NullCheck(L_11);
@@ -16052,7 +16652,7 @@ IL_0052:
 		// result.legs.Add(RouteLeg.Parse(legs[i]));
 		Route_t65233920818BB3FDF557CCB00357C155AEB6543E* L_14 = V_0;
 		NullCheck(L_14);
-		List_1_t362655BB702679A7A5649B2785AD171A6166512B* L_15 = L_14->___legs_6;
+		List_1_t362655BB702679A7A5649B2785AD171A6166512B* L_15 = L_14->___legs_2;
 		JSONArray_t00251716FA29EA13B8F7DA0628CDF50EA9693D5B* L_16 = V_1;
 		int32_t L_17 = V_2;
 		NullCheck(L_16);
@@ -16117,17 +16717,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Route_ToString_m84F6BE7F39F73837F15
 		V_0 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
 		// result += $"Route{{ distance = {distance}, geometry = {geometry}, legs = [";
 		String_t* L_0 = V_0;
-		float L_1 = __this->___distance_4;
+		float L_1 = __this->___distance_0;
 		float L_2 = L_1;
 		RuntimeObject* L_3 = Box(Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var, &L_2);
-		Geometry_t6D09A5C7963C5230A00A66CE6B4886E09F8A6014* L_4 = __this->___geometry_5;
+		Geometry_t6D09A5C7963C5230A00A66CE6B4886E09F8A6014* L_4 = __this->___geometry_1;
 		String_t* L_5;
 		L_5 = String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987(_stringLiteral720462333825FE8C7405B9B94CD94364349C073D, L_3, L_4, NULL);
 		String_t* L_6;
 		L_6 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_0, L_5, NULL);
 		V_0 = L_6;
 		// foreach (var leg in legs)
-		List_1_t362655BB702679A7A5649B2785AD171A6166512B* L_7 = __this->___legs_6;
+		List_1_t362655BB702679A7A5649B2785AD171A6166512B* L_7 = __this->___legs_2;
 		NullCheck(L_7);
 		Enumerator_t6D9710CD921404137A2EC82DA30E256F964BC521 L_8;
 		L_8 = List_1_GetEnumerator_mB43C3E12785E15C372A0E7CDBB4A60A012911A9D(L_7, List_1_GetEnumerator_mB43C3E12785E15C372A0E7CDBB4A60A012911A9D_RuntimeMethod_var);
@@ -16226,7 +16826,7 @@ IL_006b:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Route__ctor_m35955A0F37C4D578E86186937082EBE75ED72E1F (Route_t65233920818BB3FDF557CCB00357C155AEB6543E* __this, const RuntimeMethod* method) 
 {
 	{
-		ScriptableObject__ctor_mD037FDB0B487295EA47F79A4DB1BF1846C9087FF(__this, NULL);
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		return;
 	}
 }
@@ -17797,15 +18397,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MapboxRoute_Awake_m086891522A185F44C18C4
 
 IL_002b:
 	{
-		// mapbox = new MapboxApi(Settings.MapboxToken);
+		// mapbox = new MapboxApi(Settings.MapboxToken, Settings.Language);
 		SettingsData_tBA58CB665A9E3350A4C23BE4EC926F57BBF8EF1B* L_3 = __this->___Settings_4;
 		NullCheck(L_3);
 		String_t* L_4 = L_3->___MapboxToken_3;
-		MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_5 = (MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA*)il2cpp_codegen_object_new(MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA_il2cpp_TypeInfo_var);
+		SettingsData_tBA58CB665A9E3350A4C23BE4EC926F57BBF8EF1B* L_5 = __this->___Settings_4;
 		NullCheck(L_5);
-		MapboxApi__ctor_m393CDA96AEAEF30CD29C8183E1637E1B14D1100F(L_5, L_4, NULL);
-		__this->___mapbox_5 = L_5;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___mapbox_5), (void*)L_5);
+		int32_t L_6 = L_5->___Language_4;
+		MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_7 = (MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA*)il2cpp_codegen_object_new(MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA_il2cpp_TypeInfo_var);
+		NullCheck(L_7);
+		MapboxApi__ctor_m728B7F1894D2EDD4720AE606573594EF671E4F8A(L_7, L_4, L_6, NULL);
+		__this->___mapbox_5 = L_7;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___mapbox_5), (void*)L_7);
 		// }
 		return;
 	}
@@ -17827,7 +18430,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MapboxRoute_Start_mE944781AED296B91989BA
 		// if (Settings.LoadRouteAtStartup)
 		SettingsData_tBA58CB665A9E3350A4C23BE4EC926F57BBF8EF1B* L_0 = __this->___Settings_4;
 		NullCheck(L_0);
-		bool L_1 = L_0->___LoadRouteAtStartup_5;
+		bool L_1 = L_0->___LoadRouteAtStartup_6;
 		if (!L_1)
 		{
 			goto IL_0028;
@@ -17947,7 +18550,7 @@ IL_0031:
 		// Utils.Logger.LogFromMethod("MapboxRoute", "Update", "NextTarget", Settings.DebugMode);
 		SettingsData_tBA58CB665A9E3350A4C23BE4EC926F57BBF8EF1B* L_16 = __this->___Settings_4;
 		NullCheck(L_16);
-		bool L_17 = L_16->___DebugMode_8;
+		bool L_17 = L_16->___DebugMode_9;
 		Logger_LogFromMethod_m4C7E69EE8A56FB3F9718E54A586306DEE653AD2E(_stringLiteral6DBBFBF574EF0D2010D097B920FE3646FE1E2CE2, _stringLiteral42960449A18FA75AF2D9A7F9CDCC744B0EF455E6, _stringLiteral4EF2576B1C521CF8A34438674017CC5D0766D965, L_17, NULL);
 		// shouldGotoNextTarget = true;
 		V_0 = (bool)1;
@@ -18224,7 +18827,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MapboxRoute_onLocationEnabled_mB11ECEF9D
 		// if (Settings.LoadRouteAtStartup)
 		SettingsData_tBA58CB665A9E3350A4C23BE4EC926F57BBF8EF1B* L_0 = __this->___Settings_4;
 		NullCheck(L_0);
-		bool L_1 = L_0->___LoadRouteAtStartup_5;
+		bool L_1 = L_0->___LoadRouteAtStartup_6;
 		if (!L_1)
 		{
 			goto IL_0071;
@@ -18234,7 +18837,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MapboxRoute_onLocationEnabled_mB11ECEF9D
 		// if (Settings.RouteSettings.RouteType == RouteType.CustomRoute)
 		SettingsData_tBA58CB665A9E3350A4C23BE4EC926F57BBF8EF1B* L_2 = __this->___Settings_4;
 		NullCheck(L_2);
-		RouteSettings_tFE52829CFA01FD945B1DF92F1DE196FC66A20718* L_3 = L_2->___RouteSettings_4;
+		RouteSettings_tFE52829CFA01FD945B1DF92F1DE196FC66A20718* L_3 = L_2->___RouteSettings_5;
 		NullCheck(L_3);
 		int32_t L_4 = L_3->___RouteType_0;
 		if ((!(((uint32_t)L_4) == ((uint32_t)1))))
@@ -18246,7 +18849,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MapboxRoute_onLocationEnabled_mB11ECEF9D
 		// if (Settings.RouteSettings.CustomRoute != null)
 		SettingsData_tBA58CB665A9E3350A4C23BE4EC926F57BBF8EF1B* L_5 = __this->___Settings_4;
 		NullCheck(L_5);
-		RouteSettings_tFE52829CFA01FD945B1DF92F1DE196FC66A20718* L_6 = L_5->___RouteSettings_4;
+		RouteSettings_tFE52829CFA01FD945B1DF92F1DE196FC66A20718* L_6 = L_5->___RouteSettings_5;
 		NullCheck(L_6);
 		CustomRoute_t6E7F462FD12D147D9C1A3627F623ACFD7B6DF224* L_7 = L_6->___CustomRoute_3;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
@@ -18261,7 +18864,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MapboxRoute_onLocationEnabled_mB11ECEF9D
 		// LoadCustomRoute(Settings.RouteSettings.CustomRoute);
 		SettingsData_tBA58CB665A9E3350A4C23BE4EC926F57BBF8EF1B* L_9 = __this->___Settings_4;
 		NullCheck(L_9);
-		RouteSettings_tFE52829CFA01FD945B1DF92F1DE196FC66A20718* L_10 = L_9->___RouteSettings_4;
+		RouteSettings_tFE52829CFA01FD945B1DF92F1DE196FC66A20718* L_10 = L_9->___RouteSettings_5;
 		NullCheck(L_10);
 		CustomRoute_t6E7F462FD12D147D9C1A3627F623ACFD7B6DF224* L_11 = L_10->___CustomRoute_3;
 		MapboxRoute_LoadCustomRoute_mF7E677A5C6689701F77C33C9E712264129516370(__this, L_11, NULL);
@@ -18855,7 +19458,7 @@ IL_0015:
 		// if (route.legs.Count == 0)
 		Route_t65233920818BB3FDF557CCB00357C155AEB6543E* L_6 = V_0;
 		NullCheck(L_6);
-		List_1_t362655BB702679A7A5649B2785AD171A6166512B* L_7 = L_6->___legs_6;
+		List_1_t362655BB702679A7A5649B2785AD171A6166512B* L_7 = L_6->___legs_2;
 		NullCheck(L_7);
 		int32_t L_8;
 		L_8 = List_1_get_Count_m7A55D3B20231055EEC15FCC861452E4D01CBE73F_inline(L_7, List_1_get_Count_m7A55D3B20231055EEC15FCC861452E4D01CBE73F_RuntimeMethod_var);
@@ -18874,7 +19477,7 @@ IL_0031:
 		// var leg = route.legs[0];
 		Route_t65233920818BB3FDF557CCB00357C155AEB6543E* L_9 = V_0;
 		NullCheck(L_9);
-		List_1_t362655BB702679A7A5649B2785AD171A6166512B* L_10 = L_9->___legs_6;
+		List_1_t362655BB702679A7A5649B2785AD171A6166512B* L_10 = L_9->___legs_2;
 		NullCheck(L_10);
 		RouteLeg_t79EB42B909C889E6BC00424CBA00AE38ED03C566* L_11;
 		L_11 = List_1_get_Item_mC3D3DAB23DA7D1333CA21EEA460FD284D571969F(L_10, 0, List_1_get_Item_mC3D3DAB23DA7D1333CA21EEA460FD284D571969F_RuntimeMethod_var);
@@ -19066,7 +19669,7 @@ IL_0140:
 		State_t629391F405CC3F7B50B7D1735D1530E7AD332052* L_60 = __this->___s_6;
 		Route_t65233920818BB3FDF557CCB00357C155AEB6543E* L_61 = V_0;
 		NullCheck(L_61);
-		Geometry_t6D09A5C7963C5230A00A66CE6B4886E09F8A6014* L_62 = L_61->___geometry_5;
+		Geometry_t6D09A5C7963C5230A00A66CE6B4886E09F8A6014* L_62 = L_61->___geometry_1;
 		NullCheck(L_60);
 		L_60->___RouteGeometry_5 = L_62;
 		Il2CppCodeGenWriteBarrier((void**)(&L_60->___RouteGeometry_5), (void*)L_62);
@@ -19153,7 +19756,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MapboxRoute_SetTarget_m265F8F5027F0260E8
 		L_3 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral6BBFFA0F7E2864136A7712EFD3587E151FCAD75E, L_2, NULL);
 		SettingsData_tBA58CB665A9E3350A4C23BE4EC926F57BBF8EF1B* L_4 = __this->___Settings_4;
 		NullCheck(L_4);
-		bool L_5 = L_4->___DebugMode_8;
+		bool L_5 = L_4->___DebugMode_9;
 		Logger_LogFromMethod_m4C7E69EE8A56FB3F9718E54A586306DEE653AD2E(_stringLiteral6DBBFBF574EF0D2010D097B920FE3646FE1E2CE2, _stringLiteralAB4D84F7C62E7D302A9A088AA8E292DF6A477309, L_3, L_5, NULL);
 		// if (index == s.CurrentTargetIndex)
 		int32_t L_6 = ___index0;
@@ -19917,10 +20520,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SettingsData__ctor_m5C8FD6EA7E1860F3468D
 		// public string MapboxToken = "";
 		__this->___MapboxToken_3 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___MapboxToken_3), (void*)_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
+		// public MapboxApiLanguage Language = MapboxApiLanguage.English_US;
+		__this->___Language_4 = ((int32_t)12);
 		// public bool LoadRouteAtStartup = true;
-		__this->___LoadRouteAtStartup_5 = (bool)1;
+		__this->___LoadRouteAtStartup_6 = (bool)1;
 		// public float GroundHeight = 1.4f;
-		__this->___GroundHeight_6 = (1.39999998f);
+		__this->___GroundHeight_7 = (1.39999998f);
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		return;
 	}
@@ -20198,7 +20803,7 @@ IL_0056:
 		NullCheck(L_17);
 		SettingsData_tBA58CB665A9E3350A4C23BE4EC926F57BBF8EF1B* L_18 = L_17->___Settings_4;
 		NullCheck(L_18);
-		MapboxRouteLoadErrorEvent_t3453D49DC24C0F1D078E6409634DB312B2753F80* L_19 = L_18->___OnMapboxRouteLoadError_7;
+		MapboxRouteLoadErrorEvent_t3453D49DC24C0F1D078E6409634DB312B2753F80* L_19 = L_18->___OnMapboxRouteLoadError_8;
 		MapboxRouteLoadErrorEvent_t3453D49DC24C0F1D078E6409634DB312B2753F80* L_20 = L_19;
 		G_B6_0 = L_20;
 		if (L_20)
@@ -20447,14 +21052,14 @@ IL_0017:
 		NullCheck(L_5);
 		SettingsData_tBA58CB665A9E3350A4C23BE4EC926F57BBF8EF1B* L_6 = L_5->___Settings_4;
 		NullCheck(L_6);
-		RouteSettings_tFE52829CFA01FD945B1DF92F1DE196FC66A20718* L_7 = L_6->___RouteSettings_4;
+		RouteSettings_tFE52829CFA01FD945B1DF92F1DE196FC66A20718* L_7 = L_6->___RouteSettings_5;
 		NullCheck(L_7);
 		RouteWaypoint_tDBFC11E82E48C5F69ADD975E41C9E66E38C844DC* L_8 = L_7->___From_1;
 		MapboxRoute_t9F7C0E5CF1EB4B7F599503017567E4EDDBA546B0* L_9 = V_1;
 		NullCheck(L_9);
 		SettingsData_tBA58CB665A9E3350A4C23BE4EC926F57BBF8EF1B* L_10 = L_9->___Settings_4;
 		NullCheck(L_10);
-		RouteSettings_tFE52829CFA01FD945B1DF92F1DE196FC66A20718* L_11 = L_10->___RouteSettings_4;
+		RouteSettings_tFE52829CFA01FD945B1DF92F1DE196FC66A20718* L_11 = L_10->___RouteSettings_5;
 		NullCheck(L_11);
 		RouteWaypoint_tDBFC11E82E48C5F69ADD975E41C9E66E38C844DC* L_12 = L_11->___To_2;
 		NullCheck(L_4);
@@ -20674,7 +21279,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NextStepRoutePathRenderer_OnRouteUpdate_
 		NullCheck(L_1);
 		SettingsData_tBA58CB665A9E3350A4C23BE4EC926F57BBF8EF1B* L_2 = L_1->___Settings_4;
 		NullCheck(L_2);
-		float L_3 = L_2->___GroundHeight_6;
+		float L_3 = L_2->___GroundHeight_7;
 		V_0 = L_3;
 		// var y = Camera.main.transform.position.y;
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_4;
@@ -21490,13 +22095,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CLoadRouteU3Ed__10_MoveNext_m764DA3228
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_m7D8E4DEE51B57CC77629AE1599880618BB532806_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RouteWaypointResolveLocation_t6CC898E86218DB20A0C5958D46054CBA14EAB701_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral0FFC9A09ACD7D6BB442EB143F1477859451D8341);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6053E22E136DB251DFA81630057754E8BF73C44D);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral77789C8BED5F03100BFE50870FCE069FCBEAFBDE);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8A32A0EBD2955320F90060D3E38F9AB6CFEAAC3D);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8F5320B5692D580C1405B5267543756A79E879EF);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral90EB62805D0602F564C1EAF384252705652798CB);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral94C9B707A1C79066F7292D0C1F78498DB7B3B858);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral98C1FFD42D07E1CE10DC2F4E698FB344AC4CE704);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9B15A09021E9461368605946C9DB60B092E6649E);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE76B06A2639AD88030F4BB5E35CA199DAFB79272);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFEE7CD0AFBFE326FD447D1E9274E7AE18842CFBE);
 		s_Il2CppMethodInitialized = true;
@@ -21522,11 +22131,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CLoadRouteU3Ed__10_MoveNext_m764DA3228
 			}
 			case 2:
 			{
-				goto IL_0133;
+				goto IL_0126;
 			}
 			case 3:
 			{
-				goto IL_01e9;
+				goto IL_01cf;
 			}
 		}
 	}
@@ -21590,237 +22199,236 @@ IL_0091:
 		bool L_17 = L_16->___IsError_1;
 		if (!L_17)
 		{
-			goto IL_00f1;
+			goto IL_00e4;
 		}
 	}
 	{
-		// if (verbose)
-		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_18 = V_1;
+		// Utils.Logger.LogFromMethod("RouteLoader", "LoadRoute", $"Failed to resolve start waypoint: {resolver.ErrorMessage}", true);
+		RouteWaypointResolveLocation_t6CC898E86218DB20A0C5958D46054CBA14EAB701* L_18 = __this->___U3CresolverU3E5__2_5;
 		NullCheck(L_18);
-		bool L_19 = L_18->___verbose_1;
-		if (!L_19)
-		{
-			goto IL_00d7;
-		}
-	}
-	{
-		// Utils.Logger.LogFromMethod("RouteLoader", "LoadRoute", $"Failed to resolve start waypoint: {resolver.ErrorMessage}", verbose);
-		RouteWaypointResolveLocation_t6CC898E86218DB20A0C5958D46054CBA14EAB701* L_20 = __this->___U3CresolverU3E5__2_5;
-		NullCheck(L_20);
-		String_t* L_21 = L_20->___ErrorMessage_2;
-		String_t* L_22;
-		L_22 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral6053E22E136DB251DFA81630057754E8BF73C44D, L_21, NULL);
-		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_23 = V_1;
-		NullCheck(L_23);
-		bool L_24 = L_23->___verbose_1;
-		Logger_LogFromMethod_m4C7E69EE8A56FB3F9718E54A586306DEE653AD2E(_stringLiteral8F5320B5692D580C1405B5267543756A79E879EF, _stringLiteral0FFC9A09ACD7D6BB442EB143F1477859451D8341, L_22, L_24, NULL);
-	}
-
-IL_00d7:
-	{
+		String_t* L_19 = L_18->___ErrorMessage_2;
+		String_t* L_20;
+		L_20 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral6053E22E136DB251DFA81630057754E8BF73C44D, L_19, NULL);
+		Logger_LogFromMethod_m4C7E69EE8A56FB3F9718E54A586306DEE653AD2E(_stringLiteral8F5320B5692D580C1405B5267543756A79E879EF, _stringLiteral0FFC9A09ACD7D6BB442EB143F1477859451D8341, L_20, (bool)1, NULL);
 		// error = resolver.ErrorMessage;
-		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_25 = V_1;
-		RouteWaypointResolveLocation_t6CC898E86218DB20A0C5958D46054CBA14EAB701* L_26 = __this->___U3CresolverU3E5__2_5;
-		NullCheck(L_26);
-		String_t* L_27 = L_26->___ErrorMessage_2;
-		NullCheck(L_25);
-		L_25->___error_2 = L_27;
-		Il2CppCodeGenWriteBarrier((void**)(&L_25->___error_2), (void*)L_27);
+		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_21 = V_1;
+		RouteWaypointResolveLocation_t6CC898E86218DB20A0C5958D46054CBA14EAB701* L_22 = __this->___U3CresolverU3E5__2_5;
+		NullCheck(L_22);
+		String_t* L_23 = L_22->___ErrorMessage_2;
+		NullCheck(L_21);
+		L_21->___error_2 = L_23;
+		Il2CppCodeGenWriteBarrier((void**)(&L_21->___error_2), (void*)L_23);
 		// result = null;
-		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_28 = V_1;
-		NullCheck(L_28);
-		L_28->___result_3 = (RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212*)NULL;
-		Il2CppCodeGenWriteBarrier((void**)(&L_28->___result_3), (void*)(RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212*)NULL);
+		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_24 = V_1;
+		NullCheck(L_24);
+		L_24->___result_3 = (RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&L_24->___result_3), (void*)(RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212*)NULL);
 		// yield break;
 		return (bool)0;
 	}
 
-IL_00f1:
+IL_00e4:
 	{
 		// Location startLocation = resolver.result;
-		RouteWaypointResolveLocation_t6CC898E86218DB20A0C5958D46054CBA14EAB701* L_29 = __this->___U3CresolverU3E5__2_5;
-		NullCheck(L_29);
-		Location_t9E7AB293D59F64A92A93EF884B4C0120DBE40E39* L_30 = L_29->___result_0;
-		__this->___U3CstartLocationU3E5__3_6 = L_30;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CstartLocationU3E5__3_6), (void*)L_30);
+		RouteWaypointResolveLocation_t6CC898E86218DB20A0C5958D46054CBA14EAB701* L_25 = __this->___U3CresolverU3E5__2_5;
+		NullCheck(L_25);
+		Location_t9E7AB293D59F64A92A93EF884B4C0120DBE40E39* L_26 = L_25->___result_0;
+		__this->___U3CstartLocationU3E5__3_6 = L_26;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CstartLocationU3E5__3_6), (void*)L_26);
 		// resolver = new RouteWaypointResolveLocation(mapbox, end);
-		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_31 = V_1;
-		NullCheck(L_31);
-		MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_32 = L_31->___mapbox_0;
-		RouteWaypoint_tDBFC11E82E48C5F69ADD975E41C9E66E38C844DC* L_33 = __this->___end_4;
-		RouteWaypointResolveLocation_t6CC898E86218DB20A0C5958D46054CBA14EAB701* L_34 = (RouteWaypointResolveLocation_t6CC898E86218DB20A0C5958D46054CBA14EAB701*)il2cpp_codegen_object_new(RouteWaypointResolveLocation_t6CC898E86218DB20A0C5958D46054CBA14EAB701_il2cpp_TypeInfo_var);
-		NullCheck(L_34);
-		RouteWaypointResolveLocation__ctor_m59CFA0095408ED4FADED1EC121F3682B77D1C4C7(L_34, L_32, L_33, NULL);
-		__this->___U3CresolverU3E5__2_5 = L_34;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CresolverU3E5__2_5), (void*)L_34);
+		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_27 = V_1;
+		NullCheck(L_27);
+		MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_28 = L_27->___mapbox_0;
+		RouteWaypoint_tDBFC11E82E48C5F69ADD975E41C9E66E38C844DC* L_29 = __this->___end_4;
+		RouteWaypointResolveLocation_t6CC898E86218DB20A0C5958D46054CBA14EAB701* L_30 = (RouteWaypointResolveLocation_t6CC898E86218DB20A0C5958D46054CBA14EAB701*)il2cpp_codegen_object_new(RouteWaypointResolveLocation_t6CC898E86218DB20A0C5958D46054CBA14EAB701_il2cpp_TypeInfo_var);
+		NullCheck(L_30);
+		RouteWaypointResolveLocation__ctor_m59CFA0095408ED4FADED1EC121F3682B77D1C4C7(L_30, L_28, L_29, NULL);
+		__this->___U3CresolverU3E5__2_5 = L_30;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CresolverU3E5__2_5), (void*)L_30);
 		// yield return resolver.Resolve();
-		RouteWaypointResolveLocation_t6CC898E86218DB20A0C5958D46054CBA14EAB701* L_35 = __this->___U3CresolverU3E5__2_5;
-		NullCheck(L_35);
-		RuntimeObject* L_36;
-		L_36 = RouteWaypointResolveLocation_Resolve_mF072B83964B39957B2723C24CF15F87420CC9F4C(L_35, NULL);
-		__this->___U3CU3E2__current_1 = L_36;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_36);
+		RouteWaypointResolveLocation_t6CC898E86218DB20A0C5958D46054CBA14EAB701* L_31 = __this->___U3CresolverU3E5__2_5;
+		NullCheck(L_31);
+		RuntimeObject* L_32;
+		L_32 = RouteWaypointResolveLocation_Resolve_mF072B83964B39957B2723C24CF15F87420CC9F4C(L_31, NULL);
+		__this->___U3CU3E2__current_1 = L_32;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_32);
 		__this->___U3CU3E1__state_0 = 2;
 		return (bool)1;
 	}
 
-IL_0133:
+IL_0126:
 	{
 		__this->___U3CU3E1__state_0 = (-1);
 		// if (resolver.IsError)
-		RouteWaypointResolveLocation_t6CC898E86218DB20A0C5958D46054CBA14EAB701* L_37 = __this->___U3CresolverU3E5__2_5;
-		NullCheck(L_37);
-		bool L_38 = L_37->___IsError_1;
-		if (!L_38)
-		{
-			goto IL_0193;
-		}
-	}
-	{
-		// if (verbose)
-		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_39 = V_1;
-		NullCheck(L_39);
-		bool L_40 = L_39->___verbose_1;
-		if (!L_40)
+		RouteWaypointResolveLocation_t6CC898E86218DB20A0C5958D46054CBA14EAB701* L_33 = __this->___U3CresolverU3E5__2_5;
+		NullCheck(L_33);
+		bool L_34 = L_33->___IsError_1;
+		if (!L_34)
 		{
 			goto IL_0179;
 		}
 	}
 	{
-		// Utils.Logger.LogFromMethod("RouteLoader", "LoadRoute", $"Failed to resolve end waypoint: {resolver.ErrorMessage}", verbose);
-		RouteWaypointResolveLocation_t6CC898E86218DB20A0C5958D46054CBA14EAB701* L_41 = __this->___U3CresolverU3E5__2_5;
+		// Utils.Logger.LogFromMethod("RouteLoader", "LoadRoute", $"Failed to resolve end waypoint: {resolver.ErrorMessage}", true);
+		RouteWaypointResolveLocation_t6CC898E86218DB20A0C5958D46054CBA14EAB701* L_35 = __this->___U3CresolverU3E5__2_5;
+		NullCheck(L_35);
+		String_t* L_36 = L_35->___ErrorMessage_2;
+		String_t* L_37;
+		L_37 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteralE76B06A2639AD88030F4BB5E35CA199DAFB79272, L_36, NULL);
+		Logger_LogFromMethod_m4C7E69EE8A56FB3F9718E54A586306DEE653AD2E(_stringLiteral8F5320B5692D580C1405B5267543756A79E879EF, _stringLiteral0FFC9A09ACD7D6BB442EB143F1477859451D8341, L_37, (bool)1, NULL);
+		// error = resolver.ErrorMessage;
+		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_38 = V_1;
+		RouteWaypointResolveLocation_t6CC898E86218DB20A0C5958D46054CBA14EAB701* L_39 = __this->___U3CresolverU3E5__2_5;
+		NullCheck(L_39);
+		String_t* L_40 = L_39->___ErrorMessage_2;
+		NullCheck(L_38);
+		L_38->___error_2 = L_40;
+		Il2CppCodeGenWriteBarrier((void**)(&L_38->___error_2), (void*)L_40);
+		// result = null;
+		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_41 = V_1;
 		NullCheck(L_41);
-		String_t* L_42 = L_41->___ErrorMessage_2;
-		String_t* L_43;
-		L_43 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteralE76B06A2639AD88030F4BB5E35CA199DAFB79272, L_42, NULL);
-		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_44 = V_1;
-		NullCheck(L_44);
-		bool L_45 = L_44->___verbose_1;
-		Logger_LogFromMethod_m4C7E69EE8A56FB3F9718E54A586306DEE653AD2E(_stringLiteral8F5320B5692D580C1405B5267543756A79E879EF, _stringLiteral0FFC9A09ACD7D6BB442EB143F1477859451D8341, L_43, L_45, NULL);
+		L_41->___result_3 = (RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&L_41->___result_3), (void*)(RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212*)NULL);
+		// yield break;
+		return (bool)0;
 	}
 
 IL_0179:
 	{
-		// error = resolver.ErrorMessage;
-		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_46 = V_1;
-		RouteWaypointResolveLocation_t6CC898E86218DB20A0C5958D46054CBA14EAB701* L_47 = __this->___U3CresolverU3E5__2_5;
-		NullCheck(L_47);
-		String_t* L_48 = L_47->___ErrorMessage_2;
-		NullCheck(L_46);
-		L_46->___error_2 = L_48;
-		Il2CppCodeGenWriteBarrier((void**)(&L_46->___error_2), (void*)L_48);
-		// result = null;
-		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_49 = V_1;
-		NullCheck(L_49);
-		L_49->___result_3 = (RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212*)NULL;
-		Il2CppCodeGenWriteBarrier((void**)(&L_49->___result_3), (void*)(RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212*)NULL);
-		// yield break;
-		return (bool)0;
-	}
-
-IL_0193:
-	{
 		// Location endLocation = resolver.result;
-		RouteWaypointResolveLocation_t6CC898E86218DB20A0C5958D46054CBA14EAB701* L_50 = __this->___U3CresolverU3E5__2_5;
-		NullCheck(L_50);
-		Location_t9E7AB293D59F64A92A93EF884B4C0120DBE40E39* L_51 = L_50->___result_0;
-		V_2 = L_51;
+		RouteWaypointResolveLocation_t6CC898E86218DB20A0C5958D46054CBA14EAB701* L_42 = __this->___U3CresolverU3E5__2_5;
+		NullCheck(L_42);
+		Location_t9E7AB293D59F64A92A93EF884B4C0120DBE40E39* L_43 = L_42->___result_0;
+		V_2 = L_43;
 		// if (verbose)
-		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_52 = V_1;
-		NullCheck(L_52);
-		bool L_53 = L_52->___verbose_1;
-		if (!L_53)
+		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_44 = V_1;
+		NullCheck(L_44);
+		bool L_45 = L_44->___verbose_1;
+		if (!L_45)
 		{
-			goto IL_01c1;
+			goto IL_01a7;
 		}
 	}
 	{
 		// Utils.Logger.LogFromMethod("RouteLoader", "LoadRoute", "Querying route...", verbose);
-		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_54 = V_1;
-		NullCheck(L_54);
-		bool L_55 = L_54->___verbose_1;
-		Logger_LogFromMethod_m4C7E69EE8A56FB3F9718E54A586306DEE653AD2E(_stringLiteral8F5320B5692D580C1405B5267543756A79E879EF, _stringLiteral0FFC9A09ACD7D6BB442EB143F1477859451D8341, _stringLiteral90EB62805D0602F564C1EAF384252705652798CB, L_55, NULL);
+		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_46 = V_1;
+		NullCheck(L_46);
+		bool L_47 = L_46->___verbose_1;
+		Logger_LogFromMethod_m4C7E69EE8A56FB3F9718E54A586306DEE653AD2E(_stringLiteral8F5320B5692D580C1405B5267543756A79E879EF, _stringLiteral0FFC9A09ACD7D6BB442EB143F1477859451D8341, _stringLiteral90EB62805D0602F564C1EAF384252705652798CB, L_47, NULL);
 	}
 
-IL_01c1:
+IL_01a7:
 	{
 		// yield return mapbox.QueryRoute(startLocation, endLocation, false, verbose);
-		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_56 = V_1;
-		NullCheck(L_56);
-		MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_57 = L_56->___mapbox_0;
-		Location_t9E7AB293D59F64A92A93EF884B4C0120DBE40E39* L_58 = __this->___U3CstartLocationU3E5__3_6;
-		Location_t9E7AB293D59F64A92A93EF884B4C0120DBE40E39* L_59 = V_2;
-		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_60 = V_1;
-		NullCheck(L_60);
-		bool L_61 = L_60->___verbose_1;
-		NullCheck(L_57);
-		RuntimeObject* L_62;
-		L_62 = MapboxApi_QueryRoute_m033DB3712162ED4C5CD6F0F2B489AF16628D5ACB(L_57, L_58, L_59, (bool)0, L_61, NULL);
-		__this->___U3CU3E2__current_1 = L_62;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_62);
+		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_48 = V_1;
+		NullCheck(L_48);
+		MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_49 = L_48->___mapbox_0;
+		Location_t9E7AB293D59F64A92A93EF884B4C0120DBE40E39* L_50 = __this->___U3CstartLocationU3E5__3_6;
+		Location_t9E7AB293D59F64A92A93EF884B4C0120DBE40E39* L_51 = V_2;
+		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_52 = V_1;
+		NullCheck(L_52);
+		bool L_53 = L_52->___verbose_1;
+		NullCheck(L_49);
+		RuntimeObject* L_54;
+		L_54 = MapboxApi_QueryRoute_m033DB3712162ED4C5CD6F0F2B489AF16628D5ACB(L_49, L_50, L_51, (bool)0, L_53, NULL);
+		__this->___U3CU3E2__current_1 = L_54;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_54);
 		__this->___U3CU3E1__state_0 = 3;
 		return (bool)1;
 	}
 
-IL_01e9:
+IL_01cf:
 	{
 		__this->___U3CU3E1__state_0 = (-1);
 		// if (mapbox.errorMessage != null)
-		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_63 = V_1;
-		NullCheck(L_63);
-		MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_64 = L_63->___mapbox_0;
-		NullCheck(L_64);
-		String_t* L_65 = L_64->___errorMessage_3;
-		if (!L_65)
+		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_55 = V_1;
+		NullCheck(L_55);
+		MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_56 = L_55->___mapbox_0;
+		NullCheck(L_56);
+		String_t* L_57 = L_56->___errorMessage_4;
+		if (!L_57)
 		{
-			goto IL_0249;
+			goto IL_0222;
 		}
 	}
 	{
-		// if (verbose)
-		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_66 = V_1;
-		NullCheck(L_66);
-		bool L_67 = L_66->___verbose_1;
-		if (!L_67)
-		{
-			goto IL_022f;
-		}
-	}
-	{
-		// Utils.Logger.LogFromMethod("RouteLoader", "LoadRoute", $"Route query failed: {mapbox.errorMessage}", verbose);
-		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_68 = V_1;
-		NullCheck(L_68);
-		MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_69 = L_68->___mapbox_0;
-		NullCheck(L_69);
-		String_t* L_70 = L_69->___errorMessage_3;
-		String_t* L_71;
-		L_71 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral8A32A0EBD2955320F90060D3E38F9AB6CFEAAC3D, L_70, NULL);
-		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_72 = V_1;
-		NullCheck(L_72);
-		bool L_73 = L_72->___verbose_1;
-		Logger_LogFromMethod_m4C7E69EE8A56FB3F9718E54A586306DEE653AD2E(_stringLiteral8F5320B5692D580C1405B5267543756A79E879EF, _stringLiteral0FFC9A09ACD7D6BB442EB143F1477859451D8341, L_71, L_73, NULL);
-	}
-
-IL_022f:
-	{
+		// Utils.Logger.LogFromMethod("RouteLoader", "LoadRoute", $"Route query failed: {mapbox.errorMessage}", true);
+		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_58 = V_1;
+		NullCheck(L_58);
+		MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_59 = L_58->___mapbox_0;
+		NullCheck(L_59);
+		String_t* L_60 = L_59->___errorMessage_4;
+		String_t* L_61;
+		L_61 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral8A32A0EBD2955320F90060D3E38F9AB6CFEAAC3D, L_60, NULL);
+		Logger_LogFromMethod_m4C7E69EE8A56FB3F9718E54A586306DEE653AD2E(_stringLiteral8F5320B5692D580C1405B5267543756A79E879EF, _stringLiteral0FFC9A09ACD7D6BB442EB143F1477859451D8341, L_61, (bool)1, NULL);
 		// error = resolver.ErrorMessage;
-		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_74 = V_1;
-		RouteWaypointResolveLocation_t6CC898E86218DB20A0C5958D46054CBA14EAB701* L_75 = __this->___U3CresolverU3E5__2_5;
-		NullCheck(L_75);
-		String_t* L_76 = L_75->___ErrorMessage_2;
-		NullCheck(L_74);
-		L_74->___error_2 = L_76;
-		Il2CppCodeGenWriteBarrier((void**)(&L_74->___error_2), (void*)L_76);
+		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_62 = V_1;
+		RouteWaypointResolveLocation_t6CC898E86218DB20A0C5958D46054CBA14EAB701* L_63 = __this->___U3CresolverU3E5__2_5;
+		NullCheck(L_63);
+		String_t* L_64 = L_63->___ErrorMessage_2;
+		NullCheck(L_62);
+		L_62->___error_2 = L_64;
+		Il2CppCodeGenWriteBarrier((void**)(&L_62->___error_2), (void*)L_64);
 		// result = null;
-		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_77 = V_1;
-		NullCheck(L_77);
-		L_77->___result_3 = (RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212*)NULL;
-		Il2CppCodeGenWriteBarrier((void**)(&L_77->___result_3), (void*)(RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212*)NULL);
+		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_65 = V_1;
+		NullCheck(L_65);
+		L_65->___result_3 = (RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&L_65->___result_3), (void*)(RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212*)NULL);
 		// yield break;
 		return (bool)0;
 	}
 
-IL_0249:
+IL_0222:
+	{
+		// if (mapbox.QueryRouteResult == null)
+		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_66 = V_1;
+		NullCheck(L_66);
+		MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_67 = L_66->___mapbox_0;
+		NullCheck(L_67);
+		RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212* L_68;
+		L_68 = MapboxApi_get_QueryRouteResult_m214837EEF6953B00AEBAD695A23DD10005B6206C_inline(L_67, NULL);
+		if (L_68)
+		{
+			goto IL_024b;
+		}
+	}
+	{
+		// Utils.Logger.LogFromMethod("RouteLoader", "LoadRoute", $"Route result is null!", verbose);
+		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_69 = V_1;
+		NullCheck(L_69);
+		bool L_70 = L_69->___verbose_1;
+		Logger_LogFromMethod_m4C7E69EE8A56FB3F9718E54A586306DEE653AD2E(_stringLiteral8F5320B5692D580C1405B5267543756A79E879EF, _stringLiteral0FFC9A09ACD7D6BB442EB143F1477859451D8341, _stringLiteral9B15A09021E9461368605946C9DB60B092E6649E, L_70, NULL);
+		goto IL_027c;
+	}
+
+IL_024b:
+	{
+		// else if (mapbox.QueryRouteResult.routes.Count == 0)
+		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_71 = V_1;
+		NullCheck(L_71);
+		MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_72 = L_71->___mapbox_0;
+		NullCheck(L_72);
+		RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212* L_73;
+		L_73 = MapboxApi_get_QueryRouteResult_m214837EEF6953B00AEBAD695A23DD10005B6206C_inline(L_72, NULL);
+		NullCheck(L_73);
+		List_1_t745481C99ED0773886A116A313320DCA0A7027AA* L_74 = L_73->___routes_1;
+		NullCheck(L_74);
+		int32_t L_75;
+		L_75 = List_1_get_Count_m7D8E4DEE51B57CC77629AE1599880618BB532806_inline(L_74, List_1_get_Count_m7D8E4DEE51B57CC77629AE1599880618BB532806_RuntimeMethod_var);
+		if (L_75)
+		{
+			goto IL_027c;
+		}
+	}
+	{
+		// Utils.Logger.LogFromMethod("RouteLoader", "LoadRoute", $"Route result is empty!", verbose);
+		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_76 = V_1;
+		NullCheck(L_76);
+		bool L_77 = L_76->___verbose_1;
+		Logger_LogFromMethod_m4C7E69EE8A56FB3F9718E54A586306DEE653AD2E(_stringLiteral8F5320B5692D580C1405B5267543756A79E879EF, _stringLiteral0FFC9A09ACD7D6BB442EB143F1477859451D8341, _stringLiteral77789C8BED5F03100BFE50870FCE069FCBEAFBDE, L_77, NULL);
+	}
+
+IL_027c:
 	{
 		// if (verbose)
 		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_78 = V_1;
@@ -21828,7 +22436,7 @@ IL_0249:
 		bool L_79 = L_78->___verbose_1;
 		if (!L_79)
 		{
-			goto IL_027b;
+			goto IL_02ae;
 		}
 	}
 	{
@@ -21847,24 +22455,53 @@ IL_0249:
 		Logger_LogFromMethod_m4C7E69EE8A56FB3F9718E54A586306DEE653AD2E(_stringLiteral8F5320B5692D580C1405B5267543756A79E879EF, _stringLiteral0FFC9A09ACD7D6BB442EB143F1477859451D8341, L_83, L_85, NULL);
 	}
 
-IL_027b:
+IL_02ae:
 	{
-		// error = null;
+		// if (mapbox.QueryRouteResult == null)
 		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_86 = V_1;
 		NullCheck(L_86);
-		L_86->___error_2 = (String_t*)NULL;
-		Il2CppCodeGenWriteBarrier((void**)(&L_86->___error_2), (void*)(String_t*)NULL);
-		// result = mapbox.QueryRouteResult;
-		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_87 = V_1;
-		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_88 = V_1;
-		NullCheck(L_88);
-		MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_89 = L_88->___mapbox_0;
-		NullCheck(L_89);
-		RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212* L_90;
-		L_90 = MapboxApi_get_QueryRouteResult_m214837EEF6953B00AEBAD695A23DD10005B6206C_inline(L_89, NULL);
+		MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_87 = L_86->___mapbox_0;
 		NullCheck(L_87);
-		L_87->___result_3 = L_90;
-		Il2CppCodeGenWriteBarrier((void**)(&L_87->___result_3), (void*)L_90);
+		RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212* L_88;
+		L_88 = MapboxApi_get_QueryRouteResult_m214837EEF6953B00AEBAD695A23DD10005B6206C_inline(L_87, NULL);
+		if (L_88)
+		{
+			goto IL_02cf;
+		}
+	}
+	{
+		// error = "[MapboxApi]: Route result is null!";
+		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_89 = V_1;
+		NullCheck(L_89);
+		L_89->___error_2 = _stringLiteral98C1FFD42D07E1CE10DC2F4E698FB344AC4CE704;
+		Il2CppCodeGenWriteBarrier((void**)(&L_89->___error_2), (void*)_stringLiteral98C1FFD42D07E1CE10DC2F4E698FB344AC4CE704);
+		// result = null;
+		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_90 = V_1;
+		NullCheck(L_90);
+		L_90->___result_3 = (RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&L_90->___result_3), (void*)(RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212*)NULL);
+		// yield break;
+		return (bool)0;
+	}
+
+IL_02cf:
+	{
+		// error = null;
+		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_91 = V_1;
+		NullCheck(L_91);
+		L_91->___error_2 = (String_t*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&L_91->___error_2), (void*)(String_t*)NULL);
+		// result = mapbox.QueryRouteResult;
+		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_92 = V_1;
+		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_93 = V_1;
+		NullCheck(L_93);
+		MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_94 = L_93->___mapbox_0;
+		NullCheck(L_94);
+		RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212* L_95;
+		L_95 = MapboxApi_get_QueryRouteResult_m214837EEF6953B00AEBAD695A23DD10005B6206C_inline(L_94, NULL);
+		NullCheck(L_92);
+		L_92->___result_3 = L_95;
+		Il2CppCodeGenWriteBarrier((void**)(&L_92->___result_3), (void*)L_95);
 		// }
 		return (bool)0;
 	}
@@ -23220,7 +23857,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SignPost_update_mE3A83080191283026B1B28D
 		NullCheck(L_7);
 		SettingsData_tBA58CB665A9E3350A4C23BE4EC926F57BBF8EF1B* L_8 = L_7->___Settings_4;
 		NullCheck(L_8);
-		float L_9 = L_8->___GroundHeight_6;
+		float L_9 = L_8->___GroundHeight_7;
 		V_3 = L_9;
 		// var relative = args.TargetPos - args.UserPos;
 		SignPostEventArgs_t3DD475699E97FA6D0210C563C63E0D0890152091* L_10 = ___args0;
@@ -26453,7 +27090,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MenuController_loadRoute_m35DD7CD0021501
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RouteWaypoint_tDBFC11E82E48C5F69ADD975E41C9E66E38C844DC_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* V_0 = NULL;
+	int32_t V_0 = 0;
+	RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* V_1 = NULL;
 	{
 		// if (s.destination != null)
 		State_t06A28C804BAC792265824084CA303286582B91B2* L_0 = __this->___s_13;
@@ -26461,21 +27099,29 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MenuController_loadRoute_m35DD7CD0021501
 		Location_t9E7AB293D59F64A92A93EF884B4C0120DBE40E39* L_1 = L_0->___destination_3;
 		if (!L_1)
 		{
-			goto IL_0066;
+			goto IL_0078;
 		}
 	}
 	{
-		// var api = new MapboxApi(MapboxToken);
-		String_t* L_2 = __this->___MapboxToken_4;
-		MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_3 = (MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA*)il2cpp_codegen_object_new(MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA_il2cpp_TypeInfo_var);
+		// var lang = MapboxRoute.Settings.Language;
+		MapboxRoute_t9F7C0E5CF1EB4B7F599503017567E4EDDBA546B0* L_2 = __this->___MapboxRoute_9;
+		NullCheck(L_2);
+		SettingsData_tBA58CB665A9E3350A4C23BE4EC926F57BBF8EF1B* L_3 = L_2->___Settings_4;
 		NullCheck(L_3);
-		MapboxApi__ctor_m393CDA96AEAEF30CD29C8183E1637E1B14D1100F(L_3, L_2, NULL);
+		int32_t L_4 = L_3->___Language_4;
+		V_0 = L_4;
+		// var api = new MapboxApi(MapboxToken, lang);
+		String_t* L_5 = __this->___MapboxToken_4;
+		int32_t L_6 = V_0;
+		MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_7 = (MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA*)il2cpp_codegen_object_new(MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA_il2cpp_TypeInfo_var);
+		NullCheck(L_7);
+		MapboxApi__ctor_m728B7F1894D2EDD4720AE606573594EF671E4F8A(L_7, L_5, L_6, NULL);
 		// var loader = new RouteLoader(api, DebugMode);
-		bool L_4 = __this->___DebugMode_12;
-		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_5 = (RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196*)il2cpp_codegen_object_new(RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196_il2cpp_TypeInfo_var);
-		NullCheck(L_5);
-		RouteLoader__ctor_m0A423C9730C9DA985E5FBBD731D35A5BDBBBEEE3(L_5, L_3, L_4, NULL);
-		V_0 = L_5;
+		bool L_8 = __this->___DebugMode_12;
+		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_9 = (RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196*)il2cpp_codegen_object_new(RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196_il2cpp_TypeInfo_var);
+		NullCheck(L_9);
+		RouteLoader__ctor_m0A423C9730C9DA985E5FBBD731D35A5BDBBBEEE3(L_9, L_7, L_8, NULL);
+		V_1 = L_9;
 		// StartCoroutine(
 		//         loader.LoadRoute(
 		//             new RouteWaypoint { Type = RouteWaypointType.UserLocation },
@@ -26498,37 +27144,37 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MenuController_loadRoute_m35DD7CD0021501
 		//                 MapboxRoute.RoutePathRenderer = currentPathRenderer;
 		//                 MapboxRoute.BuildRoute(res);
 		//             }));
-		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_6 = V_0;
-		RouteWaypoint_tDBFC11E82E48C5F69ADD975E41C9E66E38C844DC* L_7 = (RouteWaypoint_tDBFC11E82E48C5F69ADD975E41C9E66E38C844DC*)il2cpp_codegen_object_new(RouteWaypoint_tDBFC11E82E48C5F69ADD975E41C9E66E38C844DC_il2cpp_TypeInfo_var);
-		NullCheck(L_7);
-		RouteWaypoint__ctor_m1B7A2A43D5D8B5B3941D919F8EA2D3F8F4A2ABC5(L_7, NULL);
-		RouteWaypoint_tDBFC11E82E48C5F69ADD975E41C9E66E38C844DC* L_8 = L_7;
-		NullCheck(L_8);
-		L_8->___Type_0 = 0;
-		RouteWaypoint_tDBFC11E82E48C5F69ADD975E41C9E66E38C844DC* L_9 = (RouteWaypoint_tDBFC11E82E48C5F69ADD975E41C9E66E38C844DC*)il2cpp_codegen_object_new(RouteWaypoint_tDBFC11E82E48C5F69ADD975E41C9E66E38C844DC_il2cpp_TypeInfo_var);
-		NullCheck(L_9);
-		RouteWaypoint__ctor_m1B7A2A43D5D8B5B3941D919F8EA2D3F8F4A2ABC5(L_9, NULL);
-		RouteWaypoint_tDBFC11E82E48C5F69ADD975E41C9E66E38C844DC* L_10 = L_9;
-		NullCheck(L_10);
-		L_10->___Type_0 = 1;
-		RouteWaypoint_tDBFC11E82E48C5F69ADD975E41C9E66E38C844DC* L_11 = L_10;
-		State_t06A28C804BAC792265824084CA303286582B91B2* L_12 = __this->___s_13;
-		NullCheck(L_12);
-		Location_t9E7AB293D59F64A92A93EF884B4C0120DBE40E39* L_13 = L_12->___destination_3;
+		RouteLoader_tE4FE009BCC4C874C70AE3377EE67D0ED8157A196* L_10 = V_1;
+		RouteWaypoint_tDBFC11E82E48C5F69ADD975E41C9E66E38C844DC* L_11 = (RouteWaypoint_tDBFC11E82E48C5F69ADD975E41C9E66E38C844DC*)il2cpp_codegen_object_new(RouteWaypoint_tDBFC11E82E48C5F69ADD975E41C9E66E38C844DC_il2cpp_TypeInfo_var);
 		NullCheck(L_11);
-		L_11->___Location_1 = L_13;
-		Il2CppCodeGenWriteBarrier((void**)(&L_11->___Location_1), (void*)L_13);
-		Action_2_tB1B3B9CC5F7DFA6D67E09ECDD286B00C0FFD9798* L_14 = (Action_2_tB1B3B9CC5F7DFA6D67E09ECDD286B00C0FFD9798*)il2cpp_codegen_object_new(Action_2_tB1B3B9CC5F7DFA6D67E09ECDD286B00C0FFD9798_il2cpp_TypeInfo_var);
+		RouteWaypoint__ctor_m1B7A2A43D5D8B5B3941D919F8EA2D3F8F4A2ABC5(L_11, NULL);
+		RouteWaypoint_tDBFC11E82E48C5F69ADD975E41C9E66E38C844DC* L_12 = L_11;
+		NullCheck(L_12);
+		L_12->___Type_0 = 0;
+		RouteWaypoint_tDBFC11E82E48C5F69ADD975E41C9E66E38C844DC* L_13 = (RouteWaypoint_tDBFC11E82E48C5F69ADD975E41C9E66E38C844DC*)il2cpp_codegen_object_new(RouteWaypoint_tDBFC11E82E48C5F69ADD975E41C9E66E38C844DC_il2cpp_TypeInfo_var);
+		NullCheck(L_13);
+		RouteWaypoint__ctor_m1B7A2A43D5D8B5B3941D919F8EA2D3F8F4A2ABC5(L_13, NULL);
+		RouteWaypoint_tDBFC11E82E48C5F69ADD975E41C9E66E38C844DC* L_14 = L_13;
 		NullCheck(L_14);
-		Action_2__ctor_mECD489A0DCE4BA4B073A4EB62A30974F65C2F312(L_14, __this, (intptr_t)((void*)MenuController_U3CloadRouteU3Eb__29_0_m173DEB621CFF1A8DA897AD5049F3C420F1FCBB6A_RuntimeMethod_var), NULL);
-		NullCheck(L_6);
-		RuntimeObject* L_15;
-		L_15 = RouteLoader_LoadRoute_mF848809840A4D7C6E25554049C64AEAF2F7FC11E(L_6, L_8, L_11, L_14, NULL);
-		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_16;
-		L_16 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_15, NULL);
+		L_14->___Type_0 = 1;
+		RouteWaypoint_tDBFC11E82E48C5F69ADD975E41C9E66E38C844DC* L_15 = L_14;
+		State_t06A28C804BAC792265824084CA303286582B91B2* L_16 = __this->___s_13;
+		NullCheck(L_16);
+		Location_t9E7AB293D59F64A92A93EF884B4C0120DBE40E39* L_17 = L_16->___destination_3;
+		NullCheck(L_15);
+		L_15->___Location_1 = L_17;
+		Il2CppCodeGenWriteBarrier((void**)(&L_15->___Location_1), (void*)L_17);
+		Action_2_tB1B3B9CC5F7DFA6D67E09ECDD286B00C0FFD9798* L_18 = (Action_2_tB1B3B9CC5F7DFA6D67E09ECDD286B00C0FFD9798*)il2cpp_codegen_object_new(Action_2_tB1B3B9CC5F7DFA6D67E09ECDD286B00C0FFD9798_il2cpp_TypeInfo_var);
+		NullCheck(L_18);
+		Action_2__ctor_mECD489A0DCE4BA4B073A4EB62A30974F65C2F312(L_18, __this, (intptr_t)((void*)MenuController_U3CloadRouteU3Eb__29_0_m173DEB621CFF1A8DA897AD5049F3C420F1FCBB6A_RuntimeMethod_var), NULL);
+		NullCheck(L_10);
+		RuntimeObject* L_19;
+		L_19 = RouteLoader_LoadRoute_mF848809840A4D7C6E25554049C64AEAF2F7FC11E(L_10, L_12, L_15, L_18, NULL);
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_20;
+		L_20 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_19, NULL);
 	}
 
-IL_0066:
+IL_0078:
 	{
 		// }
 		return;
@@ -26731,6 +27377,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CsearchU3Ed__30_MoveNext_m29527867FBF0
 	}
 	int32_t V_0 = 0;
 	MenuController_t64F8225C1DCD5F6813CC773A89CBA8CC3D0190D7* V_1 = NULL;
+	int32_t V_2 = 0;
 	{
 		int32_t L_0 = __this->___U3CU3E1__state_0;
 		V_0 = L_0;
@@ -26746,7 +27393,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CsearchU3Ed__30_MoveNext_m29527867FBF0
 		int32_t L_3 = V_0;
 		if ((((int32_t)L_3) == ((int32_t)1)))
 		{
-			goto IL_005a;
+			goto IL_006c;
 		}
 	}
 	{
@@ -26756,90 +27403,100 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CsearchU3Ed__30_MoveNext_m29527867FBF0
 IL_0017:
 	{
 		__this->___U3CU3E1__state_0 = (-1);
-		// var api = new MapboxApi(MapboxToken);
+		// var lang = MapboxRoute.Settings.Language;
 		MenuController_t64F8225C1DCD5F6813CC773A89CBA8CC3D0190D7* L_4 = V_1;
 		NullCheck(L_4);
-		String_t* L_5 = L_4->___MapboxToken_4;
-		MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_6 = (MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA*)il2cpp_codegen_object_new(MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA_il2cpp_TypeInfo_var);
+		MapboxRoute_t9F7C0E5CF1EB4B7F599503017567E4EDDBA546B0* L_5 = L_4->___MapboxRoute_9;
+		NullCheck(L_5);
+		SettingsData_tBA58CB665A9E3350A4C23BE4EC926F57BBF8EF1B* L_6 = L_5->___Settings_4;
 		NullCheck(L_6);
-		MapboxApi__ctor_m393CDA96AEAEF30CD29C8183E1637E1B14D1100F(L_6, L_5, NULL);
-		__this->___U3CapiU3E5__2_3 = L_6;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CapiU3E5__2_3), (void*)L_6);
-		// yield return api.QueryLocal(s.QueryText, DebugMode);
-		MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_7 = __this->___U3CapiU3E5__2_3;
+		int32_t L_7 = L_6->___Language_4;
+		V_2 = L_7;
+		// var api = new MapboxApi(MapboxToken, lang);
 		MenuController_t64F8225C1DCD5F6813CC773A89CBA8CC3D0190D7* L_8 = V_1;
 		NullCheck(L_8);
-		State_t06A28C804BAC792265824084CA303286582B91B2* L_9 = L_8->___s_13;
-		NullCheck(L_9);
-		String_t* L_10 = L_9->___QueryText_0;
-		MenuController_t64F8225C1DCD5F6813CC773A89CBA8CC3D0190D7* L_11 = V_1;
+		String_t* L_9 = L_8->___MapboxToken_4;
+		int32_t L_10 = V_2;
+		MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_11 = (MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA*)il2cpp_codegen_object_new(MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA_il2cpp_TypeInfo_var);
 		NullCheck(L_11);
-		bool L_12 = L_11->___DebugMode_12;
-		NullCheck(L_7);
-		RuntimeObject* L_13;
-		L_13 = MapboxApi_QueryLocal_mCFD68CB094871AAA50236A5723423BAB371943B7(L_7, L_10, L_12, NULL);
-		__this->___U3CU3E2__current_1 = L_13;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_13);
+		MapboxApi__ctor_m728B7F1894D2EDD4720AE606573594EF671E4F8A(L_11, L_9, L_10, NULL);
+		__this->___U3CapiU3E5__2_3 = L_11;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CapiU3E5__2_3), (void*)L_11);
+		// yield return api.QueryLocal(s.QueryText, DebugMode);
+		MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_12 = __this->___U3CapiU3E5__2_3;
+		MenuController_t64F8225C1DCD5F6813CC773A89CBA8CC3D0190D7* L_13 = V_1;
+		NullCheck(L_13);
+		State_t06A28C804BAC792265824084CA303286582B91B2* L_14 = L_13->___s_13;
+		NullCheck(L_14);
+		String_t* L_15 = L_14->___QueryText_0;
+		MenuController_t64F8225C1DCD5F6813CC773A89CBA8CC3D0190D7* L_16 = V_1;
+		NullCheck(L_16);
+		bool L_17 = L_16->___DebugMode_12;
+		NullCheck(L_12);
+		RuntimeObject* L_18;
+		L_18 = MapboxApi_QueryLocal_mCFD68CB094871AAA50236A5723423BAB371943B7(L_12, L_15, L_17, NULL);
+		__this->___U3CU3E2__current_1 = L_18;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_18);
 		__this->___U3CU3E1__state_0 = 1;
 		return (bool)1;
 	}
 
-IL_005a:
+IL_006c:
 	{
 		__this->___U3CU3E1__state_0 = (-1);
 		// if (api.ErrorMessage != null)
-		MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_14 = __this->___U3CapiU3E5__2_3;
-		NullCheck(L_14);
-		String_t* L_15;
-		L_15 = MapboxApi_get_ErrorMessage_m46C0780001769AEE7F43DB7442DD03800AFD793D_inline(L_14, NULL);
-		if (!L_15)
+		MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_19 = __this->___U3CapiU3E5__2_3;
+		NullCheck(L_19);
+		String_t* L_20;
+		L_20 = MapboxApi_get_ErrorMessage_m46C0780001769AEE7F43DB7442DD03800AFD793D_inline(L_19, NULL);
+		if (!L_20)
 		{
-			goto IL_0096;
+			goto IL_00a8;
 		}
 	}
 	{
 		// s.ErrorMessage = api.ErrorMessage;
-		MenuController_t64F8225C1DCD5F6813CC773A89CBA8CC3D0190D7* L_16 = V_1;
-		NullCheck(L_16);
-		State_t06A28C804BAC792265824084CA303286582B91B2* L_17 = L_16->___s_13;
-		MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_18 = __this->___U3CapiU3E5__2_3;
-		NullCheck(L_18);
-		String_t* L_19;
-		L_19 = MapboxApi_get_ErrorMessage_m46C0780001769AEE7F43DB7442DD03800AFD793D_inline(L_18, NULL);
-		NullCheck(L_17);
-		L_17->___ErrorMessage_5 = L_19;
-		Il2CppCodeGenWriteBarrier((void**)(&L_17->___ErrorMessage_5), (void*)L_19);
-		// s.Results = new List<GeocodingFeature>();
-		MenuController_t64F8225C1DCD5F6813CC773A89CBA8CC3D0190D7* L_20 = V_1;
-		NullCheck(L_20);
-		State_t06A28C804BAC792265824084CA303286582B91B2* L_21 = L_20->___s_13;
-		List_1_t87C72702F6828382F75FDD40F4E3E6C10598A2C0* L_22 = (List_1_t87C72702F6828382F75FDD40F4E3E6C10598A2C0*)il2cpp_codegen_object_new(List_1_t87C72702F6828382F75FDD40F4E3E6C10598A2C0_il2cpp_TypeInfo_var);
-		NullCheck(L_22);
-		List_1__ctor_m1E9F3AA71F39476833A25C788793147489D98E8E(L_22, List_1__ctor_m1E9F3AA71F39476833A25C788793147489D98E8E_RuntimeMethod_var);
+		MenuController_t64F8225C1DCD5F6813CC773A89CBA8CC3D0190D7* L_21 = V_1;
 		NullCheck(L_21);
-		L_21->___Results_1 = L_22;
-		Il2CppCodeGenWriteBarrier((void**)(&L_21->___Results_1), (void*)L_22);
-		goto IL_00b1;
+		State_t06A28C804BAC792265824084CA303286582B91B2* L_22 = L_21->___s_13;
+		MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_23 = __this->___U3CapiU3E5__2_3;
+		NullCheck(L_23);
+		String_t* L_24;
+		L_24 = MapboxApi_get_ErrorMessage_m46C0780001769AEE7F43DB7442DD03800AFD793D_inline(L_23, NULL);
+		NullCheck(L_22);
+		L_22->___ErrorMessage_5 = L_24;
+		Il2CppCodeGenWriteBarrier((void**)(&L_22->___ErrorMessage_5), (void*)L_24);
+		// s.Results = new List<GeocodingFeature>();
+		MenuController_t64F8225C1DCD5F6813CC773A89CBA8CC3D0190D7* L_25 = V_1;
+		NullCheck(L_25);
+		State_t06A28C804BAC792265824084CA303286582B91B2* L_26 = L_25->___s_13;
+		List_1_t87C72702F6828382F75FDD40F4E3E6C10598A2C0* L_27 = (List_1_t87C72702F6828382F75FDD40F4E3E6C10598A2C0*)il2cpp_codegen_object_new(List_1_t87C72702F6828382F75FDD40F4E3E6C10598A2C0_il2cpp_TypeInfo_var);
+		NullCheck(L_27);
+		List_1__ctor_m1E9F3AA71F39476833A25C788793147489D98E8E(L_27, List_1__ctor_m1E9F3AA71F39476833A25C788793147489D98E8E_RuntimeMethod_var);
+		NullCheck(L_26);
+		L_26->___Results_1 = L_27;
+		Il2CppCodeGenWriteBarrier((void**)(&L_26->___Results_1), (void*)L_27);
+		goto IL_00c3;
 	}
 
-IL_0096:
+IL_00a8:
 	{
 		// s.Results = api.QueryLocalResult.features;
-		MenuController_t64F8225C1DCD5F6813CC773A89CBA8CC3D0190D7* L_23 = V_1;
-		NullCheck(L_23);
-		State_t06A28C804BAC792265824084CA303286582B91B2* L_24 = L_23->___s_13;
-		MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_25 = __this->___U3CapiU3E5__2_3;
-		NullCheck(L_25);
-		GeocodingResponse_t38CBD1C2B935A3BAB29E994C84DD226A4AB01A94* L_26;
-		L_26 = MapboxApi_get_QueryLocalResult_m084D7A5F7DD0A99ED62EFCDDE9D560F7904C4BC8_inline(L_25, NULL);
-		NullCheck(L_26);
-		List_1_t87C72702F6828382F75FDD40F4E3E6C10598A2C0* L_27 = L_26->___features_0;
-		NullCheck(L_24);
-		L_24->___Results_1 = L_27;
-		Il2CppCodeGenWriteBarrier((void**)(&L_24->___Results_1), (void*)L_27);
+		MenuController_t64F8225C1DCD5F6813CC773A89CBA8CC3D0190D7* L_28 = V_1;
+		NullCheck(L_28);
+		State_t06A28C804BAC792265824084CA303286582B91B2* L_29 = L_28->___s_13;
+		MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* L_30 = __this->___U3CapiU3E5__2_3;
+		NullCheck(L_30);
+		GeocodingResponse_t38CBD1C2B935A3BAB29E994C84DD226A4AB01A94* L_31;
+		L_31 = MapboxApi_get_QueryLocalResult_m084D7A5F7DD0A99ED62EFCDDE9D560F7904C4BC8_inline(L_30, NULL);
+		NullCheck(L_31);
+		List_1_t87C72702F6828382F75FDD40F4E3E6C10598A2C0* L_32 = L_31->___features_0;
+		NullCheck(L_29);
+		L_29->___Results_1 = L_32;
+		Il2CppCodeGenWriteBarrier((void**)(&L_29->___Results_1), (void*)L_32);
 	}
 
-IL_00b1:
+IL_00c3:
 	{
 		// }
 		return (bool)0;
@@ -27778,19 +28435,19 @@ IL_001b:
 		return L_6;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR GeocodingResponse_t38CBD1C2B935A3BAB29E994C84DD226A4AB01A94* MapboxApi_get_QueryLocalResult_m084D7A5F7DD0A99ED62EFCDDE9D560F7904C4BC8_inline (MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* __this, const RuntimeMethod* method) 
-{
-	{
-		// public GeocodingResponse QueryLocalResult => queryLocalResult;
-		GeocodingResponse_t38CBD1C2B935A3BAB29E994C84DD226A4AB01A94* L_0 = __this->___queryLocalResult_2;
-		return L_0;
-	}
-}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212* MapboxApi_get_QueryRouteResult_m214837EEF6953B00AEBAD695A23DD10005B6206C_inline (MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* __this, const RuntimeMethod* method) 
 {
 	{
 		// public RouteResponse QueryRouteResult => queryRouteResult;
-		RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212* L_0 = __this->___queryRouteResult_1;
+		RouteResponse_tF189AFDEBA06C17330596DD4CC373AA90A1DB212* L_0 = __this->___queryRouteResult_2;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR GeocodingResponse_t38CBD1C2B935A3BAB29E994C84DD226A4AB01A94* MapboxApi_get_QueryLocalResult_m084D7A5F7DD0A99ED62EFCDDE9D560F7904C4BC8_inline (MapboxApi_t066AB897CBDEAE033CF39436666B12A6422C37AA* __this, const RuntimeMethod* method) 
+{
+	{
+		// public GeocodingResponse QueryLocalResult => queryLocalResult;
+		GeocodingResponse_t38CBD1C2B935A3BAB29E994C84DD226A4AB01A94* L_0 = __this->___queryLocalResult_3;
 		return L_0;
 	}
 }
@@ -27798,7 +28455,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* MapboxApi_get_ErrorMess
 {
 	{
 		// public string ErrorMessage => errorMessage;
-		String_t* L_0 = __this->___errorMessage_3;
+		String_t* L_0 = __this->___errorMessage_4;
 		return L_0;
 	}
 }
