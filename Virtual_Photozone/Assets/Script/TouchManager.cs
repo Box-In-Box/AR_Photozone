@@ -101,7 +101,7 @@ public class TouchManager : MonoBehaviour
 
     void FindAnimalTouch(GameObject touchObj)
     {
-        StartCoroutine(PrintText(touchObj.gameObject.name + " 을 발견"));
+        StartCoroutine(PrintText(touchObj.gameObject.name + " 동물을 발견"));
         //animal 도감 추가
     }
 

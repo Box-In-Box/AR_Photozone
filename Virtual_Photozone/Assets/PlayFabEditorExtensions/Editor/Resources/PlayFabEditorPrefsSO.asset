@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: PlayFabEditorPrefsSO
   m_EditorClassIdentifier: 
   DevAccountEmail: dgf0000@naver.com
-  DevAccountToken: g5ctaomigbdyc47eqg4t4pusn79333h7f6j1jsxu644ywapnqzipz3iub5b8n5yomihucoiq3ty91pcjbzgcd9316fyfzmhoyi4mzmpj8xq5i9i361p4dyx9rdimsjyj6iydb1mkaqoc7ers5ucihhteuax1cm4nwq87wtoqtmwhqof1bu6sxug8px35qt8jii3ao8aq
-  SelectedStudio: Box Studio
+  DevAccountToken: irsq3zyq5dhthmhu7u9air65tcu8y4te4degkrpo8bui8t6bfnferjferrf5ca3p191awf4kqf7inpfjm3itd3xs3pgahzjymzr1gyth15jdirax8sz5xkmjjhk4qq5dws1gisst7fhzfmxrn7jn8exzo33fddwat15tnbqqsekchkghubgmyndk3nkgzn6du5cpud7t
+  SelectedStudio: 
   SdkPath: Assets/PlayFabSDK
   EdExPath: 
   LocalCloudScriptPath: 
   PanelIsShown: 0
-  curMainMenuIdx: 0
+  curMainMenuIdx: 1
   curSubMenuIdx: 0
