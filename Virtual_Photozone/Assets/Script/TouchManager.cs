@@ -95,13 +95,13 @@ public class TouchManager : MonoBehaviour
     }
     void StructureTouch(GameObject touchObj)
     {
-        StartCoroutine(PrintText(touchObj.gameObject.name + " 구조물을 발견"));
+        StartCoroutine(PrintText(touchObj.gameObject.name + " 구조물 발견"));
         //구조물 은 아마 위치 변경 가능하게?
     }
 
     void FindAnimalTouch(GameObject touchObj)
     {
-        StartCoroutine(PrintText(touchObj.gameObject.name + " 동물을 발견"));
+        StartCoroutine(PrintText(touchObj.gameObject.name + " 동물 발견"));
         //animal 도감 추가
     }
 

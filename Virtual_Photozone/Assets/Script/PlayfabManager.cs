@@ -20,7 +20,9 @@ public class PlayfabManager : MonoBehaviour
 
     public void Register()
     {
-        var request = new RegisterPlayFabUserRequest { Email = Register_EmailInput.text, Password = Register_PasswordInput.text, Username = Register_UserNameInput.text };
+        var request = new RegisterPlayFabUserRequest { Email = Register_EmailInput.text, 
+            Password = Register_PasswordInput.text, Username = Register_UserNameInput.text };
+
         PlayFabClientAPI.RegisterPlayFabUser(request, OnRegisterSuccess, OnRegisterFailure);
     }
 
@@ -36,7 +38,7 @@ public class PlayfabManager : MonoBehaviour
     {
         ConsolePanel.SetActive(true);
         ConsolePanel.gameObject.transform.GetChild(0).gameObject.GetComponent<Text>().text = msg;
-        yield return new WaitForSecondsRealtime(1f);
+        yield return new WaitForSecondsRealtime(2f);
         ConsolePanel.gameObject.transform.GetChild(0).gameObject.GetComponent<Text>().text = "";
         ConsolePanel.SetActive(false);
     }
