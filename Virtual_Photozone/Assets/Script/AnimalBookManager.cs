@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
 
 public class AnimalBookManager : MonoBehaviour
 {
@@ -14,18 +15,24 @@ public class AnimalBookManager : MonoBehaviour
 
     private bool[] isFound;
     private bool[] isFoundTest;
+    private bool[] isFoundTestAll;
 
     void Start()
     {
         AnimalContentParent = GameObject.Find("AnimalBookContent").transform;
         isFound = new bool[AnimalCount];
 
+        // TEST ARRAY --
         isFoundTest = new bool[33] { true, false, false, false, false, false, false, false, false, false, 
             true, true, true, true, false, false, false, false, true, true, 
             true, true, true, true, true, false, false, false, false, false, 
             false, false, false};
 
-    AnimalCountText.GetComponent<Text>().text = "수집한 동물의 수 : " + CollectedAnimalCount.ToString() + " / " + AnimalCount.ToString();
+        isFoundTestAll = new bool[33];
+        isFoundTestAll = Enumerable.Repeat(true, 33).ToArray();
+        // -- TEST ARRAY
+
+        AnimalCountText.GetComponent<Text>().text = "수집한 동물의 수 : " + CollectedAnimalCount.ToString() + " / " + AnimalCount.ToString();
         SetAnimalBook();
     }
 
@@ -33,9 +40,9 @@ public class AnimalBookManager : MonoBehaviour
     {
         for (int i = 0; i < AnimalCount; i++) {
             GameObject go = Instantiate(AnimalPrefab, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
-            go.GetComponent<Image>().sprite = Resources.Load("AnimalBookImg/"+(i+1).ToString(), typeof(Sprite)) as Sprite;
+            go.GetComponent<Image>().sprite = Resources.Load("AnimalBookImg/"+"Animal_"+ (i+1).ToString(), typeof(Sprite)) as Sprite;
 
-            if (isFoundTest[i] == false)
+            if (isFoundTestAll[i] == false) // TEST BOOL
                 go.GetComponent<Image>().color = new Color(0, 0, 0);
 
             go.transform.SetParent(AnimalContentParent);
