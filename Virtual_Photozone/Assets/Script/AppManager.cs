@@ -117,4 +117,13 @@ public class AppManager : MonoBehaviour
     public void SetLoginText(Text text) => text.text = "로그인";
     public void SetRegistText(Text text) => text.text = "회원가입";
     #endregion
+
+    public IEnumerator PrintLog(string msg)
+    {
+        ConsolePanel.SetActive(true);
+        ConsolePanel.gameObject.transform.GetChild(0).gameObject.GetComponent<Text>().text = msg;
+        yield return new WaitForSecondsRealtime(1.5f);
+        ConsolePanel.gameObject.transform.GetChild(0).gameObject.GetComponent<Text>().text = "";
+        ConsolePanel.SetActive(false);
+    }
 }

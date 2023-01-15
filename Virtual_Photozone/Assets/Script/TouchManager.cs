@@ -17,8 +17,6 @@ public class TouchManager : MonoBehaviour
     [SerializeField] 
     public Camera arCamera;
 
-    public GameObject ConsolePanel;
-
     private static TouchManager _instance = null;
     public static TouchManager Instance
     {
@@ -95,28 +93,19 @@ public class TouchManager : MonoBehaviour
     }
     void StructureTouch(GameObject touchObj)
     {
-        StartCoroutine(PrintText(touchObj.gameObject.name + " 구조물 발견"));
+        StartCoroutine(AppManager.Instance.PrintLog(touchObj.gameObject.name + " 구조물 발견"));
         //구조물 은 아마 위치 변경 가능하게?
     }
 
     void FindAnimalTouch(GameObject touchObj)
     {
-        StartCoroutine(PrintText(touchObj.gameObject.name + " 동물 발견"));
+        StartCoroutine(AppManager.Instance.PrintLog(touchObj.gameObject.name + " 동물 발견"));
         //animal 도감 추가
     }
 
     void DescriptionTouch(GameObject touchObj)
     {
-        StartCoroutine(PrintText(touchObj.gameObject.name + " 설명"));
+        StartCoroutine(AppManager.Instance.PrintLog(touchObj.gameObject.name + " 설명"));
         //해당 위치나 건물 설명
-    }
-
-    IEnumerator PrintText(string msg)
-    {
-        ConsolePanel.SetActive(true);
-        ConsolePanel.gameObject.transform.GetChild(0).gameObject.GetComponent<Text>().text = msg;
-        yield return new WaitForSecondsRealtime(2f);
-        ConsolePanel.gameObject.transform.GetChild(0).gameObject.GetComponent<Text>().text = "";
-        ConsolePanel.SetActive(false);
     }
 }
