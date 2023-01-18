@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
@@ -12,7 +12,7 @@ public class GalleryManager : MonoBehaviour
 
     private void Update()
     {
-        //µÚ·Î°¡±â ´©¸¦ ¶§ °¶·¯¸® µé¾î°¡Áö´Â ¹ö±× ¼öÁ¤ ÇÊ¿ä
+        //ë’¤ë¡œê°€ê¸° ëˆ„ë¥¼ ë•Œ ê°¤ëŸ¬ë¦¬ ë“¤ì–´ê°€ì§€ëŠ” ë²„ê·¸ ìˆ˜ì • í•„ìš”
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (photoScreenPanel.activeSelf == true)

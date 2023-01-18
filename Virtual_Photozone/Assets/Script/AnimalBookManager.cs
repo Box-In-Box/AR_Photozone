@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,7 +7,8 @@ using System;
 
 public class AnimalBookManager : MonoBehaviour
 {
-    public static int AnimalCount = 33;
+    public static int AnimalNumber = 33;
+    public static string AnimalMsg = "Animal_";
     public int CollectedAnimalCount = 0;
 
     public GameObject AnimalPrefab;
@@ -34,47 +35,67 @@ public class AnimalBookManager : MonoBehaviour
         }
     }
 
-    private void Start()
+    public void Setting() //ì²˜ìŒë§Œ ì‹¤í–‰(ë¡œê·¸ì¸ ì‹œ)
     {
-        isFound = new bool[AnimalCount];
-    }
+        isFound = new bool[AnimalNumber];
 
-    public void Setting() //Ã³À½¸¸ ½ÇÇà
-    {
-        CollectedAnimalCount = 0; //¿©±â¼­ ¿À·ù ¹ß»ı
-        for (int i = 0; i < AnimalCount; i++)
+        CollectedAnimalCount = 0;
+        for (int i = 0; i < AnimalNumber; i++)
         {
             PlayfabManager.Instance.GetAnimal("Animal_" + i.ToString());
             GameObject go = Instantiate(AnimalPrefab, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
-            go.GetComponent<Image>().sprite = Resources.Load("AnimalBookImg/" + "Animal_" + i.ToString(), typeof(Sprite)) as Sprite;
+            go.GetComponent<Image>().sprite = Resources.Load("AnimalBookImg/" + AnimalMsg + i.ToString(), typeof(Sprite)) as Sprite;
             go.GetComponent<Image>().color = new Color(0, 0, 0);
             go.transform.SetParent(AnimalContentParent);
         }
     }
 
-    public void AddAnimal(string msg)   //µµ°¨ µî·Ï
+    public void AddAnimal(string msg)   //ì„œë²„, ë¡œì»¬ë„ê° ë“±ë¡
     {
         int num = Int32.Parse(msg.Substring(msg.IndexOf('_') + 1).Trim());
 
-        if(isFound[num] == false)   //Áßº¹ ¹æÁö
+        if(isFound[num] == false)   //ì¤‘ë³µ ë°©ì§€
         {
+            //ë¡œì»¬, ì„œë²„ë“±ë¡
             isFound[num] = true;
             PlayfabManager.Instance.SaveAnimal(msg);
 
-            GameObject go = AnimalContentParent.GetChild(num).gameObject;
-            go.GetComponent<Image>().color = new Color(255, 255, 255);
+            ChangeCollectedImg(num);
 
-            CollectedAnimalCount++;
-            ShowCount();
+            AddAnimalCount();
         }
-        else
+        else    //ì´ë¯¸ ìˆ˜ì§‘ ë˜ì—ˆì„ ë•Œ
         {
-            StartCoroutine(AppManager.Instance.PrintLog(msg + "Àº(´Â) ÀÌ¹Ì µî·ÏµÇ¾ú½À´Ï´Ù."));
+            StartCoroutine(AppManager.Instance.PrintLog(msg + "ì€(ëŠ”) ì´ë¯¸ ë“±ë¡ë˜ì—ˆìŠµë‹ˆë‹¤."));
         }
     }
 
-    public void ShowCount()
+    public void SetAnimal(string msg)   //ë¡œì»¬ ë„ê° ë“±ë¡
     {
-        AnimalCountText.GetComponent<Text>().text = "¼öÁıÇÑ µ¿¹°ÀÇ ¼ö : " + CollectedAnimalCount.ToString() + " / " + AnimalCount.ToString();
+        int num = Int32.Parse(msg.Substring(msg.IndexOf('_') + 1).Trim());
+
+        if(isFound[num] == false)   //ì¤‘ë³µ ë°©ì§€
+        {
+            //ë¡œì»¬ë“±ë¡
+            isFound[num] = true;
+
+            ChangeCollectedImg(num);
+
+            AddAnimalCount();
+        }
+    }
+
+    //ìˆ˜ì§‘ëœ ë™ë¬¼ ì´ë¯¸ì§€ ìˆ˜ì •(ê·¸ë¦¼ì > ì›ë³¸)
+    public void ChangeCollectedImg(int num)
+    {
+        GameObject go = AnimalContentParent.GetChild(num).gameObject;
+        go.GetComponent<Image>().color = new Color(255, 255, 255);
+    }
+
+    //ìˆ˜ì§‘ëœ ë™ë¬¼ ì¹´ìš´íŠ¸ ì¦ê°€ + í…ìŠ¤íŠ¸ ë³€ê²½
+    public void AddAnimalCount() 
+    {
+        CollectedAnimalCount++;
+        AnimalCountText.GetComponent<Text>().text = "ìˆ˜ì§‘í•œ ë™ë¬¼ì˜ ìˆ˜ : " + CollectedAnimalCount.ToString() + " / " + AnimalNumber.ToString();
     }
 }

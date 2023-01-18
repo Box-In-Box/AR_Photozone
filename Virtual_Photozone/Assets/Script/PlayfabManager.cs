@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using PlayFab;
@@ -40,14 +40,14 @@ public class PlayfabManager : MonoBehaviour
         PlayFabClientAPI.LoginWithEmailAddress(request,
             (result) =>
             {
-                StartCoroutine(AppManager.Instance.PrintLog("·Î±×ÀÎ ¼º°ø"));
+                StartCoroutine(AppManager.Instance.PrintLog("ë¡œê·¸ì¸ ì„±ê³µ"));
                 myID = result.PlayFabId;
                 AnimalBookManager.Instance.Setting();
                 AppManager.Instance.QuitPanel(Login_Panel);
             },
             (error) =>
             { 
-                StartCoroutine(AppManager.Instance.PrintLog("·Î±×ÀÎ ½ÇÆĞ"));
+                StartCoroutine(AppManager.Instance.PrintLog("ë¡œê·¸ì¸ ì‹¤íŒ¨"));
                 AppManager.Instance.OpenPanel(Login_Panel);
             }
         );
@@ -64,25 +64,20 @@ public class PlayfabManager : MonoBehaviour
         };
 
         PlayFabClientAPI.RegisterPlayFabUser(request,
-            (result) => { StartCoroutine(AppManager.Instance.PrintLog("È¸¿ø°¡ÀÔ ¼º°ø")); },
-            (error) => StartCoroutine(AppManager.Instance.PrintLog("È¸¿ø°¡ÀÔ ½ÇÆĞ")));
+            (result) => { StartCoroutine(AppManager.Instance.PrintLog("íšŒì›ê°€ì… ì„±ê³µ")); },
+            (error) => StartCoroutine(AppManager.Instance.PrintLog("íšŒì›ê°€ì… ì‹¤íŒ¨")));
     }
 
-    public void GetAnimal(string msg)   //½ÇÇà Ã³À½¸¸ ½ÇÇà
+    public void GetAnimal(string msg)   //ì‹¤í–‰ ì²˜ìŒë§Œ ì‹¤í–‰
     {
-        int num = Int32.Parse(msg.Substring(msg.IndexOf('_') + 1).Trim());
-
         var request = new GetUserDataRequest() { PlayFabId = myID };
         PlayFabClientAPI.GetUserData(request,
             (result) =>
             {
                 print(result.Data[msg].Value);
-                AnimalBookManager.Instance.isFound[num] = true;
-                AnimalBookManager.Instance.AnimalContentParent.GetChild(num).gameObject.GetComponent<Image>().color = new Color(255, 255, 255);
-                AnimalBookManager.Instance.CollectedAnimalCount++;
-                AnimalBookManager.Instance.ShowCount();
+                AnimalBookManager.Instance.SetAnimal(msg);
             },
-            (error) => { print("µ¥ÀÌÅÍ ºÒ·¯¿À±â ½ÇÆĞ"); });
+            (error) => { print("ë°ì´í„° ë¶ˆëŸ¬ì˜¤ê¸° ì‹¤íŒ¨"); });
     }
 
     #region AnimalBook DB
@@ -92,9 +87,9 @@ public class PlayfabManager : MonoBehaviour
         PlayFabClientAPI.UpdateUserData(request,
             (result) =>
             {
-                StartCoroutine(AppManager.Instance.PrintLog(msg + "À»(¸¦) µî·ÏÇÏ¿´½À´Ï´Ù."));
+                StartCoroutine(AppManager.Instance.PrintLog(msg + "ì„(ë¥¼) ë“±ë¡í•˜ì˜€ìŠµë‹ˆë‹¤."));
             },
-            (error) => StartCoroutine(AppManager.Instance.PrintLog(msg + "À»(¸¦) µî·Ï ½ÇÆĞÇß½À´Ï´Ù.")));
+            (error) => StartCoroutine(AppManager.Instance.PrintLog(msg + "ì„(ë¥¼) ë“±ë¡ ì‹¤íŒ¨í–ˆìŠµë‹ˆë‹¤.")));
     }
     #endregion
 }
