@@ -58,10 +58,16 @@ public class ScreenshotManager : MonoBehaviour
     {
         isCoroutinePlaying = true;
 
-        //풀 스크린일 시 UI제거 필요
+        //풀 스크린일 시 UI 제거 필요
         if(currentRatio == 2)
         {
             uiPanel.SetActive(false);
+            yield return new WaitForEndOfFrame();
+        }
+        //콘솔 패널 UI 제거
+        if(TestConsoleManager.Instance.isConsolePanelActive == true)
+        {
+            TestConsoleManager.Instance.ConsolePanel.SetActive(false);
             yield return new WaitForEndOfFrame();
         }
         // 스크린샷 + 갤러리갱신
@@ -78,9 +84,12 @@ public class ScreenshotManager : MonoBehaviour
 
         //사운드
 
-        // 풀 스크린일 시 UI 복귀
+        //풀 스크린일 시 UI 복귀
         if (currentRatio == 2) 
-            uiPanel.SetActive(true);  
+            uiPanel.SetActive(true);
+        //콘솔 패널 UI 복귀
+        if (TestConsoleManager.Instance.isConsolePanelActive == true)
+            TestConsoleManager.Instance.ConsolePanel.SetActive(true);
 
         isCoroutinePlaying = false;
     }

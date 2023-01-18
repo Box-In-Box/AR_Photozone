@@ -5,6 +5,26 @@ using UnityEngine;
 public class TestConsoleManager : MonoBehaviour
 {
     public GameObject ConsolePanel;
+    public bool isConsolePanelActive = true; //콘솔패널 활성화 여부 -> 스크린샷매니저에서 이용
+
+    private static TestConsoleManager _instance = null;
+    public static TestConsoleManager Instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                _instance = FindObjectOfType(typeof(TestConsoleManager)) as TestConsoleManager;
+
+                if (_instance == null)
+                {
+                    Debug.LogError("There's no active ManagerClass object");
+                }
+            }
+            return _instance;
+        }
+    }
+
     void Start()
     {
         UI_Position_Setting();

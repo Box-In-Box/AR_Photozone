@@ -1160,6 +1160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ConsolePanel: {fileID: 59988922}
+  isConsolePanelActive: 1
 --- !u!1 &211409966
 GameObject:
   m_ObjectHideFlags: 0
@@ -7118,8 +7119,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Test_Script, Assembly-CSharp
+      - m_Target: {fileID: 178386684}
+        m_TargetAssemblyTypeName: TestConsoleManager, Assembly-CSharp
         m_MethodName: Random_Add_Animal
         m_Mode: 1
         m_Arguments:
