@@ -57,8 +57,16 @@ public class TestConsoleManager : MonoBehaviour
     //랜덤 동물 추가
     public void Random_Add_Animal() 
     {
-        int num = Random.Range(0, AnimalBookManager.AnimalNumber);
+        int num = Random.Range(0, AnimalBookManager.Instance.animalNumber);
 
-        AnimalBookManager.Instance.AddAnimal(AnimalBookManager.AnimalMsg + num.ToString());
+        AnimalBookManager.Instance.AddAnimal(AnimalBookManager.animalMsg + num.ToString());
+    }
+
+    //모든 동물 추가
+    public void Add_All_Animal() 
+    {
+        for(int i = 0; i < AnimalBookManager.Instance.animalNumber; i++) {
+            AnimalBookManager.Instance.AddAnimal(AnimalBookManager.animalMsg + i.ToString());
+        }
     }
 }

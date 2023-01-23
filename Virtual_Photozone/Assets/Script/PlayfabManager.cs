@@ -13,7 +13,7 @@ public class PlayfabManager : MonoBehaviour
     private string myID;
     public Text RankingText;
 
-    public GameObject ConsolePanel;
+    public Text LoginLogText;
     public GameObject Login_Panel;
 
     private static PlayfabManager _instance = null;
@@ -36,25 +36,66 @@ public class PlayfabManager : MonoBehaviour
 
     public void Login()
     {
+        LoginLogText.text="로그인중...";
+
         var request = new LoginWithEmailAddressRequest { Email = EmailInput.text, Password = PasswordInput.text };
         PlayFabClientAPI.LoginWithEmailAddress(request,
             (result) =>
             {
+                ClearLoginLogText();
                 StartCoroutine(AppManager.Instance.PrintLog("로그인 성공"));
+
                 myID = result.PlayFabId;
                 AnimalBookManager.Instance.Setting();
                 AppManager.Instance.QuitPanel(Login_Panel);
             },
             (error) =>
             { 
-                StartCoroutine(AppManager.Instance.PrintLog("로그인 실패"));
                 AppManager.Instance.OpenPanel(Login_Panel);
+                
+                if (error.ErrorDetails != null && error.ErrorDetails.Count > 0)
+                {
+                    using (var iter = error.ErrorDetails.Keys.GetEnumerator())
+                    {
+                            iter.MoveNext();
+                            string key = iter.Current;
+                            LoginLogText.text = error.ErrorDetails[key][0];
+                            Debug.Log("form playfab error code : " + ((short)error.Error));
+
+                            //주요 오류 한글화
+                            switch (error.Error) {
+                                case PlayFabErrorCode.InvalidParams:
+                                    if (key == "Email")
+                                        LoginLogText.text="이메일을 잘못 입력하셨습니다.";
+                                    if (key == "Password")
+                                        LoginLogText.text="비밀번호를 잘못 입력하셨습니다.";
+                                    break;
+                            }
+                    }
+                }
+                else
+                {
+                    LoginLogText.text = error.ErrorMessage;
+                    Debug.Log("Not form playfab error code : " + ((short)error.Error));
+
+                    //주요 오류 한글화
+                    switch (error.Error) {
+                        case PlayFabErrorCode.AccountNotFound:
+                            LoginLogText.text="등록되지 않은 이메일 입니다.";
+                            break;
+                        case PlayFabErrorCode.InvalidEmailOrPassword:
+                            LoginLogText.text="비밀번호를 잘못 입력하셨습니다.";
+                            break;
+                    }
+                }
             }
         );
     }
 
     public void Register()
     {
+        LoginLogText.text="회원가입중...";
+
         var request = new RegisterPlayFabUserRequest
         {
             Email = Register_EmailInput.text,
@@ -64,26 +105,70 @@ public class PlayfabManager : MonoBehaviour
         };
 
         PlayFabClientAPI.RegisterPlayFabUser(request,
-            (result) => { StartCoroutine(AppManager.Instance.PrintLog("회원가입 성공")); },
-            (error) => StartCoroutine(AppManager.Instance.PrintLog("회원가입 실패")));
+            (result) => 
+            { 
+                StartCoroutine(AppManager.Instance.PrintLog("회원가입 성공")); 
+            },
+            (error) => 
+            {   
+                if (error.ErrorDetails != null && error.ErrorDetails.Count > 0)
+                {
+                    using (var iter = error.ErrorDetails.Keys.GetEnumerator())
+                    {
+                            iter.MoveNext();
+                            string key = iter.Current;
+                            LoginLogText.text = error.ErrorDetails[key][0];
+                            Debug.Log("form playfab error code : " + ((short)error.Error));
+
+                            //주요 오류 한글화
+                            switch (error.Error) {
+                                case PlayFabErrorCode.EmailAddressNotAvailable:
+                                    LoginLogText.text="이미 등록된 이메일 입니다.";
+                                    break;
+                                case PlayFabErrorCode.InvalidParams:
+                                    if (key == "Email")
+                                        LoginLogText.text="이메일 형식이 아닙니다.";
+                                    if (key == "Password")
+                                        LoginLogText.text="비밀번호는 6자리 이상으로 입력해주세요.";
+                                    if (key == "Username")
+                                        LoginLogText.text="닉네임은 3~20자리로 입력해주세요.";
+                                    break;
+                            }
+                    }
+                }
+                else
+                {
+                    LoginLogText.text = error.ErrorMessage;
+                    Debug.Log("Not form playfab error code : " +  ((short)error.Error));
+
+                    //주요 오류 한글화
+                    switch (error.Error) {
+                        case PlayFabErrorCode.NameNotAvailable:
+                            LoginLogText.text="이미 등록된 닉네임 입니다.";
+                            break;
+                    }
+                }
+            }
+        );
     }
 
+    #region AnimalBook DB
     public void GetAnimal(string msg)   //실행 처음만 실행
     {
         var request = new GetUserDataRequest() { PlayFabId = myID };
         PlayFabClientAPI.GetUserData(request,
             (result) =>
             {
-                print(result.Data[msg].Value);
-                AnimalBookManager.Instance.SetAnimal(msg);
+                string time = result.Data[msg].Value;
+                AnimalBookManager.Instance.SetAnimal(msg, time);
             },
-            (error) => { print("데이터 불러오기 실패"); });
+            (error) => { print("데이터 불러오기 실패"); }); //***Debug 띄워지는거 없애야함
     }
 
-    #region AnimalBook DB
-    public void SaveAnimal(string msg)
+    
+    public void SaveAnimal(string msg, string time)
     {
-        var request = new UpdateUserDataRequest() { Data = new Dictionary<string, string>() { { msg, DateTime.Now.ToString(("yyyy-MM-dd HH:mm")) } } };
+        var request = new UpdateUserDataRequest() { Data = new Dictionary<string, string>() { { msg, time } } };
         PlayFabClientAPI.UpdateUserData(request,
             (result) =>
             {
@@ -92,4 +177,9 @@ public class PlayfabManager : MonoBehaviour
             (error) => StartCoroutine(AppManager.Instance.PrintLog(msg + "을(를) 등록 실패했습니다.")));
     }
     #endregion
+
+    public void ClearLoginLogText()    //로그인 - 회원가입 전환시 필요
+    {
+        LoginLogText.text="";
+    }
 }

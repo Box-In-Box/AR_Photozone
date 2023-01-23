@@ -99,8 +99,8 @@ public class TouchManager : MonoBehaviour
 
     void FindAnimalTouch(GameObject touchObj)
     {
-        StartCoroutine(AppManager.Instance.PrintLog(touchObj.gameObject.name + " 동물 발견"));
-        //animal 도감 추가
+        //동물도감 추가
+        AnimalBookManager.Instance.AddAnimal(touchObj.gameObject.GetComponent<ObjectData>().ID_Name);
     }
 
     void DescriptionTouch(GameObject touchObj)

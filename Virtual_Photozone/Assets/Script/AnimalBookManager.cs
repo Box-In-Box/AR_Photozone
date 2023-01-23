@@ -7,15 +7,26 @@ using System;
 
 public class AnimalBookManager : MonoBehaviour
 {
-    public static int AnimalNumber = 33;
-    public static string AnimalMsg = "Animal_";
-    public int CollectedAnimalCount = 0;
+    [Header("-----Animal Book-----")]
+    public int animalNumber = 33;
+    public int collectedAnimalCount = 0;
+    public static string animalMsg = "Animal_";
 
-    public GameObject AnimalPrefab;
-    public Text AnimalCountText;
-    public Transform AnimalContentParent;
+    public GameObject animalPrefab;
+    public Text animalCountText;
+    public Transform animalContentParent;
+    public GameObject animalCard;
+    public Text animalCardName;
+    public Text collectedTime;
+    public Button loginFromAnimalBook;
 
+    [Header("-----Animal Ranking-----")]
+    public Text animalRankingText;
+    public Button loginFromAnimalRanking;
+
+    [Space(10f)]
     public bool[] isFound;
+    public string[] getTime;
 
     private static AnimalBookManager _instance = null;
     public static AnimalBookManager Instance
@@ -37,20 +48,25 @@ public class AnimalBookManager : MonoBehaviour
 
     public void Setting() //처음만 실행(로그인 시)
     {
-        isFound = new bool[AnimalNumber];
+        isFound = new bool[animalNumber];
+        getTime = new string[animalNumber];
+        collectedAnimalCount = 0;
+        animalCountText.text = "돌아다니며 동물을 수집해보세요!";
+        animalRankingText.text = "";
+        loginFromAnimalBook.gameObject.SetActive(false);
+        loginFromAnimalRanking.gameObject.SetActive(false);
 
-        CollectedAnimalCount = 0;
-        for (int i = 0; i < AnimalNumber; i++)
+        for (int i = 0; i < animalNumber; i++)
         {
             PlayfabManager.Instance.GetAnimal("Animal_" + i.ToString());
-            GameObject go = Instantiate(AnimalPrefab, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
-            go.GetComponent<Image>().sprite = Resources.Load("AnimalBookImg/" + AnimalMsg + i.ToString(), typeof(Sprite)) as Sprite;
+            GameObject go = Instantiate(animalPrefab, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
+            go.GetComponent<Image>().sprite = Resources.Load("AnimalBookImg/" + animalMsg + i.ToString(), typeof(Sprite)) as Sprite;
             go.GetComponent<Image>().color = new Color(0, 0, 0);
-            go.transform.SetParent(AnimalContentParent);
+            go.transform.SetParent(animalContentParent);
         }
     }
 
-    public void AddAnimal(string msg)   //서버, 로컬도감 등록
+    public void AddAnimal(string msg)   //서버, 로컬도감 등록 ***로그인 후 실행되도록 수정 필요***
     {
         int num = Int32.Parse(msg.Substring(msg.IndexOf('_') + 1).Trim());
 
@@ -58,7 +74,10 @@ public class AnimalBookManager : MonoBehaviour
         {
             //로컬, 서버등록
             isFound[num] = true;
-            PlayfabManager.Instance.SaveAnimal(msg);
+
+            string time = DateTime.Now.ToString(("yyyy-MM-dd_HH_mm"));
+            getTime[num] = time;
+            PlayfabManager.Instance.SaveAnimal(msg, time);
 
             ChangeCollectedImg(num);
 
@@ -70,7 +89,7 @@ public class AnimalBookManager : MonoBehaviour
         }
     }
 
-    public void SetAnimal(string msg)   //로컬 도감 등록
+    public void SetAnimal(string msg, string time)   //로컬 도감 등록
     {
         int num = Int32.Parse(msg.Substring(msg.IndexOf('_') + 1).Trim());
 
@@ -78,9 +97,9 @@ public class AnimalBookManager : MonoBehaviour
         {
             //로컬등록
             isFound[num] = true;
+            getTime[num] = time;
 
             ChangeCollectedImg(num);
-
             AddAnimalCount();
         }
     }
@@ -88,14 +107,27 @@ public class AnimalBookManager : MonoBehaviour
     //수집된 동물 이미지 수정(그림자 > 원본)
     public void ChangeCollectedImg(int num)
     {
-        GameObject go = AnimalContentParent.GetChild(num).gameObject;
+        GameObject go = animalContentParent.GetChild(num).gameObject;
         go.GetComponent<Image>().color = new Color(255, 255, 255);
+
+        //수집된 동물은 동물카드 열람 가능
+        go.GetComponent<Button>().onClick.AddListener( ()=> AnimalBookManager.Instance.SetAnimalCard(num) );
+        go.GetComponent<Button>().onClick.AddListener( ()=> AppManager.Instance.OpenPanel(animalCard) );
     }
 
     //수집된 동물 카운트 증가 + 텍스트 변경
     public void AddAnimalCount() 
     {
-        CollectedAnimalCount++;
-        AnimalCountText.GetComponent<Text>().text = "수집한 동물의 수 : " + CollectedAnimalCount.ToString() + " / " + AnimalNumber.ToString();
+        collectedAnimalCount++;
+        animalCountText.GetComponent<Text>().text = "수집한 동물의 수 : " + collectedAnimalCount.ToString() + " / " + animalNumber.ToString();
+    }
+
+    public void SetAnimalCard(int num) 
+    {
+        string when = getTime[num];
+        string[] time = when.Split('_');
+
+        animalCardName.text = CardData.Instance.GetAnimalName(num);
+        collectedTime.text = "수집일 : " + time[0] + " / " + time[1] + "시 " + time[2] + "분";
     }
 }
