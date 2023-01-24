@@ -1,9 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class CardData : MonoBehaviour
+public class Data
 {
+    //설정
+    public int screenRatio = 1;
+    public int shutterSound = 0;
+    public bool isMirror = false;
+
+    //로그인
+    public bool isAutoLogin = false;
+
+    //AnimalBookManager -> animalNumber 참조
     public string[] animalName = {
         "흰 파카",
         "검은 파카",
@@ -42,27 +49,4 @@ public class CardData : MonoBehaviour
         "흑양",
         "얼룩말",
     };
-
-    private static CardData _instance = null;
-    public static CardData Instance
-    {
-        get
-        {
-            if (_instance == null)
-            {
-                _instance = FindObjectOfType(typeof(CardData)) as CardData;
-
-                if (_instance == null)
-                {
-                    Debug.LogError("There's no active ManagerClass object");
-                }
-            }
-            return _instance;
-        }
-    }
-
-    public string GetAnimalName(int num) 
-    {
-        return animalName[num];
-    }
 }

@@ -786,11 +786,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 738432785}
         m_TargetAssemblyTypeName: AppManager, Assembly-CSharp
-        m_MethodName: SetSoundText_1
-        m_Mode: 2
+        m_MethodName: SetSound
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 578914473}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1317,7 +1317,7 @@ GameObject:
   - component: {fileID: 235823738}
   - component: {fileID: 235823737}
   m_Layer: 5
-  m_Name: Screen_Sound_Value
+  m_Name: Sutter_Sound_Value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1870,18 +1870,6 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 738432785}
-        m_TargetAssemblyTypeName: AppManager, Assembly-CSharp
-        m_MethodName: SetRatioText_3_4
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2029397049}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
-          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4208,18 +4196,6 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 738432785}
         m_TargetAssemblyTypeName: AppManager, Assembly-CSharp
-        m_MethodName: SetRatioText_Full
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2029397049}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 738432785}
-        m_TargetAssemblyTypeName: AppManager, Assembly-CSharp
         m_MethodName: QuitPanel
         m_Mode: 2
         m_Arguments:
@@ -4585,7 +4561,7 @@ GameObject:
   - component: {fileID: 578914474}
   - component: {fileID: 578914473}
   m_Layer: 5
-  m_Name: Screen_Size_Value_Text
+  m_Name: Sutter_Sound_Value_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4664,7 +4640,7 @@ GameObject:
   - component: {fileID: 585606985}
   - component: {fileID: 585606986}
   m_Layer: 0
-  m_Name: DataBase
+  m_Name: DataManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4694,43 +4670,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 585606984}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25a97b018423e404db2a32a3d8b2dbd6, type: 3}
+  m_Script: {fileID: 11500000, guid: 54426bfdbe0284d4793eb312780a2629, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animalName:
-  - "\uD770 \uC54C\uD30C\uCE74"
-  - "\uAC80\uC740 \uC54C\uD30C\uCE74"
-  - "\uACF0"
-  - "\uD310\uB2E4\uACF0"
-  - "\uD770 \uACE0\uC591\uC774"
-  - "\uC5BC\uB8E9 \uACE0\uC591\uC774"
-  - "\uBCD1\uC544\uB9AC"
-  - "\uB2ED"
-  - "\uC816\uC18C"
-  - "\uC0AC\uC2B4"
-  - "\uB315\uB315\uC774"
-  - "\uC5BC\uB8E9 \uB315\uB315\uC774"
-  - "\uC624\uB9AC"
-  - "\uCC9C\uB465 \uC624\uB9AC"
-  - "\uCF54\uB07C\uB9AC"
-  - "\uBCF4\uB77C \uCF54\uB07C\uB9AC"
-  - "\uAE30\uB9B0"
-  - "\uC5FC\uC18C"
-  - "\uC5BC\uB8E9 \uC5FC\uC18C"
-  - "\uD751\uC5FC\uC18C"
-  - "\uD558\uB9C8"
-  - "\uB9D0"
-  - "\uBC31\uB9C8"
-  - "\uB77C\uC774\uC628\uD0B9"
-  - "\uB77C\uC774\uC628\uD038"
-  - "\uB3FC\uC9C0"
-  - "\uD770 \uD1A0\uB07C"
-  - "\uAC08\uC0C9 \uD1A0\uB07C"
-  - "\uCF54\uBFD4\uC18C"
-  - "\uD551\uC591"
-  - "\uD770\uC591"
-  - "\uD751\uC591"
-  - "\uC5BC\uB8E9\uB9D0"
 --- !u!1 &588815210
 GameObject:
   m_ObjectHideFlags: 0
@@ -6151,12 +6093,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 738432785}
         m_TargetAssemblyTypeName: AppManager, Assembly-CSharp
-        m_MethodName: SetSoundText_3
-        m_Mode: 2
+        m_MethodName: SetSound
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 578914473}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
-          m_IntArgument: 0
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6457,6 +6399,9 @@ MonoBehaviour:
   upUIPanel: {fileID: 639080012}
   currentRatio: 1
   screenRatio: 0
+  screenRatioText: {fileID: 2029397049}
+  shutterSound: 0
+  shutterSoundText: {fileID: 578914473}
 --- !u!4 &738432786
 Transform:
   m_ObjectHideFlags: 0
@@ -8297,12 +8242,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 738432785}
         m_TargetAssemblyTypeName: AppManager, Assembly-CSharp
-        m_MethodName: SetSoundText_2
-        m_Mode: 2
+        m_MethodName: SetSound
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 578914473}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
-          m_IntArgument: 0
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -8808,18 +8753,6 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 738432785}
-        m_TargetAssemblyTypeName: AppManager, Assembly-CSharp
-        m_MethodName: SetRatioText_1_1
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2029397049}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -12649,7 +12582,7 @@ GameObject:
   - component: {fileID: 1633068231}
   - component: {fileID: 1633068233}
   m_Layer: 5
-  m_Name: Screen_Sound_Choice_Panel
+  m_Name: Sutter_Sound_Choice_Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12976,7 +12909,7 @@ GameObject:
   - component: {fileID: 1666561452}
   - component: {fileID: 1666561451}
   m_Layer: 5
-  m_Name: Screen_Sound_Value_Button
+  m_Name: Sutter_Sound_Value_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -12,14 +12,17 @@ public class AnimalBookManager : MonoBehaviour
     public int collectedAnimalCount = 0;
     public static string animalMsg = "Animal_";
 
+    [Space(10f)]
     public GameObject animalPrefab;
     public Text animalCountText;
     public Transform animalContentParent;
+    public Button loginFromAnimalBook;
+
+    [Header("-----Animal Card-----")]
     public GameObject animalCard;
     public Text animalCardName;
     public Text collectedTime;
-    public Button loginFromAnimalBook;
-
+    
     [Header("-----Animal Ranking-----")]
     public Text animalRankingText;
     public Button loginFromAnimalRanking;
@@ -48,6 +51,7 @@ public class AnimalBookManager : MonoBehaviour
 
     public void Setting() //처음만 실행(로그인 시)
     {
+        //초기값 생성 및 초기화
         isFound = new bool[animalNumber];
         getTime = new string[animalNumber];
         collectedAnimalCount = 0;
@@ -55,6 +59,17 @@ public class AnimalBookManager : MonoBehaviour
         animalRankingText.text = "";
         loginFromAnimalBook.gameObject.SetActive(false);
         loginFromAnimalRanking.gameObject.SetActive(false);
+        
+        Transform[] childList = animalContentParent.GetComponentsInChildren<Transform>();
+
+        //로그인 후 다른 아이디 로그인 => 동물도감 초기화
+        if(childList != null) {
+            for(int i = 1; i < childList.Length; i++) { //i = 0 은 부모
+                if(childList[i] != transform)
+                    Destroy(childList[i].gameObject);
+                    Debug.Log(childList[i].gameObject.name + "삭제");
+            }
+        }
 
         for (int i = 0; i < animalNumber; i++)
         {
@@ -66,11 +81,11 @@ public class AnimalBookManager : MonoBehaviour
         }
     }
 
-    public void AddAnimal(string msg)   //서버, 로컬도감 등록 ***로그인 후 실행되도록 수정 필요***
+    public void AddAnimal(string msg)   //서버, 로컬도감 등록
     {
         int num = Int32.Parse(msg.Substring(msg.IndexOf('_') + 1).Trim());
 
-        if(isFound[num] == false)   //중복 방지
+        if(isFound[num] == false) //중복 방지
         {
             //로컬, 서버등록
             isFound[num] = true;
@@ -83,7 +98,7 @@ public class AnimalBookManager : MonoBehaviour
 
             AddAnimalCount();
         }
-        else    //이미 수집 되었을 때
+        else //이미 수집 되었을 때
         {
             StartCoroutine(AppManager.Instance.PrintLog(msg + "은(는) 이미 등록되었습니다."));
         }
@@ -99,6 +114,7 @@ public class AnimalBookManager : MonoBehaviour
             isFound[num] = true;
             getTime[num] = time;
 
+            //도감 설정
             ChangeCollectedImg(num);
             AddAnimalCount();
         }
@@ -122,12 +138,13 @@ public class AnimalBookManager : MonoBehaviour
         animalCountText.GetComponent<Text>().text = "수집한 동물의 수 : " + collectedAnimalCount.ToString() + " / " + animalNumber.ToString();
     }
 
+    //동물 카드 설정
     public void SetAnimalCard(int num) 
     {
         string when = getTime[num];
         string[] time = when.Split('_');
 
-        animalCardName.text = CardData.Instance.GetAnimalName(num);
+        animalCardName.text = DataManager.Instance.data.animalName[num];
         collectedTime.text = "수집일 : " + time[0] + " / " + time[1] + "시 " + time[2] + "분";
     }
 }
