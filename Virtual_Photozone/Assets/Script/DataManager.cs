@@ -26,6 +26,7 @@ public class DataManager : MonoBehaviour
     string SettingDataFileName = "SettingData.json";
 
     public Data data = new Data();
+    public AnimalData animalData = new AnimalData();
 
     public void LoadSettingData() 
     {

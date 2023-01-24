@@ -144,7 +144,7 @@ public class AnimalBookManager : MonoBehaviour
         string when = getTime[num];
         string[] time = when.Split('_');
 
-        animalCardName.text = DataManager.Instance.data.animalName[num];
+        animalCardName.text = DataManager.Instance.animalData.animalName[num];
         collectedTime.text = "수집일 : " + time[0] + " / " + time[1] + "시 " + time[2] + "분";
     }
 }
