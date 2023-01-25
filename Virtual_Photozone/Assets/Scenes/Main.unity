@@ -6397,8 +6397,8 @@ MonoBehaviour:
   Down_Screen_Padding_Panel: {fileID: 648511872}
   Up_Screen_Padding_Panel: {fileID: 1969595754}
   upUIPanel: {fileID: 639080012}
-  currentRatio: 1
   screenRatio: 0
+  screenHeight: 0
   screenRatioText: {fileID: 2029397049}
   shutterSound: 0
   shutterSoundText: {fileID: 578914473}
@@ -11699,10 +11699,10 @@ MonoBehaviour:
     type: 3}
   animalCountText: {fileID: 970909926}
   animalContentParent: {fileID: 55554096}
+  loginFromAnimalBook: {fileID: 1116571457}
   animalCard: {fileID: 919210489}
   animalCardName: {fileID: 608069302}
   collectedTime: {fileID: 1518749502}
-  loginFromAnimalBook: {fileID: 1116571457}
   animalRankingText: {fileID: 1674313699}
   loginFromAnimalRanking: {fileID: 310019881}
   isFound: 
@@ -12059,6 +12059,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1578289515}
   - component: {fileID: 1578289514}
+  - component: {fileID: 1578289516}
   m_Layer: 0
   m_Name: ScreenshotManager
   m_TagString: Untagged
@@ -12082,9 +12083,14 @@ MonoBehaviour:
   uiPanel: {fileID: 822988522}
   ScreenPaddingPanel: {fileID: 648511872}
   upUIPanel: {fileID: 639080012}
-  currentRatio: 0
   screenRatio: 0
-  galleryPanel: {fileID: 2028129012}
+  screenWidth: 0
+  audioSource: {fileID: 1578289516}
+  shutterSound: 0
+  shutterSoundList:
+  - {fileID: 8300000, guid: 7de1f01583cd67140a3fe9ab09d880b2, type: 3}
+  - {fileID: 8300000, guid: 5488116eec90e194db914eb5d39f9c0a, type: 3}
+  - {fileID: 8300000, guid: 2300446ae69bdc44da04448c1b9247c1, type: 3}
 --- !u!4 &1578289515
 Transform:
   m_ObjectHideFlags: 0
@@ -12100,6 +12106,102 @@ Transform:
   m_Father: {fileID: 1146962524}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1578289516
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1578289513}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1579802251
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,25 +6,25 @@ using UnityEngine.UI;
 
 public class ScreenshotManager : MonoBehaviour
 {
-    //스크린샷에 필요한 오브젝트
+    [Header("-----Screenshot Object-----")]
     public GameObject blink;
     public GameObject uiPanel;
     public RectTransform ScreenPaddingPanel;
     public RectTransform upUIPanel;
 
-    //스크린 비율
-    public int currentRatio;    //현재 스크린 비율 //설정 바뀔 때만 변경
-    public int screenRatio;     //스크린 비율
+    [Header("-----Screen Ratio-----")]
+    public int screenRatio;     //찍을 때마다 appManager에서 가져오는것은 비효율
+    public int screenWidth;     //스크린 비율
 
-    // 코루틴 중복방지
+    [Header("-----Shutter Sound-----")]
+    public AudioSource audioSource;
+    public int shutterSound;    //셔터음
+    public AudioClip[] shutterSoundList;
+
+    [Header("-----Etc-----")]
     private bool isCoroutinePlaying;    
-
-    // 파일 불러올 때 필요
     string albumName = "arTest";     // 생성될 앨범의 이름
     string fileName = "Ar_Photozone";
-
-    [SerializeField]
-    GameObject galleryPanel;    // 찍은 사진이 뜰 패널
 
     private static ScreenshotManager _instance = null;
     public static ScreenshotManager Instance
@@ -44,7 +44,6 @@ public class ScreenshotManager : MonoBehaviour
         }
     }
 
-    #region Screenshot Function
     public void Capture_Button()
     {
         // 중복방지 bool
@@ -59,7 +58,7 @@ public class ScreenshotManager : MonoBehaviour
         isCoroutinePlaying = true;
 
         //풀 스크린일 시 UI 제거 필요
-        if(currentRatio == 2)
+        if(screenRatio == 2)
         {
             uiPanel.SetActive(false);
             yield return new WaitForEndOfFrame();
@@ -82,10 +81,11 @@ public class ScreenshotManager : MonoBehaviour
         yield return new WaitForSecondsRealtime(0.1f);
         Destroy(blinkObj);
 
-        //사운드
+        //셔터음
+        ShutterSound();
 
         //풀 스크린일 시 UI 복귀
-        if (currentRatio == 2) 
+        if (screenRatio == 2) 
             uiPanel.SetActive(true);
         //콘솔 패널 UI 복귀
         if (TestConsoleManager.Instance.isConsolePanelActive == true)
@@ -94,14 +94,15 @@ public class ScreenshotManager : MonoBehaviour
         isCoroutinePlaying = false;
     }
 
+    #region Screenshot
     void Screenshot()
     {
-        Texture2D texture = new Texture2D(Screen.width, screenRatio, TextureFormat.RGB24, false);
+        Texture2D texture = new Texture2D(Screen.width, screenWidth, TextureFormat.RGB24, false);
 
-        if (currentRatio == 2)  //풀스크린일 때 상단 UI 계산 X
+        if (screenRatio == 2)  //풀스크린일 때 상단 UI 계산 X
             texture.ReadPixels(new Rect(0, 0, Screen.width, Screen.height), 0, 0);
         else
-            texture.ReadPixels(new Rect(0, Screen.height - (screenRatio + upUIPanel.gameObject.GetComponent<RectTransform>().rect.height), Screen.width, screenRatio), 0, 0);
+            texture.ReadPixels(new Rect(0, Screen.height - (screenWidth + upUIPanel.gameObject.GetComponent<RectTransform>().rect.height), Screen.width, screenWidth), 0, 0);
 
         texture.Apply();
 
@@ -113,21 +114,36 @@ public class ScreenshotManager : MonoBehaviour
     }
     #endregion
 
+    #region Shutter Sound
+    void ShutterSound() 
+    {
+        audioSource.Play();
+    }
+
+    public void SetShutterSound(int sound) 
+    {
+        shutterSound = sound;
+        audioSource.clip = shutterSoundList[shutterSound];
+    }
+    #endregion
+
+    #region Screen Ratio
     public void SetScreenRatio(int ratio)
     {
-        currentRatio = ratio;
+        screenRatio = ratio;
 
-        switch (currentRatio)
+        switch (screenRatio)
         {
             case 0:
-                screenRatio = Screen.width; // 1 : 1 비율
+                screenWidth = Screen.width; // 1 : 1 비율
                 break;
             case 1:
-                screenRatio = (Screen.width * 4) / 3; // 3 : 4 비율
+                screenWidth = (Screen.width * 4) / 3; // 3 : 4 비율
                 break;
             case 2:
-                screenRatio = Screen.height; // Full 비율
+                screenWidth = Screen.height; // Full 비율
                 break;
         }
     }
+    #endregion
 }

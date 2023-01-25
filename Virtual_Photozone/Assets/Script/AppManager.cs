@@ -5,20 +5,20 @@ using UnityEngine.UI;
 
 public class AppManager : MonoBehaviour
 {
-    [Header("-----콘솔 텍스트-----")]
+    [Header("-----Console Text-----")]
     public GameObject ConsolePanel;
 
-    [Header("-----스크린 비율 패딩 오브젝트-----")]
+    [Header("-----Screen Ratio Padding Object-----")]
     public RectTransform Down_Screen_Padding_Panel;
     public RectTransform Up_Screen_Padding_Panel;
     public RectTransform upUIPanel; //비율 상단 기준점
 
-    [Header("-----스크린 비율-----")]
-    public int screenWidth;     //스마트폰 가로 길이
+    [Header("-----Screen Ratio-----")]
     public int screenRatio;     //스크린 비율
+    public int screenHeight;     //스크린 높이
     public Text screenRatioText;
 
-    [Header("-----셔터음-----")]
+    [Header("-----Shutter Sound-----")]
     public int shutterSound;    //셔터음 사운드
     public Text shutterSoundText;
 
@@ -53,6 +53,10 @@ public class AppManager : MonoBehaviour
         //Data Setting
         ScreenRatio(DataManager.Instance.data.screenRatio);
         ShutterSound(DataManager.Instance.data.shutterSound);
+
+        //ScrrenshotManager Setting
+        ScreenshotManager.Instance.SetScreenRatio(screenRatio);
+        ScreenshotManager.Instance.SetShutterSound(shutterSound);
     }
 
     //종료시 자동저장
@@ -89,33 +93,34 @@ public class AppManager : MonoBehaviour
 
     public void ScreenRatio(int ratio)  //screen ratio 설정
     {
+        screenRatio = ratio;
         Color ColorA = Up_Screen_Padding_Panel.gameObject.GetComponent<Image>().color;
 
         switch (ratio)
         {
             case 0:
-                screenWidth = Screen.width; // 1 : 1 비율
+                screenHeight = Screen.width; // 1 : 1 비율
                 ColorA.a = 1f;
                 Up_Screen_Padding_Panel.gameObject.GetComponent<Image>().color = ColorA;
                 Down_Screen_Padding_Panel.gameObject.GetComponent<Image>().color = ColorA;
                 screenRatioText.text = "1 : 1";
                 break;
             case 1:
-                screenWidth = (Screen.width * 4) / 3; // 3 : 4 비율
+                screenHeight = (Screen.width * 4) / 3; // 3 : 4 비율
                 ColorA.a = 1f;
                 Up_Screen_Padding_Panel.gameObject.GetComponent<Image>().color = ColorA;
                 Down_Screen_Padding_Panel.gameObject.GetComponent<Image>().color = ColorA;
                 screenRatioText.text = "3 : 4";
                 break;
             case 2:
-                screenWidth = (Screen.width * 4) / 3; // Full 비율
+                screenHeight = (Screen.width * 4) / 3; // Full 비율
                 ColorA.a = 0.1f;
                 Up_Screen_Padding_Panel.gameObject.GetComponent<Image>().color = ColorA;
                 Down_Screen_Padding_Panel.gameObject.GetComponent<Image>().color = ColorA;
                 screenRatioText.text = "FULL";
                 break;
         }
-        Down_Screen_Padding_Panel.sizeDelta = new Vector2(0, Screen.height - (screenWidth + upUIPanel.gameObject.GetComponent<RectTransform>().rect.height));
+        Down_Screen_Padding_Panel.sizeDelta = new Vector2(0, Screen.height - (screenHeight + upUIPanel.gameObject.GetComponent<RectTransform>().rect.height));
     }
     #endregion
 
@@ -125,22 +130,22 @@ public class AppManager : MonoBehaviour
         ShutterSound(sound);
         DataManager.Instance.data.shutterSound = shutterSound;
         DataManager.Instance.SavaSettingData();
+        ScreenshotManager.Instance.SetShutterSound(sound);
     }
 
     public void ShutterSound(int sound) //shutter sound 설정
     {
-        switch(sound)
+        shutterSound = sound;
+
+        switch(shutterSound)
         {
             case 0:
-                shutterSound = 0;
                 shutterSoundText.text = "Sound1";
                 break;
             case 1:
-                shutterSound = 1;
                 shutterSoundText.text = "Sound2";
                 break;
             case 2:
-                shutterSound = 2;
                 shutterSoundText.text = "Sound3";
                 break;
         }
