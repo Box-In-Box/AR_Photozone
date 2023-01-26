@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3831835913726755886}
   - component: {fileID: 2588296764325052830}
   m_Layer: 0
-  m_Name: GPS_Object
+  m_Name: GPS_Object 9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50,8 +50,8 @@ MonoBehaviour:
       LocationInputType: 0
       LocationData: {fileID: 0}
       Location:
-        Latitude: 0
-        Longitude: 0
+        Latitude: 35.913682
+        Longitude: 128.802963
         Altitude: 0
         AltitudeMode: 0
         Label: 
@@ -84,4 +84,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d94dc8af7d430b0439f0ad63ea9a1222, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locationDescription: 
+  locationDescription: "D2 -\uD560\uB85C\uC708(\uC13C\uD130 \uC624\uB978\uCABD)"

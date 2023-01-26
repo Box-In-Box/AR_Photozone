@@ -9,6 +9,23 @@ public class GalleryManager : MonoBehaviour
     public RawImage img;
     public GameObject photoScreenPanel;
 
+    private static GalleryManager _instance = null;
+    public static GalleryManager Instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                _instance = FindObjectOfType(typeof(GalleryManager)) as GalleryManager;
+
+                if (_instance == null)
+                {
+                    Debug.LogError("There's no active ManagerClass object");
+                }
+            }
+            return _instance;
+        }
+    }
 
     private void Update()
     {
@@ -66,7 +83,7 @@ public class GalleryManager : MonoBehaviour
         yield return null;
     }
 
-    void ImageSizeSetting(RawImage img, float x, float y)
+    public void ImageSizeSetting(RawImage img, float x, float y)
     {
         var imgX = img.rectTransform.sizeDelta.x;
         var imgY = img.rectTransform.sizeDelta.y;

@@ -22,6 +22,7 @@ public class ScreenshotManager : MonoBehaviour
     public AudioClip[] shutterSoundList;
 
     [Header("-----Etc-----")]
+    public bool ismirror;
     private bool isCoroutinePlaying;    
     string albumName = "arTest";     // 생성될 앨범의 이름
     string fileName = "Ar_Photozone";
@@ -106,11 +107,30 @@ public class ScreenshotManager : MonoBehaviour
 
         texture.Apply();
 
+        if(ismirror) //미러모드
+            texture = FlipTexture(texture);
+
         // 갤러리갱신
         NativeGallery.SaveImageToGallery(texture, albumName,
             fileName + System.DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss") + ".png");
 
         Destroy(texture);
+    }
+
+    Texture2D FlipTexture(Texture2D texture)
+    {
+        Texture2D flipped = new Texture2D(texture.width,texture.height);
+         
+            int textureWidth = texture.width;
+            int textureHeight = texture.height;
+         
+           for(int i=0;i<textureWidth;i++){
+              for(int j=0;j<textureHeight;j++)
+                  flipped.SetPixel(textureWidth-i-1, j, texture.GetPixel(i,j));
+           }
+            flipped.Apply();
+
+            return flipped;
     }
     #endregion
 
@@ -146,4 +166,9 @@ public class ScreenshotManager : MonoBehaviour
         }
     }
     #endregion
+
+    public void SetMirrorMode(bool mirror)
+    {
+        ismirror = mirror;
+    }
 }

@@ -22,6 +22,11 @@ public class AppManager : MonoBehaviour
     public int shutterSound;    //셔터음 사운드
     public Text shutterSoundText;
 
+    [Header("-----Etc-----")]
+    public bool isMirror;
+    public GameObject mirrorOff;
+    public GameObject mirrorOn;
+
     private static AppManager _instance = null;
     public static AppManager Instance
     {
@@ -53,10 +58,12 @@ public class AppManager : MonoBehaviour
         //Data Setting
         ScreenRatio(DataManager.Instance.data.screenRatio);
         ShutterSound(DataManager.Instance.data.shutterSound);
+        MirrorMode(DataManager.Instance.data.isMirror);
 
         //ScrrenshotManager Setting
         ScreenshotManager.Instance.SetScreenRatio(screenRatio);
         ScreenshotManager.Instance.SetShutterSound(shutterSound);
+        ScreenshotManager.Instance.SetMirrorMode(isMirror);
     }
 
     //종료시 자동저장
@@ -165,6 +172,33 @@ public class AppManager : MonoBehaviour
         yield return new WaitForSecondsRealtime(1.5f);
         ConsolePanel.gameObject.transform.GetChild(0).gameObject.GetComponent<Text>().text = "";
         ConsolePanel.SetActive(false);
+    }
+    #endregion
+
+    #region Etc
+    public void MirrorMode(bool mirror) //ismirror 설정
+    {    
+        isMirror = mirror;
+        mirrorOn.gameObject.SetActive(mirror);
+        mirrorOff.gameObject.SetActive(!mirror);
+    }
+    public void SetMirrorMode() //mirror switch
+    {
+        MirrorSwitch();
+        ScreenshotManager.Instance.SetMirrorMode(isMirror);
+        DataManager.Instance.data.isMirror = isMirror;
+        DataManager.Instance.SavaSettingData();
+    }
+
+    public void MirrorSwitch()
+    {
+        if (mirrorOff.gameObject.activeSelf == true)
+            isMirror = true;
+        else
+            isMirror = false;
+
+        mirrorOn.gameObject.SetActive(isMirror);
+        mirrorOff.gameObject.SetActive(!isMirror);
     }
     #endregion
 }

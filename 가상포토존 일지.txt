@@ -21,4 +21,5 @@
 	          동물도감 초기화 오류 수정(로그인 후 다른 아이디 로그인시), AppManager 코드 정리, AnimalBookManager 코드 정리
 		동물카드 데이터 data -> AnimalData로 분리 (읽기전용 데이터)
 2023-01-25 : (bw)셔터음 추가, 셔터음 교체(클립 변경 후 처음 소리 잘 안나옴 -> 길이가 짧기 때문으로 추정), 
-		인스펙터창 정리(AppManager, ScreenshotManager 주석 -> Header(영문)으로 변경)
+		인스펙터창 정리(AppManager, ScreenshotManager 주석 -> Header(영문)으로 변경), 테마 GPS 오브젝트 프리팹화
+2023-01-26 : (bw) 미러모드 추가, 맵 추가 (해상도따라 비율 유지, 크기변경), 맵 테마별 버튼 추가(해상도 별 위치 업데이트)
