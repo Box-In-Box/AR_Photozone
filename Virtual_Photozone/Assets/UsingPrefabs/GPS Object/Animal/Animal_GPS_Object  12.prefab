@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6291711005977027720
+--- !u!1 &4646110280855486875
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,23 +8,23 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6291711005977027717}
-  - component: {fileID: 6291711005977027722}
-  - component: {fileID: 6291711005977027723}
+  - component: {fileID: 4646110280855486878}
+  - component: {fileID: 4646110280855486873}
+  - component: {fileID: 4646110280855486872}
   m_Layer: 0
-  m_Name: Animal_GPS_Object 0
+  m_Name: Animal_GPS_Object  12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6291711005977027717
+--- !u!4 &4646110280855486878
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6291711005977027720}
+  m_GameObject: {fileID: 4646110280855486875}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -33,13 +33,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6291711005977027722
+--- !u!114 &4646110280855486873
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6291711005977027720}
+  m_GameObject: {fileID: 4646110280855486875}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ed08d66cc34e4c49bf4ebb7b1ac269a, type: 3}
@@ -50,8 +50,8 @@ MonoBehaviour:
       LocationInputType: 0
       LocationData: {fileID: 0}
       Location:
-        Latitude: 35.913424
-        Longitude: 128.802858
+        Latitude: 35.910749
+        Longitude: 128.806462
         Altitude: 0
         AltitudeMode: 0
         Label: 
@@ -72,16 +72,16 @@ MonoBehaviour:
   ObjectPositionUpdated:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &6291711005977027723
+--- !u!114 &4646110280855486872
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6291711005977027720}
+  m_GameObject: {fileID: 4646110280855486875}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d94dc8af7d430b0439f0ad63ea9a1222, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locationDescription: "D2 \uAD6C\uC11D"
+  locationDescription: "\uBBF8\uB300\uAE38 \uC911\uAC04"

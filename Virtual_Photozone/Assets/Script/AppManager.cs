@@ -22,10 +22,28 @@ public class AppManager : MonoBehaviour
     public int shutterSound;    //셔터음 사운드
     public Text shutterSoundText;
 
-    [Header("-----Etc-----")]
+    [Header("-----Mirror-----")]
     public bool isMirror;
     public GameObject mirrorOff;
     public GameObject mirrorOn;
+
+    [Header("-----AutoLogin-----")]
+    public bool isAutoLogin;
+    public  Image autoLoginButtonImage;
+    public Sprite autoLoginOff;
+    public Sprite autoLoginOn;
+
+    [Header("-----TransparentUI-----")]
+    public bool isTransparentUI;    //로컬저장 x
+    public RectTransform TransparentUIButton;
+    public  Image transparentUIImage;
+    public Sprite transparentUIDown;
+    public Sprite transparentUIUp;
+
+    [Space(10f)]
+    public RectTransform Up_Panel;
+    public RectTransform Down_Panel;
+    public bool isrunnigCoroutine;
 
     private static AppManager _instance = null;
     public static AppManager Instance
@@ -59,6 +77,7 @@ public class AppManager : MonoBehaviour
         ScreenRatio(DataManager.Instance.data.screenRatio);
         ShutterSound(DataManager.Instance.data.shutterSound);
         MirrorMode(DataManager.Instance.data.isMirror);
+        AutoLogin(DataManager.Instance.data.isAutoLogin);
 
         //ScrrenshotManager Setting
         ScreenshotManager.Instance.SetScreenRatio(screenRatio);
@@ -175,7 +194,7 @@ public class AppManager : MonoBehaviour
     }
     #endregion
 
-    #region Etc
+    #region MirrorMode
     public void MirrorMode(bool mirror) //ismirror 설정
     {    
         isMirror = mirror;
@@ -199,6 +218,140 @@ public class AppManager : MonoBehaviour
 
         mirrorOn.gameObject.SetActive(isMirror);
         mirrorOff.gameObject.SetActive(!isMirror);
+    }
+    #endregion
+
+    #region AutoLogin
+    public void AutoLogin(bool autoLogin) //isAutoLogin 설정
+    {    
+        isAutoLogin = autoLogin;
+        if(autoLogin == true)
+            autoLoginButtonImage.GetComponent<Image>().sprite = autoLoginOn;
+        else
+            autoLoginButtonImage.GetComponent<Image>().sprite = autoLoginOff;
+    }
+
+    public void SetAutoLogin() //mirror switch
+    {
+        AutoLoginSwitch();
+        DataManager.Instance.data.isAutoLogin = isAutoLogin;
+        DataManager.Instance.SavaSettingData();
+    }
+
+    public void AutoLoginSwitch()
+    {
+        if (isAutoLogin == true) {
+            isAutoLogin = false;
+            autoLoginButtonImage.GetComponent<Image>().sprite = autoLoginOff;
+        }
+        else {
+            isAutoLogin = true;
+            autoLoginButtonImage.GetComponent<Image>().sprite = autoLoginOn;
+        }
+    }
+    #endregion
+
+    #region TransparentUI
+    public void SetTransparentUI()
+    {
+        if (isTransparentUI == false && isrunnigCoroutine == false) {
+            isTransparentUI = true;
+            isrunnigCoroutine = true;
+            DownPanel();
+        }
+        if (isTransparentUI == true && isrunnigCoroutine == false) {
+            isTransparentUI = false;
+            isrunnigCoroutine = true;
+            UpPanel();
+        }
+    }
+
+    public void TransparentUSwitch() //애니메이션 끝날 때로 수정 필요
+    {
+        if (isTransparentUI == true)
+            transparentUIImage.GetComponent<Image>().sprite = transparentUIUp;
+        else
+            transparentUIImage.GetComponent<Image>().sprite = transparentUIDown;
+    }
+
+    public void DownPanel() //최적화 필요
+    {   
+        Transform[] targetUI = {Down_Panel, Down_Screen_Padding_Panel, Up_Panel, Up_Screen_Padding_Panel, TransparentUIButton};
+
+        Vector3[] current = {Down_Panel.position, Down_Screen_Padding_Panel.position, Up_Panel.position, Up_Screen_Padding_Panel.position, TransparentUIButton.position};
+        
+        Vector3[] target = new Vector3[targetUI.Length];
+
+        target[0] = Down_Panel.position;
+        target[0].y -= Down_Panel.GetComponent<RectTransform>().rect.height;
+
+        target[1] = Down_Screen_Padding_Panel.position;
+        target[1].y -= Down_Screen_Padding_Panel.GetComponent<RectTransform>().rect.height;
+
+        target[2] = Up_Panel.position;
+        target[2].y += Up_Panel.GetComponent<RectTransform>().rect.height;
+
+        target[3] = Up_Screen_Padding_Panel.position;
+        target[3].y += Up_Screen_Padding_Panel.GetComponent<RectTransform>().rect.height;
+
+        target[4] = TransparentUIButton.position;
+        target[4].y -= Down_Screen_Padding_Panel.GetComponent<RectTransform>().rect.height;
+
+        StartCoroutine(WaitLerpCoroutine(targetUI, current, target, 1.0f));
+    }
+
+    public void UpPanel() //최적화 필요
+    {   
+        Transform[] targetUI = {Down_Panel, Down_Screen_Padding_Panel, Up_Panel, Up_Screen_Padding_Panel, TransparentUIButton};
+
+        Vector3[] current = {Down_Panel.position, Down_Screen_Padding_Panel.position, Up_Panel.position, Up_Screen_Padding_Panel.position, TransparentUIButton.position};
+        
+        Vector3[] target = new Vector3[targetUI.Length];
+
+        target[0] = Down_Panel.position;
+        target[0].y += Down_Panel.GetComponent<RectTransform>().rect.height;
+
+        target[1] = Down_Screen_Padding_Panel.position;
+        target[1].y += Down_Screen_Padding_Panel.GetComponent<RectTransform>().rect.height;
+
+        target[2] = Up_Panel.position;
+        target[2].y -= Up_Panel.GetComponent<RectTransform>().rect.height;
+
+        target[3] = Up_Screen_Padding_Panel.position;
+        target[3].y -= Up_Screen_Padding_Panel.GetComponent<RectTransform>().rect.height;
+
+        target[4] = TransparentUIButton.position;
+        target[4].y += Down_Screen_Padding_Panel.GetComponent<RectTransform>().rect.height;
+
+        StartCoroutine(WaitLerpCoroutine(targetUI, current, target, 1.0f));
+    }
+
+    IEnumerator WaitLerpCoroutine(Transform[] targetUI, Vector3[] current, Vector3[] target, float time)
+    {
+        yield return StartCoroutine(lerpCoroutine(targetUI, current, target, 1.0f));
+        isrunnigCoroutine = false;
+        TransparentUSwitch();
+    }
+
+    IEnumerator lerpCoroutine(Transform[] targetUI, Vector3[] current, Vector3[] target, float time)
+    {
+        float elapsedTime = 0.0f;
+
+        for(int i = 0; i < targetUI.Length; i++) {
+            targetUI[i].transform.position = current[i];
+        }
+        
+        while(elapsedTime < time)
+        {
+            elapsedTime += (Time.deltaTime);
+
+            for(int i = 0; i < targetUI.Length; i++) 
+                targetUI[i].transform.position = Vector3.Lerp(current[i], target[i], elapsedTime / time);
+            yield return null;
+        }
+        for(int i = 0; i < targetUI.Length; i++) 
+                targetUI[i].transform.position = target[i];
+        yield return null;
     }
     #endregion
 }

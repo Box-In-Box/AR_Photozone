@@ -9,4 +9,6 @@ public class Data
 
     //로그인
     public bool isAutoLogin = false;
+    private string email;
+    private string password;
 }
