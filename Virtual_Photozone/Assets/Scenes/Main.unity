@@ -12778,8 +12778,10 @@ MonoBehaviour:
   animalCard: {fileID: 919210489}
   animalCardName: {fileID: 608069302}
   collectedTime: {fileID: 1518749502}
+  score: -1
   animalRankingText: {fileID: 1674313699}
   loginFromAnimalRanking: {fileID: 310019881}
+  leaderboardText: {fileID: 1680755565}
   isFound: 
   getTime: []
 --- !u!1001 &1533910672
@@ -14331,12 +14333,12 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 80
+    m_FontSize: 70
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 100
-    m_Alignment: 1
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0

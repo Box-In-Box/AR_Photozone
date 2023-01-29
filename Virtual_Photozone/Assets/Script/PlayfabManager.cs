@@ -46,7 +46,7 @@ public class PlayfabManager : MonoBehaviour
                 StartCoroutine(AppManager.Instance.PrintLog("로그인 성공"));
 
                 myID = result.PlayFabId;
-                AnimalBookManager.Instance.Setting();
+                StartCoroutine(SettingAnimalBook());
                 AppManager.Instance.QuitPanel(Login_Panel);
             },
             (error) =>
@@ -153,6 +153,11 @@ public class PlayfabManager : MonoBehaviour
     }
 
     #region AnimalBook DB
+    IEnumerator SettingAnimalBook()
+    {
+        yield return AnimalBookManager.Instance.StartCoroutine(AnimalBookManager.Instance.Setting());
+    }
+
     public void GetAnimal(string msg)   //실행 처음만 실행
     {
         var request = new GetUserDataRequest() { PlayFabId = myID };
@@ -178,6 +183,41 @@ public class PlayfabManager : MonoBehaviour
     }
     #endregion
 
+    #region AnimalBook Ranking
+    public void SetStat(int score)
+    {
+        var request = new UpdatePlayerStatisticsRequest { Statistics = new List<StatisticUpdate> { new StatisticUpdate { StatisticName = "Score", Value = score } } };
+        PlayFabClientAPI.UpdatePlayerStatistics(request, (result) => Debug.Log("Save Score : " + score), (error) => Debug.Log("Error Save Score"));
+    }
+
+    public void GetState()
+    {
+        PlayFabClientAPI.GetPlayerStatistics(
+            new GetPlayerStatisticsRequest(),
+            (result) =>
+            {
+                foreach (var eachStat in result.Statistics) {
+                    AnimalBookManager.Instance.score = eachStat.Value;
+                } 
+            },
+            (error) => { Debug.Log("Error Load Score"); });
+    }
+
+    public void GetLeaderboard()
+    {
+        var request = new GetLeaderboardRequest { StartPosition = 0, StatisticName = "Score", MaxResultsCount = 10, ProfileConstraints = new PlayerProfileViewConstraints() { ShowDisplayName = true } };
+        PlayFabClientAPI.GetLeaderboard(request, (result) => 
+        {   
+            AnimalBookManager.Instance.leaderboardText.text = "";
+            for (int i = 0; i < result.Leaderboard.Count; i++)
+            {
+                var curBoard = result.Leaderboard[i];
+                AnimalBookManager.Instance.leaderboardText.text += String.Format("{0}위 {1, -10} 님 {2, 2}마리", (i+1), curBoard.Profile.DisplayName, curBoard.StatValue) +"\n";
+            }
+        },
+        (error) => Debug.Log("Failed load leaderboard"));
+    }
+    #endregion
     public void ClearLoginLogText()    //로그인 - 회원가입 전환시 필요
     {
         LoginLogText.text="";

@@ -9,7 +9,7 @@ public class AnimalBookManager : MonoBehaviour
 {
     [Header("-----Animal Book-----")]
     public int animalNumber = 33;
-    public int collectedAnimalCount = 0;
+    public int collectedAnimalCount;
     public static string animalMsg = "Animal_";
 
     [Space(10f)]
@@ -24,8 +24,11 @@ public class AnimalBookManager : MonoBehaviour
     public Text collectedTime;
     
     [Header("-----Animal Ranking-----")]
+    public int score = -1;
+    float refreshTime = 0.5f;
     public Text animalRankingText;
     public Button loginFromAnimalRanking;
+    public Text leaderboardText;
 
     [Space(10f)]
     public bool[] isFound;
@@ -49,7 +52,7 @@ public class AnimalBookManager : MonoBehaviour
         }
     }
 
-    public void Setting() //처음만 실행(로그인 시)
+    public IEnumerator Setting() //처음만 실행(로그인 시)
     {
         //초기값 생성 및 초기화
         isFound = new bool[animalNumber];
@@ -67,7 +70,6 @@ public class AnimalBookManager : MonoBehaviour
             for(int i = 1; i < childList.Length; i++) { //i = 0 은 부모
                 if(childList[i] != transform)
                     Destroy(childList[i].gameObject);
-                    Debug.Log(childList[i].gameObject.name + "삭제");
             }
         }
 
@@ -79,6 +81,18 @@ public class AnimalBookManager : MonoBehaviour
             go.GetComponent<Image>().color = new Color(0, 0, 0);
             go.transform.SetParent(animalContentParent);
         }
+        //모은 동물 개수 동기화
+        int collectTemp = collectedAnimalCount;
+        yield return new WaitForSeconds(refreshTime);
+        while(collectTemp != collectedAnimalCount) {
+            collectTemp = collectedAnimalCount;
+            yield return new WaitForSeconds(refreshTime);
+        }
+
+        //랭킹, 리더보드 동기화
+        PlayfabManager.Instance.GetState();
+        yield return new WaitForSeconds(refreshTime);
+        StartCoroutine(AnimalRank());
     }
 
     public void AddAnimal(string msg)   //서버, 로컬도감 등록
@@ -97,6 +111,7 @@ public class AnimalBookManager : MonoBehaviour
             ChangeCollectedImg(num);
 
             AddAnimalCount();
+            StartCoroutine(AnimalRank()); //랭킹 동기화
         }
         else //이미 수집 되었을 때
         {
@@ -104,7 +119,7 @@ public class AnimalBookManager : MonoBehaviour
         }
     }
 
-    public void SetAnimal(string msg, string time)   //로컬 도감 등록
+    public void SetAnimal(string msg, string time)   //로컬 도감 등록 처음에만 실행
     {
         int num = Int32.Parse(msg.Substring(msg.IndexOf('_') + 1).Trim());
 
@@ -136,6 +151,18 @@ public class AnimalBookManager : MonoBehaviour
     {
         collectedAnimalCount++;
         animalCountText.GetComponent<Text>().text = "수집한 동물의 수 : " + collectedAnimalCount.ToString() + " / " + animalNumber.ToString();
+    }
+
+    IEnumerator AnimalRank()
+    {
+        while (score < collectedAnimalCount) {
+            PlayfabManager.Instance.SetStat(collectedAnimalCount);
+            yield return new WaitForSeconds(refreshTime);
+            PlayfabManager.Instance.GetState();
+            yield return new WaitForSeconds(refreshTime);
+        }
+        PlayfabManager.Instance.GetLeaderboard();
+        Debug.Log("랭킹 동기화 완료");
     }
 
     //동물 카드 설정

@@ -77,6 +77,7 @@ public class AppManager : MonoBehaviour
         ScreenRatio(DataManager.Instance.data.screenRatio);
         ShutterSound(DataManager.Instance.data.shutterSound);
         MirrorMode(DataManager.Instance.data.isMirror);
+        SetTransparentUIPosition();
         AutoLogin(DataManager.Instance.data.isAutoLogin);
 
         //ScrrenshotManager Setting
@@ -115,6 +116,7 @@ public class AppManager : MonoBehaviour
         ScreenshotManager.Instance.SetScreenRatio(ratio);
         DataManager.Instance.data.screenRatio = ratio;
         DataManager.Instance.SavaSettingData();
+        SetTransparentUIPosition();
     }
 
     public void ScreenRatio(int ratio)  //screen ratio 설정
@@ -252,6 +254,13 @@ public class AppManager : MonoBehaviour
     #endregion
 
     #region TransparentUI
+    public void SetTransparentUIPosition()
+    {
+        Vector3 position  = TransparentUIButton.position;
+        position.y = Down_Screen_Padding_Panel.GetComponent<RectTransform>().rect.height;
+        TransparentUIButton.position = position;
+    }
+
     public void SetTransparentUI()
     {
         if (isTransparentUI == false && isrunnigCoroutine == false) {
