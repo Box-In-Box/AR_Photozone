@@ -43,6 +43,13 @@ public class PlayfabManager : MonoBehaviour
             (result) =>
             {
                 ClearLoginLogText();
+
+                if (AppManager.Instance.isAutoLogin == true) {
+                    DataManager.Instance.data.email = EmailInput.text;
+                    DataManager.Instance.data.password = PasswordInput.text;
+                    DataManager.Instance.SavaSettingData();
+                }
+
                 StartCoroutine(AppManager.Instance.PrintLog("로그인 성공"));
 
                 myID = result.PlayFabId;
@@ -90,6 +97,23 @@ public class PlayfabManager : MonoBehaviour
                 }
             }
         );
+    }
+
+    public void AutoLogin(string email, string password)
+    {
+        var request = new LoginWithEmailAddressRequest { Email = email, Password = password };
+        PlayFabClientAPI.LoginWithEmailAddress(request, 
+        (result) => 
+        {
+            Debug.Log("Auto Login Successful");
+
+            myID = result.PlayFabId;
+            StartCoroutine(SettingAnimalBook());
+        },
+        (error) => 
+        {
+            AppManager.Instance.OpenPanel(Login_Panel);
+        });
     }
 
     public void Register()
@@ -214,6 +238,7 @@ public class PlayfabManager : MonoBehaviour
                 var curBoard = result.Leaderboard[i];
                 AnimalBookManager.Instance.leaderboardText.text += String.Format("{0}위 {1, -10} 님 {2, 2}마리", (i+1), curBoard.Profile.DisplayName, curBoard.StatValue) +"\n";
             }
+            Debug.Log("Ranking Synchronization Completed");
         },
         (error) => Debug.Log("Failed load leaderboard"));
     }

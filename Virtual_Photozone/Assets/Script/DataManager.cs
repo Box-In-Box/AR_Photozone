@@ -36,7 +36,7 @@ public class DataManager : MonoBehaviour
         {
             string FromJsonData = File.ReadAllText(filePath);
             data = JsonUtility.FromJson<Data>(FromJsonData);
-            Debug.Log("셋팅 값 Load");
+            Debug.Log("Load Data");
         }
     }
 
@@ -46,6 +46,6 @@ public class DataManager : MonoBehaviour
         string filePath = Application.persistentDataPath + "/" + SettingDataFileName;
 
         File.WriteAllText(filePath, ToJsonData);
-        Debug.Log("셋팅 값 Save");
+        Debug.Log("Save Data");
     }
 }

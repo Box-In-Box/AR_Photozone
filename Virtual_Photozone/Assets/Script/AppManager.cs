@@ -78,7 +78,8 @@ public class AppManager : MonoBehaviour
         ShutterSound(DataManager.Instance.data.shutterSound);
         MirrorMode(DataManager.Instance.data.isMirror);
         SetTransparentUIPosition();
-        AutoLogin(DataManager.Instance.data.isAutoLogin);
+        AutoLoginBtn(DataManager.Instance.data.isAutoLogin);
+        AutoLogin();
 
         //ScrrenshotManager Setting
         ScreenshotManager.Instance.SetScreenRatio(screenRatio);
@@ -224,7 +225,7 @@ public class AppManager : MonoBehaviour
     #endregion
 
     #region AutoLogin
-    public void AutoLogin(bool autoLogin) //isAutoLogin 설정
+    public void AutoLoginBtn(bool autoLogin) //isAutoLogin 설정
     {    
         isAutoLogin = autoLogin;
         if(autoLogin == true)
@@ -233,7 +234,7 @@ public class AppManager : MonoBehaviour
             autoLoginButtonImage.GetComponent<Image>().sprite = autoLoginOff;
     }
 
-    public void SetAutoLogin() //mirror switch
+    public void SetAutoLogin()
     {
         AutoLoginSwitch();
         DataManager.Instance.data.isAutoLogin = isAutoLogin;
@@ -250,6 +251,14 @@ public class AppManager : MonoBehaviour
             isAutoLogin = true;
             autoLoginButtonImage.GetComponent<Image>().sprite = autoLoginOn;
         }
+    }
+
+    public void AutoLogin()
+    {
+        if (!isAutoLogin)
+            return;
+        
+        PlayfabManager.Instance.AutoLogin(DataManager.Instance.data.email, DataManager.Instance.data.password);
     }
     #endregion
 

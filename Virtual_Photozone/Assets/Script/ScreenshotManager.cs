@@ -26,6 +26,7 @@ public class ScreenshotManager : MonoBehaviour
     private bool isCoroutinePlaying;    
     string albumName = "arTest";     // 생성될 앨범의 이름
     string fileName = "Ar_Photozone";
+    public GameObject TransparentUI;
 
     private static ScreenshotManager _instance = null;
     public static ScreenshotManager Instance
@@ -70,6 +71,10 @@ public class ScreenshotManager : MonoBehaviour
             TestConsoleManager.Instance.ConsolePanel.SetActive(false);
             yield return new WaitForEndOfFrame();
         }
+        //클린UI 버튼 제거
+        TransparentUI.SetActive(false);
+        yield return new WaitForEndOfFrame();
+
         // 스크린샷 + 갤러리갱신
         Screenshot();
         yield return new WaitForEndOfFrame();
@@ -91,6 +96,8 @@ public class ScreenshotManager : MonoBehaviour
         //콘솔 패널 UI 복귀
         if (TestConsoleManager.Instance.isConsolePanelActive == true)
             TestConsoleManager.Instance.ConsolePanel.SetActive(true);
+        //클린UI 버튼 복귀
+        TransparentUI.SetActive(true);
 
         isCoroutinePlaying = false;
     }

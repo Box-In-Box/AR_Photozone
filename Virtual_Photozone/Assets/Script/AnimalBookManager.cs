@@ -162,7 +162,18 @@ public class AnimalBookManager : MonoBehaviour
             yield return new WaitForSeconds(refreshTime);
         }
         PlayfabManager.Instance.GetLeaderboard();
-        Debug.Log("랭킹 동기화 완료");
+    }
+
+    public void RefreshAnimalRank() //Button
+    {
+        StartCoroutine(RefreshAnimalRankCoroutine());
+    }
+
+    IEnumerator RefreshAnimalRankCoroutine()
+    {
+        PlayfabManager.Instance.GetState();
+        PlayfabManager.Instance.GetLeaderboard();
+        yield return null;
     }
 
     //동물 카드 설정
