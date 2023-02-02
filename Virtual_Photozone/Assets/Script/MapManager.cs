@@ -46,7 +46,7 @@ public class MapManager : MonoBehaviour
         mapView.GetComponent<RectTransform>().pivot = new Vector2(0.5f, 0.5f);
     }    
 
-    public static Texture2D textureFromSprite(Sprite sprite)
+    public Texture2D textureFromSprite(Sprite sprite)
     {
         if(sprite.rect.width != sprite.texture.width){
             Texture2D newText = new Texture2D((int)sprite.rect.width,(int)sprite.rect.height);
@@ -85,6 +85,10 @@ public class MapManager : MonoBehaviour
             vector.y -= movey - mapLocationButton.GetComponent<RectTransform>().rect.height;
 
             mapLocationButton.transform.position = vector;
+
+            //for button Moving  (position -> isSetPosition 순서)
+            mapLocationButton.GetComponent<MapLocationData>().position = vector;
+            mapLocationButton.GetComponent<MapLocationData>().isSetPosition = true;
         }
     }
 }

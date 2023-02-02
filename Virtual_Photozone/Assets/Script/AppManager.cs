@@ -22,6 +22,11 @@ public class AppManager : MonoBehaviour
     public int shutterSound;    //셔터음 사운드
     public Text shutterSoundText;
 
+    [Header("-----Dark-----")]
+    public bool isDark;
+    public GameObject darkOff;
+    public GameObject darkOn;
+
     [Header("-----Mirror-----")]
     public bool isMirror;
     public GameObject mirrorOff;
@@ -76,6 +81,7 @@ public class AppManager : MonoBehaviour
         //Data Setting
         ScreenRatio(DataManager.Instance.data.screenRatio);
         ShutterSound(DataManager.Instance.data.shutterSound);
+        DarkMode(DataManager.Instance.data.isDark);
         MirrorMode(DataManager.Instance.data.isMirror);
         SetTransparentUIPosition();
         AutoLoginBtn(DataManager.Instance.data.isAutoLogin);
@@ -197,6 +203,40 @@ public class AppManager : MonoBehaviour
     }
     #endregion
 
+    #region DarkMode
+    public void DarkMode(bool dark) //isDark 설정
+    {    
+        isDark = dark;
+        darkOn.gameObject.SetActive(dark);
+        darkOff.gameObject.SetActive(!dark);
+        
+        isDark = !isDark; //DarkSwitch로 다크모드 설정을 위함 DarkSwitch이후 원래값 되찾음
+        DarkSwitch();
+    }
+    public void SetDarkMode() //dark switch
+    {
+        DarkSwitch();
+        DataManager.Instance.data.isDark = isDark;
+        DataManager.Instance.SavaSettingData();
+    }
+
+    public void DarkSwitch()
+    {   
+        if (isDark == false) {
+            isDark = true;
+            Down_Screen_Padding_Panel.gameObject.GetComponent<Image>().color = new Color(0, 0, 0);
+            Up_Screen_Padding_Panel.gameObject.GetComponent<Image>().color = new Color(0, 0, 0);
+        }
+        else {
+            isDark = false;
+            Down_Screen_Padding_Panel.gameObject.GetComponent<Image>().color = new Color(255, 255, 255);
+            Up_Screen_Padding_Panel.gameObject.GetComponent<Image>().color = new Color(255, 255, 255);
+        }
+        darkOn.gameObject.SetActive(isDark);
+        darkOff.gameObject.SetActive(!isDark);
+    }
+    #endregion
+
     #region MirrorMode
     public void MirrorMode(bool mirror) //ismirror 설정
     {    
@@ -214,7 +254,7 @@ public class AppManager : MonoBehaviour
 
     public void MirrorSwitch()
     {
-        if (mirrorOff.gameObject.activeSelf == true)
+        if (isMirror == false)
             isMirror = true;
         else
             isMirror = false;

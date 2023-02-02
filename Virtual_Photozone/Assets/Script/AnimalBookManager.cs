@@ -22,6 +22,7 @@ public class AnimalBookManager : MonoBehaviour
     public GameObject animalCard;
     public Text animalCardName;
     public Text collectedTime;
+    public RawImage animalCardView;
     
     [Header("-----Animal Ranking-----")]
     public int score = -1;
@@ -184,5 +185,18 @@ public class AnimalBookManager : MonoBehaviour
 
         animalCardName.text = DataManager.Instance.animalData.animalName[num];
         collectedTime.text = "수집일 : " + time[0] + " / " + time[1] + "시 " + time[2] + "분";
+
+        Sprite sprite = Resources.Load("AnimalBookImg/" + animalMsg + num.ToString(), typeof(Sprite)) as Sprite;
+
+        animalCardView.texture = MapManager.Instance.textureFromSprite(sprite);
+        animalCardView.SetNativeSize();
+
+        GalleryManager.Instance.ImageSizeSetting(animalCardView, 
+            animalCardView.GetComponent<RectTransform>().rect.height, 
+            animalCardView.GetComponent<RectTransform>().rect.width);
+        
+        animalCardView.GetComponent<RectTransform>().anchorMin = new Vector2(0.5f, 0.5f);
+        animalCardView.GetComponent<RectTransform>().anchorMax = new Vector2(0.5f, 0.5f);
+        animalCardView.GetComponent<RectTransform>().pivot = new Vector2(0.5f, 0.5f);
     }
 }

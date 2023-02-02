@@ -236,7 +236,7 @@ public class PlayfabManager : MonoBehaviour
             for (int i = 0; i < result.Leaderboard.Count; i++)
             {
                 var curBoard = result.Leaderboard[i];
-                AnimalBookManager.Instance.leaderboardText.text += String.Format("{0}위 {1, -10} 님 {2, 2}마리", (i+1), curBoard.Profile.DisplayName, curBoard.StatValue) +"\n";
+                AnimalBookManager.Instance.leaderboardText.text += String.Format("{0, 2}위 {1, 8} 님 {2, 3}마리", (i+1), curBoard.Profile.DisplayName, curBoard.StatValue) +"\n";
             }
             Debug.Log("Ranking Synchronization Completed");
         },
