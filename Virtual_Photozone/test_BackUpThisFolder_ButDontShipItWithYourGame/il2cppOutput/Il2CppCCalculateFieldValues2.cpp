@@ -4111,52 +4111,52 @@ struct U3CSettingU3Ed__21_t75352DB4B260D4556C22C7C6CEFC70E93B2F011E  : public Ru
 	int32_t ___U3CcollectTempU3E5__2_3;
 };
 
-// AppManager/<PrintLog>d__42
-struct U3CPrintLogU3Ed__42_t4C66C1CF122BFF162AB59F68F023700BEF7EAF66  : public RuntimeObject
+// AppManager/<PrintLog>d__44
+struct U3CPrintLogU3Ed__44_t939A76E68992262B857EF21B46BDD7F50B444E49  : public RuntimeObject
 {
-	// System.Int32 AppManager/<PrintLog>d__42::<>1__state
+	// System.Int32 AppManager/<PrintLog>d__44::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object AppManager/<PrintLog>d__42::<>2__current
+	// System.Object AppManager/<PrintLog>d__44::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// AppManager AppManager/<PrintLog>d__42::<>4__this
+	// AppManager AppManager/<PrintLog>d__44::<>4__this
 	AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C* ___U3CU3E4__this_2;
-	// System.String AppManager/<PrintLog>d__42::msg
+	// System.String AppManager/<PrintLog>d__44::msg
 	String_t* ___msg_3;
 };
 
-// AppManager/<WaitLerpCoroutine>d__58
-struct U3CWaitLerpCoroutineU3Ed__58_t6BADEC1E1444E73D346B954D3F7E6DDFAAA9865B  : public RuntimeObject
+// AppManager/<WaitLerpCoroutine>d__60
+struct U3CWaitLerpCoroutineU3Ed__60_tD488F5F3FC4756649A50B61DD0AEE63866E8611E  : public RuntimeObject
 {
-	// System.Int32 AppManager/<WaitLerpCoroutine>d__58::<>1__state
+	// System.Int32 AppManager/<WaitLerpCoroutine>d__60::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object AppManager/<WaitLerpCoroutine>d__58::<>2__current
+	// System.Object AppManager/<WaitLerpCoroutine>d__60::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// AppManager AppManager/<WaitLerpCoroutine>d__58::<>4__this
+	// AppManager AppManager/<WaitLerpCoroutine>d__60::<>4__this
 	AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C* ___U3CU3E4__this_2;
-	// UnityEngine.Transform[] AppManager/<WaitLerpCoroutine>d__58::targetUI
+	// UnityEngine.Transform[] AppManager/<WaitLerpCoroutine>d__60::targetUI
 	TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* ___targetUI_3;
-	// UnityEngine.Vector3[] AppManager/<WaitLerpCoroutine>d__58::current
+	// UnityEngine.Vector3[] AppManager/<WaitLerpCoroutine>d__60::current
 	Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* ___current_4;
-	// UnityEngine.Vector3[] AppManager/<WaitLerpCoroutine>d__58::target
+	// UnityEngine.Vector3[] AppManager/<WaitLerpCoroutine>d__60::target
 	Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* ___target_5;
 };
 
-// AppManager/<lerpCoroutine>d__59
-struct U3ClerpCoroutineU3Ed__59_t856F1BC91B1D31DAEC55E8E86EC99C9EB4B2DDE9  : public RuntimeObject
+// AppManager/<lerpCoroutine>d__61
+struct U3ClerpCoroutineU3Ed__61_t2B47BD82277EC6FD3B5E6FD682F576B5B14C5A23  : public RuntimeObject
 {
-	// System.Int32 AppManager/<lerpCoroutine>d__59::<>1__state
+	// System.Int32 AppManager/<lerpCoroutine>d__61::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object AppManager/<lerpCoroutine>d__59::<>2__current
+	// System.Object AppManager/<lerpCoroutine>d__61::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// UnityEngine.Transform[] AppManager/<lerpCoroutine>d__59::targetUI
+	// UnityEngine.Transform[] AppManager/<lerpCoroutine>d__61::targetUI
 	TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* ___targetUI_2;
-	// UnityEngine.Vector3[] AppManager/<lerpCoroutine>d__59::current
+	// UnityEngine.Vector3[] AppManager/<lerpCoroutine>d__61::current
 	Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* ___current_3;
-	// UnityEngine.Vector3[] AppManager/<lerpCoroutine>d__59::target
+	// UnityEngine.Vector3[] AppManager/<lerpCoroutine>d__61::target
 	Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* ___target_4;
-	// System.Single AppManager/<lerpCoroutine>d__59::time
+	// System.Single AppManager/<lerpCoroutine>d__61::time
 	float ___time_5;
-	// System.Single AppManager/<lerpCoroutine>d__59::<elapsedTime>5__2
+	// System.Single AppManager/<lerpCoroutine>d__61::<elapsedTime>5__2
 	float ___U3CelapsedTimeU3E5__2_6;
 };
 
@@ -20790,66 +20790,70 @@ struct AnimatorController_t931CB24999468F0698FE2FF590C54BCAAEF99A3E  : public Mo
 // AppManager
 struct AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
-	// UnityEngine.GameObject AppManager::ConsolePanel
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___ConsolePanel_4;
+	// UnityEngine.UI.Text AppManager::MapConsoleText
+	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___MapConsoleText_4;
+	// UnityEngine.UI.Text AppManager::ConsoleText
+	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___ConsoleText_5;
+	// System.Boolean AppManager::isConsoleTextUsing
+	bool ___isConsoleTextUsing_6;
 	// UnityEngine.RectTransform AppManager::Down_Screen_Padding_Panel
-	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___Down_Screen_Padding_Panel_5;
+	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___Down_Screen_Padding_Panel_7;
 	// UnityEngine.RectTransform AppManager::Up_Screen_Padding_Panel
-	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___Up_Screen_Padding_Panel_6;
+	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___Up_Screen_Padding_Panel_8;
 	// UnityEngine.RectTransform AppManager::upUIPanel
-	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___upUIPanel_7;
+	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___upUIPanel_9;
 	// System.Int32 AppManager::screenRatio
-	int32_t ___screenRatio_8;
+	int32_t ___screenRatio_10;
 	// System.Int32 AppManager::screenHeight
-	int32_t ___screenHeight_9;
+	int32_t ___screenHeight_11;
 	// UnityEngine.UI.Text AppManager::screenRatioText
-	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___screenRatioText_10;
+	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___screenRatioText_12;
 	// System.Int32 AppManager::shutterSound
-	int32_t ___shutterSound_11;
+	int32_t ___shutterSound_13;
 	// UnityEngine.UI.Text AppManager::shutterSoundText
-	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___shutterSoundText_12;
+	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___shutterSoundText_14;
 	// System.Boolean AppManager::isDark
-	bool ___isDark_13;
+	bool ___isDark_15;
 	// UnityEngine.GameObject AppManager::darkOff
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___darkOff_14;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___darkOff_16;
 	// UnityEngine.GameObject AppManager::darkOn
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___darkOn_15;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___darkOn_17;
 	// System.Boolean AppManager::isMirror
-	bool ___isMirror_16;
+	bool ___isMirror_18;
 	// UnityEngine.GameObject AppManager::mirrorOff
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___mirrorOff_17;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___mirrorOff_19;
 	// UnityEngine.GameObject AppManager::mirrorOn
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___mirrorOn_18;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___mirrorOn_20;
 	// System.Boolean AppManager::isAutoLogin
-	bool ___isAutoLogin_19;
+	bool ___isAutoLogin_21;
 	// UnityEngine.UI.Image AppManager::autoLoginButtonImage
-	Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* ___autoLoginButtonImage_20;
+	Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* ___autoLoginButtonImage_22;
 	// UnityEngine.Sprite AppManager::autoLoginOff
-	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___autoLoginOff_21;
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___autoLoginOff_23;
 	// UnityEngine.Sprite AppManager::autoLoginOn
-	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___autoLoginOn_22;
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___autoLoginOn_24;
 	// System.Boolean AppManager::isTransparentUI
-	bool ___isTransparentUI_23;
+	bool ___isTransparentUI_25;
 	// UnityEngine.RectTransform AppManager::TransparentUIButton
-	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___TransparentUIButton_24;
+	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___TransparentUIButton_26;
 	// UnityEngine.UI.Image AppManager::transparentUIImage
-	Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* ___transparentUIImage_25;
+	Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* ___transparentUIImage_27;
 	// UnityEngine.Sprite AppManager::transparentUIDown
-	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___transparentUIDown_26;
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___transparentUIDown_28;
 	// UnityEngine.Sprite AppManager::transparentUIUp
-	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___transparentUIUp_27;
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___transparentUIUp_29;
 	// UnityEngine.RectTransform AppManager::Up_Panel
-	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___Up_Panel_28;
+	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___Up_Panel_30;
 	// UnityEngine.RectTransform AppManager::Down_Panel
-	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___Down_Panel_29;
+	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___Down_Panel_31;
 	// System.Boolean AppManager::isrunnigCoroutine
-	bool ___isrunnigCoroutine_30;
+	bool ___isrunnigCoroutine_32;
 };
 
 struct AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C_StaticFields
 {
 	// AppManager AppManager::_instance
-	AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C* ____instance_31;
+	AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C* ____instance_33;
 };
 
 // ARLocation.MapboxRoutes.Examples.Search.ArMenuController
@@ -21331,18 +21335,20 @@ struct MapLocationData_t4AB1D602B056F4D7492DE9E8BD1A7800AB0E9640  : public MonoB
 {
 	// System.String MapLocationData::locationDescription
 	String_t* ___locationDescription_4;
+	// System.String MapLocationData::mapDescription
+	String_t* ___mapDescription_5;
 	// System.Int32 MapLocationData::lengthX
-	int32_t ___lengthX_5;
+	int32_t ___lengthX_6;
 	// System.Int32 MapLocationData::lengthY
-	int32_t ___lengthY_6;
+	int32_t ___lengthY_7;
 	// System.Boolean MapLocationData::isSetPosition
-	bool ___isSetPosition_7;
+	bool ___isSetPosition_8;
 	// UnityEngine.Vector3 MapLocationData::position
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position_8;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position_9;
 	// System.Single MapLocationData::delta
-	float ___delta_9;
+	float ___delta_10;
 	// System.Single MapLocationData::speed
-	float ___speed_10;
+	float ___speed_11;
 };
 
 // MapManager
@@ -21354,12 +21360,32 @@ struct MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53  : public MonoBehavi
 	RawImage_tFF12F7DB574FBDC1863CF607C7A12A5D9F8D6179* ___mapView_5;
 	// UnityEngine.Transform MapManager::MapLocation
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___MapLocation_6;
+	// UnityEngine.Transform MapManager::structurePanel
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___structurePanel_7;
+	// UnityEngine.Transform MapManager::animalPanel
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___animalPanel_8;
+	// System.Boolean MapManager::isShowStructureDistance
+	bool ___isShowStructureDistance_9;
+	// System.Int32 MapManager::structureIndex
+	int32_t ___structureIndex_10;
+	// System.Int32 MapManager::distance
+	int32_t ___distance_11;
+	// UnityEngine.UI.Text MapManager::mapCardName
+	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___mapCardName_12;
+	// UnityEngine.UI.Text MapManager::locationName
+	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___locationName_13;
+	// UnityEngine.UI.Text MapManager::distanceText
+	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___distanceText_14;
+	// UnityEngine.GameObject[] MapManager::structureObject
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___structureObject_15;
+	// UnityEngine.GameObject[] MapManager::animalObject
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___animalObject_16;
 };
 
 struct MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53_StaticFields
 {
 	// MapManager MapManager::_instance
-	MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53* ____instance_7;
+	MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53* ____instance_17;
 };
 
 // ARLocation.MapboxRoutes.MapboxRoute
@@ -24950,16 +24976,16 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6349[1] =
 	static_cast<int32_t>(offsetof(AnimalData_tDDC2903E0CC4BFF756ADA0D74A0743FC3466D976, ___animalName_0)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6350[4] = 
 {
-	static_cast<int32_t>(offsetof(U3CPrintLogU3Ed__42_t4C66C1CF122BFF162AB59F68F023700BEF7EAF66, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CPrintLogU3Ed__42_t4C66C1CF122BFF162AB59F68F023700BEF7EAF66, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CPrintLogU3Ed__42_t4C66C1CF122BFF162AB59F68F023700BEF7EAF66, ___U3CU3E4__this_2)),static_cast<int32_t>(offsetof(U3CPrintLogU3Ed__42_t4C66C1CF122BFF162AB59F68F023700BEF7EAF66, ___msg_3)),};
+	static_cast<int32_t>(offsetof(U3CPrintLogU3Ed__44_t939A76E68992262B857EF21B46BDD7F50B444E49, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CPrintLogU3Ed__44_t939A76E68992262B857EF21B46BDD7F50B444E49, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CPrintLogU3Ed__44_t939A76E68992262B857EF21B46BDD7F50B444E49, ___U3CU3E4__this_2)),static_cast<int32_t>(offsetof(U3CPrintLogU3Ed__44_t939A76E68992262B857EF21B46BDD7F50B444E49, ___msg_3)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6351[6] = 
 {
-	static_cast<int32_t>(offsetof(U3CWaitLerpCoroutineU3Ed__58_t6BADEC1E1444E73D346B954D3F7E6DDFAAA9865B, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CWaitLerpCoroutineU3Ed__58_t6BADEC1E1444E73D346B954D3F7E6DDFAAA9865B, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CWaitLerpCoroutineU3Ed__58_t6BADEC1E1444E73D346B954D3F7E6DDFAAA9865B, ___U3CU3E4__this_2)),static_cast<int32_t>(offsetof(U3CWaitLerpCoroutineU3Ed__58_t6BADEC1E1444E73D346B954D3F7E6DDFAAA9865B, ___targetUI_3)),static_cast<int32_t>(offsetof(U3CWaitLerpCoroutineU3Ed__58_t6BADEC1E1444E73D346B954D3F7E6DDFAAA9865B, ___current_4)),static_cast<int32_t>(offsetof(U3CWaitLerpCoroutineU3Ed__58_t6BADEC1E1444E73D346B954D3F7E6DDFAAA9865B, ___target_5)),};
+	static_cast<int32_t>(offsetof(U3CWaitLerpCoroutineU3Ed__60_tD488F5F3FC4756649A50B61DD0AEE63866E8611E, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CWaitLerpCoroutineU3Ed__60_tD488F5F3FC4756649A50B61DD0AEE63866E8611E, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CWaitLerpCoroutineU3Ed__60_tD488F5F3FC4756649A50B61DD0AEE63866E8611E, ___U3CU3E4__this_2)),static_cast<int32_t>(offsetof(U3CWaitLerpCoroutineU3Ed__60_tD488F5F3FC4756649A50B61DD0AEE63866E8611E, ___targetUI_3)),static_cast<int32_t>(offsetof(U3CWaitLerpCoroutineU3Ed__60_tD488F5F3FC4756649A50B61DD0AEE63866E8611E, ___current_4)),static_cast<int32_t>(offsetof(U3CWaitLerpCoroutineU3Ed__60_tD488F5F3FC4756649A50B61DD0AEE63866E8611E, ___target_5)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6352[7] = 
 {
-	static_cast<int32_t>(offsetof(U3ClerpCoroutineU3Ed__59_t856F1BC91B1D31DAEC55E8E86EC99C9EB4B2DDE9, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3ClerpCoroutineU3Ed__59_t856F1BC91B1D31DAEC55E8E86EC99C9EB4B2DDE9, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3ClerpCoroutineU3Ed__59_t856F1BC91B1D31DAEC55E8E86EC99C9EB4B2DDE9, ___targetUI_2)),static_cast<int32_t>(offsetof(U3ClerpCoroutineU3Ed__59_t856F1BC91B1D31DAEC55E8E86EC99C9EB4B2DDE9, ___current_3)),static_cast<int32_t>(offsetof(U3ClerpCoroutineU3Ed__59_t856F1BC91B1D31DAEC55E8E86EC99C9EB4B2DDE9, ___target_4)),static_cast<int32_t>(offsetof(U3ClerpCoroutineU3Ed__59_t856F1BC91B1D31DAEC55E8E86EC99C9EB4B2DDE9, ___time_5)),static_cast<int32_t>(offsetof(U3ClerpCoroutineU3Ed__59_t856F1BC91B1D31DAEC55E8E86EC99C9EB4B2DDE9, ___U3CelapsedTimeU3E5__2_6)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6353[28] = 
+	static_cast<int32_t>(offsetof(U3ClerpCoroutineU3Ed__61_t2B47BD82277EC6FD3B5E6FD682F576B5B14C5A23, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3ClerpCoroutineU3Ed__61_t2B47BD82277EC6FD3B5E6FD682F576B5B14C5A23, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3ClerpCoroutineU3Ed__61_t2B47BD82277EC6FD3B5E6FD682F576B5B14C5A23, ___targetUI_2)),static_cast<int32_t>(offsetof(U3ClerpCoroutineU3Ed__61_t2B47BD82277EC6FD3B5E6FD682F576B5B14C5A23, ___current_3)),static_cast<int32_t>(offsetof(U3ClerpCoroutineU3Ed__61_t2B47BD82277EC6FD3B5E6FD682F576B5B14C5A23, ___target_4)),static_cast<int32_t>(offsetof(U3ClerpCoroutineU3Ed__61_t2B47BD82277EC6FD3B5E6FD682F576B5B14C5A23, ___time_5)),static_cast<int32_t>(offsetof(U3ClerpCoroutineU3Ed__61_t2B47BD82277EC6FD3B5E6FD682F576B5B14C5A23, ___U3CelapsedTimeU3E5__2_6)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6353[30] = 
 {
-	static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___ConsolePanel_4)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___Down_Screen_Padding_Panel_5)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___Up_Screen_Padding_Panel_6)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___upUIPanel_7)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___screenRatio_8)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___screenHeight_9)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___screenRatioText_10)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___shutterSound_11)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___shutterSoundText_12)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___isDark_13)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___darkOff_14)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___darkOn_15)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___isMirror_16)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___mirrorOff_17)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___mirrorOn_18)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___isAutoLogin_19)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___autoLoginButtonImage_20)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___autoLoginOff_21)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___autoLoginOn_22)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___isTransparentUI_23)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___TransparentUIButton_24)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___transparentUIImage_25)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___transparentUIDown_26)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___transparentUIUp_27)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___Up_Panel_28)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___Down_Panel_29)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___isrunnigCoroutine_30)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C_StaticFields, ____instance_31)),};
+	static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___MapConsoleText_4)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___ConsoleText_5)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___isConsoleTextUsing_6)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___Down_Screen_Padding_Panel_7)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___Up_Screen_Padding_Panel_8)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___upUIPanel_9)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___screenRatio_10)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___screenHeight_11)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___screenRatioText_12)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___shutterSound_13)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___shutterSoundText_14)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___isDark_15)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___darkOff_16)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___darkOn_17)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___isMirror_18)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___mirrorOff_19)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___mirrorOn_20)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___isAutoLogin_21)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___autoLoginButtonImage_22)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___autoLoginOff_23)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___autoLoginOn_24)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___isTransparentUI_25)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___TransparentUIButton_26)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___transparentUIImage_27)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___transparentUIDown_28)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___transparentUIUp_29)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___Up_Panel_30)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___Down_Panel_31)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C, ___isrunnigCoroutine_32)),static_cast<int32_t>(offsetof(AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C_StaticFields, ____instance_33)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6354[7] = 
 {
 	static_cast<int32_t>(offsetof(Data_tD68044ADE8612868F3B424B065920F50C65B5CCE, ___screenRatio_0)),static_cast<int32_t>(offsetof(Data_tD68044ADE8612868F3B424B065920F50C65B5CCE, ___shutterSound_1)),static_cast<int32_t>(offsetof(Data_tD68044ADE8612868F3B424B065920F50C65B5CCE, ___isDark_2)),static_cast<int32_t>(offsetof(Data_tD68044ADE8612868F3B424B065920F50C65B5CCE, ___isMirror_3)),static_cast<int32_t>(offsetof(Data_tD68044ADE8612868F3B424B065920F50C65B5CCE, ___isAutoLogin_4)),static_cast<int32_t>(offsetof(Data_tD68044ADE8612868F3B424B065920F50C65B5CCE, ___email_5)),static_cast<int32_t>(offsetof(Data_tD68044ADE8612868F3B424B065920F50C65B5CCE, ___password_6)),};
@@ -24975,12 +25001,12 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6357[3] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6358[1] = 
 {
 	static_cast<int32_t>(offsetof(LocationDescription_t769CEDD178668995DD4BF9FDD168968BC74EEEB5, ___locationDescription_4)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6359[7] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6359[8] = 
 {
-	static_cast<int32_t>(offsetof(MapLocationData_t4AB1D602B056F4D7492DE9E8BD1A7800AB0E9640, ___locationDescription_4)),static_cast<int32_t>(offsetof(MapLocationData_t4AB1D602B056F4D7492DE9E8BD1A7800AB0E9640, ___lengthX_5)),static_cast<int32_t>(offsetof(MapLocationData_t4AB1D602B056F4D7492DE9E8BD1A7800AB0E9640, ___lengthY_6)),static_cast<int32_t>(offsetof(MapLocationData_t4AB1D602B056F4D7492DE9E8BD1A7800AB0E9640, ___isSetPosition_7)),static_cast<int32_t>(offsetof(MapLocationData_t4AB1D602B056F4D7492DE9E8BD1A7800AB0E9640, ___position_8)),static_cast<int32_t>(offsetof(MapLocationData_t4AB1D602B056F4D7492DE9E8BD1A7800AB0E9640, ___delta_9)),static_cast<int32_t>(offsetof(MapLocationData_t4AB1D602B056F4D7492DE9E8BD1A7800AB0E9640, ___speed_10)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6360[4] = 
+	static_cast<int32_t>(offsetof(MapLocationData_t4AB1D602B056F4D7492DE9E8BD1A7800AB0E9640, ___locationDescription_4)),static_cast<int32_t>(offsetof(MapLocationData_t4AB1D602B056F4D7492DE9E8BD1A7800AB0E9640, ___mapDescription_5)),static_cast<int32_t>(offsetof(MapLocationData_t4AB1D602B056F4D7492DE9E8BD1A7800AB0E9640, ___lengthX_6)),static_cast<int32_t>(offsetof(MapLocationData_t4AB1D602B056F4D7492DE9E8BD1A7800AB0E9640, ___lengthY_7)),static_cast<int32_t>(offsetof(MapLocationData_t4AB1D602B056F4D7492DE9E8BD1A7800AB0E9640, ___isSetPosition_8)),static_cast<int32_t>(offsetof(MapLocationData_t4AB1D602B056F4D7492DE9E8BD1A7800AB0E9640, ___position_9)),static_cast<int32_t>(offsetof(MapLocationData_t4AB1D602B056F4D7492DE9E8BD1A7800AB0E9640, ___delta_10)),static_cast<int32_t>(offsetof(MapLocationData_t4AB1D602B056F4D7492DE9E8BD1A7800AB0E9640, ___speed_11)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6360[14] = 
 {
-	static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53, ___mapSprite_4)),static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53, ___mapView_5)),static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53, ___MapLocation_6)),static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53_StaticFields, ____instance_7)),};
+	static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53, ___mapSprite_4)),static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53, ___mapView_5)),static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53, ___MapLocation_6)),static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53, ___structurePanel_7)),static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53, ___animalPanel_8)),static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53, ___isShowStructureDistance_9)),static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53, ___structureIndex_10)),static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53, ___distance_11)),static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53, ___mapCardName_12)),static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53, ___locationName_13)),static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53, ___distanceText_14)),static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53, ___structureObject_15)),static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53, ___animalObject_16)),static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53_StaticFields, ____instance_17)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6361[1] = 
 {
 	static_cast<int32_t>(offsetof(ObjectData_tD9D3F22C72FE76B37DAA1A192E10D74B7C00CBA4, ___ID_Name_4)),};

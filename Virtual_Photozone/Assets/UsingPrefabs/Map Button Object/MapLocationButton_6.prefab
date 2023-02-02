@@ -136,8 +136,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   locationDescription: "\uAE30\uC219\uC0AC"
+  mapDescription: "\uD48D\uC120 \uD14C\uB9C8"
   lengthX: 330
   lengthY: 620
+  isSetPosition: 0
+  position: {x: 0, y: 0, z: 0}
 --- !u!1 &4639273924735402908
 GameObject:
   m_ObjectHideFlags: 0

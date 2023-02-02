@@ -135,9 +135,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44d4ab9cfa3053a42a040bc9e9735d8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locationDescription: "\uCCB4\uB9AC\uB85C"
+  locationDescription: "\uCCB4\uB9AC\uB85C\uB4DC"
+  mapDescription: "\uB3D9\uBB3C\uC218\uC9D1"
   lengthX: 630
   lengthY: 310
+  isSetPosition: 0
+  position: {x: 0, y: 0, z: 0}
 --- !u!1 &6516087260237975965
 GameObject:
   m_ObjectHideFlags: 0

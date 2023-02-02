@@ -271,5 +271,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   locationDescription: "\uBBF8\uC220\uAD00"
+  mapDescription: "\uB098\uBE44 \uD14C\uB9C8"
   lengthX: 390
   lengthY: 490
+  isSetPosition: 0
+  position: {x: 0, y: 0, z: 0}

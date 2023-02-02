@@ -6,7 +6,9 @@ using UnityEngine.UI;
 public class AppManager : MonoBehaviour
 {
     [Header("-----Console Text-----")]
-    public GameObject ConsolePanel;
+    public Text MapConsoleText;
+    public Text ConsoleText;
+    public bool isConsoleTextUsing;
 
     [Header("-----Screen Ratio Padding Object-----")]
     public RectTransform Down_Screen_Padding_Panel;
@@ -194,12 +196,12 @@ public class AppManager : MonoBehaviour
 
     #region Print Log
     public IEnumerator PrintLog(string msg)
-    {
-        ConsolePanel.SetActive(true);
-        ConsolePanel.gameObject.transform.GetChild(0).gameObject.GetComponent<Text>().text = msg;
+    {   
+        isConsoleTextUsing = true;
+        ConsoleText.text = msg;
         yield return new WaitForSecondsRealtime(1.5f);
-        ConsolePanel.gameObject.transform.GetChild(0).gameObject.GetComponent<Text>().text = "";
-        ConsolePanel.SetActive(false);
+        ConsoleText.text = "";
+        isConsoleTextUsing = false;
     }
     #endregion
 

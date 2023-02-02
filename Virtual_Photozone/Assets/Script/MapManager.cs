@@ -2,12 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class MapManager : MonoBehaviour
 {
     public Sprite mapSprite;
     public RawImage mapView;
     public Transform MapLocation;
+
+    [Header("-----GpsObject-----")]
+    public Transform structurePanel;
+    public Transform animalPanel;
+    public bool isShowStructureDistance;
+    public int structureIndex = -1;
+    public int distance;
+
+    [Header("-----MapCard-----")]
+    public Text mapCardName;
+    public Text locationName;
+    public Text distanceText;
+
+    [Space(10f)]
+    public GameObject[] structureObject;
+    public GameObject[] animalObject;
 
     private static MapManager _instance = null;
     public static MapManager Instance
@@ -26,12 +43,23 @@ public class MapManager : MonoBehaviour
             return _instance;
         }
     }
+    private void Awake() {
+        SettingGpsObject(); //Gps 오브젝트 Get 컴포넌트 
+    }
 
     private void Start() {
         SettingMap();   //맵 해상도 변경
         SetMapLocationButton(); //변경된 해상도에 따라 포토존 위치 버튼 설정
     }
 
+    private void Update() {
+        if(isShowStructureDistance == false)
+            return;
+        
+        ShowStructureDistance();
+    }
+
+    #region Map Image setting
     void SettingMap()   //해상도에 따른 Map비율
     {
         mapView.texture = textureFromSprite(mapSprite);
@@ -91,4 +119,58 @@ public class MapManager : MonoBehaviour
             mapLocationButton.GetComponent<MapLocationData>().isSetPosition = true;
         }
     }
+    #endregion
+
+    #region Gps Object Setting
+    public void SettingGpsObject()
+    {
+        int structureCount = structurePanel.childCount;
+        int animalCount = animalPanel.childCount;
+
+        if(structureCount != 0)
+            structureObject = new GameObject[structureCount];
+
+        if(animalCount != 0)
+            animalObject = new GameObject[animalCount];
+
+        for(int i = 0; i < structureCount; i++) {
+            structureObject[i] = structurePanel.GetChild(i).gameObject;
+        }
+
+        for(int i = 0; i < animalCount; i++) {
+            animalObject[i] = animalPanel.GetChild(i).gameObject;
+        }
+    }
+
+    public void SetStructureInfo(int index)
+    {
+        structureIndex = index;
+        GameObject go = EventSystem.current.currentSelectedGameObject;
+        this.mapCardName.text = go.GetComponent<MapLocationData>().mapDescription;
+        this.locationName.text = go.GetComponent<MapLocationData>().locationDescription;
+    }
+
+    public void SetStructureDistance()
+    {
+        isShowStructureDistance = true;
+    }
+
+    public void ShowStructureDistance()
+    {
+        if (structureIndex != -1)
+            distance = (int)structureObject[structureIndex].GetComponent<ARLocation.PlaceAtLocation>().RawGpsDistance; //RawGpsDistance와 비교 필요
+
+        if (distance < 10)
+            distanceText.text = "포토존이\n 근처에 있습니다.";
+        else
+            distanceText.text = distance + "m\n 떨어져있습니다.";
+    }
+
+    public void OffStructureDistance()
+    {
+        isShowStructureDistance = false;
+        distanceText.text = "";
+        AppManager.Instance.ConsoleText.text = "";
+    }
+    #endregion
 }
