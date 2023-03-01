@@ -9,15 +9,18 @@
 ```
 ```
 　　[Setting]
-　　　　● screen ratio
-　　　　● shutter sound
+　　　　● screen ratio (1:1, 3:4, Full)
+　　　　● shutter sound (sound1, sound2, sound3)
+　　　　● dark mode
 　　　　● mirror mode
+　　　　● information
+　　　　● login window
     
 　　[Animal Book]
-　　　　● similer pokemon go
+　　　　● similer pokemon go (33 animals)
     
 　　[Ranking]
-　　　　● check my ranking
+　　　　● check my ranking (1st to 10th)
     
 　　[Map]
 　　　　● check photozone location
