@@ -13,9 +13,10 @@ public class MapManager : MonoBehaviour
     [Header("-----GpsObject-----")]
     public Transform structurePanel;
     public Transform animalPanel;
+    public int DeactivationRadius;  //오브젝트 활성화/비활성화 거리
     public bool isShowStructureDistance;
     public int structureIndex = -1;
-    public int distance;
+    public int mapDistance;
 
     [Header("-----MapCard-----")]
     public Text mapCardName;
@@ -44,7 +45,7 @@ public class MapManager : MonoBehaviour
         }
     }
     private void Awake() {
-        SettingGpsObject(); //Gps 오브젝트 Get 컴포넌트 
+        SettingGpsObject(); //Gps 오브젝트 Get 컴포넌트
     }
 
     private void Start() {
@@ -52,11 +53,34 @@ public class MapManager : MonoBehaviour
         SetMapLocationButton(); //변경된 해상도에 따라 포토존 위치 버튼 설정
     }
 
-    private void Update() {
-        if(isShowStructureDistance == false)
-            return;
-        
-        ShowStructureDistance();
+    private void Update() { //거리별 오브젝트 활성화/비활성화
+        int objectDistance;
+
+        for(int i = 0; i < structureObject.Length; i++) {   //포토존 오브젝트
+            objectDistance = (int)structureObject[i].GetComponent<ARLocation.PlaceAtLocation>().RawGpsDistance;
+            
+            if(objectDistance > DeactivationRadius) {
+                if(structureObject[i].transform.GetChild(0).gameObject.activeSelf == true)
+                    structureObject[i].transform.GetChild(0).gameObject.SetActive(false);
+            }
+            else {
+                if(structureObject[i].transform.GetChild(0).gameObject.activeSelf == false)
+                    structureObject[i].transform.GetChild(0).gameObject.SetActive(true);
+            }
+        }
+
+        for(int i = 0; i < animalObject.Length; i++) {  //동물 오브젝트
+            objectDistance = (int)animalObject[i].GetComponent<ARLocation.PlaceAtLocation>().RawGpsDistance;
+            
+            if(objectDistance > DeactivationRadius) {
+                if(animalObject[i].transform.GetChild(0).gameObject.activeSelf == true)
+                    animalObject[i].transform.GetChild(0).gameObject.SetActive(false);
+            }
+            else {
+                if(animalObject[i].transform.GetChild(0).gameObject.activeSelf == false)
+                    animalObject[i].transform.GetChild(0).gameObject.SetActive(true);
+            }
+        }
     }
 
     #region Map Image setting
@@ -153,17 +177,19 @@ public class MapManager : MonoBehaviour
     public void SetStructureDistance()
     {
         isShowStructureDistance = true;
+
+        ShowStructureDistance();
     }
 
     public void ShowStructureDistance()
     {
         if (structureIndex != -1)
-            distance = (int)structureObject[structureIndex].GetComponent<ARLocation.PlaceAtLocation>().RawGpsDistance; //RawGpsDistance와 비교 필요
+            mapDistance = (int)structureObject[structureIndex].GetComponent<ARLocation.PlaceAtLocation>().RawGpsDistance; //RawGpsDistance와 비교 필요
 
-        if (distance < 10)
+        if (mapDistance < 10)
             distanceText.text = "포토존이\n 근처에 있습니다.";
         else
-            distanceText.text = distance + "m\n 떨어져있습니다.";
+            distanceText.text = mapDistance + "m\n 떨어져있습니다.";
     }
 
     public void OffStructureDistance()

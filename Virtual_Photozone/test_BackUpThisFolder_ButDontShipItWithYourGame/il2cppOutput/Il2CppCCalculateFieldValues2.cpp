@@ -21364,28 +21364,30 @@ struct MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53  : public MonoBehavi
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___structurePanel_7;
 	// UnityEngine.Transform MapManager::animalPanel
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___animalPanel_8;
+	// System.Int32 MapManager::DeactivationRadius
+	int32_t ___DeactivationRadius_9;
 	// System.Boolean MapManager::isShowStructureDistance
-	bool ___isShowStructureDistance_9;
+	bool ___isShowStructureDistance_10;
 	// System.Int32 MapManager::structureIndex
-	int32_t ___structureIndex_10;
-	// System.Int32 MapManager::distance
-	int32_t ___distance_11;
+	int32_t ___structureIndex_11;
+	// System.Int32 MapManager::mapDistance
+	int32_t ___mapDistance_12;
 	// UnityEngine.UI.Text MapManager::mapCardName
-	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___mapCardName_12;
+	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___mapCardName_13;
 	// UnityEngine.UI.Text MapManager::locationName
-	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___locationName_13;
+	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___locationName_14;
 	// UnityEngine.UI.Text MapManager::distanceText
-	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___distanceText_14;
+	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___distanceText_15;
 	// UnityEngine.GameObject[] MapManager::structureObject
-	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___structureObject_15;
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___structureObject_16;
 	// UnityEngine.GameObject[] MapManager::animalObject
-	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___animalObject_16;
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___animalObject_17;
 };
 
 struct MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53_StaticFields
 {
 	// MapManager MapManager::_instance
-	MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53* ____instance_17;
+	MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53* ____instance_18;
 };
 
 // ARLocation.MapboxRoutes.MapboxRoute
@@ -25004,9 +25006,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6358[1] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6359[8] = 
 {
 	static_cast<int32_t>(offsetof(MapLocationData_t4AB1D602B056F4D7492DE9E8BD1A7800AB0E9640, ___locationDescription_4)),static_cast<int32_t>(offsetof(MapLocationData_t4AB1D602B056F4D7492DE9E8BD1A7800AB0E9640, ___mapDescription_5)),static_cast<int32_t>(offsetof(MapLocationData_t4AB1D602B056F4D7492DE9E8BD1A7800AB0E9640, ___lengthX_6)),static_cast<int32_t>(offsetof(MapLocationData_t4AB1D602B056F4D7492DE9E8BD1A7800AB0E9640, ___lengthY_7)),static_cast<int32_t>(offsetof(MapLocationData_t4AB1D602B056F4D7492DE9E8BD1A7800AB0E9640, ___isSetPosition_8)),static_cast<int32_t>(offsetof(MapLocationData_t4AB1D602B056F4D7492DE9E8BD1A7800AB0E9640, ___position_9)),static_cast<int32_t>(offsetof(MapLocationData_t4AB1D602B056F4D7492DE9E8BD1A7800AB0E9640, ___delta_10)),static_cast<int32_t>(offsetof(MapLocationData_t4AB1D602B056F4D7492DE9E8BD1A7800AB0E9640, ___speed_11)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6360[14] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6360[15] = 
 {
-	static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53, ___mapSprite_4)),static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53, ___mapView_5)),static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53, ___MapLocation_6)),static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53, ___structurePanel_7)),static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53, ___animalPanel_8)),static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53, ___isShowStructureDistance_9)),static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53, ___structureIndex_10)),static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53, ___distance_11)),static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53, ___mapCardName_12)),static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53, ___locationName_13)),static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53, ___distanceText_14)),static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53, ___structureObject_15)),static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53, ___animalObject_16)),static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53_StaticFields, ____instance_17)),};
+	static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53, ___mapSprite_4)),static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53, ___mapView_5)),static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53, ___MapLocation_6)),static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53, ___structurePanel_7)),static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53, ___animalPanel_8)),static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53, ___DeactivationRadius_9)),static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53, ___isShowStructureDistance_10)),static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53, ___structureIndex_11)),static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53, ___mapDistance_12)),static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53, ___mapCardName_13)),static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53, ___locationName_14)),static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53, ___distanceText_15)),static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53, ___structureObject_16)),static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53, ___animalObject_17)),static_cast<int32_t>(offsetof(MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53_StaticFields, ____instance_18)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6361[1] = 
 {
 	static_cast<int32_t>(offsetof(ObjectData_tD9D3F22C72FE76B37DAA1A192E10D74B7C00CBA4, ___ID_Name_4)),};

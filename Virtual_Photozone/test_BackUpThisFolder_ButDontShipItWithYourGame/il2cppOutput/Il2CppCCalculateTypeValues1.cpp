@@ -32490,28 +32490,30 @@ struct MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53  : public MonoBehavi
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___structurePanel_7;
 	// UnityEngine.Transform MapManager::animalPanel
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___animalPanel_8;
+	// System.Int32 MapManager::DeactivationRadius
+	int32_t ___DeactivationRadius_9;
 	// System.Boolean MapManager::isShowStructureDistance
-	bool ___isShowStructureDistance_9;
+	bool ___isShowStructureDistance_10;
 	// System.Int32 MapManager::structureIndex
-	int32_t ___structureIndex_10;
-	// System.Int32 MapManager::distance
-	int32_t ___distance_11;
+	int32_t ___structureIndex_11;
+	// System.Int32 MapManager::mapDistance
+	int32_t ___mapDistance_12;
 	// UnityEngine.UI.Text MapManager::mapCardName
-	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___mapCardName_12;
+	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___mapCardName_13;
 	// UnityEngine.UI.Text MapManager::locationName
-	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___locationName_13;
+	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___locationName_14;
 	// UnityEngine.UI.Text MapManager::distanceText
-	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___distanceText_14;
+	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___distanceText_15;
 	// UnityEngine.GameObject[] MapManager::structureObject
-	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___structureObject_15;
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___structureObject_16;
 	// UnityEngine.GameObject[] MapManager::animalObject
-	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___animalObject_16;
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___animalObject_17;
 };
 
 struct MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53_StaticFields
 {
 	// MapManager MapManager::_instance
-	MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53* ____instance_17;
+	MapManager_t05F548D377024861E72CA6B6CC2D15681AA25F53* ____instance_18;
 };
 
 // ARLocation.MapboxRoutes.MapboxRoute
