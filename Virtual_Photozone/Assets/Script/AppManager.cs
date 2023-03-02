@@ -157,6 +157,7 @@ public class AppManager : MonoBehaviour
                 screenRatioText.text = "FULL";
                 break;
         }
+        DarkMode(isDark);
         Down_Screen_Padding_Panel.sizeDelta = new Vector2(0, Screen.height - (screenHeight + upUIPanel.gameObject.GetComponent<RectTransform>().rect.height));
     }
     #endregion
@@ -226,13 +227,17 @@ public class AppManager : MonoBehaviour
     {   
         if (isDark == false) {
             isDark = true;
-            Down_Screen_Padding_Panel.gameObject.GetComponent<Image>().color = new Color(0, 0, 0);
-            Up_Screen_Padding_Panel.gameObject.GetComponent<Image>().color = new Color(0, 0, 0);
+            if(screenRatio != 2) {
+                Down_Screen_Padding_Panel.gameObject.GetComponent<Image>().color = new Color(0, 0, 0);
+                Up_Screen_Padding_Panel.gameObject.GetComponent<Image>().color = new Color(0, 0, 0);
+            }
         }
         else {
             isDark = false;
-            Down_Screen_Padding_Panel.gameObject.GetComponent<Image>().color = new Color(255, 255, 255);
-            Up_Screen_Padding_Panel.gameObject.GetComponent<Image>().color = new Color(255, 255, 255);
+            if(screenRatio != 2) {
+                Down_Screen_Padding_Panel.gameObject.GetComponent<Image>().color = new Color(255, 255, 255);
+                Up_Screen_Padding_Panel.gameObject.GetComponent<Image>().color = new Color(255, 255, 255);
+            }
         }
         darkOn.gameObject.SetActive(isDark);
         darkOff.gameObject.SetActive(!isDark);

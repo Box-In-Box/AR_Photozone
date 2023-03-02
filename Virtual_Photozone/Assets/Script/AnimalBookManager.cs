@@ -30,6 +30,8 @@ public class AnimalBookManager : MonoBehaviour
     public Text animalRankingText;
     public Button loginFromAnimalRanking;
     public Text leaderboardText;
+    public Text leaderboardValueText;
+    public GameObject rankImg;
 
     [Space(10f)]
     public bool[] isFound;
@@ -63,6 +65,7 @@ public class AnimalBookManager : MonoBehaviour
         animalRankingText.text = "";
         loginFromAnimalBook.gameObject.SetActive(false);
         loginFromAnimalRanking.gameObject.SetActive(false);
+        rankImg.SetActive(true);
         
         Transform[] childList = animalContentParent.GetComponentsInChildren<Transform>();
 
@@ -172,6 +175,8 @@ public class AnimalBookManager : MonoBehaviour
 
     IEnumerator RefreshAnimalRankCoroutine()
     {
+        leaderboardText.text = "";
+        leaderboardValueText.text = "";
         PlayfabManager.Instance.GetState();
         PlayfabManager.Instance.GetLeaderboard();
         yield return null;
@@ -198,5 +203,17 @@ public class AnimalBookManager : MonoBehaviour
         animalCardView.GetComponent<RectTransform>().anchorMin = new Vector2(0.5f, 0.5f);
         animalCardView.GetComponent<RectTransform>().anchorMax = new Vector2(0.5f, 0.5f);
         animalCardView.GetComponent<RectTransform>().pivot = new Vector2(0.5f, 0.5f);
+    }
+
+    public void Ranking(int rank, string displayName, int value)   //랭킹에 따른 이미지, 텍스트 조절
+    {
+        if(rank <= 3) {
+            leaderboardText.text += String.Format("        {0, -10}", displayName) +"\n";
+            leaderboardValueText.text += String.Format("{0, 3}마리", value) +"\n";
+        }
+        else {
+            leaderboardText.text += String.Format("{0, 2}위 {1, -2}", rank, displayName) +"\n";
+            leaderboardValueText.text += String.Format("{0, 3}마리", value) +"\n";
+        }
     }
 }
