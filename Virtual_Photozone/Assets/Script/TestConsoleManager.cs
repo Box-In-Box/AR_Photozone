@@ -7,6 +7,8 @@ public class TestConsoleManager : MonoBehaviour
     public GameObject ConsolePanel;
     public bool isConsolePanelActive = true; //콘솔패널 활성화 여부 -> 스크린샷매니저에서 이용
 
+    public GameObject testStructureObject;
+
     private static TestConsoleManager _instance = null;
     public static TestConsoleManager Instance
     {
@@ -18,7 +20,7 @@ public class TestConsoleManager : MonoBehaviour
 
                 if (_instance == null)
                 {
-                    Debug.LogError("There's no active ManagerClass object");
+                    Debug.LogError("There's no active TestConsoleManager object");
                 }
             }
             return _instance;
@@ -28,6 +30,22 @@ public class TestConsoleManager : MonoBehaviour
     void Start()
     {
         UI_Position_Setting();
+    }
+
+    void Update()
+    {
+        int objectDistance;
+
+        objectDistance = (int)testStructureObject.GetComponent<ARLocation.PlaceAtLocation>().RawGpsDistance;
+            
+        if(objectDistance > 15) {
+            if(testStructureObject.transform.GetChild(0).gameObject.activeSelf == true)
+                testStructureObject.transform.GetChild(0).gameObject.SetActive(false);
+        }
+        else {
+            if(testStructureObject.transform.GetChild(0).gameObject.activeSelf == false)
+                testStructureObject.transform.GetChild(0).gameObject.SetActive(true);
+        }
     }
 
     //테스트 버튼 위치 조절

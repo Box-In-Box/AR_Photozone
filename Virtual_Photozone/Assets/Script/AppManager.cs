@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class AppManager : MonoBehaviour
 {
     [Header("-----Console Text-----")]
-    public Text MapConsoleText;
     public Text ConsoleText;
     public bool isConsoleTextUsing;
 
@@ -41,7 +40,7 @@ public class AppManager : MonoBehaviour
     public Sprite autoLoginOn;
 
     [Header("-----TransparentUI-----")]
-    public bool isTransparentUI;    //로컬저장 x
+    public bool isTransparentUI;
     public RectTransform TransparentUIButton;
     public  Image transparentUIImage;
     public Sprite transparentUIDown;
@@ -50,7 +49,7 @@ public class AppManager : MonoBehaviour
     [Space(10f)]
     public RectTransform Up_Panel;
     public RectTransform Down_Panel;
-    public bool isrunnigCoroutine;
+    public bool isrunnigTransparentUI;
 
     private static AppManager _instance = null;
     public static AppManager Instance
@@ -63,7 +62,7 @@ public class AppManager : MonoBehaviour
 
                 if (_instance == null)
                 {
-                    Debug.LogError("There's no active ManagerClass object");
+                    Debug.LogError("There's no active AppManager object");
                 }
             }
             return _instance;
@@ -319,14 +318,14 @@ public class AppManager : MonoBehaviour
 
     public void SetTransparentUI()
     {
-        if (isTransparentUI == false && isrunnigCoroutine == false) {
+        if (isTransparentUI == false && isrunnigTransparentUI == false) {
             isTransparentUI = true;
-            isrunnigCoroutine = true;
+            isrunnigTransparentUI = true;
             DownPanel();
         }
-        if (isTransparentUI == true && isrunnigCoroutine == false) {
+        if (isTransparentUI == true && isrunnigTransparentUI == false) {
             isTransparentUI = false;
-            isrunnigCoroutine = true;
+            isrunnigTransparentUI = true;
             UpPanel();
         }
     }
@@ -394,7 +393,7 @@ public class AppManager : MonoBehaviour
     IEnumerator WaitLerpCoroutine(Transform[] targetUI, Vector3[] current, Vector3[] target, float time)
     {
         yield return StartCoroutine(lerpCoroutine(targetUI, current, target, 1.0f));
-        isrunnigCoroutine = false;
+        isrunnigTransparentUI = false;
         TransparentUSwitch();
     }
 

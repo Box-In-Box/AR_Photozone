@@ -27,7 +27,7 @@ public class PlayfabManager : MonoBehaviour
 
                 if (_instance == null)
                 {
-                    Debug.LogError("There's no active ManagerClass object");
+                    Debug.LogError("There's no active PlayfabManager object");
                 }
             }
             return _instance;

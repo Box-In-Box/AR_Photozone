@@ -16,7 +16,7 @@ public class DataManager : MonoBehaviour
 
                 if (_instance == null)
                 {
-                    Debug.LogError("There's no active ManagerClass object");
+                    Debug.LogError("There's no active DataManager object");
                 }
             }
             return _instance;

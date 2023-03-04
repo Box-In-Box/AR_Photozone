@@ -28,7 +28,7 @@ public class TouchManager : MonoBehaviour
 
                 if (_instance == null)
                 {
-                    Debug.LogError("There's no active ManagerClass object");
+                    Debug.LogError("There's no active TouchManager object");
                 }
             }
             return _instance;

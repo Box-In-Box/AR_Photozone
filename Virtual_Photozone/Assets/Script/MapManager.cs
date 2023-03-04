@@ -14,6 +14,7 @@ public class MapManager : MonoBehaviour
     public Transform structurePanel;
     public Transform animalPanel;
     public int DeactivationRadius;  //오브젝트 활성화/비활성화 거리
+    [Space(10f)]
     public bool isShowStructureDistance;
     public int structureIndex = -1;
     public int mapDistance;
@@ -38,7 +39,7 @@ public class MapManager : MonoBehaviour
 
                 if (_instance == null)
                 {
-                    Debug.LogError("There's no active ManagerClass object");
+                    Debug.LogError("There's no active MapManager object");
                 }
             }
             return _instance;
@@ -168,17 +169,20 @@ public class MapManager : MonoBehaviour
 
     public void SetStructureInfo(int index)
     {
+        isShowStructureDistance = true;
         structureIndex = index;
         GameObject go = EventSystem.current.currentSelectedGameObject;
         this.mapCardName.text = go.GetComponent<MapLocationData>().mapDescription;
         this.locationName.text = go.GetComponent<MapLocationData>().locationDescription;
+        StartCoroutine(ShowDistanceCoroutine());
     }
 
-    public void SetStructureDistance()
-    {
-        isShowStructureDistance = true;
-
-        ShowStructureDistance();
+    IEnumerator ShowDistanceCoroutine()
+    {   
+        while(isShowStructureDistance) {
+            ShowStructureDistance();
+            yield return new WaitForSeconds(0.5f);
+        }
     }
 
     public void ShowStructureDistance()
@@ -186,7 +190,7 @@ public class MapManager : MonoBehaviour
         if (structureIndex != -1)
             mapDistance = (int)structureObject[structureIndex].GetComponent<ARLocation.PlaceAtLocation>().RawGpsDistance; //RawGpsDistance와 비교 필요
 
-        if (mapDistance < 10)
+        if (mapDistance < DeactivationRadius)
             distanceText.text = "포토존이\n 근처에 있습니다.";
         else
             distanceText.text = mapDistance + "m\n 떨어져있습니다.";
@@ -196,7 +200,6 @@ public class MapManager : MonoBehaviour
     {
         isShowStructureDistance = false;
         distanceText.text = "";
-        AppManager.Instance.ConsoleText.text = "";
     }
     #endregion
 }

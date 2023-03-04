@@ -39,7 +39,7 @@ public class ScreenshotManager : MonoBehaviour
 
                 if (_instance == null)
                 {
-                    Debug.LogError("There's no active ManagerClass object");
+                    Debug.LogError("There's no active ScreenshotManager object");
                 }
             }
             return _instance;
