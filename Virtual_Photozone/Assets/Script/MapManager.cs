@@ -12,14 +12,17 @@ public class MapManager : MonoBehaviour
 
     [Header("-----GpsObject-----")]
     public Transform structurePanel;
+    public Transform structureSubPanel;
     public Transform animalPanel;
-    public int DeactivationRadius;  //오브젝트 활성화/비활성화 거리
-    [Space(10f)]
+    [Tooltip("포토존 구조물 활성화/비활성화 거리")]
+    public int structureDeactivationRadius;
+    [Tooltip("동물 구조물 활성화/비활성화 거리")]
+    public int animalDeactivationRadius;
+    
+    [Header("-----MapCard-----")]
     public bool isShowStructureDistance;
     public int structureIndex = -1;
     public int mapDistance;
-
-    [Header("-----MapCard-----")]
     public Text mapCardName;
     public Text locationName;
     public Text distanceText;
@@ -52,36 +55,8 @@ public class MapManager : MonoBehaviour
     private void Start() {
         SettingMap();   //맵 해상도 변경
         SetMapLocationButton(); //변경된 해상도에 따라 포토존 위치 버튼 설정
-    }
-
-    private void Update() { //거리별 오브젝트 활성화/비활성화
-        int objectDistance;
-
-        for(int i = 0; i < structureObject.Length; i++) {   //포토존 오브젝트
-            objectDistance = (int)structureObject[i].GetComponent<ARLocation.PlaceAtLocation>().RawGpsDistance;
-            
-            if(objectDistance > DeactivationRadius) {
-                if(structureObject[i].transform.GetChild(0).gameObject.activeSelf == true)
-                    structureObject[i].transform.GetChild(0).gameObject.SetActive(false);
-            }
-            else {
-                if(structureObject[i].transform.GetChild(0).gameObject.activeSelf == false)
-                    structureObject[i].transform.GetChild(0).gameObject.SetActive(true);
-            }
-        }
-
-        for(int i = 0; i < animalObject.Length; i++) {  //동물 오브젝트
-            objectDistance = (int)animalObject[i].GetComponent<ARLocation.PlaceAtLocation>().RawGpsDistance;
-            
-            if(objectDistance > DeactivationRadius) {
-                if(animalObject[i].transform.GetChild(0).gameObject.activeSelf == true)
-                    animalObject[i].transform.GetChild(0).gameObject.SetActive(false);
-            }
-            else {
-                if(animalObject[i].transform.GetChild(0).gameObject.activeSelf == false)
-                    animalObject[i].transform.GetChild(0).gameObject.SetActive(true);
-            }
-        }
+        StartCoroutine(ShowStructureView()); //거리별 포토존 오브젝트 활성화/비활성화
+        StartCoroutine(ShowAnimalView()); //거리별 동물 오브젝트 활성화/비활성화
     }
 
     #region Map Image setting
@@ -150,16 +125,21 @@ public class MapManager : MonoBehaviour
     public void SettingGpsObject()
     {
         int structureCount = structurePanel.childCount;
+        int structureSubCount = structureSubPanel.childCount;
         int animalCount = animalPanel.childCount;
 
         if(structureCount != 0)
-            structureObject = new GameObject[structureCount];
+            structureObject = new GameObject[structureCount + structureSubCount];
 
         if(animalCount != 0)
             animalObject = new GameObject[animalCount];
 
         for(int i = 0; i < structureCount; i++) {
             structureObject[i] = structurePanel.GetChild(i).gameObject;
+        }
+
+        for(int i = 0; i < structureSubCount; i++) {    //Sub Structure 포함
+            structureObject[structureCount + i] = structureSubPanel.GetChild(i).gameObject;
         }
 
         for(int i = 0; i < animalCount; i++) {
@@ -181,7 +161,7 @@ public class MapManager : MonoBehaviour
     {   
         while(isShowStructureDistance) {
             ShowStructureDistance();
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(1f);
         }
     }
 
@@ -190,7 +170,7 @@ public class MapManager : MonoBehaviour
         if (structureIndex != -1)
             mapDistance = (int)structureObject[structureIndex].GetComponent<ARLocation.PlaceAtLocation>().RawGpsDistance; //RawGpsDistance와 비교 필요
 
-        if (mapDistance < DeactivationRadius)
+        if (mapDistance < structureDeactivationRadius)
             distanceText.text = "포토존이\n 근처에 있습니다.";
         else
             distanceText.text = mapDistance + "m\n 떨어져있습니다.";
@@ -200,6 +180,48 @@ public class MapManager : MonoBehaviour
     {
         isShowStructureDistance = false;
         distanceText.text = "";
+    }
+
+    IEnumerator ShowStructureView()
+    {
+        while(true) {
+            int objectDistance;
+
+            for(int i = 0; i < structureObject.Length; i++) {   //포토존 오브젝트
+                objectDistance = (int)structureObject[i].GetComponent<ARLocation.PlaceAtLocation>().RawGpsDistance;
+                
+                if(objectDistance > structureDeactivationRadius) {
+                    if(structureObject[i].transform.GetChild(0).gameObject.activeSelf == true)
+                        structureObject[i].transform.GetChild(0).gameObject.SetActive(false);
+                }
+                else {
+                    if(structureObject[i].transform.GetChild(0).gameObject.activeSelf == false)
+                        structureObject[i].transform.GetChild(0).gameObject.SetActive(true);
+                }
+            }
+            yield return new WaitForSeconds(1f);
+        }
+    }
+
+    IEnumerator ShowAnimalView()
+    {
+        while(true) {
+            int objectDistance;
+
+            for(int i = 0; i < animalObject.Length; i++) {  //동물 오브젝트
+                objectDistance = (int)animalObject[i].GetComponent<ARLocation.PlaceAtLocation>().RawGpsDistance;
+                
+                if(objectDistance > animalDeactivationRadius) {
+                    if(animalObject[i].transform.GetChild(0).gameObject.activeSelf == true)
+                        animalObject[i].transform.GetChild(0).gameObject.SetActive(false);
+                }
+                else {
+                    if(animalObject[i].transform.GetChild(0).gameObject.activeSelf == false)
+                        animalObject[i].transform.GetChild(0).gameObject.SetActive(true);
+                }
+            }
+            yield return new WaitForSeconds(1f);
+        }
     }
     #endregion
 }

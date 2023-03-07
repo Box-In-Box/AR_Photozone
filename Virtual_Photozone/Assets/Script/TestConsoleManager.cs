@@ -7,7 +7,10 @@ public class TestConsoleManager : MonoBehaviour
     public GameObject ConsolePanel;
     public bool isConsolePanelActive = true; //콘솔패널 활성화 여부 -> 스크린샷매니저에서 이용
 
-    public GameObject testStructureObject;
+    public int testDeactivationRadius;
+    public Transform testStructurePanel;
+    public GameObject[] testStructureObject;
+    public GameObject sdfsd;
 
     private static TestConsoleManager _instance = null;
     public static TestConsoleManager Instance
@@ -27,24 +30,49 @@ public class TestConsoleManager : MonoBehaviour
         }
     }
 
+    private void Awake() 
+    {
+        SettingTestObject();
+    }
+
     void Start()
     {
         UI_Position_Setting();
+        StartCoroutine(ShowTestStructureView());
     }
 
-    void Update()
+    public void SettingTestObject()
     {
-        int objectDistance;
+        int testStructureCount = testStructurePanel.childCount;
 
-        objectDistance = (int)testStructureObject.GetComponent<ARLocation.PlaceAtLocation>().RawGpsDistance;
-            
-        if(objectDistance > 15) {
-            if(testStructureObject.transform.GetChild(0).gameObject.activeSelf == true)
-                testStructureObject.transform.GetChild(0).gameObject.SetActive(false);
+        if(testStructureCount != 0)
+            testStructureObject = new GameObject[testStructureCount];
+
+        for(int i = 0; i < testStructureCount; i++) {
+            testStructureObject[i] = testStructurePanel.GetChild(i).gameObject;
         }
-        else {
-            if(testStructureObject.transform.GetChild(0).gameObject.activeSelf == false)
-                testStructureObject.transform.GetChild(0).gameObject.SetActive(true);
+    }
+
+    IEnumerator ShowTestStructureView()
+    {
+        yield return new WaitForSeconds(2f);
+        while(true) {
+            int objectDistance;
+
+            for(int i = 0; i < testStructureObject.Length; i++) {
+                objectDistance = (int)testStructureObject[i].GetComponent<ARLocation.PlaceAtLocation>().RawGpsDistance;
+                /*if(i == 0) StartCoroutine(AppManager.Instance.PrintLog(objectDistance.ToString()));*/
+
+                if(objectDistance > testDeactivationRadius) {
+                    if(testStructureObject[i].transform.GetChild(0).gameObject.activeSelf == true)
+                        testStructureObject[i].transform.GetChild(0).gameObject.SetActive(false);
+                }
+                else {
+                    if(testStructureObject[i].transform.GetChild(0).gameObject.activeSelf == false)
+                        testStructureObject[i].transform.GetChild(0).gameObject.SetActive(true);
+                }
+            }
+            yield return new WaitForSeconds(1f);
         }
     }
 
