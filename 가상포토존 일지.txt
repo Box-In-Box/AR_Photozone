@@ -34,4 +34,5 @@
 2023-03-02 : (bw)랭킹 표시 PlayfabManager > AnimalBookManager 옮김, 랭킹 1~3순위 메달 이미지 추가, 랭킹 새로고침 시인성, 
 		랭킹 이름과 찾은 동물 분리, Full Screen에서 다크모드전환 오류 수정
 2023-03-04 : (bw)포토존 거리 확인 (버튼식 > 코루틴 반복화), 갤러리 이미지 핀치 줌 추가
+2023-03-06 : (wy)DCU mascot 3D모델 ,(hb) DCU logo 3D모델 구현
 2023-03-07 : (bw)중앙도서관(DCU mascot), 입구(logo) 구조물 추가, 적용안되었던 Sub structure 추가
