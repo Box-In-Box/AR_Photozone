@@ -37,4 +37,5 @@
 2023-03-06 : (wy)DCU mascot 3D모델 ,(hb) DCU logo 3D모델 구현
 2023-03-07 : (bw)중앙도서관(DCU mascot), 입구(logo) 구조물 추가, 적용안되었던 Sub structure 추가
 2023-03-09 : (bw)랭킹 텍스트 오류 수정
-2023-03-09 : (bw)Debug Panel 추가(GPS 구조물 확인 패널, 로그 확인 기능)
+2023-03-11 : (bw)Debug Panel 추가(GPS 구조물 확인 패널, 로그 확인 기능)
+
