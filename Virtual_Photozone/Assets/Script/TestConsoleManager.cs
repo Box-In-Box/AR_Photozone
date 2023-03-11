@@ -1,11 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TestConsoleManager : MonoBehaviour
 {
     public GameObject ConsolePanel;
+    public GameObject DebugPanel;
+    public Transform StructureObjectToggle;
+    public Transform AnimalObjectToggle;
+    public Transform LogTextOgject;
+    public GameObject ObjectTogglePrfab;
+    public GameObject TextLogPrfab;
     public bool isConsolePanelActive = true; //콘솔패널 활성화 여부 -> 스크린샷매니저에서 이용
+
+    public string myLog;
+ 	Queue myLogQueue = new Queue ();
 
     public int testDeactivationRadius;
     public Transform testStructurePanel;
@@ -39,6 +49,8 @@ public class TestConsoleManager : MonoBehaviour
     {
         UI_Position_Setting();
         StartCoroutine(ShowTestStructureView());
+        SettingDebugPanel();
+        StartCoroutine(GpsObjectLog());
     }
 
     public void SettingTestObject()
@@ -79,7 +91,7 @@ public class TestConsoleManager : MonoBehaviour
     //테스트 버튼 위치 조절
     void UI_Position_Setting() 
     {
-        int count = ConsolePanel.transform.childCount;
+        int count = ConsolePanel.transform.GetChild(0).childCount;
         int maxRow = 8;
         Vector3 position = ConsolePanel.transform.localPosition;
         position.x = 0;
@@ -89,7 +101,7 @@ public class TestConsoleManager : MonoBehaviour
             if (i >= maxRow)
                 break;
 
-            float childPositionY = ConsolePanel.transform.GetChild(i).GetComponent<RectTransform>().rect.height;
+            float childPositionY = ConsolePanel.transform.GetChild(0).GetChild(i).GetComponent<RectTransform>().rect.height;
 
             position.y += childPositionY;
         }
@@ -98,6 +110,10 @@ public class TestConsoleManager : MonoBehaviour
         ConsolePanel.GetComponent<RectTransform>().anchorMin = new Vector2(0, 0.5f);
         ConsolePanel.GetComponent<RectTransform>().anchorMax = new Vector2(0, 0.5f);
         ConsolePanel.GetComponent<RectTransform>().pivot = new Vector2(0, 0.5f);
+
+        // width - login Btn - left spacing - right spacing
+        DebugPanel.transform.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, Screen.width - 250 - 30 - 30);
+        DebugPanel.transform.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, position.y + ((count-1) * 30));
     }
 
     //랜덤 동물 추가
@@ -113,6 +129,52 @@ public class TestConsoleManager : MonoBehaviour
     {
         for(int i = 0; i < AnimalBookManager.Instance.animalNumber; i++) {
             AnimalBookManager.Instance.AddAnimal(AnimalBookManager.animalMsg + i.ToString());
+        }
+    }
+
+    public void OpenClosePanel(GameObject gameObject) => gameObject.SetActive(gameObject.activeSelf ? false : true);
+
+    public void SettingDebugPanel()
+    {
+        for(int i = 0; i < MapManager.Instance.structureObject.Length; i++) {
+            GameObject obj = Instantiate(ObjectTogglePrfab) as GameObject;
+            obj.transform.SetParent(StructureObjectToggle.transform, false);
+        }
+
+        for(int i = 0; i < StructureObjectToggle.childCount; i++) {
+            StructureObjectToggle.GetChild(i).GetChild(1).GetComponent<Text>().text = MapManager.Instance.structureObject[i].gameObject.GetComponent<LocationDescription>().locationDescription;
+        }
+
+        for(int i = 0; i < MapManager.Instance.animalObject.Length; i++) {
+            GameObject obj = Instantiate(ObjectTogglePrfab) as GameObject;
+            obj.transform.SetParent(AnimalObjectToggle.transform, false);
+        }
+
+        for(int i = 0; i < AnimalObjectToggle.childCount; i++) {
+            AnimalObjectToggle.GetChild(i).GetChild(1).GetComponent<Text>().text = MapManager.Instance.animalObject[i].gameObject.GetComponent<LocationDescription>().locationDescription;
+        }
+    }
+
+    public void AddConsoleLog(string msg)
+    {
+        GameObject obj = Instantiate(TextLogPrfab) as GameObject;
+        obj.transform.SetParent(LogTextOgject.transform, false);
+        obj.GetComponent<Text>().text = msg;
+    }
+
+    IEnumerator GpsObjectLog()
+    {
+        while(true) {
+            for(int i = 0; i < StructureObjectToggle.childCount; i++) {
+                StructureObjectToggle.GetChild(i).GetComponent<Toggle>().isOn = MapManager.Instance.structureObject[i].transform.GetChild(0).gameObject.activeSelf ? true : false;
+                StructureObjectToggle.GetChild(i).GetChild(2).GetComponent<Text>().text = MapManager.Instance.structureObjectDistance[i].ToString();
+            }
+            
+            for(int i = 0; i < AnimalObjectToggle.childCount; i++) {
+                AnimalObjectToggle.GetChild(i).GetComponent<Toggle>().isOn = MapManager.Instance.animalObject[i].transform.GetChild(0).gameObject.activeSelf ? true : false;
+                AnimalObjectToggle.GetChild(i).GetChild(2).GetComponent<Text>().text = MapManager.Instance.animalObjectDistance[i].ToString();
+            }
+            yield return null;
         }
     }
 }

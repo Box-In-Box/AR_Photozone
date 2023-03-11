@@ -37,6 +37,7 @@ public class DataManager : MonoBehaviour
             string FromJsonData = File.ReadAllText(filePath);
             data = JsonUtility.FromJson<Data>(FromJsonData);
             Debug.Log("Load Data");
+            TestConsoleManager.Instance.AddConsoleLog("Load Data");
         }
     }
 
@@ -47,5 +48,6 @@ public class DataManager : MonoBehaviour
 
         File.WriteAllText(filePath, ToJsonData);
         Debug.Log("Save Data");
+        TestConsoleManager.Instance.AddConsoleLog("Save Data");
     }
 }

@@ -31,6 +31,9 @@ public class MapManager : MonoBehaviour
     public GameObject[] structureObject;
     public GameObject[] animalObject;
 
+    public int[] structureObjectDistance;
+    public int[] animalObjectDistance;
+
     private static MapManager _instance = null;
     public static MapManager Instance
     {
@@ -49,6 +52,8 @@ public class MapManager : MonoBehaviour
         }
     }
     private void Awake() {
+        structureObjectDistance = new int[structurePanel.childCount + structureSubPanel.childCount];
+        animalObjectDistance = new int[animalPanel.childCount];
         SettingGpsObject(); //Gps 오브젝트 Get 컴포넌트
     }
 
@@ -184,13 +189,12 @@ public class MapManager : MonoBehaviour
 
     IEnumerator ShowStructureView()
     {
+        yield return new WaitForSeconds(1f); //null reference피하기 위함
         while(true) {
-            int objectDistance;
-
             for(int i = 0; i < structureObject.Length; i++) {   //포토존 오브젝트
-                objectDistance = (int)structureObject[i].GetComponent<ARLocation.PlaceAtLocation>().RawGpsDistance;
+                structureObjectDistance[i] = (int)structureObject[i].GetComponent<ARLocation.PlaceAtLocation>().RawGpsDistance;
                 
-                if(objectDistance > structureDeactivationRadius) {
+                if(structureObjectDistance[i] > structureDeactivationRadius) {
                     if(structureObject[i].transform.GetChild(0).gameObject.activeSelf == true)
                         structureObject[i].transform.GetChild(0).gameObject.SetActive(false);
                 }
@@ -205,13 +209,12 @@ public class MapManager : MonoBehaviour
 
     IEnumerator ShowAnimalView()
     {
+        yield return new WaitForSeconds(1f); //null reference피하기 위함
         while(true) {
-            int objectDistance;
-
             for(int i = 0; i < animalObject.Length; i++) {  //동물 오브젝트
-                objectDistance = (int)animalObject[i].GetComponent<ARLocation.PlaceAtLocation>().RawGpsDistance;
+                animalObjectDistance[i] = (int)animalObject[i].GetComponent<ARLocation.PlaceAtLocation>().RawGpsDistance;
                 
-                if(objectDistance > animalDeactivationRadius) {
+                if(animalObjectDistance[i] > animalDeactivationRadius) {
                     if(animalObject[i].transform.GetChild(0).gameObject.activeSelf == true)
                         animalObject[i].transform.GetChild(0).gameObject.SetActive(false);
                 }

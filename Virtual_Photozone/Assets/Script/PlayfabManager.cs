@@ -68,6 +68,7 @@ public class PlayfabManager : MonoBehaviour
                             string key = iter.Current;
                             LoginLogText.text = error.ErrorDetails[key][0];
                             Debug.Log("form playfab error code : " + ((short)error.Error));
+                            TestConsoleManager.Instance.AddConsoleLog("form playfab error code : " + ((short)error.Error));
 
                             //주요 오류 한글화
                             switch (error.Error) {
@@ -106,6 +107,7 @@ public class PlayfabManager : MonoBehaviour
         (result) => 
         {
             Debug.Log("Auto Login Successful");
+            TestConsoleManager.Instance.AddConsoleLog("Auto Login Successful");
 
             myID = result.PlayFabId;
             StartCoroutine(SettingAnimalBook());
@@ -143,6 +145,7 @@ public class PlayfabManager : MonoBehaviour
                             string key = iter.Current;
                             LoginLogText.text = error.ErrorDetails[key][0];
                             Debug.Log("form playfab error code : " + ((short)error.Error));
+                            TestConsoleManager.Instance.AddConsoleLog("form playfab error code : " + ((short)error.Error));
 
                             //주요 오류 한글화
                             switch (error.Error) {
@@ -164,6 +167,7 @@ public class PlayfabManager : MonoBehaviour
                 {
                     LoginLogText.text = error.ErrorMessage;
                     Debug.Log("Not form playfab error code : " +  ((short)error.Error));
+                    TestConsoleManager.Instance.AddConsoleLog("Not form playfab error code : " +  ((short)error.Error));
 
                     //주요 오류 한글화
                     switch (error.Error) {
@@ -191,7 +195,11 @@ public class PlayfabManager : MonoBehaviour
                 string time = result.Data[msg].Value;
                 AnimalBookManager.Instance.SetAnimal(msg, time);
             },
-            (error) => { print("데이터 불러오기 실패"); }); //***Debug 띄워지는거 없애야함
+            (error) => 
+            { 
+                Debug.Log("Error Load Animal Data"); 
+                TestConsoleManager.Instance.AddConsoleLog("Error Load Animal Data");
+            });
     }
 
     
@@ -211,7 +219,16 @@ public class PlayfabManager : MonoBehaviour
     public void SetStat(int score)
     {
         var request = new UpdatePlayerStatisticsRequest { Statistics = new List<StatisticUpdate> { new StatisticUpdate { StatisticName = "Score", Value = score } } };
-        PlayFabClientAPI.UpdatePlayerStatistics(request, (result) => Debug.Log("Save Score : " + score), (error) => Debug.Log("Error Save Score"));
+        PlayFabClientAPI.UpdatePlayerStatistics(request, 
+        (result) => {
+            Debug.Log("Save Score : " + score);
+            TestConsoleManager.Instance.AddConsoleLog("Save Score : " + score);
+        }, 
+        (error) => 
+        {
+            Debug.Log("Error Save Score");
+            TestConsoleManager.Instance.AddConsoleLog("Error Save Score");
+        });
     }
 
     public void GetState()
@@ -233,12 +250,14 @@ public class PlayfabManager : MonoBehaviour
         PlayFabClientAPI.GetLeaderboard(request, (result) => 
         {   
             AnimalBookManager.Instance.leaderboardText.text = "";
+            AnimalBookManager.Instance.leaderboardValueText.text = "";
             for (int i = 0; i < result.Leaderboard.Count; i++)
             {
                 var curBoard = result.Leaderboard[i];
                 AnimalBookManager.Instance.Ranking((i+1), curBoard.Profile.DisplayName, curBoard.StatValue);
             }
             Debug.Log("Ranking Synchronization Completed");
+            TestConsoleManager.Instance.AddConsoleLog("Ranking Synchronization Completed");
         },
         (error) => Debug.Log("Failed load leaderboard"));
     }
