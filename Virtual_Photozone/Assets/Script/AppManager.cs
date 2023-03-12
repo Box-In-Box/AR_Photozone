@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class AppManager : MonoBehaviour
 {
     [Header("-----Console Text-----")]
-    public Text ConsoleText;
+    public Transform appConsoleText;
     public bool isConsoleTextUsing;
 
     [Header("-----Screen Ratio Padding Object-----")]
@@ -127,7 +127,7 @@ public class AppManager : MonoBehaviour
         SetTransparentUIPosition();
     }
 
-    public void ScreenRatio(int ratio)  //screen ratio 설정
+    public void ScreenRatio(int ratio)  //screen ratio 설정(Down UI 패딩 appConsoleText, TransparentUI 위치 조정)
     {
         screenRatio = ratio;
         Color ColorA = Up_Screen_Padding_Panel.gameObject.GetComponent<Image>().color;
@@ -157,7 +157,16 @@ public class AppManager : MonoBehaviour
                 break;
         }
         DarkMode(isDark);
-        Down_Screen_Padding_Panel.sizeDelta = new Vector2(0, Screen.height - (screenHeight + upUIPanel.gameObject.GetComponent<RectTransform>().rect.height));
+        int appScreenWidth = (int)(Screen.height - (screenHeight + upUIPanel.gameObject.GetComponent<RectTransform>().rect.height));
+        Down_Screen_Padding_Panel.sizeDelta = new Vector2(0, appScreenWidth);
+
+        Vector3 position = appConsoleText.transform.position;
+        position.y = appScreenWidth;
+        appConsoleText.transform.position = position;
+
+        position = TransparentUIButton.transform.position;
+        position.y = appScreenWidth;
+        TransparentUIButton.transform.position = position;
     }
     #endregion
 
@@ -195,12 +204,14 @@ public class AppManager : MonoBehaviour
     #endregion
 
     #region Print Log
+    public void PrintConsoleText(string msg) => StartCoroutine(PrintLog(msg));
+
     public IEnumerator PrintLog(string msg)
     {   
         isConsoleTextUsing = true;
-        ConsoleText.text = msg;
+        appConsoleText.GetChild(0).GetComponent<Text>().text = msg;
         yield return new WaitForSecondsRealtime(1.5f);
-        ConsoleText.text = "";
+        appConsoleText.GetChild(0).GetComponent<Text>().text = "";
         isConsoleTextUsing = false;
     }
     #endregion

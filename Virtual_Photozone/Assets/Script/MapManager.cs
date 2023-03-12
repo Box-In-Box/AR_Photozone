@@ -190,6 +190,7 @@ public class MapManager : MonoBehaviour
     IEnumerator ShowStructureView()
     {
         yield return new WaitForSeconds(1f); //null reference피하기 위함
+
         while(true) {
             for(int i = 0; i < structureObject.Length; i++) {   //포토존 오브젝트
                 structureObjectDistance[i] = (int)structureObject[i].GetComponent<ARLocation.PlaceAtLocation>().RawGpsDistance;
@@ -203,13 +204,14 @@ public class MapManager : MonoBehaviour
                         structureObject[i].transform.GetChild(0).gameObject.SetActive(true);
                 }
             }
-            yield return new WaitForSeconds(1f);
+            yield return null;
         }
     }
 
     IEnumerator ShowAnimalView()
     {
         yield return new WaitForSeconds(1f); //null reference피하기 위함
+        
         while(true) {
             for(int i = 0; i < animalObject.Length; i++) {  //동물 오브젝트
                 animalObjectDistance[i] = (int)animalObject[i].GetComponent<ARLocation.PlaceAtLocation>().RawGpsDistance;
@@ -223,7 +225,7 @@ public class MapManager : MonoBehaviour
                         animalObject[i].transform.GetChild(0).gameObject.SetActive(true);
                 }
             }
-            yield return new WaitForSeconds(1f);
+            yield return null;
         }
     }
     #endregion

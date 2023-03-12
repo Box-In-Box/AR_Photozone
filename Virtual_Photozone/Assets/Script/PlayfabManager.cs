@@ -49,8 +49,7 @@ public class PlayfabManager : MonoBehaviour
                     DataManager.Instance.data.password = PasswordInput.text;
                     DataManager.Instance.SavaSettingData();
                 }
-
-                StartCoroutine(AppManager.Instance.PrintLog("로그인 성공"));
+                AppManager.Instance.PrintConsoleText("로그인 성공");
 
                 myID = result.PlayFabId;
                 StartCoroutine(SettingAnimalBook());
@@ -133,7 +132,7 @@ public class PlayfabManager : MonoBehaviour
         PlayFabClientAPI.RegisterPlayFabUser(request,
             (result) => 
             { 
-                StartCoroutine(AppManager.Instance.PrintLog("회원가입 성공")); 
+                AppManager.Instance.PrintConsoleText("회원가입 성공"); 
             },
             (error) => 
             {   
@@ -209,9 +208,9 @@ public class PlayfabManager : MonoBehaviour
         PlayFabClientAPI.UpdateUserData(request,
             (result) =>
             {
-                StartCoroutine(AppManager.Instance.PrintLog(msg + "을(를) 등록하였습니다."));
+                AppManager.Instance.PrintConsoleText(msg + "을(를) 등록하였습니다.");
             },
-            (error) => StartCoroutine(AppManager.Instance.PrintLog(msg + "을(를) 등록 실패했습니다.")));
+            (error) => AppManager.Instance.PrintConsoleText(msg + "을(를) 등록 실패했습니다."));
     }
     #endregion
 

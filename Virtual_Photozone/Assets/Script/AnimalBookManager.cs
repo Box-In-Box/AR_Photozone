@@ -119,7 +119,7 @@ public class AnimalBookManager : MonoBehaviour
         }
         else //이미 수집 되었을 때
         {
-            StartCoroutine(AppManager.Instance.PrintLog(msg + "은(는) 이미 등록되었습니다."));
+            AppManager.Instance.PrintConsoleText(msg + "은(는) 이미 등록되었습니다.");
         }
     }
 

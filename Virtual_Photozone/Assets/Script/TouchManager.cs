@@ -14,6 +14,10 @@ public class TouchManager : MonoBehaviour
 
     private GameObject touchObj;
 
+    private float moveSpeed = 0.5f;
+    private Vector2 nowPos, prePos;
+    private Vector3 movePos;
+
     [SerializeField] 
     public Camera arCamera;
 
@@ -52,7 +56,7 @@ public class TouchManager : MonoBehaviour
 
             ray = arCamera.ScreenPointToRay(touch.position);
 
-            if (Physics.Raycast(ray, out hitobj))
+            if (Physics.Raycast(ray, out hitobj) && Touched == false)
             {
                 if (hitobj.collider.tag.Equals("Structure"))
                 {
@@ -64,7 +68,6 @@ public class TouchManager : MonoBehaviour
                 {
                     touchObj = hitobj.collider.gameObject;
                     FindAnimalTouch(touchObj);
-                    Touched = true;
                     return;
                 }
                 else if (hitobj.collider.tag.Equals("Description"))
@@ -72,40 +75,40 @@ public class TouchManager : MonoBehaviour
                     //아마 구조물 옆 별 이미지로 해당 위치 설명이 들어갈 듯
                     touchObj = hitobj.collider.gameObject;
                     DescriptionTouch(touchObj);
-                    Touched = true;
                     return;
                 }
             }
+            prePos = touch.position - touch.deltaPosition;
         }
         
         if (touch.phase == TouchPhase.Ended)
         {
             Touched = false;
         }
-        /* 구조물 위치 변경 안됨, 수정 필요 */
-        if (raycastMgr.Raycast(touch.position, hits, TrackableType.PlaneWithinPolygon))
+
+        if (touch.phase == TouchPhase.Moved)
         {
-            if (Touched)
-            {
-                touchObj.transform.position = hits[0].pose.position;
-            }
+            nowPos = touch.position - touch.deltaPosition;
+            movePos = (Vector3)(prePos - nowPos) * Time.deltaTime * moveSpeed;
+            float temp = movePos.y; //좌우 앞 뒤이동만
+            movePos.y = movePos.z;
+            movePos.z = temp;
+            touchObj.transform.Translate(movePos);
+            prePos = touch.position - touch.deltaPosition;
         }
     }
     void StructureTouch(GameObject touchObj)
     {
-        StartCoroutine(AppManager.Instance.PrintLog(touchObj.gameObject.name + " 구조물 발견"));
-        //구조물 은 아마 위치 변경 가능하게?
+        AppManager.Instance.PrintConsoleText(touchObj.gameObject.name + " 구조물 발견");
     }
 
     void FindAnimalTouch(GameObject touchObj)
     {
-        //동물도감 추가
         AnimalBookManager.Instance.AddAnimal(touchObj.gameObject.GetComponent<ObjectData>().ID_Name);
     }
 
     void DescriptionTouch(GameObject touchObj)
-    {
-        StartCoroutine(AppManager.Instance.PrintLog(touchObj.gameObject.name + " 설명"));
-        //해당 위치나 건물 설명
+    {   
+        AppManager.Instance.PrintConsoleText(touchObj.gameObject.name + " 설명");
     }
 }

@@ -92,7 +92,7 @@ public class TestConsoleManager : MonoBehaviour
     void UI_Position_Setting() 
     {
         int count = ConsolePanel.transform.GetChild(0).childCount;
-        int maxRow = 8;
+        int maxRow = 6;
         Vector3 position = ConsolePanel.transform.localPosition;
         position.x = 0;
         position.y = 0;
@@ -113,7 +113,7 @@ public class TestConsoleManager : MonoBehaviour
 
         // width - login Btn - left spacing - right spacing
         DebugPanel.transform.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, Screen.width - 250 - 30 - 30);
-        DebugPanel.transform.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, position.y + ((count-1) * 30));
+        DebugPanel.transform.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, ((count) * 130) - 30 > 800 ? ((count) * 130) - 30 : 800);
     }
 
     //랜덤 동물 추가

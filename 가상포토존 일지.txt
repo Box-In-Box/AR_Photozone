@@ -38,4 +38,6 @@
 2023-03-07 : (bw)중앙도서관(DCU mascot), 입구(logo) 구조물 추가, 적용안되었던 Sub structure 추가
 2023-03-09 : (bw)랭킹 텍스트 오류 수정
 2023-03-11 : (bw)Debug Panel 추가(GPS 구조물 확인 패널, 로그 확인 기능)
+2023-03-12 : (bw)UI 50씩 내리고 ConsoleText, TransparntBtn 위치 스크립트로 조정, PrintLog > PrintConsoleText, 
+		구조물 방향 조정, 오브젝트 터치 이동 추가(구조물 오브젝트, 동물 오브젝트는 이동안함)
 
