@@ -35715,9 +35715,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1497[1] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1498[4] = 
 {
 	static_cast<int32_t>(offsetof(QueueEnumerator_tA454AC08FDA03FCE3C9F57238527F1E666384DED, ____q_0)),static_cast<int32_t>(offsetof(QueueEnumerator_tA454AC08FDA03FCE3C9F57238527F1E666384DED, ____index_1)),static_cast<int32_t>(offsetof(QueueEnumerator_tA454AC08FDA03FCE3C9F57238527F1E666384DED, ____version_2)),static_cast<int32_t>(offsetof(QueueEnumerator_tA454AC08FDA03FCE3C9F57238527F1E666384DED, ____currentElement_3)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1500[9] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1500[7] = 
 {
-	static_cast<int32_t>(offsetof(Queue_t82FD2BE12D138AF4D22C801CB5044DAEC2BA66BC, ____array_0)),static_cast<int32_t>(offsetof(Queue_t82FD2BE12D138AF4D22C801CB5044DAEC2BA66BC, ____head_1)),static_cast<int32_t>(offsetof(Queue_t82FD2BE12D138AF4D22C801CB5044DAEC2BA66BC, ____tail_2)),static_cast<int32_t>(offsetof(Queue_t82FD2BE12D138AF4D22C801CB5044DAEC2BA66BC, ____size_3)),static_cast<int32_t>(offsetof(Queue_t82FD2BE12D138AF4D22C801CB5044DAEC2BA66BC, ____growFactor_4)),static_cast<int32_t>(offsetof(Queue_t82FD2BE12D138AF4D22C801CB5044DAEC2BA66BC, ____version_5)),static_cast<int32_t>(offsetof(Queue_t82FD2BE12D138AF4D22C801CB5044DAEC2BA66BC, ____syncRoot_6)),0,0,};
+	static_cast<int32_t>(offsetof(Queue_t82FD2BE12D138AF4D22C801CB5044DAEC2BA66BC, ____array_0)),static_cast<int32_t>(offsetof(Queue_t82FD2BE12D138AF4D22C801CB5044DAEC2BA66BC, ____head_1)),static_cast<int32_t>(offsetof(Queue_t82FD2BE12D138AF4D22C801CB5044DAEC2BA66BC, ____tail_2)),static_cast<int32_t>(offsetof(Queue_t82FD2BE12D138AF4D22C801CB5044DAEC2BA66BC, ____size_3)),static_cast<int32_t>(offsetof(Queue_t82FD2BE12D138AF4D22C801CB5044DAEC2BA66BC, ____growFactor_4)),static_cast<int32_t>(offsetof(Queue_t82FD2BE12D138AF4D22C801CB5044DAEC2BA66BC, ____version_5)),static_cast<int32_t>(offsetof(Queue_t82FD2BE12D138AF4D22C801CB5044DAEC2BA66BC, ____syncRoot_6)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1501[1] = 
 {
 	static_cast<int32_t>(offsetof(ReadOnlyCollectionBase_tDFADA53EA832E96746EED154A156F609C844D7BD, ____list_0)),};

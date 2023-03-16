@@ -13,9 +13,8 @@ public class TestConsoleManager : MonoBehaviour
     public GameObject ObjectTogglePrfab;
     public GameObject TextLogPrfab;
     public bool isConsolePanelActive = true; //콘솔패널 활성화 여부 -> 스크린샷매니저에서 이용
-
-    public string myLog;
- 	Queue myLogQueue = new Queue ();
+    public Text currentLocationText;
+    public Text playerLocationText;
 
     public int testDeactivationRadius;
     public Transform testStructurePanel;

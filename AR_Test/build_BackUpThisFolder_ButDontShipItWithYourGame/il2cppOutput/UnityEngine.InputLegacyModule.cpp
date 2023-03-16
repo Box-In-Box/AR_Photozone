@@ -817,6 +817,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double LocationInfo_get_timestamp_mAD1095E60A
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocationService_GetLastLocation_Injected_m2463D5B46B8E9CA2C10AB3E611CD176BE7C3D472 (LocationInfo_tBFD49220A54B71CDF564F61822F7B8D524465441* ___ret0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.LocationService::GetLastHeading_Injected(UnityEngine.LocationService/HeadingInfo&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocationService_GetLastHeading_Injected_m6BC975D8809617948C105507082D3273FBDF0539 (HeadingInfo_tDE66705847BB57D5815F1D570980E7C306B513BC* ___ret0, const RuntimeMethod* method) ;
+// System.Boolean UnityEngine.LocationService::IsServiceEnabledByUser()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LocationService_IsServiceEnabledByUser_m88DF3FEBB0B816F0D90E4972630D95714E5DDEDF (const RuntimeMethod* method) ;
 // UnityEngine.LocationServiceStatus UnityEngine.LocationService::GetLocationStatus()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t LocationService_GetLocationStatus_m1BE18671C8A455141C877979259EB9BA546A9103 (const RuntimeMethod* method) ;
 // UnityEngine.LocationServiceStatus UnityEngine.LocationService::get_status()
@@ -831,6 +833,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocationService_SetDesiredAccuracy_m6F69
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocationService_SetDistanceFilter_m847B85271A56F9291337C79E6C80012F2BD6C1AE (float ___value0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.LocationService::StartUpdatingLocation()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocationService_StartUpdatingLocation_m93789B3CDDF62EBD26326127DEC65C6C94123D29 (const RuntimeMethod* method) ;
+// System.Void UnityEngine.LocationService::Start(System.Single,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocationService_Start_m5076FE201E96C086B0F9C2D8677DA69C98099F3D (LocationService_tF2F2720FE2C07562EBFD128889F9A99F4B41B1B2* __this, float ___desiredAccuracyInMeters0, float ___updateDistanceInMeters1, const RuntimeMethod* method) ;
 // System.Void System.Object::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
 // UnityEngine.LocationService/HeadingInfo UnityEngine.LocationService::GetLastHeading()
@@ -1519,6 +1523,16 @@ IL2CPP_EXTERN_C  double LocationInfo_get_timestamp_mAD1095E60A61DF0FA66195AA06A0
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Boolean UnityEngine.LocationService::IsServiceEnabledByUser()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LocationService_IsServiceEnabledByUser_m88DF3FEBB0B816F0D90E4972630D95714E5DDEDF (const RuntimeMethod* method) 
+{
+	typedef bool (*LocationService_IsServiceEnabledByUser_m88DF3FEBB0B816F0D90E4972630D95714E5DDEDF_ftn) ();
+	static LocationService_IsServiceEnabledByUser_m88DF3FEBB0B816F0D90E4972630D95714E5DDEDF_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (LocationService_IsServiceEnabledByUser_m88DF3FEBB0B816F0D90E4972630D95714E5DDEDF_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.LocationService::IsServiceEnabledByUser()");
+	bool icallRetVal = _il2cpp_icall_func();
+	return icallRetVal;
+}
 // UnityEngine.LocationServiceStatus UnityEngine.LocationService::GetLocationStatus()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t LocationService_GetLocationStatus_m1BE18671C8A455141C877979259EB9BA546A9103 (const RuntimeMethod* method) 
 {
@@ -1597,6 +1611,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocationService_SetHeadingUpdatesEnabled
 	_il2cpp_icall_func = (LocationService_SetHeadingUpdatesEnabled_m77B8BAC72D790DF0B03CC97AA3CA1863F657B9A7_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.LocationService::SetHeadingUpdatesEnabled(System.Boolean)");
 	_il2cpp_icall_func(___value0);
 }
+// System.Boolean UnityEngine.LocationService::get_isEnabledByUser()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LocationService_get_isEnabledByUser_m78FE3A38B1101BAF658E259C1A6B4CD9A008DCAE (LocationService_tF2F2720FE2C07562EBFD128889F9A99F4B41B1B2* __this, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	{
+		bool L_0;
+		L_0 = LocationService_IsServiceEnabledByUser_m88DF3FEBB0B816F0D90E4972630D95714E5DDEDF(NULL);
+		V_0 = L_0;
+		goto IL_0009;
+	}
+
+IL_0009:
+	{
+		bool L_1 = V_0;
+		return L_1;
+	}
+}
 // UnityEngine.LocationServiceStatus UnityEngine.LocationService::get_status()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t LocationService_get_status_m25B7C4012B9529265D9746BB73ED689737E9C9CD (LocationService_tF2F2720FE2C07562EBFD128889F9A99F4B41B1B2* __this, const RuntimeMethod* method) 
 {
@@ -1665,6 +1696,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocationService_Start_m5076FE201E96C086B
 		float L_1 = ___updateDistanceInMeters1;
 		LocationService_SetDistanceFilter_m847B85271A56F9291337C79E6C80012F2BD6C1AE(L_1, NULL);
 		LocationService_StartUpdatingLocation_m93789B3CDDF62EBD26326127DEC65C6C94123D29(NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.LocationService::Start(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocationService_Start_m9415AA1CC6D8E4C450C6CF1C9D32BFBCF44C1F12 (LocationService_tF2F2720FE2C07562EBFD128889F9A99F4B41B1B2* __this, float ___desiredAccuracyInMeters0, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = ___desiredAccuracyInMeters0;
+		LocationService_Start_m5076FE201E96C086B0F9C2D8677DA69C98099F3D(__this, L_0, (10.0f), NULL);
 		return;
 	}
 }

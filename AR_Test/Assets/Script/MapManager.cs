@@ -18,6 +18,10 @@ public class MapManager : MonoBehaviour
     public int structureDeactivationRadius;
     [Tooltip("동물 구조물 활성화/비활성화 거리")]
     public int animalDeactivationRadius;
+    [Tooltip("AR Restart 거리")]
+    public int playerDeactivationRadius;
+
+    public GameObject playerGPS;
     
     [Header("-----MapCard-----")]
     public bool isShowStructureDistance;
@@ -33,6 +37,7 @@ public class MapManager : MonoBehaviour
 
     public int[] structureObjectDistance;
     public int[] animalObjectDistance;
+    public int playerDistance;
 
     private static MapManager _instance = null;
     public static MapManager Instance
@@ -60,8 +65,9 @@ public class MapManager : MonoBehaviour
     private void Start() {
         SettingMap();   //맵 해상도 변경
         SetMapLocationButton(); //변경된 해상도에 따라 포토존 위치 버튼 설정
-        //StartCoroutine(ShowStructureView()); //거리별 포토존 오브젝트 활성화/비활성화
-        //StartCoroutine(ShowAnimalView()); //거리별 동물 오브젝트 활성화/비활성화
+        StartCoroutine(ShowStructureView()); //거리별 포토존 오브젝트 활성화/비활성화
+        StartCoroutine(ShowAnimalView()); //거리별 동물 오브젝트 활성화/비활성화
+        StartCoroutine(ReStartGps());
     }
 
     #region Map Image setting
@@ -227,6 +233,48 @@ public class MapManager : MonoBehaviour
             }
             yield return null;
         }
+    }
+
+    public void ReSetAR()
+    {
+        ARLocation.ARLocationManager.Instance.ResetARSession((() =>
+        {
+            Debug.Log("AR+GPS and AR Session were restarted!");
+        }));
+    }
+
+    public void ReStartAR()
+    {
+       ARLocation.ARLocationManager.Instance.Restart();
+       TestConsoleManager.Instance.AddConsoleLog("Restart AR Object Location");
+    }
+
+    public void SetPlayerLocation()
+    {
+        Vector2 location = GPSManager.Instance.GetLocation();
+
+        playerGPS.GetComponent<ARLocation.PlaceAtLocation>().Location.Latitude = location.x;
+        playerGPS.GetComponent<ARLocation.PlaceAtLocation>().Location.Longitude = location.y;
+    }
+
+    IEnumerator ReStartGps()
+    {
+        yield return new WaitForSeconds(2f);
+
+        SetPlayerLocation();
+
+        while(true) {
+            playerDistance = (int)playerGPS.GetComponent<ARLocation.PlaceAtLocation>().RawGpsDistance;
+
+            TestConsoleManager.Instance.playerLocationText.text = "거리 : " + playerDistance;
+
+            if (playerDistance >= playerDeactivationRadius) {
+                ReStartAR();
+                SetPlayerLocation();
+                yield return new WaitForSeconds(1f);
+            }
+            yield return null;
+        }                                               
     }
     #endregion
 }

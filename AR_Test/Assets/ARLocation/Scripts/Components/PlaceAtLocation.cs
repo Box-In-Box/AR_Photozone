@@ -206,6 +206,18 @@ namespace ARLocation
             get => state.Paused;
             set => state.Paused = value;
         }
+        public void ResetARSesstion()
+        {
+            ARLocationManager.Instance.ResetARSession((() =>
+            {
+                Debug.Log("AR+GPS and AR Session were restarted!");
+            }));
+        }
+
+        public void RestartARSesstion()
+        {
+            ARLocationManager.Instance.Restart();
+        }
 
         public bool UseGroundHeight => state.Location.AltitudeMode == AltitudeMode.GroundRelative;
 
