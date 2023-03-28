@@ -90,23 +90,15 @@ public class TestConsoleManager : MonoBehaviour
     void UI_Position_Setting() 
     {
         int count = ConsolePanel.transform.GetChild(0).childCount;
-        int maxRow = 6;
         Vector3 position = ConsolePanel.transform.localPosition;
         position.x = 0;
         position.y = 0;
 
-        for(int i = 0; i < count; i++) {
-            if (i >= maxRow)
-                break;
-
-            float childPositionY = ConsolePanel.transform.GetChild(0).GetChild(i).GetComponent<RectTransform>().rect.height;
-
-            position.y += childPositionY;
-        }
+        position.y = -(AppManager.Instance.Up_Screen_Padding_Panel.GetComponent<RectTransform>().rect.height + 200);
         ConsolePanel.transform.localPosition = position;
-
-        ConsolePanel.GetComponent<RectTransform>().anchorMin = new Vector2(0, 0.5f);
-        ConsolePanel.GetComponent<RectTransform>().anchorMax = new Vector2(0, 0.5f);
+        
+        ConsolePanel.GetComponent<RectTransform>().anchorMin = new Vector2(0, 1f);
+        ConsolePanel.GetComponent<RectTransform>().anchorMax = new Vector2(0, 1f);
         ConsolePanel.GetComponent<RectTransform>().pivot = new Vector2(0, 0.5f);
 
         // width - login Btn - left spacing - right spacing

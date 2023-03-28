@@ -33,6 +33,10 @@ public class AnimalBookManager : MonoBehaviour
     public Text leaderboardValueText;
     public GameObject rankImg;
 
+    [Header("-----ETC-----")]
+    public Sprite normalmgTap;
+    public Sprite selectedImgTap;
+
     [Space(10f)]
     public bool[] isFound;
     public string[] getTime;
@@ -216,4 +220,7 @@ public class AnimalBookManager : MonoBehaviour
             leaderboardValueText.text += String.Format("{0, 3}마리", value) +"\n";
         }
     }
+
+    public void SetNormalmgTap(GameObject go) => go.GetComponent<Image>().sprite = normalmgTap;
+    public void SetselectedImgTap(GameObject go) => go.GetComponent<Image>().sprite = selectedImgTap;
 }
