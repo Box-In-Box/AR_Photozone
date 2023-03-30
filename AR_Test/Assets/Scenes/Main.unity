@@ -1990,6 +1990,8 @@ GameObject:
   - component: {fileID: 114286660}
   - component: {fileID: 114286659}
   - component: {fileID: 114286658}
+  - component: {fileID: 114286662}
+  - component: {fileID: 114286661}
   m_Layer: 0
   m_Name: AR Session Origin
   m_TagString: Untagged
@@ -2009,8 +2011,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1760703bbd54c04488a8d10600262ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_PlanePrefab: {fileID: 0}
-  m_DetectionMode: -1
+  m_PlanePrefab: {fileID: 1039233257419862991, guid: ae85e79fcf87d1f4abb08ea80586297e, type: 3}
+  m_DetectionMode: 1
 --- !u!114 &114286659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2042,6 +2044,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114286661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114286657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5ef63d54802d334dbb16e2403474974, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  placedPrefabName: 
+  arCamera: {fileID: 904007834}
+  placedObjectLayerMask:
+    serializedVersion: 2
+    m_Bits: 64
+--- !u!114 &114286662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114286657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa17d122634046b4a8e23048891fafc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RaycastPrefab: {fileID: 0}
 --- !u!1 &128083229
 GameObject:
   m_ObjectHideFlags: 0
@@ -3638,11 +3670,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4893690304070136, guid: fd8a1ea49b1bb463bb0f799cae30cdcb, type: 3}
       propertyPath: m_LocalScale.x
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4893690304070136, guid: fd8a1ea49b1bb463bb0f799cae30cdcb, type: 3}
       propertyPath: m_LocalScale.z
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4893690304070136, guid: fd8a1ea49b1bb463bb0f799cae30cdcb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4163,7 +4195,7 @@ GameObject:
   - component: {fileID: 279761339}
   - component: {fileID: 279761340}
   m_Layer: 5
-  m_Name: ARO_ETC_Content
+  m_Name: PO_ETC_Content
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4677,7 +4709,7 @@ GameObject:
   - component: {fileID: 316328774}
   - component: {fileID: 316328776}
   m_Layer: 5
-  m_Name: AR_Object_UI_Panel
+  m_Name: Placed_Object_UI_Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5111,6 +5143,7 @@ GameObject:
   - component: {fileID: 344858268}
   - component: {fileID: 344858267}
   - component: {fileID: 344858266}
+  - component: {fileID: 344858270}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -5168,6 +5201,49 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &344858270
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344858265}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
 --- !u!1001 &346662349
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5540,7 +5616,7 @@ GameObject:
   - component: {fileID: 351485010}
   - component: {fileID: 351485011}
   m_Layer: 5
-  m_Name: ARO_Food_Content
+  m_Name: PO_Food_Content
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10791,7 +10867,7 @@ GameObject:
   - component: {fileID: 665912334}
   - component: {fileID: 665912335}
   m_Layer: 0
-  m_Name: ARObjectManager
+  m_Name: PlacedObjectManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10826,6 +10902,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normalmgTap: {fileID: 21300000, guid: 64e66d50a131a4abaa8d4ebe129b2b72, type: 3}
   selectedImgTap: {fileID: 21300000, guid: dd01d53f3253e4265af152ab692b3ed5, type: 3}
+  placedObjectPanel: {fileID: 316328772}
+  foodCount: 1
+  propsCount: 0
+  etcCount: 0
+  foodContent: {fileID: 630232694}
 --- !u!1 &667907661
 GameObject:
   m_ObjectHideFlags: 0
@@ -15576,6 +15657,7 @@ GameObject:
   - component: {fileID: 904007837}
   - component: {fileID: 904007836}
   - component: {fileID: 904007835}
+  - component: {fileID: 904007840}
   m_Layer: 0
   m_Name: AR Camera
   m_TagString: MainCamera
@@ -15692,6 +15774,22 @@ Transform:
   m_Father: {fileID: 114286660}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &904007840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 904007833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c49b4cc203aa6414fae5c798d1d0e7d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EventMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_MaxRayIntersections: 0
 --- !u!224 &913261521 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7761917866986393253, guid: 40cb9a735931a473bbf901adeda65c94, type: 3}
@@ -20170,7 +20268,7 @@ GameObject:
   - component: {fileID: 1160326844}
   - component: {fileID: 1160326843}
   m_Layer: 5
-  m_Name: AR_Object_Panel
+  m_Name: Placed_Object_Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23442,7 +23540,7 @@ GameObject:
   - component: {fileID: 1405594807}
   - component: {fileID: 1405594808}
   m_Layer: 5
-  m_Name: ARO_Props_Content
+  m_Name: PO_Props_Content
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26202,7 +26300,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animalNumber: 33
   collectedAnimalCount: 0
-  animalPrefab: {fileID: 7733258645636081037, guid: 6b3c014733f528044a7698792207baf5, type: 3}
   animalCountText: {fileID: 820896121}
   animalContentParent: {fileID: 1244157719}
   loginFromAnimalBook: {fileID: 1246991835}
@@ -32310,7 +32407,7 @@ GameObject:
   - component: {fileID: 2045511756}
   - component: {fileID: 2045511757}
   m_Layer: 5
-  m_Name: AR_Object_Tap_Panel
+  m_Name: Placed_Object_Tap_Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

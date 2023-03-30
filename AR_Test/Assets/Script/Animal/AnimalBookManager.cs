@@ -13,7 +13,6 @@ public class AnimalBookManager : MonoBehaviour
     public static string animalMsg = "Animal_";
 
     [Space(10f)]
-    public GameObject animalPrefab;
     public Text animalCountText;
     public Transform animalContentParent;
     public Button loginFromAnimalBook;
@@ -84,7 +83,7 @@ public class AnimalBookManager : MonoBehaviour
         for (int i = 0; i < animalNumber; i++)
         {
             PlayfabManager.Instance.GetAnimal("Animal_" + i.ToString());
-            GameObject go = Instantiate(animalPrefab, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
+            GameObject go = Instantiate(Resources.Load("Item_Slot"), new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
             go.GetComponent<Image>().sprite = Resources.Load("AnimalBookImg/" + animalMsg + i.ToString(), typeof(Sprite)) as Sprite;
             go.GetComponent<Image>().color = new Color(0, 0, 0);
             go.transform.SetParent(animalContentParent);

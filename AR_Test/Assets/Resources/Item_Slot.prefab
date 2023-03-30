@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7733258645636081032}
   - component: {fileID: 7733258645636081039}
   m_Layer: 5
-  m_Name: Animal_Slot
+  m_Name: Item_Slot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
