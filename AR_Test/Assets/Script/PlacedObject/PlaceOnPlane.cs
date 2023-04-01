@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.ARFoundation;
+using UnityEngine.XR.ARSubsystems;
 
+[RequireComponent(typeof(ARPlaneManager))]
 public class PlaceOnPlane : MonoBehaviour
 {
+    private ARPlaneManager planeManager;
     public string placedPrefabName;
     private Vector2 touchPosition;
 
@@ -14,6 +18,11 @@ public class PlaceOnPlane : MonoBehaviour
     private Ray ray;
     private RaycastHit hit;
 
+    private void Awake()
+    {
+        planeManager = GetComponent<ARPlaneManager>();
+    }
+
     void Update()
     {
         //화면 터치하지 않을 때 리턴
@@ -23,12 +32,14 @@ public class PlaceOnPlane : MonoBehaviour
         //오브젝트 선택
         ray = arCamera.ScreenPointToRay(touchPosition);
         if (Physics.Raycast(ray, out hit, Mathf.Infinity, placedObjectLayerMask)) {
-            PlacedObject.SelectedObject = hit.transform.GetComponentInChildren<PlacedObject>();
+            PlacedObject.SelectedObject = hit.transform.GetComponent<PlacedObject>();
+            PlacedObjectManager.Instance.SetRemoveObjectBtn(hit.transform.gameObject);
             return;
         }
 
         //오브젝트 선택이 아닐 경우 취소
         PlacedObject.SelectedObject = null;
+        //PlacedObjectManager.Instance.RemoveObjectBtn.gameObject.SetActive(false);
 
         //오브젝트 생성
         if (placedPrefabName != "" && PlacedObjectManager.Raycast(touchPosition, out Pose hitPose)) {
@@ -43,6 +54,8 @@ public class PlaceOnPlane : MonoBehaviour
                 
             Instantiate(Resources.Load(prefabLocation + placedPrefabName), hitPose.position, hitPose.rotation);
             placedPrefabName = "";
+            planeManager.enabled = false;
+            SetAllPlanesActive(false);
         } 
     }
 
@@ -56,5 +69,14 @@ public class PlaceOnPlane : MonoBehaviour
     {
         yield return new WaitForSeconds(0.3f);
         placedPrefabName = name;
+        planeManager.enabled = true;
+        SetAllPlanesActive(true);
+    }
+
+    private void SetAllPlanesActive(bool value)
+    {
+        foreach (var plane in planeManager.trackables) {
+            plane.gameObject.SetActive(value);
+        }
     }
 }

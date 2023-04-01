@@ -51,6 +51,9 @@ public class AppManager : MonoBehaviour
     public RectTransform Down_Panel;
     public bool isrunnigTransparentUI;
 
+    [Header("-----RemoveObjectUI-----")]
+    public RectTransform RemoveObjectButton;
+
     private static AppManager _instance = null;
     public static AppManager Instance
     {
@@ -85,6 +88,7 @@ public class AppManager : MonoBehaviour
         DarkMode(DataManager.Instance.data.isDark);
         MirrorMode(DataManager.Instance.data.isMirror);
         SetTransparentUIPosition();
+        SetRemoveObjectosition();
         AutoLoginBtn(DataManager.Instance.data.isAutoLogin);
         AutoLogin();
 
@@ -427,6 +431,15 @@ public class AppManager : MonoBehaviour
         for(int i = 0; i < targetUI.Length; i++) 
                 targetUI[i].transform.position = target[i];
         yield return null;
+    }
+    #endregion
+
+    #region RemoveObjectBtn
+    public void SetRemoveObjectosition()
+    {
+        Vector3 position  = RemoveObjectButton.position;
+        position.y = Down_Screen_Padding_Panel.GetComponent<RectTransform>().rect.height + 50;
+        RemoveObjectButton.position = position;
     }
     #endregion
 }
