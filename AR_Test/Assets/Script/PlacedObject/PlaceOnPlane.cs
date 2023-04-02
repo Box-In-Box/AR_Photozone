@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
@@ -15,12 +15,16 @@ public class PlaceOnPlane : MonoBehaviour
     private Camera arCamera;
     [SerializeField]
     private LayerMask placedObjectLayerMask;
+    [SerializeField]
+    private LayerMask removeMask;
+    private GameObject removeObject;
     private Ray ray;
     private RaycastHit hit;
 
     private void Awake()
     {
         planeManager = GetComponent<ARPlaneManager>();
+        planeManager.enabled = false;
     }
 
     void Update()
@@ -29,17 +33,20 @@ public class PlaceOnPlane : MonoBehaviour
         if (!PlacedObjectManager.TryGetInputPosition(out touchPosition))
             return;
 
-        //오브젝트 선택
+        //오브젝트 선택, 생성 중일 때는 선택 불가
         ray = arCamera.ScreenPointToRay(touchPosition);
-        if (Physics.Raycast(ray, out hit, Mathf.Infinity, placedObjectLayerMask)) {
+        if (Physics.Raycast(ray, out hit, Mathf.Infinity, placedObjectLayerMask) && !PlacedObjectManager.Instance.placedObjectPanel.activeSelf) {
             PlacedObject.SelectedObject = hit.transform.GetComponent<PlacedObject>();
-            PlacedObjectManager.Instance.SetRemoveObjectBtn(hit.transform.gameObject);
+            removeObject = hit.transform.gameObject;
+            
+            //선택 오브젝트는 선택 불가 부모만 선택 후 모두 삭제
+            if (hit.transform.gameObject.name != "slected")
+                PlacedObjectManager.Instance.SetRemoveObjectBtn(hit.transform.gameObject);
             return;
         }
-
+        
         //오브젝트 선택이 아닐 경우 취소
         PlacedObject.SelectedObject = null;
-        //PlacedObjectManager.Instance.RemoveObjectBtn.gameObject.SetActive(false);
 
         //오브젝트 생성
         if (placedPrefabName != "" && PlacedObjectManager.Raycast(touchPosition, out Pose hitPose)) {

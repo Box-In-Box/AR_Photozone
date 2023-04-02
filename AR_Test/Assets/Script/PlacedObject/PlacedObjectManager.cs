@@ -35,7 +35,7 @@ public class PlacedObjectManager : MonoBehaviour
 
     /**
     Resources - PlacedObjectImg, Resources - PlacedObject 추가
-    PlacedObject는 자식으로 같은 프리팹 추가 후 placed Object에 자식 오브젝트 추가
+    PlacedObject는 자식으로 slected이름으로 같은 프리팹 추가 후 placed Object에 자식 오브젝트 추가
     자식 오브젝트는 비활성화
     layer -> PlacedObject 자식 모두 변경
     인스펙터창에서 각 수 지정
@@ -136,11 +136,16 @@ public class PlacedObjectManager : MonoBehaviour
 
     public void SetRemoveObjectBtn(GameObject target)
     {
+        if (target == null) {
+            RemoveObjectBtn.onClick.RemoveAllListeners();
+            RemoveObjectBtn.gameObject.SetActive(false);
+            return;
+        }
+
         RemoveObjectBtn.onClick.RemoveAllListeners();
 
         RemoveObjectBtn.onClick.AddListener( ()=> Destroy(target));
-        RemoveObjectBtn.onClick.AddListener( ()=> AppManager.Instance.PrintConsoleText(target.name + " 삭제"));
-        RemoveObjectBtn.onClick.AddListener( ()=> RemoveObjectBtn.onClick.RemoveAllListeners());
+        RemoveObjectBtn.onClick.AddListener( ()=> TestConsoleManager.Instance.AddConsoleLog(target.transform.gameObject.ToString() + "오브젝트 삭제"));
         RemoveObjectBtn.onClick.AddListener( ()=> RemoveObjectBtn.gameObject.SetActive(false));
 
         RemoveObjectBtn.gameObject.SetActive(true);

@@ -23,7 +23,7 @@ public class PlacedObject : MonoBehaviour
                 return;
             
             //다른 오브젝트일 경우 이전 오브젝트 비활성화
-            if (selectedObject != null)
+            if (selectedObject != null) 
                 selectedObject.selected.SetActive(false);
 
             //현재 오브젝트 저장

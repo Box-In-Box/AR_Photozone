@@ -2011,7 +2011,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1760703bbd54c04488a8d10600262ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_PlanePrefab: {fileID: 4776765576899091622, guid: 3738bd65ede154463b2c35064b9e5fdb, type: 3}
+  m_PlanePrefab: {fileID: 2807520129213382843, guid: 03a040a6fe56d3247b24e066f7ab445f, type: 3}
   m_DetectionMode: 1
 --- !u!114 &114286659
 MonoBehaviour:
@@ -2061,6 +2061,9 @@ MonoBehaviour:
   placedObjectLayerMask:
     serializedVersion: 2
     m_Bits: 64
+  removeMask:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!114 &114286662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2073,7 +2076,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa17d122634046b4a8e23048891fafc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_RaycastPrefab: {fileID: 4776765576899091622, guid: 3738bd65ede154463b2c35064b9e5fdb, type: 3}
+  m_RaycastPrefab: {fileID: 0}
 --- !u!1 &128083229
 GameObject:
   m_ObjectHideFlags: 0
@@ -25784,7 +25787,7 @@ GameObject:
   - component: {fileID: 1580180092}
   - component: {fileID: 1580180094}
   - component: {fileID: 1580180093}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30578,7 +30581,7 @@ GameObject:
   - component: {fileID: 1920700915}
   - component: {fileID: 1920700914}
   - component: {fileID: 1920700913}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: RemoveObjctButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}

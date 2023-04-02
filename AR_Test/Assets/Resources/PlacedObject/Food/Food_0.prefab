@@ -177,7 +177,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3445003256888115320, guid: c7d60d3f208fb7a42bd16716bded1749, type: 3}
       propertyPath: m_Name
-      value: Food_0 (1)
+      value: slected
       objectReference: {fileID: 0}
     - target: {fileID: 3445003256888115320, guid: c7d60d3f208fb7a42bd16716bded1749, type: 3}
       propertyPath: m_Layer

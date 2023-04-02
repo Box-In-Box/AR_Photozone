@@ -46,3 +46,4 @@
 2023-03-26 : (bw)AnimalBook, Ranking 통합 (한 개 패널 탭형식), RankingPanel > ARObjectPanel(AR 오브젝트 생성용)
 2023-03-30 : (bw)ARObjectPanel -> PlacedObjectPanel 이름 변경 및 배치오브젝트 생성, 선택 추가(구조 설정)
 2023-04-01 : (bw)AR Plane 투명 점박이로 변경(추가 수정필요), planed Object 생성 때만 인식 트레킹 설정, 선택 된 오브젝트 삭제 추가
+2023-04-01 : (bw)AR Plane 메테리얼 변경(특정 방향 안보이는 버그), placedObject 선택 및 오브젝트 삭제 최적화

@@ -5944,16 +5944,16 @@ struct Entry_tCD78F14709F5F5F8A9088194083AA3EFB53827EA  : public RuntimeObject
 	OverrideAltitudeData_t5C2EC8CE8A45E1E6030295DA728F9454A234E603* ___OverrideAltitude_1;
 };
 
-// PlaceOnPlane/<Inputdelay>d__10
-struct U3CInputdelayU3Ed__10_tFBD5CFCD4D0AB97D96DA058BD081ECEC2A0EAEDC  : public RuntimeObject
+// PlaceOnPlane/<Inputdelay>d__12
+struct U3CInputdelayU3Ed__12_t7819F54219DAB5D41B24BC20F11DC3024A92FE22  : public RuntimeObject
 {
-	// System.Int32 PlaceOnPlane/<Inputdelay>d__10::<>1__state
+	// System.Int32 PlaceOnPlane/<Inputdelay>d__12::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object PlaceOnPlane/<Inputdelay>d__10::<>2__current
+	// System.Object PlaceOnPlane/<Inputdelay>d__12::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// PlaceOnPlane PlaceOnPlane/<Inputdelay>d__10::<>4__this
+	// PlaceOnPlane PlaceOnPlane/<Inputdelay>d__12::<>4__this
 	PlaceOnPlane_t717C58662DC565F29819D900A31C0F3649A406E3* ___U3CU3E4__this_2;
-	// System.String PlaceOnPlane/<Inputdelay>d__10::name
+	// System.String PlaceOnPlane/<Inputdelay>d__12::name
 	String_t* ___name_3;
 };
 
@@ -24313,10 +24313,14 @@ struct PlaceOnPlane_t717C58662DC565F29819D900A31C0F3649A406E3  : public MonoBeha
 	Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ___arCamera_7;
 	// UnityEngine.LayerMask PlaceOnPlane::placedObjectLayerMask
 	LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB ___placedObjectLayerMask_8;
+	// UnityEngine.LayerMask PlaceOnPlane::removeMask
+	LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB ___removeMask_9;
+	// UnityEngine.GameObject PlaceOnPlane::removeObject
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___removeObject_10;
 	// UnityEngine.Ray PlaceOnPlane::ray
-	Ray_t2B1742D7958DC05BDC3EFC7461D3593E1430DC00 ___ray_9;
+	Ray_t2B1742D7958DC05BDC3EFC7461D3593E1430DC00 ___ray_11;
 	// UnityEngine.RaycastHit PlaceOnPlane::hit
-	RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5 ___hit_10;
+	RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5 ___hit_12;
 };
 
 // PlacedObject
@@ -27604,7 +27608,7 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize5745 = { sizeof(U3CU3Ec__Dis
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5746;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize5746 = { sizeof(PlacedObjectManager_tF5749A8D16B53EF2803E14B13FB4F7053A1AB93A), -1, sizeof(PlacedObjectManager_tF5749A8D16B53EF2803E14B13FB4F7053A1AB93A_StaticFields), 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5747;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize5747 = { sizeof(U3CInputdelayU3Ed__10_tFBD5CFCD4D0AB97D96DA058BD081ECEC2A0EAEDC), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize5747 = { sizeof(U3CInputdelayU3Ed__12_t7819F54219DAB5D41B24BC20F11DC3024A92FE22), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5748;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize5748 = { sizeof(PlaceOnPlane_t717C58662DC565F29819D900A31C0F3649A406E3), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5749;
