@@ -17,13 +17,16 @@
 　　　　● login window
     
 　　[Animal Book]
-　　　　● similer pokemon go (33 animals)
-    
-　　[Ranking]
-　　　　● check my ranking (1st to 10th)
-    
+        [Collected Animal]
+        　　● similer pokemon go (33 animals)
+        [Ranking]
+        　　● check my ranking and 1st to 10th user
+          
+    [Placed Object]
+　　　　●instantiate object on Plane to thouch whit out login
+
 　　[Map]
-　　　　● check photozone location
+　　　　● check photozone location distance (9 location)
 ```
 \
 <img src = "https://user-images.githubusercontent.com/79827366/170507982-f161d171-8e05-425a-b04c-d1dcff72d777.png" width="24%" height="24%">
