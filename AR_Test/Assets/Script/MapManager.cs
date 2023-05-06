@@ -31,13 +31,19 @@ public class MapManager : MonoBehaviour
     public Text locationName;
     public Text distanceText;
 
+    /*****테스트 끝나면 지우기*****/
+    [Header("-----MapTEST-----")]
+    public Transform testAnimalPanel;
+    public GameObject[] testAnimalObject;
+    public int[] testAnimalObjectDistance;
+
     [Space(10f)]
     public GameObject[] structureObject;
     public GameObject[] animalObject;
 
     public int[] structureObjectDistance;
     public int[] animalObjectDistance;
-    public int playerDistance;
+    private int playerDistance;
 
     private static MapManager _instance = null;
     public static MapManager Instance
@@ -59,6 +65,9 @@ public class MapManager : MonoBehaviour
     private void Awake() {
         structureObjectDistance = new int[structurePanel.childCount + structureSubPanel.childCount];
         animalObjectDistance = new int[animalPanel.childCount];
+        /*****테스트 끝나면 지우기*****/
+        testAnimalObjectDistance = new int[testAnimalPanel.childCount];
+
         SettingGpsObject(); //Gps 오브젝트 Get 컴포넌트
     }
 
@@ -68,6 +77,8 @@ public class MapManager : MonoBehaviour
         StartCoroutine(ShowStructureView()); //거리별 포토존 오브젝트 활성화/비활성화
         StartCoroutine(ShowAnimalView()); //거리별 동물 오브젝트 활성화/비활성화
         StartCoroutine(ReStartGps());
+        /*****테스트 끝나면 지우기*****/
+        StartCoroutine(ShowTestAnimalView());
     }
 
     #region Map Image setting
@@ -138,12 +149,17 @@ public class MapManager : MonoBehaviour
         int structureCount = structurePanel.childCount;
         int structureSubCount = structureSubPanel.childCount;
         int animalCount = animalPanel.childCount;
+        /*****테스트 끝나면 지우기*****/
+        int testAnimalCount = testAnimalPanel.childCount;
 
         if(structureCount != 0)
             structureObject = new GameObject[structureCount + structureSubCount];
 
         if(animalCount != 0)
             animalObject = new GameObject[animalCount];
+
+        if(testAnimalCount != 0)
+            testAnimalObject = new GameObject[testAnimalCount];
 
         for(int i = 0; i < structureCount; i++) {
             structureObject[i] = structurePanel.GetChild(i).gameObject;
@@ -155,6 +171,11 @@ public class MapManager : MonoBehaviour
 
         for(int i = 0; i < animalCount; i++) {
             animalObject[i] = animalPanel.GetChild(i).gameObject;
+        }
+
+        /*테스트 끝나면 지우기*/
+        for(int i = 0; i < testAnimalCount; i++) {
+            testAnimalObject[i] = testAnimalPanel.GetChild(i).gameObject;
         }
     }
 
@@ -200,7 +221,7 @@ public class MapManager : MonoBehaviour
         while(true) {
             for(int i = 0; i < structureObject.Length; i++) {   //포토존 오브젝트
                 structureObjectDistance[i] = (int)structureObject[i].GetComponent<ARLocation.PlaceAtLocation>().RawGpsDistance;
-                
+
                 if(structureObjectDistance[i] > structureDeactivationRadius) {
                     if(structureObject[i].transform.GetChild(0).gameObject.activeSelf == true)
                         structureObject[i].transform.GetChild(0).gameObject.SetActive(false);
@@ -217,11 +238,11 @@ public class MapManager : MonoBehaviour
     IEnumerator ShowAnimalView()
     {
         yield return new WaitForSeconds(1f); //null reference피하기 위함
-        
+
         while(true) {
             for(int i = 0; i < animalObject.Length; i++) {  //동물 오브젝트
                 animalObjectDistance[i] = (int)animalObject[i].GetComponent<ARLocation.PlaceAtLocation>().RawGpsDistance;
-                
+
                 if(animalObjectDistance[i] > animalDeactivationRadius) {
                     if(animalObject[i].transform.GetChild(0).gameObject.activeSelf == true)
                         animalObject[i].transform.GetChild(0).gameObject.SetActive(false);
@@ -229,6 +250,29 @@ public class MapManager : MonoBehaviour
                 else {
                     if(animalObject[i].transform.GetChild(0).gameObject.activeSelf == false)
                         animalObject[i].transform.GetChild(0).gameObject.SetActive(true);
+                }
+            }
+            yield return null;
+        }
+    }
+
+    /*****테스트 끝나면 지우기*****/
+    IEnumerator ShowTestAnimalView()
+    {
+        yield return new WaitForSeconds(1f); //null reference피하기 위함
+
+        while(true) {
+            for(int i = 0; i < testAnimalObject.Length; i++) {  //동물 오브젝트
+                testAnimalObjectDistance[i] = (int)testAnimalObject[i].GetComponent<ARLocation.PlaceAtLocation>().RawGpsDistance;
+                testAnimalObjectDistance[i] = (int)structureObject[i].GetComponent<ARLocation.PlaceAtLocation>().SceneDistance;
+
+                if(animalObjectDistance[i] > animalDeactivationRadius) {
+                    if(testAnimalObject[i].transform.GetChild(0).gameObject.activeSelf == true)
+                        testAnimalObject[i].transform.GetChild(0).gameObject.SetActive(false);
+                }
+                else {
+                    if(testAnimalObject[i].transform.GetChild(0).gameObject.activeSelf == false)
+                        testAnimalObject[i].transform.GetChild(0).gameObject.SetActive(true);
                 }
             }
             yield return null;

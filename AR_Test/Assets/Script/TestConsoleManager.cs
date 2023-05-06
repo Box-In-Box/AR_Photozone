@@ -9,16 +9,17 @@ public class TestConsoleManager : MonoBehaviour
     public GameObject DebugPanel;
     public Transform StructureObjectToggle;
     public Transform AnimalObjectToggle;
+    public Transform TestAnimalObjectToggle;
     public Transform LogTextOgject;
     public GameObject ObjectTogglePrfab;
     public GameObject TextLogPrfab;
     public bool isConsolePanelActive = true; //콘솔패널 활성화 여부 -> 스크린샷매니저에서 이용
     public Text currentLocationText;
     public Text playerLocationText;
+    public Text playerAltitudeLocationText;
 
     public int testDeactivationRadius;
     public Transform testStructurePanel;
-    public GameObject[] testStructureObject;
 
     private static TestConsoleManager _instance = null;
     public static TestConsoleManager Instance
@@ -38,57 +39,17 @@ public class TestConsoleManager : MonoBehaviour
         }
     }
 
-    private void Awake() 
-    {
-        SettingTestObject();
-    }
-
     void Start()
     {
-        UI_Position_Setting();
-        StartCoroutine(ShowTestStructureView());
+        Invoke("UI_Position_Setting", 0.5f);
         SettingDebugPanel();
         StartCoroutine(GpsObjectLog());
-    }
-
-    public void SettingTestObject()
-    {
-        int testStructureCount = testStructurePanel.childCount;
-
-        if(testStructureCount != 0)
-            testStructureObject = new GameObject[testStructureCount];
-
-        for(int i = 0; i < testStructureCount; i++) {
-            testStructureObject[i] = testStructurePanel.GetChild(i).gameObject;
-        }
-    }
-
-    IEnumerator ShowTestStructureView()
-    {
-        yield return new WaitForSeconds(2f);
-        while(true) {
-            int objectDistance;
-
-            for(int i = 0; i < testStructureObject.Length; i++) {
-                objectDistance = (int)testStructureObject[i].GetComponent<ARLocation.PlaceAtLocation>().RawGpsDistance;
-                /*if(i == 0) StartCoroutine(AppManager.Instance.PrintLog(objectDistance.ToString()));*/
-
-                if(objectDistance > testDeactivationRadius) {
-                    if(testStructureObject[i].transform.GetChild(0).gameObject.activeSelf == true)
-                        testStructureObject[i].transform.GetChild(0).gameObject.SetActive(false);
-                }
-                else {
-                    if(testStructureObject[i].transform.GetChild(0).gameObject.activeSelf == false)
-                        testStructureObject[i].transform.GetChild(0).gameObject.SetActive(true);
-                }
-            }
-            yield return new WaitForSeconds(1f);
-        }
     }
 
     //테스트 버튼 위치 조절
     void UI_Position_Setting() 
     {
+        
         int count = ConsolePanel.transform.GetChild(0).childCount;
         Vector3 position = ConsolePanel.transform.localPosition;
         position.x = 0;
@@ -102,8 +63,11 @@ public class TestConsoleManager : MonoBehaviour
         ConsolePanel.GetComponent<RectTransform>().pivot = new Vector2(0, 0.5f);
 
         // width - login Btn - left spacing - right spacing
-        DebugPanel.transform.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, Screen.width - 250 - 30 - 30);
-        DebugPanel.transform.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, ((count) * 130) - 30 > 800 ? ((count) * 130) - 30 : 800);
+        DebugPanel.transform.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, Screen.width - 30 - 30);
+        DebugPanel.transform.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, Screen.height 
+            - AppManager.Instance.Up_Screen_Padding_Panel.GetComponent<RectTransform>().rect.height
+                - AppManager.Instance.Down_Screen_Padding_Panel.GetComponent<RectTransform>().rect.height
+                - 200 - 30 - 30 - 100);
     }
 
     //랜덤 동물 추가

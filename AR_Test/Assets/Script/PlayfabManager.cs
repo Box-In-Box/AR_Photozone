@@ -52,11 +52,11 @@ public class PlayfabManager : MonoBehaviour
 
                 myID = result.PlayFabId;
                 StartCoroutine(SettingAnimalBook());
-                AppManager.Instance.QuitPanel(Login_Panel);
+                Login_Panel.SetActive(false);
             },
             (error) =>
             { 
-                AppManager.Instance.OpenPanel(Login_Panel);
+                Login_Panel.SetActive(true);
                 
                 if (error.ErrorDetails != null && error.ErrorDetails.Count > 0)
                 {
@@ -112,7 +112,7 @@ public class PlayfabManager : MonoBehaviour
         },
         (error) => 
         {
-            AppManager.Instance.OpenPanel(Login_Panel);
+            Login_Panel.SetActive(true);
         });
     }
 
@@ -156,7 +156,7 @@ public class PlayfabManager : MonoBehaviour
                                     if (key == "Password")
                                         LoginLogText.text="비밀번호는 6자리 이상으로 입력해주세요.";
                                     if (key == "Username")
-                                        LoginLogText.text="닉네임은 3~20자리로 입력해주세요.";
+                                        LoginLogText.text="닉네임은 영어 혹은 3~20자리로 입력해주세요.";
                                     break;
                             }
                     }
@@ -251,8 +251,14 @@ public class PlayfabManager : MonoBehaviour
             AnimalBookManager.Instance.leaderboardValueText.text = "";
             for (int i = 0; i < result.Leaderboard.Count; i++)
             {
-                var curBoard = result.Leaderboard[i];
-                AnimalBookManager.Instance.Ranking((i+1), curBoard.Profile.DisplayName, curBoard.StatValue);
+                if (i < 10) { //10등까지만 표시
+                    var curBoard = result.Leaderboard[i];
+                    AnimalBookManager.Instance.Ranking((i+1), curBoard.Profile.DisplayName, curBoard.StatValue);
+                }
+
+                if (result.Leaderboard[i].PlayFabId == myID) {
+                    AnimalBookManager.Instance.animalRankingText.text = "[ " + result.Leaderboard[i].DisplayName + " ] " + "내 순위 : " + (i+1).ToString() + "위";
+                }
             }
             Debug.Log("Ranking Synchronization Completed");
             TestConsoleManager.Instance.AddConsoleLog("Ranking Synchronization Completed");

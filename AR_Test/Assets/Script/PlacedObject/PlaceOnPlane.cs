@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
+using UnityEngine.EventSystems;
 
 [RequireComponent(typeof(ARPlaneManager))]
 public class PlaceOnPlane : MonoBehaviour
@@ -16,8 +17,7 @@ public class PlaceOnPlane : MonoBehaviour
     [SerializeField]
     private LayerMask placedObjectLayerMask;
     [SerializeField]
-    private LayerMask removeMask;
-    private GameObject removeObject;
+    private LayerMask removeLayerMask;
     private Ray ray;
     private RaycastHit hit;
 
@@ -37,17 +37,15 @@ public class PlaceOnPlane : MonoBehaviour
         ray = arCamera.ScreenPointToRay(touchPosition);
         if (Physics.Raycast(ray, out hit, Mathf.Infinity, placedObjectLayerMask) && !PlacedObjectManager.Instance.placedObjectPanel.activeSelf) {
             PlacedObject.SelectedObject = hit.transform.GetComponent<PlacedObject>();
-            removeObject = hit.transform.gameObject;
             
             //선택 오브젝트는 선택 불가 부모만 선택 후 모두 삭제
             if (hit.transform.gameObject.name != "slected")
                 PlacedObjectManager.Instance.SetRemoveObjectBtn(hit.transform.gameObject);
+            else if (hit.transform.gameObject.name == "slected") 
+                PlacedObjectManager.Instance.SetRemoveObjectBtn(null);
             return;
         }
         
-        //오브젝트 선택이 아닐 경우 취소
-        PlacedObject.SelectedObject = null;
-
         //오브젝트 생성
         if (placedPrefabName != "" && PlacedObjectManager.Raycast(touchPosition, out Pose hitPose)) {
             string prefabLocation = "PlacedObject/";
@@ -86,4 +84,13 @@ public class PlaceOnPlane : MonoBehaviour
             plane.gameObject.SetActive(value);
         }
     }
+
+    public bool IsPointerOverUIObject(Vector2 touchPos)
+    {
+        PointerEventData eventDataCurrentPosition = new PointerEventData(EventSystem.current);
+        eventDataCurrentPosition.position = touchPos;
+        List<RaycastResult> results = new List<RaycastResult>();
+        EventSystem.current.RaycastAll(eventDataCurrentPosition, results);
+        return results.Count > 0;
+    } 
 }

@@ -51,8 +51,14 @@ public class AppManager : MonoBehaviour
     public RectTransform Down_Panel;
     public bool isrunnigTransparentUI;
 
+    [Header("-----ArResetUI-----")]
+    public RectTransform ArResetUIButton;
+
     [Header("-----RemoveObjectUI-----")]
     public RectTransform RemoveObjectButton;
+
+    [Header("-----ETC-----")]
+    int backCount = 0;
 
     private static AppManager _instance = null;
     public static AppManager Instance
@@ -77,6 +83,11 @@ public class AppManager : MonoBehaviour
         AppSetting();
     }
 
+    void Update()
+    {
+        QuitAppBackTwice();
+    }
+
     public void AppSetting()
     {
         //Data Load
@@ -88,7 +99,8 @@ public class AppManager : MonoBehaviour
         DarkMode(DataManager.Instance.data.isDark);
         MirrorMode(DataManager.Instance.data.isMirror);
         SetTransparentUIPosition();
-        SetRemoveObjectosition();
+        SetArResetPosition();
+        SetRemoveObjectPosition();
         AutoLoginBtn(DataManager.Instance.data.isAutoLogin);
         AutoLogin();
 
@@ -98,30 +110,29 @@ public class AppManager : MonoBehaviour
         ScreenshotManager.Instance.SetMirrorMode(isMirror);
     }
 
+    #region Quit App
+    /*뒤로가기 버튼 두 번 연속시 앱 종료*/
+    void QuitAppBackTwice()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            backCount++;
+            PrintConsoleText("뒤로가기 버튼을 한번 더 누르면 종료됩니다.", 1.0f);
+            if (!IsInvoking("DoubleClick"))
+                Invoke("DoubleClick", 1.0f);
+        }
+        else if (backCount == 2) {
+            CancelInvoke("DoubleClick");
+            Application.Quit();
+        }
+    }
+    void DoubleClick() => backCount = 0;
+
     //종료시 자동저장
-    private void OnApplicationQuit() 
-    {
-        DataManager.Instance.SavaSettingData();
-    }
-
-    #region Panel stting
-    public void OpenPanel(GameObject gameObject)
-    {
-        gameObject.SetActive(true);
-    }
-
-    public void QuitPanel(GameObject gameObject)
-    {
-        gameObject.SetActive(false);
-    }
-
-    public void OtherPanelActiveFalse(GameObject gameObject)
-    {
-        gameObject.SetActive(false);
-    }
+    void OnApplicationQuit() => DataManager.Instance.SavaSettingData();
     #endregion
 
     #region Setting Screen
+    /*비율 변경시 적용되는 것들*/
     public void SetRatio(int ratio) //screen ratio 변경 (중복 save 방지)
     {
         ScreenRatio(ratio);
@@ -129,8 +140,9 @@ public class AppManager : MonoBehaviour
         DataManager.Instance.data.screenRatio = ratio;
         DataManager.Instance.SavaSettingData();
         SetTransparentUIPosition();
+        SetArResetPosition();
     }
-
+    /*실제 비율 설정 함수*/
     public void ScreenRatio(int ratio)  //screen ratio 설정(Down UI 패딩 appConsoleText, TransparentUI 위치 조정)
     {
         screenRatio = ratio;
@@ -164,6 +176,7 @@ public class AppManager : MonoBehaviour
         int appScreenWidth = (int)(Screen.height - (screenHeight + upUIPanel.gameObject.GetComponent<RectTransform>().rect.height));
         Down_Screen_Padding_Panel.sizeDelta = new Vector2(0, appScreenWidth);
 
+        //비율에 따른 콘솔메시지창, UI가림 버튼 위치 설정
         Vector3 position = appConsoleText.transform.position;
         position.y = appScreenWidth;
         appConsoleText.transform.position = position;
@@ -208,13 +221,14 @@ public class AppManager : MonoBehaviour
     #endregion
 
     #region Print Log
-    public void PrintConsoleText(string msg) => StartCoroutine(PrintLog(msg));
+    public void PrintConsoleText(string msg, float lifeTime = 1.5f) 
+        => StartCoroutine(PrintLog(msg, lifeTime));
 
-    public IEnumerator PrintLog(string msg)
+    public IEnumerator PrintLog(string msg, float lifeTime)
     {   
         isConsoleTextUsing = true;
         appConsoleText.GetChild(0).GetComponent<Text>().text = msg;
-        yield return new WaitForSecondsRealtime(1.5f);
+        yield return new WaitForSecondsRealtime(lifeTime);
         appConsoleText.GetChild(0).GetComponent<Text>().text = "";
         isConsoleTextUsing = false;
     }
@@ -355,9 +369,9 @@ public class AppManager : MonoBehaviour
 
     public void DownPanel() //최적화 필요
     {   
-        Transform[] targetUI = {Down_Panel, Down_Screen_Padding_Panel, Up_Panel, Up_Screen_Padding_Panel, TransparentUIButton};
+        Transform[] targetUI = {Down_Panel, Down_Screen_Padding_Panel, Up_Panel, Up_Screen_Padding_Panel, TransparentUIButton, ArResetUIButton};
 
-        Vector3[] current = {Down_Panel.position, Down_Screen_Padding_Panel.position, Up_Panel.position, Up_Screen_Padding_Panel.position, TransparentUIButton.position};
+        Vector3[] current = {Down_Panel.position, Down_Screen_Padding_Panel.position, Up_Panel.position, Up_Screen_Padding_Panel.position, TransparentUIButton.position, ArResetUIButton.position};
         
         Vector3[] target = new Vector3[targetUI.Length];
 
@@ -376,14 +390,17 @@ public class AppManager : MonoBehaviour
         target[4] = TransparentUIButton.position;
         target[4].y -= Down_Screen_Padding_Panel.GetComponent<RectTransform>().rect.height;
 
+        target[5] = ArResetUIButton.position;
+        target[5].y -= Down_Screen_Padding_Panel.GetComponent<RectTransform>().rect.height;
+
         StartCoroutine(WaitLerpCoroutine(targetUI, current, target, 1.0f));
     }
 
     public void UpPanel() //최적화 필요
     {   
-        Transform[] targetUI = {Down_Panel, Down_Screen_Padding_Panel, Up_Panel, Up_Screen_Padding_Panel, TransparentUIButton};
+        Transform[] targetUI = {Down_Panel, Down_Screen_Padding_Panel, Up_Panel, Up_Screen_Padding_Panel, TransparentUIButton, ArResetUIButton};
 
-        Vector3[] current = {Down_Panel.position, Down_Screen_Padding_Panel.position, Up_Panel.position, Up_Screen_Padding_Panel.position, TransparentUIButton.position};
+        Vector3[] current = {Down_Panel.position, Down_Screen_Padding_Panel.position, Up_Panel.position, Up_Screen_Padding_Panel.position, TransparentUIButton.position, ArResetUIButton.position};
         
         Vector3[] target = new Vector3[targetUI.Length];
 
@@ -401,6 +418,9 @@ public class AppManager : MonoBehaviour
 
         target[4] = TransparentUIButton.position;
         target[4].y += Down_Screen_Padding_Panel.GetComponent<RectTransform>().rect.height;
+
+        target[5] = ArResetUIButton.position;
+        target[5].y += Down_Screen_Padding_Panel.GetComponent<RectTransform>().rect.height;
 
         StartCoroutine(WaitLerpCoroutine(targetUI, current, target, 1.0f));
     }
@@ -434,11 +454,21 @@ public class AppManager : MonoBehaviour
     }
     #endregion
 
-    #region RemoveObjectBtn
-    public void SetRemoveObjectosition()
+    #region ArResetUI
+    public void SetArResetPosition()
     {
+        Vector3 position  = ArResetUIButton.position;
+        position.y = Down_Screen_Padding_Panel.GetComponent<RectTransform>().rect.height;
+        ArResetUIButton.position = position;
+    }
+    #endregion
+
+    #region RemoveObjectBtn
+    public void SetRemoveObjectPosition()
+    {
+        //기본  3 : 4 비율 에서 위치
         Vector3 position  = RemoveObjectButton.position;
-        position.y = Down_Screen_Padding_Panel.GetComponent<RectTransform>().rect.height + 50;
+        position.y = (Screen.height - ((Screen.width * 4) / 3 + upUIPanel.gameObject.GetComponent<RectTransform>().rect.height)) + 100;
         RemoveObjectButton.position = position;
     }
     #endregion

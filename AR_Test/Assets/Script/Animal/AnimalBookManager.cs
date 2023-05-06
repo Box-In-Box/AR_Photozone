@@ -80,6 +80,7 @@ public class AnimalBookManager : MonoBehaviour
             }
         }
 
+        //서버 동물 데이터 -> 로컬 동물 데이터
         for (int i = 0; i < animalNumber; i++)
         {
             PlayfabManager.Instance.GetAnimal("Animal_" + i.ToString());
@@ -150,7 +151,7 @@ public class AnimalBookManager : MonoBehaviour
 
         //수집된 동물은 동물카드 열람 가능
         go.GetComponent<Button>().onClick.AddListener( ()=> AnimalBookManager.Instance.SetAnimalCard(num) );
-        go.GetComponent<Button>().onClick.AddListener( ()=> AppManager.Instance.OpenPanel(animalCard) );
+        go.GetComponent<Button>().onClick.AddListener( ()=> animalCard.SetActive(true) );
     }
 
     //수집된 동물 카운트 증가 + 텍스트 변경

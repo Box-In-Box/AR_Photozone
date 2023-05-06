@@ -143,7 +143,6 @@ public class PlacedObjectManager : MonoBehaviour
         }
 
         RemoveObjectBtn.onClick.RemoveAllListeners();
-
         RemoveObjectBtn.onClick.AddListener( ()=> Destroy(target));
         RemoveObjectBtn.onClick.AddListener( ()=> TestConsoleManager.Instance.AddConsoleLog(target.transform.gameObject.ToString() + "오브젝트 삭제"));
         RemoveObjectBtn.onClick.AddListener( ()=> RemoveObjectBtn.gameObject.SetActive(false));

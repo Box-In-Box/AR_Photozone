@@ -9,6 +9,7 @@ public class GPSManager : MonoBehaviour
     LocationInfo currentGPSPosition;
     double detailed_num =1.0;//기존 좌표는 float형으로 소수점 자리가 비교적 자세히 출력되는 double을 곱하여 자세한 값을 구합니다.
 
+    public double deviceAltitude;
     // Use this for initialization
 
     private static GPSManager _instance = null;
@@ -66,6 +67,11 @@ public class GPSManager : MonoBehaviour
         TestConsoleManager.Instance.currentLocationText.text = 
         "위도 : " + (currentGPSPosition.latitude * detailed_num).ToString() 
         + "\n" + "경도 : " + (currentGPSPosition.longitude * detailed_num).ToString();
+
+        deviceAltitude = currentGPSPosition.altitude * detailed_num;
+         
+        TestConsoleManager.Instance.playerAltitudeLocationText.text = 
+        "고도 : " + deviceAltitude.ToString();
     }
 
     public Vector2 GetLocation()
