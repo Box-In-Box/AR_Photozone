@@ -34,6 +34,7 @@ public class AppManager : MonoBehaviour
     public GameObject mirrorOn;
 
     [Header("-----AutoLogin-----")]
+    public GameObject loginPanel;
     public bool isAutoLogin;
     public  Image autoLoginButtonImage;
     public Sprite autoLoginOff;
@@ -175,15 +176,10 @@ public class AppManager : MonoBehaviour
         DarkMode(isDark);
         int appScreenWidth = (int)(Screen.height - (screenHeight + upUIPanel.gameObject.GetComponent<RectTransform>().rect.height));
         Down_Screen_Padding_Panel.sizeDelta = new Vector2(0, appScreenWidth);
-
-        //비율에 따른 콘솔메시지창, UI가림 버튼 위치 설정
-        Vector3 position = appConsoleText.transform.position;
-        position.y = appScreenWidth;
-        appConsoleText.transform.position = position;
-
-        position = TransparentUIButton.transform.position;
-        position.y = appScreenWidth;
-        TransparentUIButton.transform.position = position;
+        
+        Vector3 transparentPosition = TransparentUIButton.transform.position;
+        transparentPosition.y = appScreenWidth;
+        TransparentUIButton.transform.position = transparentPosition;
     }
     #endregion
 
@@ -332,7 +328,7 @@ public class AppManager : MonoBehaviour
     {
         if (!isAutoLogin)
             return;
-        
+
         PlayfabManager.Instance.AutoLogin(DataManager.Instance.data.email, DataManager.Instance.data.password);
     }
     #endregion

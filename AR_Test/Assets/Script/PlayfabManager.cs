@@ -36,6 +36,10 @@ public class PlayfabManager : MonoBehaviour
     public void Login()
     {
         LoginLogText.text="로그인중...";
+        if (StartManager.Instance.starUI.activeSelf == true) {
+            StartManager.Instance.loggingIn.SetActive(true);
+            StartManager.Instance.skipLogin.SetActive(false);
+        }
 
         var request = new LoginWithEmailAddressRequest { Email = EmailInput.text, Password = PasswordInput.text };
         PlayFabClientAPI.LoginWithEmailAddress(request,
@@ -48,8 +52,9 @@ public class PlayfabManager : MonoBehaviour
                     DataManager.Instance.data.password = PasswordInput.text;
                     DataManager.Instance.SavaSettingData();
                 }
+                StartManager.Instance.SettingOriginalPosition();
                 AppManager.Instance.PrintConsoleText("로그인 성공");
-
+                
                 myID = result.PlayFabId;
                 StartCoroutine(SettingAnimalBook());
                 Login_Panel.SetActive(false);
@@ -57,6 +62,10 @@ public class PlayfabManager : MonoBehaviour
             (error) =>
             { 
                 Login_Panel.SetActive(true);
+                if (StartManager.Instance.starUI.activeSelf == true) {
+                    StartManager.Instance.loggingIn.SetActive(false);
+                    StartManager.Instance.skipLogin.SetActive(true);
+                }
                 
                 if (error.ErrorDetails != null && error.ErrorDetails.Count > 0)
                 {
@@ -99,7 +108,11 @@ public class PlayfabManager : MonoBehaviour
     }
 
     public void AutoLogin(string email, string password)
-    {
+    {   
+        Login_Panel.SetActive(false);
+        StartManager.Instance.loggingIn.SetActive(true);
+        StartManager.Instance.skipLogin.SetActive(false);
+
         var request = new LoginWithEmailAddressRequest { Email = email, Password = password };
         PlayFabClientAPI.LoginWithEmailAddress(request, 
         (result) => 
@@ -108,11 +121,14 @@ public class PlayfabManager : MonoBehaviour
             TestConsoleManager.Instance.AddConsoleLog("Auto Login Successful");
 
             myID = result.PlayFabId;
+            StartManager.Instance.SettingOriginalPosition();
             StartCoroutine(SettingAnimalBook());
         },
         (error) => 
         {
             Login_Panel.SetActive(true);
+            StartManager.Instance.loggingIn.SetActive(false);
+            StartManager.Instance.skipLogin.SetActive(true);
         });
     }
 
