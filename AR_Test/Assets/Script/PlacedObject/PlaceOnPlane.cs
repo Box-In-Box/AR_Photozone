@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(ARPlaneManager))]
 public class PlaceOnPlane : MonoBehaviour
@@ -52,8 +53,8 @@ public class PlaceOnPlane : MonoBehaviour
 
             if (placedPrefabName.Contains("Food"))
                 prefabLocation += "Food/";
-            else if (placedPrefabName.Contains("Props"))
-                prefabLocation += "Props/";
+            else if (placedPrefabName.Contains("Human"))
+                prefabLocation += "Human/";
             else if (placedPrefabName.Contains("ETC"))
                 prefabLocation += "ETC/";
                 
@@ -64,9 +65,10 @@ public class PlaceOnPlane : MonoBehaviour
         } 
     }
 
-    public void SetPlacedPrefabName(string name)
+    public void SetPlacedPrefabName()
     {
-        StartCoroutine(Inputdelay(name));
+        string objName = EventSystem.current.currentSelectedGameObject.name;
+        StartCoroutine(Inputdelay(objName));
     }
 
     //터치됨과 동시에 생성 방지

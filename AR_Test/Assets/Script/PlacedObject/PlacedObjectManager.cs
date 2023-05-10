@@ -23,13 +23,14 @@ public class PlacedObjectManager : MonoBehaviour
 
 
     //PlacedObject Panel
-    public const byte FOOD = 0, PROPS = 1, ETC = 2;
+    public const byte HUMAN = 0, FOOD = 1, ETC = 2;
+
+    public int humanCount;
     public int foodCount;
-    public int propsCount;
     public int etcCount;
 
     public static string foodMsg = "Food_";
-    public static string propsMsg = "Props_";
+    public static string humanMsg = "Human_";
     public static string etcMsg = "ETC_";
     public Transform[] placedObjectContent;
 
@@ -70,39 +71,42 @@ public class PlacedObjectManager : MonoBehaviour
     IEnumerator PlacedObjectSetting()
     {
         string objName;
+        //Human setting
+        for (int i = 0; i < humanCount; i++)
+        {
+            objName = humanMsg + i.ToString();
+            GameObject go = Instantiate(Resources.Load("Item_Slot"), new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
+            go.GetComponent<Image>().sprite = Resources.Load("PlacedObjectImg/" + "Human/" + objName, typeof(Sprite)) as Sprite;
+            go.GetComponent<Button>().onClick.AddListener(() => placeOnPlane.SetPlacedPrefabName());
+            go.GetComponent<Button>().onClick.AddListener(() => placedObjectPanel.SetActive(false));
+            go.transform.SetParent(placedObjectContent[HUMAN]);
+            go.name = objName;
+        }
+        yield return null;
+
         //Food setting
         for (int i = 0; i < foodCount; i++)
         {
-            objName = foodMsg + i.ToString(); //온클릭 추가에서 ++된 상태로 삽입되는 버그로 추가됨
+            objName = foodMsg + i.ToString();
             GameObject go = Instantiate(Resources.Load("Item_Slot"), new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
             go.GetComponent<Image>().sprite = Resources.Load("PlacedObjectImg/" + "Food/" + objName, typeof(Sprite)) as Sprite;
-            go.GetComponent<Button>().onClick.AddListener(() => placeOnPlane.SetPlacedPrefabName(objName));
+            go.GetComponent<Button>().onClick.AddListener(() => placeOnPlane.SetPlacedPrefabName());
             go.GetComponent<Button>().onClick.AddListener(() => placedObjectPanel.SetActive(false));
             go.transform.SetParent(placedObjectContent[FOOD]);
+            go.name = objName;
         }
         yield return null;
 
-        //Food setting
-        for (int i = 0; i < propsCount; i++)
-        {
-            objName = propsMsg + i.ToString();
-            GameObject go = Instantiate(Resources.Load("Item_Slot"), new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
-            go.GetComponent<Image>().sprite = Resources.Load("PlacedObjectImg/" + "Props/" + objName, typeof(Sprite)) as Sprite;
-            go.GetComponent<Button>().onClick.AddListener(() => placeOnPlane.SetPlacedPrefabName(objName));
-            go.GetComponent<Button>().onClick.AddListener(() => placedObjectPanel.SetActive(false));
-            go.transform.SetParent(placedObjectContent[PROPS]);
-        }
-        yield return null;
-
-        //Food setting
+        //ETC setting
         for (int i = 0; i < etcCount; i++)
         {
             objName = etcMsg + i.ToString();
             GameObject go = Instantiate(Resources.Load("Item_Slot"), new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
             go.GetComponent<Image>().sprite = Resources.Load("PlacedObjectImg/" + "ETC/" + objName, typeof(Sprite)) as Sprite;
-            go.GetComponent<Button>().onClick.AddListener(() => placeOnPlane.SetPlacedPrefabName(objName));
+            go.GetComponent<Button>().onClick.AddListener(() => placeOnPlane.SetPlacedPrefabName());
             go.GetComponent<Button>().onClick.AddListener(() => placedObjectPanel.SetActive(false));
             go.transform.SetParent(placedObjectContent[ETC]);
+            go.name = objName;
         }
         yield return null;
     }
