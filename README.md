@@ -36,7 +36,7 @@
 <img src = "https://github.com/Box-In-Box/AR_Photozone/assets/79827366/89d3d00d-d1b8-49a1-b44d-8712490885c4" width="16%">
 <img src = "https://github.com/Box-In-Box/AR_Photozone/assets/79827366/8eefcf40-6431-4739-97b6-81530ef0b53d" width="16%">
 
-<p>Title  /  Main(White_3:4 Ratio)  /  Main(Dark_3:4 Ratio)  /  Main(Dark_1:1 Ratio)  /  Main(Full)  /  Main(Transfer UI)</p>
+<p>Title  /  Main(White_3:4 Ratio)  /  Main(Dark_3:4 Ratio)  /  Main(Dark_1:1 Ratio)  /  Main(Full Ratio)  /  Main(Transfer UI)</p>
 
 <img src = "https://github.com/Box-In-Box/AR_Photozone/assets/79827366/974809cc-3ea0-4ff7-88c2-865d781e644f" width="16%">
 <img src = "https://github.com/Box-In-Box/AR_Photozone/assets/79827366/8a383c8f-d3f9-4cea-94ff-4badabda64ed" width="16%">
