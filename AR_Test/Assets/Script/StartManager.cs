@@ -61,7 +61,17 @@ public class StartManager : MonoBehaviour
     {
         //원래 위치로 (3 : 4)
         Vector3 appComsolePosition = ConsoleTextUI.transform.position;
-        appComsolePosition.y = (int)(Screen.height - (((Screen.width * 4) / 3) + upUIPanel.gameObject.GetComponent<RectTransform>().rect.height));
+
+        int minHeight = (int)(Screen.height - (((Screen.width * 4) / 3) + upUIPanel.gameObject.GetComponent<RectTransform>().rect.height));
+        if (minHeight < 500) { //가로가 긴 기기 (ex 옛날 기종)
+            appComsolePosition.y = (int)(Screen.height - (((Screen.width * 4) / 3) + 150));
+        }
+        else if (minHeight > 800) { //세로가 긴 기기 (ex 플립z)
+            appComsolePosition.y = (int)(Screen.height - (((Screen.width * 4) / 3) + 350));
+        }
+        else 
+            appComsolePosition.y = (int)(Screen.height - (((Screen.width * 4) / 3) + 300));
+
         ConsoleTextUI.transform.position = appComsolePosition;
 
         //원래 위치 저장

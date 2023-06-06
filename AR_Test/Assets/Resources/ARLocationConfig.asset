@@ -16,9 +16,9 @@ MonoBehaviour:
   EarthEquatorialRadiusInKM: 6378.137
   EarthFirstEccentricitySquared: 0.00669437999014
   InitialGroundHeightGuess: 1.4
-  MinGroundHeight: 0.4
+  MinGroundHeight: 1
   MaxGroundHeight: 3
   VuforiaGroundHitTestDistance: 4
-  GroundHeightSmoothingFactor: 0.1
+  GroundHeightSmoothingFactor: 0.01
   UseVuforia: 0
   UseCustomGeoCalculator: 0

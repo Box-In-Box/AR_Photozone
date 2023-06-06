@@ -94,6 +94,7 @@ public class AppManager : MonoBehaviour
         DataManager.Instance.LoadSettingData();
 
         //Data Setting
+        PreRatio();
         ScreenRatio(DataManager.Instance.data.screenRatio);
         ShutterSound(DataManager.Instance.data.shutterSound);
         DarkMode(DataManager.Instance.data.isDark);
@@ -132,6 +133,19 @@ public class AppManager : MonoBehaviour
     #endregion
 
     #region Setting Screen
+    public void PreRatio()
+    {
+        screenHeight = (Screen.width * 4) / 3;
+        int minHeight = (int)(Screen.height - (screenHeight + upUIPanel.gameObject.GetComponent<RectTransform>().rect.height));
+        if (minHeight < 500) { //가로가 긴 기기 (ex 옛날 기종)
+            Up_Screen_Padding_Panel.sizeDelta = new Vector2(0, 150);
+            Up_Panel.sizeDelta = new Vector2(0, 150);
+        }
+        else if (minHeight > 800) { //세로가 긴 기기 (ex 플립z)
+            Up_Screen_Padding_Panel.sizeDelta = new Vector2(0, 350);
+            Up_Panel.sizeDelta = new Vector2(0, 350);
+        }
+    }
     /*비율 변경시 적용되는 것들*/
     public void SetRatio(int ratio) //screen ratio 변경 (중복 save 방지)
     {
