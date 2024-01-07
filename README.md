@@ -46,3 +46,7 @@
 <img src = "https://github.com/Box-In-Box/AR_Photozone/assets/79827366/68a68ae2-fb91-4b46-86c4-3a99e47a4b22" width="16%">
 
 <p>Setting  /  Collected Animal  /  Animal Ranking /  Placed Object  /  Map  /  Map(Distance)</p>
+
+---
+
+https://github.com/Box-In-Box/AR_Photozone/assets/79827366/7fdee5ac-a8f3-48a0-9e94-5fadeb712c5c
